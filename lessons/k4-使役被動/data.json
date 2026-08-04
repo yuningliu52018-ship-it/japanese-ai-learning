@@ -1,6 +1,181 @@
 {
   "title": "第四課：使役被動",
   "description": "〜させられる 的規則、例句與練習",
-  "source": "日文使役被動形.html",
-  "status": "planned"
+  "source": "90.91(3).html",
+  "sections": [
+    {
+      "id": "pictures",
+      "title": "看圖說日文",
+      "type": "picture_lessons",
+      "items": [
+        {
+          "id": "pic-ex",
+          "title": "例 (範例)",
+          "imageDesc": "媽媽強迫孩子吃討厭的蔬菜",
+          "japanese": "<ruby>野<rt>や</rt></ruby><ruby>菜<rt>さい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べさせられました。",
+          "plainText": "野菜を食べさせられました。",
+          "romaji": "Yasai o tabesaseraremashita.",
+          "chinese": "（我）被強迫吃了蔬菜。",
+          "verbInfo": "二類動詞：食べます → 食べさせられます",
+          "borderColor": "border-amber-200 dark:border-amber-800/50"
+        },
+        {
+          "id": "pic-1",
+          "title": "1)",
+          "imageDesc": "外面大太陽，小男孩卻被關在房間看書",
+          "japanese": "<ruby>晴<rt>は</rt></ruby>れているのに、<ruby>部<rt>へ</rt></ruby><ruby>屋<rt>や</rt></ruby>で<ruby>勉<rt>べん</rt></ruby><ruby>強<rt>きょう</rt></ruby>させられました。",
+          "plainText": "晴れているのに、部屋で勉強させられました。",
+          "romaji": "Harete iru noni, heya de benkyou saseraremashita.",
+          "chinese": "明明外面是晴天，卻被強迫在房間裡讀書。",
+          "verbInfo": "三類動詞：勉強します → 勉強させられます",
+          "borderColor": "border-blue-200 dark:border-blue-800/50"
+        },
+        {
+          "id": "pic-2",
+          "title": "2)",
+          "imageDesc": "父母在旁邊督促，孩子在練習電腦操作",
+          "japanese": "<ruby>両<rt>りょう</rt></ruby><ruby>親<rt>しん</rt></ruby>にパソコンの<ruby>練<rt>れん</rt></ruby><ruby>習<rt>しゅう</rt></ruby>をさせられました。",
+          "plainText": "両親にパソコンの練習をさせられました。",
+          "romaji": "Ryoushin ni pasokon no renshuu o saseraremashita.",
+          "chinese": "被父母強迫練習電腦。",
+          "verbInfo": "三類動詞：練習します → 練習させられます",
+          "borderColor": "border-emerald-200 dark:border-emerald-800/50"
+        },
+        {
+          "id": "pic-3",
+          "title": "3)",
+          "imageDesc": "過年時，奶奶命令孫子正座跪坐",
+          "japanese": "お<ruby>正<rt>しょう</rt></ruby><ruby>月<rt>がつ</rt></ruby>に、<ruby>祖<rt>そ</rt></ruby><ruby>母<rt>ぼ</rt></ruby>に<ruby>正<rt>せい</rt></ruby><ruby>座<rt>ざ</rt></ruby>させられました。",
+          "plainText": "お正月に、祖母に正座させられました。",
+          "romaji": "Oshougatsu ni, sobo ni seiza saseraremashita.",
+          "chinese": "過年時，被祖母要求正座（端正跪坐）。",
+          "verbInfo": "三類動詞：正座します → 正座させられます",
+          "borderColor": "border-purple-200 dark:border-purple-800/50"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "title": "練習 2 (對話演練)",
+      "type": "dialogue_lessons",
+      "items": [
+        {
+          "id": "ren2-ex",
+          "title": "練習 2 - 例",
+          "promptQ": "<ruby>何<rt>なに</rt></ruby>かあったんですか。",
+          "promptQPlain": "何かあったんですか。",
+          "promptNote": "（彼女・２時間も待つ）",
+          "speakerA": "發生了什麼事嗎？",
+          "speakerBAns": "…ええ。<ruby>彼<rt>かの</rt></ruby><ruby>女<rt>じょ</rt></ruby>に ２<ruby>時<rt>じ</rt></ruby><ruby>間<rt>かん</rt></ruby>も <ruby>待<rt>ま</rt></ruby>たされたんです。",
+          "speakerBPlain": "…ええ。彼女に２時間も待たされたんです。",
+          "speakerBTrans": "…是的。我被女朋友硬生生讓我在那裡等了 2 個小時。",
+          "grammarKey": "一類動詞「待つ」→ あ段音 + される = 待たされる"
+        },
+        {
+          "id": "ren2-1",
+          "title": "練習 2 - 1)",
+          "promptQ": "<ruby>声<rt>こえ</rt></ruby>が<ruby>変<rt>へん</rt></ruby>ですね。",
+          "promptQPlain": "声が変ですね。",
+          "promptNote": "（課長・カラオケで歌う）",
+          "speakerA": "你的聲音聽起來怪怪的呢。",
+          "speakerBAns": "…ええ。<ruby>課<rt>か</rt></ruby><ruby>長<rt>ちょう</rt></ruby>に カラオケで <ruby>歌<rt>うた</rt></ruby>わされたんです。",
+          "speakerBPlain": "…ええ。課長にカラオケで歌わされたんです。",
+          "speakerBTrans": "…是的。我被課長強迫在卡拉 OK 唱歌。",
+          "grammarKey": "一類動詞「歌う」→ 詞尾「う」改「わ」+ される = 歌わされる"
+        },
+        {
+          "id": "ren2-2",
+          "title": "練習 2 - 2)",
+          "promptQ": "<ruby>足<rt>あし</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いんですか。",
+          "promptQPlain": "足が痛いんですか。",
+          "promptNote": "（先輩・運動場を走る）",
+          "speakerA": "腳很痛嗎？",
+          "speakerBAns": "…ええ。<ruby>先<rt>せん</rt></ruby><ruby>輩<rt>ぱい</rt></ruby>に <ruby>運<rt>うん</rt></ruby><ruby>動<rt>どう</rt></ruby><ruby>場<rt>じょう</rt></ruby>を <ruby>走<rt>はし</rt></ruby>らされたんです。",
+          "speakerBPlain": "…ええ。先輩に運動場を走らされたんです。",
+          "speakerBTrans": "…是的。我被學長/前輩強迫在操場跑步。",
+          "grammarKey": "一類動詞「走る」→ あ段音 + される = 走らされる"
+        },
+        {
+          "id": "ren2-3",
+          "title": "練習 2 - 3)",
+          "promptQ": "たばこを<ruby>吸<rt>す</rt></ruby>わないんですか。",
+          "promptQPlain": "たばこを吸わないんですか。",
+          "promptNote": "（妻・やめる）",
+          "speakerA": "你不抽菸了嗎？",
+          "speakerBAns": "…ええ。<ruby>妻<rt>つま</rt></ruby>に やめさせられたんです。",
+          "speakerBPlain": "…ええ。妻にやめさせられたんです。",
+          "speakerBTrans": "…是的。我是被我老婆逼著戒掉的。",
+          "grammarKey": "二類動詞「やめる」→ 去る + させられる = やめさせられる（無簡略形）"
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "title": "文法速查表",
+      "type": "grammar_notes",
+      "items": [
+        {
+          "title": "一類動詞",
+          "formula": "あ段音 + される",
+          "examples": [
+            { "from": "待つ", "to": "待たされる" },
+            { "from": "歌う", "to": "歌わされる" },
+            { "from": "走る", "to": "走らされる" }
+          ]
+        },
+        {
+          "title": "二類動詞",
+          "formula": "去 る + させられる",
+          "examples": [
+            { "from": "食べます", "to": "食べさせられる" },
+            { "from": "やめます", "to": "やめさせられる" }
+          ]
+        },
+        {
+          "title": "三類動詞",
+          "formula": "不規則變化",
+          "examples": [
+            { "from": "する", "to": "させられる" },
+            { "from": "勉強する", "to": "勉強させられる" },
+            { "from": "来る（くる）", "to": "来させられる" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "title": "隨堂小測驗",
+      "type": "quiz_questions",
+      "items": [
+        {
+          "id": "q1",
+          "question": "一類動詞「待つ（まつ）」改為使役被動形（簡略形）應該是？",
+          "options": ["待たさせられる", "待たされる", "待たれる", "待ちなさられる"],
+          "correct": 1,
+          "explanation": "「待つ」是一類動詞，將詞尾「つ」改為あ段音「た」加上「される」，變成「待たされる」。"
+        },
+        {
+          "id": "q2",
+          "question": "二類動詞「やめる」轉為使役被動形時，下列何者正確？",
+          "options": ["やめされる", "やめさせられる", "やまされる", "やめられさせられる"],
+          "correct": 1,
+          "explanation": "二類動詞不能使用「〜される」簡略形，必須去「る」加上「〜させられる」，因此是「やめさせられる」。"
+        },
+        {
+          "id": "q3",
+          "question": "句型「彼女（　）2時間も待たされた」中，括號內應填入哪個助詞表示「加害者/對象」？",
+          "options": ["を", "で", "に", "へ"],
+          "correct": 2,
+          "explanation": "使役被動句中，動作的促成者（強迫你的人）後面接格助詞「に」。"
+        },
+        {
+          "id": "q4",
+          "question": "「歌う（うたう）」改為使役被動形過去式時，正確變化為？",
+          "options": ["歌わせられました", "歌わされました", "歌いさせられました", "歌うされました"],
+          "correct": 1,
+          "explanation": "「歌う」字尾是「う」，其あ段音為「わ」，簡略使役被動過去式為「歌わされました」。"
+        }
+      ]
+    }
+  ]
 }
