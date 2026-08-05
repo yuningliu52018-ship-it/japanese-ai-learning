@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>第四課：使役被動</title>
   <link rel="stylesheet" href="../../css/main.css" />
+  <style>
+    .lesson-section + .lesson-section { margin-top: 1.5rem; }
+    .lesson-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .lesson-item { padding: 16px; border: 1px solid var(--border); border-radius: 16px; background: #fff; }
+    .lesson-item h3 { margin: 0 0 8px; font-size: 1rem; }
+    .lesson-muted { color: var(--muted); font-size: 0.95rem; }
+    .lesson-kv { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: var(--accent-soft); border: 1px solid rgba(79,70,229,.12); }
+    .lesson-kv strong { display: block; margin-bottom: 4px; }
+    .lesson-options { display: grid; gap: 8px; margin-top: 10px; }
+    .lesson-option { padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); background: #fff; }
+    code { background: var(--accent-soft); padding: 0 4px; border-radius: 6px; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -18,13 +30,91 @@
   <main class="layout">
     <section class="card">
       <h2>課本重點</h2>
-      <p>這一課包含課本圖片題、對話演練、文法速查表與隨堂測驗。此頁目前是重構後的正式入口，後續會逐步接上原始教材資料。</p>
+      <p>這一課包含課本圖片題、對話演練、文法速查表與隨堂測驗。</p>
     </section>
 
-    <section class="card">
-      <h2>原始教材來源</h2>
-      <p>來源檔為「日文使役被動形（〜させられる）互動教學網頁 - 桌面版」。本 repo 會以這份內容為基礎進行重構與拆分。</p>
+    <section class="card" id="lesson-root">
+      <h2>載入中…</h2>
+      <p class="lesson-muted">正在讀取 data.json。</p>
     </section>
   </main>
+
+  <script>
+    async function loadLesson() {
+      const root = document.getElementById('lesson-root');
+      try {
+        const res = await fetch('./data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        const html = [];
+        html.push(`<h2>${data.title}</h2>`);
+        html.push(`<p class="lesson-muted">${data.description}</p>`);
+
+        for (const section of data.sections || []) {
+          html.push(`<div class="lesson-section">`);
+          html.push(`<h3>${section.title}</h3>`);
+
+          if (section.type === 'picture_lessons' || section.type === 'dialogue_lessons') {
+            html.push(`<div class="lesson-grid">`);
+            for (const item of section.items || []) {
+              html.push(`<article class="lesson-item">`);
+              html.push(`<h3>${item.title}</h3>`);
+              if (item.imageDesc) html.push(`<p class="lesson-muted">${item.imageDesc}</p>`);
+              if (item.japanese) html.push(`<p>${item.japanese}</p>`);
+              if (item.plainText) html.push(`<p class="lesson-muted">${item.plainText}</p>`);
+              if (item.romaji) html.push(`<p class="lesson-muted"><code>${item.romaji}</code></p>`);
+              if (item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.chinese}</div>`);
+              if (item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法提示</strong>${item.verbInfo}</div>`);
+              if (item.promptQ) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
+              if (item.speakerBAns) html.push(`<div class="lesson-kv"><strong>答案</strong>${item.speakerBAns}</div>`);
+              if (item.speakerBTrans) html.push(`<div class="lesson-kv"><strong>翻譯</strong>${item.speakerBTrans}</div>`);
+              if (item.grammarKey) html.push(`<div class="lesson-kv"><strong>要點</strong>${item.grammarKey}</div>`);
+              html.push(`</article>`);
+            }
+            html.push(`</div>`);
+          } else if (section.type === 'grammar_notes') {
+            html.push(`<div class="lesson-grid">`);
+            for (const item of section.items || []) {
+              html.push(`<article class="lesson-item">`);
+              html.push(`<h3>${item.title}</h3>`);
+              if (item.formula) html.push(`<p class="lesson-muted"><strong>公式：</strong>${item.formula}</p>`);
+              html.push(`<div class="lesson-options">`);
+              for (const ex of item.examples || []) {
+                html.push(`<div class="lesson-option"><strong>${ex.from}</strong> → ${ex.to}</div>`);
+              }
+              html.push(`</div>`);
+              html.push(`</article>`);
+            }
+            html.push(`</div>`);
+          } else if (section.type === 'quiz_questions') {
+            html.push(`<div class="lesson-grid">`);
+            for (const item of section.items || []) {
+              html.push(`<article class="lesson-item">`);
+              html.push(`<h3>${item.question}</h3>`);
+              html.push(`<div class="lesson-options">`);
+              (item.options || []).forEach((opt, idx) => {
+                const mark = idx === item.correct ? '（正解）' : '';
+                html.push(`<div class="lesson-option">${opt}${mark}</div>`);
+              });
+              html.push(`</div>`);
+              if (item.explanation) html.push(`<div class="lesson-kv"><strong>解釋</strong>${item.explanation}</div>`);
+              html.push(`</article>`);
+            }
+            html.push(`</div>`);
+          }
+
+          html.push(`</div>`);
+        }
+
+        root.innerHTML = html.join('');
+      } catch (err) {
+        root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
+        console.error(err);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadLesson);
+  </script>
 </body>
 </html>
