@@ -138,6 +138,80 @@ body {
   margin-top: 1.5rem;
 }
 
+.chapter-nav {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.chapter-nav a {
+  display: grid;
+  gap: 2px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--surface);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.chapter-nav a:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.chapter-nav span,
+.chapter-nav small,
+.chapter-pages {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.chapter-heading {
+  display: flex;
+  gap: 16px;
+  margin: 42px 0 18px;
+  padding: 20px;
+  border-radius: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  scroll-margin-top: 110px;
+}
+
+.chapter-number {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.chapter-heading h2,
+.chapter-heading p {
+  margin: 0;
+}
+
+.chapter-heading h2 small {
+  margin-left: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.chapter-heading .chapter-pages {
+  color: #c7d2fe;
+}
+
+.chapter-pending {
+  margin: -6px 0 24px;
+  padding: 12px 16px;
+  border-left: 4px solid #f59e0b;
+  color: #78350f;
+  background: #fffbeb;
+}
+
 .lesson-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -185,6 +259,20 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--surface);
+}
+
+.lesson-answer {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(79, 70, 229, 0.18);
+  border-radius: 12px;
+  background: var(--accent-soft);
+}
+
+.lesson-answer summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .lesson-item code {
@@ -319,6 +407,10 @@ body {
 
   .lesson-grid {
     grid-template-columns: 1fr;
+  }
+
+  .chapter-nav {
+    grid-template-columns: 1fr 1fr;
   }
 
   .speech-toolbar {
