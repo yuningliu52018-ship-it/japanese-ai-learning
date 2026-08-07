@@ -1,3 +1,110 @@
+function plainText(value = '') {
+  const container = document.createElement('div');
+  container.innerHTML = String(value);
+  return (container.textContent || '').replace(/\s+/g, ' ').trim();
+}
+
+function speechButton(text, label = '播放') {
+  const cleanText = plainText(text);
+  if (!cleanText) return '';
+  return `<button class="speech-button" type="button" data-speak="${encodeURIComponent(cleanText)}" aria-label="播放日文：${cleanText.replace(/"/g, '&quot;')}"><span aria-hidden="true">▶</span> ${label}</button>`;
+}
+
+function itemSpeechText(item = {}) {
+  return item.jpPlain || item.plainText || item.japanese || item.jpRuby || '';
+}
+
+function sectionSpeechText(section = {}) {
+  const parts = [];
+  for (const item of section.items || []) {
+    if (section.type === 'grammar_notes') {
+      for (const example of item.examples || []) parts.push(example.from, example.to);
+    } else if (section.type === 'quiz_questions') {
+      parts.push(item.question, ...(item.options || []));
+    } else {
+      parts.push(itemSpeechText(item));
+    }
+  }
+  return parts.filter(Boolean).map(plainText).join('。');
+}
+
+function renderSpeechToolbar() {
+  return `
+    <aside class="speech-toolbar" aria-label="日文 AI 發音導讀">
+      <div>
+        <strong>日文 AI 發音導讀</strong>
+        <span id="speech-status" class="speech-status" aria-live="polite">點選播放即可聆聽</span>
+      </div>
+      <div class="speech-controls">
+        <label for="speech-rate">速度</label>
+        <select id="speech-rate">
+          <option value="0.75">慢速 0.75×</option>
+          <option value="1" selected>正常 1×</option>
+          <option value="1.25">快速 1.25×</option>
+        </select>
+        <button class="speech-stop" type="button" data-speech-stop>停止</button>
+      </div>
+    </aside>`;
+}
+
+function setupSpeech(root) {
+  const status = root.querySelector('#speech-status');
+  const synthesis = window.speechSynthesis;
+  let japaneseVoice = null;
+
+  if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
+    if (status) status.textContent = '此瀏覽器不支援語音播放';
+    root.querySelectorAll('.speech-button, .speech-stop').forEach((button) => {
+      button.disabled = true;
+    });
+    return;
+  }
+
+  const selectVoice = () => {
+    const voices = synthesis.getVoices();
+    japaneseVoice = voices.find((voice) => voice.lang === 'ja-JP')
+      || voices.find((voice) => voice.lang?.toLowerCase().startsWith('ja'))
+      || null;
+  };
+  selectVoice();
+  synthesis.addEventListener?.('voiceschanged', selectVoice);
+
+  root.addEventListener('click', (event) => {
+    const stopButton = event.target.closest('[data-speech-stop]');
+    if (stopButton) {
+      synthesis.cancel();
+      if (status) status.textContent = '已停止播放';
+      return;
+    }
+
+    const playButton = event.target.closest('[data-speak]');
+    if (!playButton) return;
+
+    const text = decodeURIComponent(playButton.dataset.speak || '');
+    if (!text) return;
+    synthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
+    if (japaneseVoice) utterance.voice = japaneseVoice;
+    utterance.onstart = () => {
+      root.querySelectorAll('.speech-button.is-playing').forEach((button) => button.classList.remove('is-playing'));
+      playButton.classList.add('is-playing');
+      if (status) status.textContent = `播放中：${text.slice(0, 34)}${text.length > 34 ? '…' : ''}`;
+    };
+    utterance.onend = () => {
+      playButton.classList.remove('is-playing');
+      if (status) status.textContent = '播放完成';
+    };
+    utterance.onerror = () => {
+      playButton.classList.remove('is-playing');
+      if (status) status.textContent = '播放失敗，請確認裝置已安裝日文語音';
+    };
+    synthesis.speak(utterance);
+  });
+}
+
 function renderLesson(root, data) {
   if (!root || !data) return;
 
@@ -9,13 +116,15 @@ function renderLesson(root, data) {
     html.push(`<span class="lesson-status">${data.status}</span>`);
   }
 
+  html.push(renderSpeechToolbar());
+
   if (!data.sections?.length) {
     html.push(`<p class="empty-state">本課教材正在整理中，完成後會顯示在這裡。</p>`);
   }
 
   for (const section of data.sections || []) {
     html.push(`<div class="lesson-section">`);
-    html.push(`<h3>${section.title || ''}</h3>`);
+    html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
     if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
       html.push(`<div class="lesson-grid">`);
@@ -24,6 +133,7 @@ function renderLesson(root, data) {
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
         if (item.jpRuby || item.japanese) html.push(`<p>${item.jpRuby || item.japanese}</p>`);
         if (item.jpPlain || item.plainText) html.push(`<p class="lesson-muted">${item.jpPlain || item.plainText}</p>`);
+        html.push(speechButton(itemSpeechText(item)));
         if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
@@ -43,6 +153,7 @@ function renderLesson(root, data) {
         if (item.imageDesc) html.push(`<p class="lesson-muted">${item.imageDesc}</p>`);
         if (item.japanese) html.push(`<p>${item.japanese}</p>`);
         if (item.plainText) html.push(`<p class="lesson-muted">${item.plainText}</p>`);
+        html.push(speechButton(itemSpeechText(item)));
         if (item.romaji) html.push(`<p class="lesson-muted"><code>${item.romaji}</code></p>`);
         if (item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.chinese}</div>`);
         if (item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法提示</strong>${item.verbInfo}</div>`);
@@ -57,7 +168,7 @@ function renderLesson(root, data) {
         if (item.formula) html.push(`<p class="lesson-muted"><strong>公式：</strong>${item.formula}</p>`);
         html.push(`<div class="lesson-options">`);
         for (const ex of item.examples || []) {
-          html.push(`<div class="lesson-option"><strong>${ex.from}</strong> → ${ex.to}</div>`);
+          html.push(`<div class="lesson-option"><strong>${ex.from}</strong> → ${ex.to}${speechButton(`${ex.from}。${ex.to}`)}</div>`);
         }
         html.push(`</div>`);
         html.push(`</article>`);
@@ -68,6 +179,7 @@ function renderLesson(root, data) {
       for (const item of section.items || []) {
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.question || ''}</h3>`);
+        html.push(speechButton(item.question));
         html.push(`<div class="lesson-options">`);
         (item.options || []).forEach((opt, idx) => {
           const mark = idx === item.correct ? '（正解）' : '';
@@ -84,6 +196,7 @@ function renderLesson(root, data) {
   }
 
   root.innerHTML = html.join('');
+  setupSpeech(root);
 }
 
 async function loadLesson() {
@@ -94,6 +207,24 @@ async function loadLesson() {
     const res = await fetch('./data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
+    const includedLessons = await Promise.all(
+      (data.includes || []).map(async (include) => {
+        const includedResponse = await fetch(include.path);
+        if (!includedResponse.ok) throw new Error(`HTTP ${includedResponse.status}: ${include.path}`);
+        const includedData = await includedResponse.json();
+        return (includedData.sections || []).map((section) => ({
+          ...section,
+          title: `${include.label}｜${section.title || ''}`
+        }));
+      })
+    );
+    data.sections = [
+      ...includedLessons.flat(),
+      ...(data.sections || []).map((section) => ({
+        ...section,
+        title: `${data.sectionLabel || '話す・聞く'}｜${section.title || ''}`
+      }))
+    ];
     document.title = `${data.title}｜日文互動學習平台`;
 
     const pageTitle = document.getElementById('lesson-page-title');
