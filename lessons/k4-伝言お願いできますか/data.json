@@ -1,7 +1,18 @@
 {
   "title": "第四課：伝言、お願いできますか",
-  "description": "商務電話轉接、代接留言、語音信箱與敬語表達",
+  "description": "第4課完整教材：文法・練習、話す・聞く、読む・書く與問題",
   "source": "伝言、お願いできますか.html",
+  "sectionLabel": "話す・聞く",
+  "includes": [
+    {
+      "path": "../k4-ということだ/data.json",
+      "label": "文法・練習"
+    },
+    {
+      "path": "../k4-使役被動/data.json",
+      "label": "文法・練習"
+    }
+  ],
   "sections": [
     {
       "type": "sentence_cards",
