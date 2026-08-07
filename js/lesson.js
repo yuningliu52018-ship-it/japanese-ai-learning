@@ -124,6 +124,22 @@ function renderLesson(root, data) {
 
   for (const section of data.sections || []) {
     html.push(`<div class="lesson-section">`);
+    if (section.type === 'chapter_heading') {
+      html.push(`
+        <header class="chapter-heading" id="chapter-${section.id}">
+          <span class="chapter-number">${section.number}</span>
+          <div>
+            <p class="chapter-pages">課本 ${section.pages} 頁</p>
+            <h2>${section.title}<small>${section.chinese}</small></h2>
+            <p>${section.description}</p>
+          </div>
+        </header>`);
+      if (!section.hasContent) {
+        html.push(`<p class="chapter-pending">本部分將依照已提供的課本照片逐頁建置。</p>`);
+      }
+      html.push(`</div>`);
+      continue;
+    }
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
     if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
@@ -182,11 +198,13 @@ function renderLesson(root, data) {
         html.push(speechButton(item.question));
         html.push(`<div class="lesson-options">`);
         (item.options || []).forEach((opt, idx) => {
-          const mark = idx === item.correct ? '（正解）' : '';
-          html.push(`<div class="lesson-option">${opt}${mark}</div>`);
+          html.push(`<div class="lesson-option">${String.fromCharCode(65 + idx)}. ${opt}</div>`);
         });
         html.push(`</div>`);
-        if (item.explanation) html.push(`<div class="lesson-kv"><strong>解釋</strong>${item.explanation}</div>`);
+        if (Number.isInteger(item.correct) || item.explanation) {
+          const answer = Number.isInteger(item.correct) ? `${String.fromCharCode(65 + item.correct)}. ${(item.options || [])[item.correct] || ''}` : '';
+          html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>答案：</strong>${answer}</p>` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}</details>`);
+        }
         html.push(`</article>`);
       }
       html.push(`</div>`);
@@ -214,17 +232,40 @@ async function loadLesson() {
         const includedData = await includedResponse.json();
         return (includedData.sections || []).map((section) => ({
           ...section,
+          chapter: include.chapter,
           title: `${include.label}｜${section.title || ''}`
         }));
       })
     );
-    data.sections = [
+    const vocabularySection = data.vocabulary?.length ? [{
+      type: 'sentence_cards',
+      chapter: 'vocabulary',
+      title: '単語 1–80',
+      items: data.vocabulary.map((entry, index) => {
+        const [japanese, chinese] = entry.split('|');
+        return {
+          id: String(index + 1).padStart(2, '0'),
+          topic: `${index + 1}. ${japanese}`,
+          japanese,
+          plainText: japanese,
+          chinese
+        };
+      })
+    }] : [];
+    const lessonSections = [
+      ...vocabularySection,
       ...includedLessons.flat(),
+      ...(data.supplementalSections || []),
       ...(data.sections || []).map((section) => ({
         ...section,
+        chapter: data.sectionChapter,
         title: `${data.sectionLabel || '話す・聞く'}｜${section.title || ''}`
       }))
     ];
+    data.sections = (data.chapters || []).flatMap((chapter) => {
+      const sections = lessonSections.filter((section) => section.chapter === chapter.id);
+      return [{ type: 'chapter_heading', ...chapter, hasContent: sections.length > 0 }, ...sections];
+    });
     document.title = `${data.title}｜日文互動學習平台`;
 
     const pageTitle = document.getElementById('lesson-page-title');
@@ -233,6 +274,10 @@ async function loadLesson() {
     if (pageDescription) pageDescription.textContent = data.description || '';
 
     renderLesson(root, data);
+    const toolbar = root.querySelector('.speech-toolbar');
+    if (toolbar && data.chapters?.length) {
+      toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span>${chapter.title}<small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
+    }
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
     console.error(err);
