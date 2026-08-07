@@ -16,6 +16,7 @@ function itemSpeechText(item = {}) {
 
 function sectionSpeechText(section = {}) {
   const parts = [];
+  if (section.type === 'long_reading') return (section.paragraphs || []).join('');
   for (const item of section.items || []) {
     if (section.type === 'grammar_notes') {
       for (const example of item.examples || []) parts.push(example.from, example.to);
@@ -142,7 +143,14 @@ function renderLesson(root, data) {
     }
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
-    if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
+    if (section.type === 'long_reading') {
+      html.push(`<article class="reading-article">`);
+      html.push(`<div class="reading-article-toolbar">${speechButton((section.paragraphs || []).join(''), '朗讀全文')}</div>`);
+      (section.paragraphs || []).forEach((paragraph, index) => {
+        html.push(`<div class="reading-paragraph"><span>${index + 1}</span><div><p lang="ja">${paragraph}</p>${speechButton(paragraph, '朗讀本段')}</div></div>`);
+      });
+      html.push(`</article>`);
+    } else if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
         html.push(`<article class="lesson-item">`);
