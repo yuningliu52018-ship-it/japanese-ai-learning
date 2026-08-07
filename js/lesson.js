@@ -5,6 +5,14 @@ function renderLesson(root, data) {
   html.push(`<h2>${data.title}</h2>`);
   html.push(`<p class="lesson-muted">${data.description || ''}</p>`);
 
+  if (data.status) {
+    html.push(`<span class="lesson-status">${data.status}</span>`);
+  }
+
+  if (!data.sections?.length) {
+    html.push(`<p class="empty-state">本課教材正在整理中，完成後會顯示在這裡。</p>`);
+  }
+
   for (const section of data.sections || []) {
     html.push(`<div class="lesson-section">`);
     html.push(`<h3>${section.title || ''}</h3>`);
@@ -14,12 +22,16 @@ function renderLesson(root, data) {
       for (const item of section.items || []) {
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
-        if (item.jpRuby) html.push(`<p>${item.jpRuby}</p>`);
-        if (item.jpPlain) html.push(`<p class="lesson-muted">${item.jpPlain}</p>`);
-        if (item.zh) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh}</div>`);
-        if (item.grammarNote) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote}</div>`);
+        if (item.jpRuby || item.japanese) html.push(`<p>${item.jpRuby || item.japanese}</p>`);
+        if (item.jpPlain || item.plainText) html.push(`<p class="lesson-muted">${item.jpPlain || item.plainText}</p>`);
+        if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
+        if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
         if (item.dialoguePrompts) html.push(`<div class="lesson-kv"><strong>演練提示</strong>${item.dialoguePrompts.join(' / ')}</div>`);
+        if (item.promptQ) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
+        if (item.speakerBAns) html.push(`<div class="lesson-kv"><strong>答案</strong>${item.speakerBAns}</div>`);
+        if (item.speakerBTrans) html.push(`<div class="lesson-kv"><strong>翻譯</strong>${item.speakerBTrans}</div>`);
+        if (item.grammarKey) html.push(`<div class="lesson-kv"><strong>要點</strong>${item.grammarKey}</div>`);
         html.push(`</article>`);
       }
       html.push(`</div>`);
@@ -82,6 +94,13 @@ async function loadLesson() {
     const res = await fetch('./data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
+    document.title = `${data.title}｜日文互動學習平台`;
+
+    const pageTitle = document.getElementById('lesson-page-title');
+    const pageDescription = document.getElementById('lesson-page-description');
+    if (pageTitle) pageTitle.textContent = data.title || '日文課程';
+    if (pageDescription) pageDescription.textContent = data.description || '';
+
     renderLesson(root, data);
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
