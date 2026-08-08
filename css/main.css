@@ -227,6 +227,56 @@ body {
   background: #fffef9;
 }
 
+.audio-track-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.audio-track-card {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #fecdd3;
+  border-radius: 16px;
+  background: #fff7f8;
+}
+
+.audio-track-badge {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  place-items: center;
+  align-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #db2777;
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.audio-track-badge span {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.audio-track-content h3,
+.audio-track-content p {
+  margin: 0 0 8px;
+}
+
+.audio-track-meta {
+  color: #9d174d;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.audio-track-content audio {
+  width: 100%;
+  max-width: 620px;
+}
+
 .reading-article-toolbar {
   display: flex;
   justify-content: flex-end;
@@ -596,6 +646,10 @@ body {
 
   .chapter-nav {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .audio-track-card {
+    grid-template-columns: 1fr;
   }
 
   .speech-toolbar {

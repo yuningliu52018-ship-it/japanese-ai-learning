@@ -78,6 +78,55 @@
   ],
   "supplementalSections": [
     {
+      "type": "audio_tracks",
+      "chapter": "speaking",
+      "title": "課本真人音源｜CD14",
+      "items": [
+        {
+          "track": "14",
+          "title": "話す・聞く：会話與留言練習",
+          "pages": "97–99",
+          "duration": "1:45",
+          "src": "../../assets/audio/lesson-04-track-14.mp3"
+        }
+      ]
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "reading",
+      "title": "課本真人音源｜CD15",
+      "items": [
+        {
+          "track": "15",
+          "title": "読む：電話嫌い",
+          "pages": "106",
+          "duration": "2:01",
+          "src": "../../assets/audio/lesson-04-track-15.mp3"
+        }
+      ]
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "questions",
+      "title": "課本真人音源｜CD16・CD17",
+      "items": [
+        {
+          "track": "16",
+          "title": "問題 1：聽力作答",
+          "pages": "109",
+          "duration": "0:26",
+          "src": "../../assets/audio/lesson-04-track-16.mp3"
+        },
+        {
+          "track": "17",
+          "title": "問題 2：伝言メモ",
+          "pages": "109",
+          "duration": "1:19",
+          "src": "../../assets/audio/lesson-04-track-17.mp3"
+        }
+      ]
+    },
+    {
       "type": "scenario_practice",
       "chapter": "speaking",
       "title": "生活應用｜電話留言實戰",
