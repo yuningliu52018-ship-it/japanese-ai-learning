@@ -339,7 +339,16 @@ function renderLesson(root, data) {
     }
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
-    if (section.type === 'long_reading') {
+    if (section.type === 'audio_tracks') {
+      html.push(`<div class="audio-track-grid">`);
+      for (const item of section.items || []) {
+        html.push(`<article class="audio-track-card">`);
+        html.push(`<div class="audio-track-badge"><span>CD</span>${item.track}</div>`);
+        html.push(`<div class="audio-track-content"><p class="audio-track-meta">課本 ${item.pages} 頁・${item.duration}</p><h3>${item.title}</h3><audio controls preload="metadata" src="${item.src}">您的瀏覽器不支援音訊播放。</audio><p class="lesson-muted">真人教材音源。播放後可搭配下方逐句「跟讀」練習。</p></div>`);
+        html.push(`</article>`);
+      }
+      html.push(`</div>`);
+    } else if (section.type === 'long_reading') {
       html.push(`<article class="reading-article">`);
       html.push(`<div class="reading-article-toolbar">${speechButton((section.paragraphs || []).join(''), '朗讀全文')}</div>`);
       (section.paragraphs || []).forEach((paragraph, index) => {
