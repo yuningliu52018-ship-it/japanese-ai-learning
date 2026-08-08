@@ -486,6 +486,11 @@ body {
 .shadow-record.is-recording {
   background: #dc2626;
   border-color: #dc2626;
+  animation: recording-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes recording-pulse {
+  50% { box-shadow: 0 0 0 6px rgba(220, 38, 38, 0.14); }
 }
 
 .shadow-result {
