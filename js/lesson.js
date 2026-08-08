@@ -7,7 +7,39 @@ function plainText(value = '') {
 function speechButton(text, label = '播放') {
   const cleanText = plainText(text);
   if (!cleanText) return '';
-  return `<button class="speech-button" type="button" data-speak="${encodeURIComponent(cleanText)}" aria-label="播放日文：${cleanText.replace(/"/g, '&quot;')}"><span aria-hidden="true">▶</span> ${label}</button>`;
+  const encoded = encodeURIComponent(cleanText);
+  const escaped = cleanText.replace(/"/g, '&quot;');
+  const canShadow = label === '播放' || label === '朗讀本段';
+  return `<span class="speech-actions"><button class="speech-button" type="button" data-speak="${encoded}" aria-label="播放日文：${escaped}"><span aria-hidden="true">▶</span> ${label}</button>${canShadow ? `<button class="shadow-button" type="button" data-shadow="${encoded}" aria-label="跟讀練習：${escaped}"><span aria-hidden="true">🎙</span> 跟讀</button>` : ''}</span>`;
+}
+
+function normalizeJapanese(text = '') {
+  return text
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\s、。！？!?,.「」『』（）()・ー]/g, '');
+}
+
+function levenshteinDistance(a, b) {
+  const rows = Array.from({ length: b.length + 1 }, (_, index) => [index]);
+  rows[0] = Array.from({ length: a.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= b.length; row += 1) {
+    for (let column = 1; column <= a.length; column += 1) {
+      rows[row][column] = Math.min(
+        rows[row - 1][column] + 1,
+        rows[row][column - 1] + 1,
+        rows[row - 1][column - 1] + (a[column - 1] === b[row - 1] ? 0 : 1)
+      );
+    }
+  }
+  return rows[b.length][a.length];
+}
+
+function pronunciationScore(target, transcript) {
+  const expected = normalizeJapanese(target);
+  const actual = normalizeJapanese(transcript);
+  if (!expected || !actual) return 0;
+  return Math.max(0, Math.round((1 - levenshteinDistance(expected, actual) / Math.max(expected.length, actual.length)) * 100));
 }
 
 function itemSpeechText(item = {}) {
@@ -45,6 +77,24 @@ function renderSpeechToolbar() {
         </select>
         <button class="speech-stop" type="button" data-speech-stop>停止</button>
       </div>
+    </aside>
+    <aside class="shadowing-panel" id="shadowing-panel" hidden aria-live="polite">
+      <div class="shadowing-heading">
+        <div><strong>跟讀練習</strong><span>先聽示範，再按下錄音說一次</span></div>
+        <button type="button" class="shadow-close" data-shadow-close aria-label="關閉跟讀練習">×</button>
+      </div>
+      <p class="shadow-target" id="shadow-target" lang="ja"></p>
+      <div class="shadowing-controls">
+        <button type="button" class="speech-button" data-shadow-listen>▶ 再聽一次</button>
+        <button type="button" class="shadow-record" data-shadow-record>🎙 開始跟讀</button>
+      </div>
+      <p class="shadow-status" id="shadow-status">選擇一句日文開始練習。</p>
+      <div class="shadow-result" id="shadow-result" hidden>
+        <p><strong>辨識結果</strong><span id="shadow-transcript" lang="ja"></span></p>
+        <p><strong>相似度</strong><span id="shadow-score"></span></p>
+        <p id="shadow-feedback"></p>
+      </div>
+      <small>語音辨識由瀏覽器提供；辨識分數供練習參考，不等同專業發音評量。</small>
     </aside>`;
 }
 
@@ -52,6 +102,16 @@ function setupSpeech(root) {
   const status = root.querySelector('#speech-status');
   const synthesis = window.speechSynthesis;
   let japaneseVoice = null;
+  let shadowTarget = '';
+  let recognition = null;
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const panel = root.querySelector('#shadowing-panel');
+  const targetElement = root.querySelector('#shadow-target');
+  const shadowStatus = root.querySelector('#shadow-status');
+  const shadowResult = root.querySelector('#shadow-result');
+  const transcriptElement = root.querySelector('#shadow-transcript');
+  const scoreElement = root.querySelector('#shadow-score');
+  const feedbackElement = root.querySelector('#shadow-feedback');
 
   if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
     if (status) status.textContent = '此瀏覽器不支援語音播放';
@@ -71,6 +131,78 @@ function setupSpeech(root) {
   synthesis.addEventListener?.('voiceschanged', selectVoice);
 
   root.addEventListener('click', (event) => {
+    const closeButton = event.target.closest('[data-shadow-close]');
+    if (closeButton) {
+      recognition?.abort();
+      panel.hidden = true;
+      return;
+    }
+
+    const shadowButton = event.target.closest('[data-shadow]');
+    if (shadowButton) {
+      shadowTarget = decodeURIComponent(shadowButton.dataset.shadow || '');
+      targetElement.textContent = shadowTarget;
+      shadowResult.hidden = true;
+      panel.hidden = false;
+      panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      shadowStatus.textContent = '正在播放示範，聽完後請按「開始跟讀」。';
+      const utterance = new SpeechSynthesisUtterance(shadowTarget);
+      utterance.lang = 'ja-JP';
+      utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
+      if (japaneseVoice) utterance.voice = japaneseVoice;
+      utterance.onend = () => { shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。'; };
+      synthesis.cancel();
+      synthesis.speak(utterance);
+      return;
+    }
+
+    if (event.target.closest('[data-shadow-listen]')) {
+      if (!shadowTarget) return;
+      const utterance = new SpeechSynthesisUtterance(shadowTarget);
+      utterance.lang = 'ja-JP';
+      utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
+      if (japaneseVoice) utterance.voice = japaneseVoice;
+      synthesis.cancel();
+      synthesis.speak(utterance);
+      return;
+    }
+
+    const recordButton = event.target.closest('[data-shadow-record]');
+    if (recordButton) {
+      if (!Recognition) {
+        shadowStatus.textContent = '此瀏覽器不支援語音辨識，建議使用電腦版 Chrome。你仍可播放示範並自行跟讀。';
+        return;
+      }
+      recognition?.abort();
+      recognition = new Recognition();
+      recognition.lang = 'ja-JP';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+      recognition.onstart = () => {
+        recordButton.classList.add('is-recording');
+        recordButton.textContent = '● 錄音中…';
+        shadowStatus.textContent = '請說出上面的日文句子。';
+      };
+      recognition.onresult = (resultEvent) => {
+        const transcript = resultEvent.results[0][0].transcript;
+        const score = pronunciationScore(shadowTarget, transcript);
+        transcriptElement.textContent = transcript;
+        scoreElement.textContent = `${score}%`;
+        feedbackElement.textContent = score >= 90 ? '非常接近！試著再注意語調與停頓。' : score >= 75 ? '很接近，再跟讀一次會更自然。' : score >= 55 ? '大致正確，建議切換慢速再聽一次。' : '先用慢速分段模仿，再重新錄一次。';
+        shadowResult.hidden = false;
+      };
+      recognition.onerror = (recognitionEvent) => {
+        shadowStatus.textContent = recognitionEvent.error === 'not-allowed' ? '需要允許麥克風權限才能跟讀辨識。' : '沒有辨識到完整日文，請再試一次。';
+      };
+      recognition.onend = () => {
+        recordButton.classList.remove('is-recording');
+        recordButton.textContent = '🎙 再說一次';
+        if (!shadowResult.hidden) shadowStatus.textContent = '完成！可查看結果，或再說一次。';
+      };
+      recognition.start();
+      return;
+    }
+
     const stopButton = event.target.closest('[data-speech-stop]');
     if (stopButton) {
       synthesis.cancel();
@@ -213,6 +345,18 @@ function renderLesson(root, data) {
           const answer = Number.isInteger(item.correct) ? `${String.fromCharCode(65 + item.correct)}. ${(item.options || [])[item.correct] || ''}` : '';
           html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>答案：</strong>${answer}</p>` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}</details>`);
         }
+        html.push(`</article>`);
+      }
+      html.push(`</div>`);
+    } else if (section.type === 'scenario_practice') {
+      html.push(`<div class="scenario-grid">`);
+      for (const item of section.items || []) {
+        html.push(`<article class="scenario-card">`);
+        html.push(`<p class="scenario-label">${item.situation}</p>`);
+        html.push(`<h3>${item.title}</h3>`);
+        html.push(`<div class="scenario-turn"><strong>對方</strong><p lang="ja">${item.partner}</p>${speechButton(item.partner)}</div>`);
+        html.push(`<div class="scenario-turn is-you"><strong>你要說</strong><p lang="ja">${item.target}</p>${speechButton(item.target)}</div>`);
+        if (item.swap) html.push(`<p class="scenario-swap"><strong>替換練習：</strong>${item.swap}</p>`);
         html.push(`</article>`);
       }
       html.push(`</div>`);
