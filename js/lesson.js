@@ -104,6 +104,8 @@ function setupSpeech(root) {
   let japaneseVoice = null;
   let shadowTarget = '';
   let recognition = null;
+  let recognitionActive = false;
+  let recognitionTimer = null;
   const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const panel = root.querySelector('#shadowing-panel');
   const targetElement = root.querySelector('#shadow-target');
@@ -130,7 +132,7 @@ function setupSpeech(root) {
   selectVoice();
   synthesis.addEventListener?.('voiceschanged', selectVoice);
 
-  root.addEventListener('click', (event) => {
+  root.addEventListener('click', async (event) => {
     const closeButton = event.target.closest('[data-shadow-close]');
     if (closeButton) {
       recognition?.abort();
@@ -169,21 +171,60 @@ function setupSpeech(root) {
 
     const recordButton = event.target.closest('[data-shadow-record]');
     if (recordButton) {
-      if (!Recognition) {
-        shadowStatus.textContent = '此瀏覽器不支援語音辨識，建議使用電腦版 Chrome。你仍可播放示範並自行跟讀。';
+      if (recognitionActive) {
+        recognition?.stop();
+        shadowStatus.textContent = '正在整理辨識結果…';
         return;
+      }
+      if (!Recognition) {
+        shadowStatus.textContent = '此瀏覽器沒有提供日文語音辨識。請改用電腦版 Chrome；目前仍可播放示範並自行跟讀。';
+        return;
+      }
+      if (window.isSecureContext === false) {
+        shadowStatus.textContent = '麥克風只能在 HTTPS 安全連線使用，請從正式 GitHub Pages 網址開啟。';
+        return;
+      }
+      synthesis.cancel();
+      shadowResult.hidden = true;
+      shadowStatus.textContent = '正在確認麥克風權限…';
+      if (navigator.mediaDevices?.getUserMedia) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          stream.getTracks().forEach((track) => track.stop());
+        } catch (permissionError) {
+          shadowStatus.textContent = permissionError.name === 'NotAllowedError'
+            ? '麥克風權限被拒絕。請按網址列左側圖示，將「麥克風」改成允許後重新整理。'
+            : '目前無法開啟麥克風，請確認沒有被其他程式占用。';
+          return;
+        }
       }
       recognition?.abort();
       recognition = new Recognition();
       recognition.lang = 'ja-JP';
       recognition.interimResults = false;
       recognition.maxAlternatives = 1;
+      recognition.continuous = false;
+      let recognitionHadResult = false;
+      let recognitionError = '';
       recognition.onstart = () => {
+        recognitionActive = true;
         recordButton.classList.add('is-recording');
-        recordButton.textContent = '● 錄音中…';
-        shadowStatus.textContent = '請說出上面的日文句子。';
+        recordButton.textContent = '■ 說完請按停止';
+        shadowStatus.textContent = '麥克風已開啟，請開始說日文（最長12秒）。';
+        clearTimeout(recognitionTimer);
+        recognitionTimer = window.setTimeout(() => {
+          if (recognitionActive) recognition.stop();
+        }, 12000);
+      };
+      recognition.onaudiostart = () => { shadowStatus.textContent = '已連接麥克風，正在等待你說話…'; };
+      recognition.onsoundstart = () => { shadowStatus.textContent = '已收到聲音，請繼續說完整句子。'; };
+      recognition.onspeechstart = () => { shadowStatus.textContent = '正在聽你的日文…說完後請稍等。'; };
+      recognition.onspeechend = () => {
+        shadowStatus.textContent = '已收到語音，正在辨識日文…';
+        if (recognitionActive) recognition.stop();
       };
       recognition.onresult = (resultEvent) => {
+        recognitionHadResult = true;
         const transcript = resultEvent.results[0][0].transcript;
         const score = pronunciationScore(shadowTarget, transcript);
         transcriptElement.textContent = transcript;
@@ -192,14 +233,37 @@ function setupSpeech(root) {
         shadowResult.hidden = false;
       };
       recognition.onerror = (recognitionEvent) => {
-        shadowStatus.textContent = recognitionEvent.error === 'not-allowed' ? '需要允許麥克風權限才能跟讀辨識。' : '沒有辨識到完整日文，請再試一次。';
+        recognitionError = recognitionEvent.error;
+        const errorMessages = {
+          'not-allowed': '麥克風權限未允許。請在網址列的網站設定中允許麥克風。',
+          'audio-capture': '找不到可用的麥克風，請檢查系統輸入裝置。',
+          'no-speech': '麥克風已開啟，但沒有收到清楚語音。請靠近麥克風，按下按鈕後立即開始說。',
+          'network': '瀏覽器語音辨識服務連線失敗，請確認網路後再試。',
+          'aborted': '本次錄音已取消。'
+        };
+        shadowStatus.textContent = errorMessages[recognitionEvent.error] || `語音辨識失敗（${recognitionEvent.error}），請再試一次。`;
+      };
+      recognition.onnomatch = () => {
+        recognitionError = 'no-match';
+        shadowStatus.textContent = '有收到聲音，但無法判斷成日文。請先用慢速聽一次，再清楚重說。';
       };
       recognition.onend = () => {
+        clearTimeout(recognitionTimer);
+        recognitionActive = false;
         recordButton.classList.remove('is-recording');
         recordButton.textContent = '🎙 再說一次';
-        if (!shadowResult.hidden) shadowStatus.textContent = '完成！可查看結果，或再說一次。';
+        if (recognitionHadResult) {
+          shadowStatus.textContent = '完成！可查看結果，或再說一次。';
+        } else if (!recognitionError) {
+          shadowStatus.textContent = '錄音結束，但沒有取得辨識文字。請靠近麥克風並在按下後立即開始說。';
+        }
       };
-      recognition.start();
+      try {
+        recognition.start();
+      } catch (startError) {
+        recognitionActive = false;
+        shadowStatus.textContent = '麥克風尚未準備好，請等待一秒後再按一次。';
+      }
       return;
     }
 
