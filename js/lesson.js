@@ -365,6 +365,13 @@ function renderLesson(root, data) {
         html.push(speechButton(itemSpeechText(item)));
         if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
+        if (item.examples?.length) {
+          html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">例句</strong>`);
+          for (const example of item.examples) {
+            html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
+          }
+          html.push(`</div>`);
+        }
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
         if (item.dialoguePrompts) html.push(`<div class="lesson-kv"><strong>演練提示</strong>${item.dialoguePrompts.join(' / ')}</div>`);
         if (item.promptQ) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
@@ -467,13 +474,17 @@ async function loadLesson() {
       chapter: 'vocabulary',
       title: '単語 1–80',
       items: data.vocabulary.map((entry, index) => {
-        const [japanese, chinese] = entry.split('|');
+        const normalized = typeof entry === 'string'
+          ? (() => {
+              const [japanese, chinese] = entry.split('|');
+              return { japanese, chinese };
+            })()
+          : entry;
         return {
+          ...normalized,
           id: String(index + 1).padStart(2, '0'),
-          topic: `${index + 1}. ${japanese}`,
-          japanese,
-          plainText: japanese,
-          chinese
+          topic: `${index + 1}. ${normalized.japanese}`,
+          plainText: normalized.plainText || normalized.japanese
         };
       })
     }] : [];
