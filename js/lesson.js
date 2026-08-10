@@ -306,8 +306,10 @@ function renderLesson(root, data) {
   if (!root || !data) return;
 
   const html = [];
-  html.push(`<h2>${data.title}</h2>`);
-  html.push(`<p class="lesson-muted">${data.description || ''}</p>`);
+  if (!document.getElementById('lesson-page-title')) {
+    html.push(`<h2>${data.title}</h2>`);
+    html.push(`<p class="lesson-muted">${data.description || ''}</p>`);
+  }
 
   if (data.status) {
     html.push(`<span class="lesson-status">${data.status}</span>`);
@@ -358,10 +360,14 @@ function renderLesson(root, data) {
     } else if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
+        const displayedJapanese = item.jpRuby || item.japanese || '';
+        const plainJapanese = item.jpPlain || item.plainText || '';
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
-        if (item.jpRuby || item.japanese) html.push(`<p>${item.jpRuby || item.japanese}</p>`);
-        if (item.jpPlain || item.plainText) html.push(`<p class="lesson-muted">${item.jpPlain || item.plainText}</p>`);
+        if (displayedJapanese) html.push(`<p lang="ja">${displayedJapanese}</p>`);
+        if (plainJapanese && plainJapanese !== displayedJapanese) {
+          html.push(`<p class="lesson-muted" lang="ja">${plainJapanese}</p>`);
+        }
         html.push(speechButton(itemSpeechText(item)));
         if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
