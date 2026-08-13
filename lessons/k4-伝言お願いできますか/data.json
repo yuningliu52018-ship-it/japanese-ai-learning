@@ -1,9 +1,15 @@
 {
+  "schemaVersion": 1,
   "title": "第四課：伝言、お願いできますか",
   "description": "第4課完整教材：文法・練習、話す・聞く、読む・書く與問題",
   "source": "伝言、お願いできますか.html",
   "sectionLabel": "話す・聞く",
   "sectionChapter": "speaking",
+  "catalog": {
+    "listed": true,
+    "order": 4,
+    "description": "文法・練習、話す・聞く、読む・書く與問題"
+  },
   "chapters": [
     {
       "id": "vocabulary",
@@ -59,14 +65,45 @@
     }
   ],
   "vocabulary": [
-    "検査する|檢查",
-    "明日|明天",
-    "能力|能力",
-    "バザー|慈善義賣",
-    "マスク|口罩",
-    "スーツケース|手提箱",
+    {
+      "japanese": "検査する",
+      "plainText": "検査する（けんさする）",
+      "chinese": "檢查、檢驗",
+      "examples": [{ "plain": "病院で血液を検査します。", "chinese": "在醫院檢驗血液。" }]
+    },
+    {
+      "japanese": "明日",
+      "plainText": "明日（あす）",
+      "chinese": "明天",
+      "examples": [{ "plain": "明日の会議は九時からです。", "chinese": "明天的會議九點開始。" }]
+    },
+    {
+      "japanese": "能力",
+      "plainText": "能力（のうりょく）",
+      "chinese": "能力",
+      "examples": [{ "plain": "彼は語学の能力が高いです。", "chinese": "他的語言能力很好。" }]
+    },
+    {
+      "japanese": "バザー",
+      "plainText": "バザー",
+      "chinese": "（慈善）義賣會",
+      "examples": [{ "plain": "学校でバザーが開かれます。", "chinese": "學校將舉辦義賣會。" }]
+    },
+    {
+      "japanese": "マスク",
+      "plainText": "マスク",
+      "chinese": "口罩",
+      "examples": [{ "plain": "風邪をひいたので、マスクをします。", "chinese": "因為感冒了，所以戴口罩。" }]
+    },
+    {
+      "japanese": "スーツケース",
+      "plainText": "スーツケース",
+      "chinese": "行李箱",
+      "examples": [{ "plain": "服をスーツケースに入れました。", "chinese": "把衣服放進行李箱了。" }]
+    },
     {
       "japanese": "目が覚める",
+      "plainText": "目が覚める（めがさめる）",
       "chinese": "醒來",
       "examples": [
         {
@@ -81,13 +118,39 @@
         }
       ]
     },
-    "朝礼|朝會",
-    "校歌|校歌",
-    "敬語|敬語",
-    "感想文|感想、心得",
-    "運動場|運動場",
+    {
+      "japanese": "朝礼",
+      "plainText": "朝礼（ちょうれい）",
+      "chinese": "晨會、朝會",
+      "examples": [{ "plain": "毎朝、会社で朝礼があります。", "chinese": "公司每天早上都有晨會。" }]
+    },
+    {
+      "japanese": "校歌",
+      "plainText": "校歌（こうか）",
+      "chinese": "校歌",
+      "examples": [{ "plain": "入学式で校歌を歌いました。", "chinese": "在入學典禮上唱了校歌。" }]
+    },
+    {
+      "japanese": "敬語",
+      "plainText": "敬語（けいご）",
+      "chinese": "敬語",
+      "examples": [{ "plain": "お客様には敬語を使います。", "chinese": "對客人使用敬語。" }]
+    },
+    {
+      "japanese": "感想文",
+      "plainText": "感想文（かんそうぶん）",
+      "chinese": "讀書心得、感想文章",
+      "examples": [{ "plain": "夏休みに本の感想文を書きました。", "chinese": "暑假寫了讀書心得。" }]
+    },
+    {
+      "japanese": "運動場",
+      "plainText": "運動場（うんどうじょう）",
+      "chinese": "運動場",
+      "examples": [{ "plain": "学生が運動場を走っています。", "chinese": "學生正在運動場跑步。" }]
+    },
     {
       "japanese": "いたずら",
+      "plainText": "いたずら",
       "chinese": "惡作劇",
       "examples": [
         {
@@ -102,12 +165,33 @@
         }
       ]
     },
-    "美しい|美麗的",
-    "世紀|世紀",
-    "平和|和平",
-    "人々|人們",
+    {
+      "japanese": "美しい",
+      "plainText": "美しい（うつくしい）",
+      "chinese": "美麗的、優美的",
+      "examples": [{ "plain": "この町は景色が美しいです。", "chinese": "這座城市的景色很美。" }]
+    },
+    {
+      "japanese": "世紀",
+      "plainText": "世紀（せいき）",
+      "chinese": "世紀",
+      "examples": [{ "plain": "電話は十九世紀に発明されました。", "chinese": "電話是在十九世紀發明的。" }]
+    },
+    {
+      "japanese": "平和な",
+      "plainText": "平和な（へいわな）",
+      "chinese": "和平的、平靜的",
+      "examples": [{ "plain": "平和な世界を願っています。", "chinese": "祈願世界和平。" }]
+    },
+    {
+      "japanese": "人々",
+      "plainText": "人々（ひとびと）",
+      "chinese": "人們",
+      "examples": [{ "plain": "多くの人々が広場に集まりました。", "chinese": "許多人聚集在廣場。" }]
+    },
     {
       "japanese": "願う",
+      "plainText": "願う（ねがう）",
       "chinese": "希望",
       "grammarNote": "Aを願う／動詞原形＋ことを願う：祈求、希望 A",
       "examples": [
@@ -128,11 +212,17 @@
         }
       ]
     },
-    "文|句子",
     {
-      "japanese": "換える",
-      "chinese": "更換、交換",
-      "grammarNote": "依搭配名詞不同，可表示物品替換、位置變更或內容改寫。常見複合動詞：書き換える（改寫）、乗り換える（轉乘）。",
+      "japanese": "文",
+      "plainText": "文（ぶん）",
+      "chinese": "句子、文章",
+      "examples": [{ "plain": "次の文を読んでください。", "chinese": "請讀下一個句子。" }]
+    },
+    {
+      "japanese": "書き換える",
+      "plainText": "書き換える（かきかえる）",
+      "chinese": "改寫、重寫",
+      "grammarNote": "把原有文字或內容改成另一種寫法。也可指改寫資料、紀錄或程式內容。",
       "examples": [
         {
           "ruby": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、すぐ<ruby>部屋着<rt>へやぎ</rt></ruby>に<ruby>着換<rt>きが</rt></ruby>える。",
@@ -153,6 +243,7 @@
     },
     {
       "japanese": "合わせる",
+      "plainText": "合わせる（あわせる）",
       "chinese": "配合、合併、使一致",
       "grammarNote": "依前接名詞不同，可表示時間上的配合、物品的重疊或數量的相加。常見複合動詞：組み合わせる（組合）、問い合わせる（詢問）。",
       "examples": [
@@ -180,7 +271,8 @@
     },
     {
       "japanese": "もともと",
-      "chinese": "原本、本來",
+      "plainText": "元々（もともと）",
+      "chinese": "原本、本來、原來",
       "examples": [
         {
           "ruby": "カリナさんはもともとN1に<ruby>合格<rt>ごうかく</rt></ruby>したそうだよ。",
@@ -199,11 +291,27 @@
         }
       ]
     },
-    "若者|年輕人",
-    "～湖|～湖",
-    "深い|深的",
+    {
+      "japanese": "若者",
+      "plainText": "若者（わかもの）",
+      "chinese": "年輕人、青年",
+      "examples": [{ "plain": "最近の若者はスマホをよく使います。", "chinese": "最近的年輕人常使用智慧型手機。" }]
+    },
+    {
+      "japanese": "～湖",
+      "plainText": "～湖（～こ）",
+      "chinese": "～湖（接在湖名後）",
+      "examples": [{ "plain": "琵琶湖は日本で一番大きい湖です。", "chinese": "琵琶湖是日本最大的湖。" }]
+    },
+    {
+      "japanese": "深い",
+      "plainText": "深い（ふかい）",
+      "chinese": "深的",
+      "examples": [{ "plain": "この湖はとても深いです。", "chinese": "這座湖非常深。" }]
+    },
     {
       "japanese": "いろいろ",
+      "plainText": "いろいろ",
       "chinese": "各式各樣、形形色色；多用於日常會話",
       "examples": [
         {
@@ -220,6 +328,7 @@
     },
     {
       "japanese": "さまざま",
+      "plainText": "様々な（さまざまな）",
       "chinese": "各式各樣、各有不同；較常用於文章或正式表達",
       "examples": [
         {
@@ -234,11 +343,27 @@
         }
       ]
     },
-    "苦しい|困苦的",
-    "性格|性格",
-    "人気者|受歡迎的人",
+    {
+      "japanese": "苦しい",
+      "plainText": "苦しい（くるしい）",
+      "chinese": "痛苦的、難受的、艱苦的",
+      "examples": [{ "plain": "息が苦しいので、少し休みます。", "chinese": "呼吸很難受，所以稍微休息一下。" }]
+    },
+    {
+      "japanese": "性格",
+      "plainText": "性格（せいかく）",
+      "chinese": "性格",
+      "examples": [{ "plain": "彼女は明るい性格です。", "chinese": "她個性開朗。" }]
+    },
+    {
+      "japanese": "人気者",
+      "plainText": "人気者（にんきもの）",
+      "chinese": "紅人、受歡迎的人",
+      "examples": [{ "plain": "彼はクラスの人気者です。", "chinese": "他是班上的紅人。" }]
+    },
     {
       "japanese": "多く",
+      "plainText": "多く（おおく）",
       "chinese": "很多、多數、大部分",
       "grammarNote": "「多くの＋名詞」修飾名詞；也可單獨作名詞或副詞使用。",
       "examples": [
@@ -259,13 +384,39 @@
         }
       ]
     },
-    "不安|不安",
-    "出る|推出、發行",
-    "雷|雷",
-    "うち|家、我們家",
-    "残念|遺憾的",
+    {
+      "japanese": "不安な",
+      "plainText": "不安な（ふあんな）",
+      "chinese": "不安的、擔心的、不放心的",
+      "examples": [{ "plain": "初めての一人旅で不安です。", "chinese": "第一次獨自旅行，心裡很不安。" }]
+    },
+    {
+      "japanese": "出る",
+      "plainText": "出る（でる）",
+      "chinese": "上市、推出；出去、出現",
+      "examples": [{ "plain": "新しいモデルが来月出ます。", "chinese": "新款型號下個月上市。" }]
+    },
+    {
+      "japanese": "雷",
+      "plainText": "雷（かみなり）",
+      "chinese": "雷、雷聲",
+      "examples": [{ "plain": "昨夜は雷が鳴っていました。", "chinese": "昨晚一直在打雷。" }]
+    },
+    {
+      "japanese": "うち",
+      "plainText": "うち",
+      "chinese": "我家、我們（這一方）",
+      "examples": [{ "plain": "うちの会社では日本語を使います。", "chinese": "我們公司使用日語。" }]
+    },
+    {
+      "japanese": "残念な",
+      "plainText": "残念な（ざんねんな）",
+      "chinese": "遺憾的、可惜的",
+      "examples": [{ "plain": "試合が中止になって残念です。", "chinese": "比賽取消了，真可惜。" }]
+    },
     {
       "japanese": "認める",
+      "plainText": "認める（みとめる）",
       "chinese": "認同、承認",
       "grammarNote": "Aを認める：認同或承認 A。",
       "examples": [
@@ -281,20 +432,81 @@
         }
       ]
     },
-    "現実|現實",
-    "愛する|愛",
-    "首都|首都",
-    "伝言|留言",
-    "留守番電話|電話答錄機、語音信箱",
-    "メッセージを受ける|接收留言",
-    "伝言を入れる|留下口信",
-    "メッセージを入れる|留下訊息",
-    "電話を差し上げる|打電話給您",
-    "そのように|像那樣",
-    "電話に出る|接電話",
-    "急|緊急的",
+    {
+      "japanese": "現実",
+      "plainText": "現実（げんじつ）",
+      "chinese": "現實、真實",
+      "examples": [{ "plain": "夢を現実にしたいです。", "chinese": "我想讓夢想成真。" }]
+    },
+    {
+      "japanese": "愛する",
+      "plainText": "愛する（あいする）",
+      "chinese": "愛、熱愛",
+      "examples": [{ "plain": "彼は故郷を深く愛しています。", "chinese": "他深愛自己的故鄉。" }]
+    },
+    {
+      "japanese": "首都",
+      "plainText": "首都（しゅと）",
+      "chinese": "首都",
+      "examples": [{ "plain": "東京は日本の首都です。", "chinese": "東京是日本的首都。" }]
+    },
+    {
+      "japanese": "伝言",
+      "plainText": "伝言（でんごん）",
+      "chinese": "傳話、口信、留言",
+      "examples": [{ "plain": "田中さんに伝言をお願いできますか。", "chinese": "可以請您幫我傳話給田中先生嗎？" }]
+    },
+    {
+      "japanese": "留守番電話",
+      "plainText": "留守番電話（るすばんでんわ）",
+      "chinese": "電話答錄機、語音信箱",
+      "examples": [{ "plain": "留守番電話にメッセージを残しました。", "chinese": "我在語音信箱裡留下了訊息。" }]
+    },
+    {
+      "japanese": "メッセージを受ける",
+      "plainText": "メッセージを受ける（メッセージをうける）",
+      "chinese": "收到、代接留言",
+      "examples": [{ "plain": "受付の人がメッセージを受けました。", "chinese": "櫃檯人員代收了留言。" }]
+    },
+    {
+      "japanese": "伝言を入れる",
+      "plainText": "伝言を入れる（でんごんをいれる）",
+      "chinese": "留下口信",
+      "examples": [{ "plain": "留守電に伝言を入れておきます。", "chinese": "我會先在語音信箱留下口信。" }]
+    },
+    {
+      "japanese": "メッセージを入れる",
+      "plainText": "メッセージを入れる",
+      "chinese": "留下訊息",
+      "examples": [{ "plain": "あとでメッセージを入れてください。", "chinese": "請稍後留下訊息。" }]
+    },
+    {
+      "japanese": "電話を差し上げる",
+      "plainText": "電話を差し上げる（でんわをさしあげる）",
+      "chinese": "打電話給您（謙讓語）",
+      "examples": [{ "plain": "確認してから、こちらからお電話を差し上げます。", "chinese": "確認後由我們打電話給您。" }]
+    },
+    {
+      "japanese": "そのように",
+      "plainText": "そのように",
+      "chinese": "像那樣、照您說的那樣",
+      "examples": [{ "plain": "担当者にそのように伝えます。", "chinese": "我會照您說的轉告負責人。" }]
+    },
+    {
+      "japanese": "電話に出る",
+      "plainText": "電話に出る（でんわにでる）",
+      "chinese": "接電話",
+      "examples": [{ "plain": "今、部長は電話に出ています。", "chinese": "部長現在正在接電話。" }]
+    },
+    {
+      "japanese": "急な",
+      "plainText": "急な（きゅうな）",
+      "chinese": "緊急的、突然的",
+      "examples": [{ "plain": "急な仕事が入って、行けなくなりました。", "chinese": "臨時有緊急工作，所以不能去了。" }]
+    },
     {
       "japanese": "～を入れる／～が入る",
+      "plainText": "～を入れる／～が入る（～をいれる／～がはいる）",
       "chinese": "排入、安排／收到、臨時出現",
       "grammarNote": "「入れる」表示主動將行程、留言等排入；「入る」表示留言、工作等進來或突然發生。",
       "examples": [
@@ -322,6 +534,7 @@
     },
     {
       "japanese": "取り消す",
+      "plainText": "取り消す（とりけす）",
       "chinese": "取消、撤回",
       "grammarNote": "用於取消契約、認定、公文，或撤回已說過的話與訊息；日常預約和商務會面也常說「キャンセルする」。",
       "examples": [
@@ -342,15 +555,51 @@
         }
       ]
     },
-    "来客中|有客人到訪",
-    "食パン|吐司",
-    "売り切れ|售完",
-    "バーゲンセール|特賣",
-    "案内状|邀請函、通知函",
-    "招待状|邀請函",
-    "電話が遠い|電話聲音聽不清楚",
+    {
+      "japanese": "来客中",
+      "plainText": "来客中（らいきゃくちゅう）",
+      "chinese": "正有客人來訪、正在接待客人",
+      "examples": [{ "plain": "社長はただ今、来客中です。", "chinese": "社長現在正在接待客人。" }]
+    },
+    {
+      "japanese": "食パン",
+      "plainText": "食パン（しょくパン）",
+      "chinese": "吐司、白麵包",
+      "examples": [{ "plain": "朝は食パンを二枚食べます。", "chinese": "早上吃兩片吐司。" }]
+    },
+    {
+      "japanese": "売り切れ",
+      "plainText": "売り切れ（うりきれ）",
+      "chinese": "售完、賣光",
+      "examples": [{ "plain": "人気の商品はもう売り切れです。", "chinese": "熱門商品已經售完了。" }]
+    },
+    {
+      "japanese": "バーゲンセール",
+      "plainText": "バーゲンセール",
+      "chinese": "大減價、特賣",
+      "examples": [{ "plain": "デパートでバーゲンセールが始まりました。", "chinese": "百貨公司的特賣活動開始了。" }]
+    },
+    {
+      "japanese": "案内状",
+      "plainText": "案内状（あんないじょう）",
+      "chinese": "通知函、邀請函",
+      "examples": [{ "plain": "同窓会の案内状が届きました。", "chinese": "收到了同學會的通知函。" }]
+    },
+    {
+      "japanese": "～状",
+      "plainText": "～状（～じょう）",
+      "chinese": "～函、～信、～狀",
+      "examples": [{ "plain": "結婚式の招待状を送りました。", "chinese": "寄出了婚禮邀請函。" }]
+    },
+    {
+      "japanese": "電話が遠い",
+      "plainText": "電話が遠い（でんわがとおい）",
+      "chinese": "電話聲音太小、聽不清楚",
+      "examples": [{ "plain": "すみません、少し電話が遠いようです。", "chinese": "不好意思，電話聲音好像有點聽不清楚。" }]
+    },
     {
       "japanese": "～嫌い／～嫌いがある",
+      "plainText": "～嫌い／～嫌いがある（～ぎらい／～ぎらいがある）",
       "chinese": "討厭～／有某種不好的傾向",
       "grammarNote": "「名詞＋嫌い」表示討厭某事物；「動詞辭書形＋嫌いがある」多用於負面評價，表示容易出現某種毛病或傾向。",
       "examples": [
@@ -371,11 +620,39 @@
         }
       ]
     },
-    "時代|時代",
-    "順に|依序",
-    "失礼|失禮的",
+    {
+      "japanese": "時代",
+      "plainText": "時代（じだい）",
+      "chinese": "時代",
+      "examples": [{ "plain": "時代とともに生活も変わります。", "chinese": "生活也會隨著時代改變。" }]
+    },
+    {
+      "japanese": "順に",
+      "plainText": "順に（じゅんに）",
+      "chinese": "依序、按順序",
+      "examples": [{ "plain": "名前を順に呼びます。", "chinese": "我會依序點名。" }]
+    },
+    {
+      "japanese": "失礼な",
+      "plainText": "失礼な（しつれいな）",
+      "chinese": "失禮的、沒禮貌的",
+      "grammarNote": "な形容詞。修飾名詞時用「失礼な＋名詞」；也可說「失礼します／失礼しました」表示打擾、告辭或致歉。",
+      "examples": [
+        {
+          "ruby": "あの<ruby>人<rt>ひと</rt></ruby>は<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>です。",
+          "plain": "あの人は失礼な人です。",
+          "chinese": "那個人很沒禮貌。"
+        },
+        {
+          "ruby": "お<ruby>先<rt>さき</rt></ruby>に<ruby>失礼<rt>しつれい</rt></ruby>します。",
+          "plain": "お先に失礼します。",
+          "chinese": "我先告辭了。"
+        }
+      ]
+    },
     {
       "japanese": "勧める／薦める",
+      "plainText": "勧める／薦める（すすめる）",
       "chinese": "勸做某事／推薦人或物",
       "grammarNote": "「勧める」側重勸對方採取行動；「薦める」側重推薦合適的人選或物品。現代日文中也常統一寫成「勧める」。",
       "examples": [
@@ -398,6 +675,7 @@
     },
     {
       "japanese": "腹を立てる",
+      "plainText": "腹を立てる（はらをたてる）",
       "chinese": "生氣、動怒",
       "grammarNote": "A（人／事）に腹を立てる：對某人或某事感到生氣。較書面，日常口語常說「怒る」。",
       "examples": [
@@ -415,6 +693,7 @@
     },
     {
       "japanese": "味わう",
+      "plainText": "味わう（あじわう）",
       "chinese": "品嚐；品味；體會",
       "grammarNote": "A（名詞）を味わう：品嚐食物，也可表示細細體會景色、感受或經驗。",
       "examples": [
@@ -432,6 +711,7 @@
     },
     {
       "japanese": "つなぐ",
+      "plainText": "つなぐ",
       "chinese": "連接、接起",
       "grammarNote": "A（名詞）をつなぐ：把分開的兩者連接在一起，可用於具體或抽象事物。",
       "examples": [
@@ -447,11 +727,27 @@
         }
       ]
     },
-    "エピソード|小插曲、逸事",
-    "大嫌い|最討厭",
-    "大～|很～、最～",
+    {
+      "japanese": "エピソード",
+      "plainText": "エピソード",
+      "chinese": "小故事、逸事、插曲",
+      "examples": [{ "plain": "子供のころのエピソードを話しました。", "chinese": "談了小時候的一段故事。" }]
+    },
+    {
+      "japanese": "大嫌い",
+      "plainText": "大嫌い（だいきらい）",
+      "chinese": "最討厭、非常討厭",
+      "examples": [{ "plain": "私はうそをつく人が大嫌いです。", "chinese": "我最討厭說謊的人。" }]
+    },
+    {
+      "japanese": "大～",
+      "plainText": "大～（だい～）",
+      "chinese": "非常～、最～",
+      "examples": [{ "plain": "この歌手は若者に大人気です。", "chinese": "這位歌手非常受年輕人歡迎。" }]
+    },
     {
       "japanese": "しつこい",
+      "plainText": "しつこい",
       "chinese": "糾纏不休的；死纏爛打的；味道濃膩的",
       "grammarNote": "多用於人的持續行為或難以擺脫的狀態，通常帶負面語氣。",
       "examples": [
@@ -467,12 +763,33 @@
         }
       ]
     },
-    "全員|全員",
-    "数日|數日",
-    "親せき|親戚",
-    "接続する|連接",
+    {
+      "japanese": "全員",
+      "plainText": "全員（ぜんいん）",
+      "chinese": "全體人員、所有人",
+      "examples": [{ "plain": "参加者は全員そろいました。", "chinese": "參加者已經全員到齊。" }]
+    },
+    {
+      "japanese": "数日",
+      "plainText": "数日（すうじつ）",
+      "chinese": "數日、幾天",
+      "examples": [{ "plain": "返事まで数日かかります。", "chinese": "回覆需要幾天時間。" }]
+    },
+    {
+      "japanese": "親戚",
+      "plainText": "親戚（しんせき）",
+      "chinese": "親戚",
+      "examples": [{ "plain": "お正月に親戚が集まりました。", "chinese": "新年時親戚們聚在一起。" }]
+    },
+    {
+      "japanese": "接続する",
+      "plainText": "接続する（せつぞくする）",
+      "chinese": "連接、接通",
+      "examples": [{ "plain": "パソコンをインターネットに接続します。", "chinese": "把電腦連接到網路。" }]
+    },
     {
       "japanese": "申し出る",
+      "plainText": "申し出る（もうしでる）",
       "chinese": "提出、表明、申報",
       "grammarNote": "A（提議事項）を申し出る：多用於正式或商務場合，向對方主動提出意見、希望或意願。",
       "examples": [
@@ -488,14 +805,71 @@
         }
       ]
     },
-    "結局|結果、最後",
-    "早速|馬上、立刻",
-    "そば|旁邊",
-    "取り付ける|安裝",
-    "出席者|出席者",
-    "料金|費用"
+    {
+      "japanese": "結局",
+      "plainText": "結局（けっきょく）",
+      "chinese": "結果、最後、終究",
+      "examples": [{ "plain": "いろいろ考えましたが、結局行かないことにしました。", "chinese": "考慮了很多，最後決定不去了。" }]
+    },
+    {
+      "japanese": "早速",
+      "plainText": "早速（さっそく）",
+      "chinese": "立刻、馬上、趕緊",
+      "examples": [{ "plain": "資料をありがとうございます。早速読んでみます。", "chinese": "謝謝您的資料，我馬上讀看看。" }]
+    },
+    {
+      "japanese": "そば",
+      "plainText": "そば",
+      "chinese": "旁邊、附近",
+      "examples": [{ "plain": "いつも家族がそばにいてくれます。", "chinese": "家人總是陪在我身邊。" }]
+    },
+    {
+      "japanese": "取り付ける",
+      "plainText": "取り付ける（とりつける）",
+      "chinese": "安裝、裝設",
+      "examples": [{ "plain": "玄関に新しいカメラを取り付けました。", "chinese": "在玄關安裝了新的攝影機。" }]
+    },
+    {
+      "japanese": "出席者",
+      "plainText": "出席者（しゅっせきしゃ）",
+      "chinese": "出席者、參加者",
+      "examples": [{ "plain": "会議の出席者は十人です。", "chinese": "會議的出席者有十人。" }]
+    },
+    {
+      "japanese": "料金",
+      "plainText": "料金（りょうきん）",
+      "chinese": "費用、收費",
+      "examples": [{ "plain": "入場料金はいくらですか。", "chinese": "入場費是多少？" }]
+    }
   ],
   "supplementalSections": [
+    {
+      "type": "video_resource",
+      "chapter": "vocabulary",
+      "title": "第4課 單字2｜影片複習",
+      "videoId": "vyZNdcko6JU",
+      "start": 0,
+      "description": "配合第 41–81 個生字使用。資料依影片作者提供的單字2 PDF 整理。",
+      "sourceUrl": "https://www.youtube.com/watch?v=vyZNdcko6JU"
+    },
+    {
+      "type": "video_resource",
+      "chapter": "vocabulary",
+      "title": "第4課 單字1｜影片複習",
+      "videoId": "bPI0M7t2xfU",
+      "start": 0,
+      "description": "配合本頁新增的生字、中文解釋與例句使用。影片僅嵌入播放，不會擷取或另存其中音訊。",
+      "sourceUrl": "https://www.youtube.com/watch?v=bPI0M7t2xfU"
+    },
+    {
+      "type": "video_resource",
+      "chapter": "vocabulary",
+      "title": "單字影片導讀｜みんなの日本語中級Ⅰ 第4課",
+      "videoId": "kLgh2SyewXY",
+      "start": 428,
+      "description": "Higacchi's Japanese Class 的第四課單字教學。影片從 7:08「失礼な」開始播放，可自行拖曳回前段複習完整單字。",
+      "sourceUrl": "https://www.youtube.com/watch?v=kLgh2SyewXY&t=428s"
+    },
     {
       "type": "audio_tracks",
       "chapter": "speaking",

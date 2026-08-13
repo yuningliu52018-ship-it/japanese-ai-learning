@@ -1,0 +1,10 @@
+{
+  "name": "japanese-ai-learning",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "courses:validate": "node scripts/course-tools.mjs validate",
+    "courses:index": "node scripts/course-tools.mjs index",
+    "courses:check": "node scripts/course-tools.mjs check"
+  }
+}

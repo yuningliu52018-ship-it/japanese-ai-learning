@@ -85,16 +85,22 @@ function renderSpeechToolbar() {
       </div>
       <p class="shadow-target" id="shadow-target" lang="ja"></p>
       <div class="shadowing-controls">
-        <button type="button" class="speech-button" data-shadow-listen>▶ 再聽一次</button>
+        <button type="button" class="speech-button" data-shadow-listen data-rate="1">▶ 正常示範</button>
+        <button type="button" class="speech-button" data-shadow-listen data-rate="0.7">🐢 慢速示範</button>
         <button type="button" class="shadow-record" data-shadow-record>🎙 開始跟讀</button>
       </div>
       <p class="shadow-status" id="shadow-status">選擇一句日文開始練習。</p>
       <div class="shadow-result" id="shadow-result" hidden>
         <p><strong>辨識結果</strong><span id="shadow-transcript" lang="ja"></span></p>
-        <p><strong>相似度</strong><span id="shadow-score"></span></p>
+        <p><strong>句子辨識度</strong><span id="shadow-score"></span></p>
+        <p class="shadow-candidates" id="shadow-candidates" hidden></p>
         <p id="shadow-feedback"></p>
+        <div class="shadow-playback" id="shadow-playback" hidden>
+          <strong>我的錄音</strong>
+          <audio id="shadow-audio" controls preload="metadata"></audio>
+        </div>
       </div>
-      <small>語音辨識由瀏覽器提供；辨識分數供練習參考，不等同專業發音評量。</small>
+      <small>「句子辨識度」只檢查瀏覽器聽到的文字，不代表音高、重音或語調評分；請用錄音回放與示範自行比較。</small>
     </aside>`;
 }
 
@@ -106,6 +112,10 @@ function setupSpeech(root) {
   let recognition = null;
   let recognitionActive = false;
   let recognitionTimer = null;
+  let mediaRecorder = null;
+  let microphoneStream = null;
+  let recordedChunks = [];
+  let recordingUrl = '';
   const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const panel = root.querySelector('#shadowing-panel');
   const targetElement = root.querySelector('#shadow-target');
@@ -113,7 +123,27 @@ function setupSpeech(root) {
   const shadowResult = root.querySelector('#shadow-result');
   const transcriptElement = root.querySelector('#shadow-transcript');
   const scoreElement = root.querySelector('#shadow-score');
+  const candidatesElement = root.querySelector('#shadow-candidates');
   const feedbackElement = root.querySelector('#shadow-feedback');
+  const playbackElement = root.querySelector('#shadow-playback');
+  const recordedAudio = root.querySelector('#shadow-audio');
+
+  const stopRecording = () => {
+    if (mediaRecorder?.state === 'recording') mediaRecorder.stop();
+    microphoneStream?.getTracks().forEach((track) => track.stop());
+    microphoneStream = null;
+  };
+
+  const playShadowTarget = (rate = 1) => {
+    if (!shadowTarget) return;
+    const utterance = new SpeechSynthesisUtterance(shadowTarget);
+    utterance.lang = 'ja-JP';
+    utterance.rate = rate;
+    if (japaneseVoice) utterance.voice = japaneseVoice;
+    synthesis.cancel();
+    synthesis.speak(utterance);
+    return utterance;
+  };
 
   if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
     if (status) status.textContent = '此瀏覽器不支援語音播放';
@@ -136,6 +166,7 @@ function setupSpeech(root) {
     const closeButton = event.target.closest('[data-shadow-close]');
     if (closeButton) {
       recognition?.abort();
+      stopRecording();
       panel.hidden = true;
       return;
     }
@@ -145,27 +176,20 @@ function setupSpeech(root) {
       shadowTarget = decodeURIComponent(shadowButton.dataset.shadow || '');
       targetElement.textContent = shadowTarget;
       shadowResult.hidden = true;
+      playbackElement.hidden = true;
       panel.hidden = false;
       panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
       shadowStatus.textContent = '正在播放示範，聽完後請按「開始跟讀」。';
-      const utterance = new SpeechSynthesisUtterance(shadowTarget);
-      utterance.lang = 'ja-JP';
-      utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
-      if (japaneseVoice) utterance.voice = japaneseVoice;
+      const utterance = playShadowTarget(Number(root.querySelector('#speech-rate')?.value || 1));
       utterance.onend = () => { shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。'; };
-      synthesis.cancel();
-      synthesis.speak(utterance);
       return;
     }
 
     if (event.target.closest('[data-shadow-listen]')) {
       if (!shadowTarget) return;
-      const utterance = new SpeechSynthesisUtterance(shadowTarget);
-      utterance.lang = 'ja-JP';
-      utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
-      if (japaneseVoice) utterance.voice = japaneseVoice;
-      synthesis.cancel();
-      synthesis.speak(utterance);
+      const requestedRate = Number(event.target.closest('[data-shadow-listen]').dataset.rate || 1);
+      playShadowTarget(requestedRate);
+      shadowStatus.textContent = requestedRate < 1 ? '正在播放慢速示範。請注意長音、促音與停頓。' : '正在播放正常速度示範。';
       return;
     }
 
@@ -189,8 +213,21 @@ function setupSpeech(root) {
       shadowStatus.textContent = '正在確認麥克風權限…';
       if (navigator.mediaDevices?.getUserMedia) {
         try {
-          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          stream.getTracks().forEach((track) => track.stop());
+          microphoneStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          if (typeof MediaRecorder === 'function') {
+            recordedChunks = [];
+            mediaRecorder = new MediaRecorder(microphoneStream);
+            mediaRecorder.ondataavailable = (chunkEvent) => {
+              if (chunkEvent.data.size) recordedChunks.push(chunkEvent.data);
+            };
+            mediaRecorder.onstop = () => {
+              if (!recordedChunks.length) return;
+              if (recordingUrl) URL.revokeObjectURL(recordingUrl);
+              recordingUrl = URL.createObjectURL(new Blob(recordedChunks, { type: mediaRecorder.mimeType || 'audio/webm' }));
+              recordedAudio.src = recordingUrl;
+              playbackElement.hidden = false;
+            };
+          }
         } catch (permissionError) {
           shadowStatus.textContent = permissionError.name === 'NotAllowedError'
             ? '麥克風權限被拒絕。請按網址列左側圖示，將「麥克風」改成允許後重新整理。'
@@ -202,7 +239,7 @@ function setupSpeech(root) {
       recognition = new Recognition();
       recognition.lang = 'ja-JP';
       recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
+      recognition.maxAlternatives = 5;
       recognition.continuous = false;
       let recognitionHadResult = false;
       let recognitionError = '';
@@ -211,6 +248,7 @@ function setupSpeech(root) {
         recordButton.classList.add('is-recording');
         recordButton.textContent = '■ 說完請按停止';
         shadowStatus.textContent = '麥克風已開啟，請開始說日文（最長12秒）。';
+        if (mediaRecorder?.state === 'inactive') mediaRecorder.start();
         clearTimeout(recognitionTimer);
         recognitionTimer = window.setTimeout(() => {
           if (recognitionActive) recognition.stop();
@@ -225,11 +263,18 @@ function setupSpeech(root) {
       };
       recognition.onresult = (resultEvent) => {
         recognitionHadResult = true;
-        const transcript = resultEvent.results[0][0].transcript;
-        const score = pronunciationScore(shadowTarget, transcript);
-        transcriptElement.textContent = transcript;
+        const alternatives = Array.from(resultEvent.results[0]).map((result) => ({
+          transcript: result.transcript,
+          score: pronunciationScore(shadowTarget, result.transcript)
+        })).sort((a, b) => b.score - a.score);
+        const bestMatch = alternatives[0];
+        const score = bestMatch.score;
+        transcriptElement.textContent = bestMatch.transcript;
         scoreElement.textContent = `${score}%`;
-        feedbackElement.textContent = score >= 90 ? '非常接近！試著再注意語調與停頓。' : score >= 75 ? '很接近，再跟讀一次會更自然。' : score >= 55 ? '大致正確，建議切換慢速再聽一次。' : '先用慢速分段模仿，再重新錄一次。';
+        const otherCandidates = alternatives.slice(1).map((item) => item.transcript).filter((text, index, list) => text !== bestMatch.transcript && list.indexOf(text) === index);
+        candidatesElement.textContent = otherCandidates.length ? `其他辨識候選：${otherCandidates.join('／')}` : '';
+        candidatesElement.hidden = !otherCandidates.length;
+        feedbackElement.textContent = score >= 90 ? '句子內容辨識很完整。請回放錄音，與正常示範比較語調和停頓。' : score >= 75 ? '大部分內容已辨識。請回放錄音，確認容易含糊的部分。' : score >= 55 ? '部分內容有被辨識，建議先聽慢速示範再試一次。' : '辨識到的文字差異較大；先用慢速示範分段模仿，再重新錄一次。';
         shadowResult.hidden = false;
       };
       recognition.onerror = (recognitionEvent) => {
@@ -249,6 +294,7 @@ function setupSpeech(root) {
       };
       recognition.onend = () => {
         clearTimeout(recognitionTimer);
+        stopRecording();
         recognitionActive = false;
         recordButton.classList.remove('is-recording');
         recordButton.textContent = '🎙 再說一次';
@@ -262,6 +308,7 @@ function setupSpeech(root) {
         recognition.start();
       } catch (startError) {
         recognitionActive = false;
+        stopRecording();
         shadowStatus.textContent = '麥克風尚未準備好，請等待一秒後再按一次。';
       }
       return;
@@ -341,7 +388,15 @@ function renderLesson(root, data) {
     }
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
-    if (section.type === 'audio_tracks') {
+    if (section.type === 'video_resource') {
+      const start = Number(section.start) || 0;
+      const videoTitle = plainText(section.title || '日文教學影片');
+      html.push(`<article class="video-resource-card">`);
+      html.push(`<div class="video-resource-frame"><iframe src="https://www.youtube-nocookie.com/embed/${section.videoId}?start=${start}" title="${videoTitle}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`);
+      if (section.description) html.push(`<p>${section.description}</p>`);
+      if (section.sourceUrl) html.push(`<a class="video-resource-link" href="${section.sourceUrl}" target="_blank" rel="noopener noreferrer">在 YouTube 開啟影片</a>`);
+      html.push(`</article>`);
+    } else if (section.type === 'audio_tracks') {
       html.push(`<div class="audio-track-grid">`);
       for (const item of section.items || []) {
         html.push(`<article class="audio-track-card">`);

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "title": "第X課：課程標題",
+  "description": "本課學習內容摘要",
+  "source": "教材來源或備註",
+  "catalog": {
+    "listed": true,
+    "order": 1,
+    "description": "顯示於首頁的簡短介紹"
+  },
+  "chapters": [
+    {
+      "id": "vocabulary",
+      "number": "01",
+      "title": "単語",
+      "chinese": "單語",
+      "pages": "1–2",
+      "description": "本課重要語彙"
+    }
+  ],
+  "vocabulary": [
+    {
+      "japanese": "例",
+      "plainText": "例（れい）",
+      "chinese": "例子",
+      "examples": [
+        {
+          "plain": "これは例です。",
+          "chinese": "這是一個例子。"
+        }
+      ]
+    }
+  ],
+  "supplementalSections": [],
+  "sections": []
+}

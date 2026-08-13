@@ -232,6 +232,39 @@ body {
   gap: 14px;
 }
 
+.video-resource-card {
+  padding: 18px;
+  border: 1px solid #fecaca;
+  border-radius: 16px;
+  background: #fffafa;
+}
+
+.video-resource-frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.video-resource-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-resource-card p {
+  margin: 14px 0 8px;
+}
+
+.video-resource-link {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
 .audio-track-card {
   display: grid;
   grid-template-columns: 74px 1fr;
@@ -557,6 +590,33 @@ body {
 .shadow-result strong {
   display: inline-block;
   min-width: 5.5rem;
+}
+
+.shadow-candidates {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.shadow-playback {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.shadow-playback audio {
+  width: min(100%, 360px);
+  height: 40px;
+}
+
+@media (max-width: 640px) {
+  .shadowing-controls,
+  .shadow-playback {
+    align-items: stretch;
+    flex-direction: column;
+  }
 }
 
 .scenario-grid {
