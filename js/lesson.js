@@ -401,7 +401,21 @@ function renderLesson(root, data) {
       for (const item of section.items || []) {
         html.push(`<article class="audio-track-card">`);
         html.push(`<div class="audio-track-badge"><span>CD</span>${item.track}</div>`);
-        html.push(`<div class="audio-track-content"><p class="audio-track-meta">課本 ${item.pages} 頁・${item.duration}</p><h3>${item.title}</h3><audio controls preload="metadata" src="${item.src}">您的瀏覽器不支援音訊播放。</audio><p class="lesson-muted">真人教材音源。播放後可搭配下方逐句「跟讀」練習。</p></div>`);
+        html.push(`<div class="audio-track-content"><p class="audio-track-meta">課本 ${item.pages} 頁・${item.duration}</p><h3>${item.title}</h3><audio controls preload="metadata" src="${item.src}">您的瀏覽器不支援音訊播放。</audio><p class="lesson-muted">真人教材音源。播放後可搭配下方逐句「跟讀」練習。</p>`);
+        if (item.segments?.length) {
+          html.push(`<div class="audio-segment-list"><h4>逐句真人原音與解說</h4>`);
+          for (const segment of item.segments) {
+            html.push(`<article class="audio-segment">`);
+            html.push(`<div class="audio-segment-heading"><strong>${segment.speaker || '原音'}</strong><button type="button" class="audio-segment-play" data-audio-start="${segment.start}" data-audio-end="${segment.end}">▶ 播放本句</button></div>`);
+            html.push(`<p lang="ja">${segment.japanese}</p>`);
+            if (segment.reading) html.push(`<p class="lesson-muted" lang="ja">${segment.reading}</p>`);
+            if (segment.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${segment.chinese}</div>`);
+            if (segment.note) html.push(`<div class="lesson-kv"><strong>重點</strong>${segment.note}</div>`);
+            html.push(`${speechButton(segment.japanese)}</article>`);
+          }
+          html.push(`</div>`);
+        }
+        html.push(`</div>`);
         html.push(`</article>`);
       }
       html.push(`</div>`);
@@ -508,6 +522,44 @@ function renderLesson(root, data) {
 
   root.innerHTML = html.join('');
   setupSpeech(root);
+  setupAudioSegments(root);
+}
+
+function setupAudioSegments(root) {
+  root.addEventListener('click', async (event) => {
+    const button = event.target.closest('[data-audio-start]');
+    if (!button) return;
+    const card = button.closest('.audio-track-card');
+    const audio = card?.querySelector('audio');
+    if (!audio) return;
+    const start = Number(button.dataset.audioStart);
+    const end = Number(button.dataset.audioEnd);
+    if (!Number.isFinite(start) || !Number.isFinite(end)) return;
+
+    card.querySelectorAll('.audio-segment-play').forEach((item) => {
+      item.textContent = '▶ 播放本句';
+      item.classList.remove('is-playing');
+    });
+    audio.pause();
+    audio.currentTime = start;
+    button.textContent = '■ 停止';
+    button.classList.add('is-playing');
+
+    const stopAtEnd = () => {
+      if (audio.currentTime >= end || audio.paused) {
+        audio.pause();
+        audio.removeEventListener('timeupdate', stopAtEnd);
+        button.textContent = '▶ 播放本句';
+        button.classList.remove('is-playing');
+      }
+    };
+    audio.addEventListener('timeupdate', stopAtEnd);
+    try {
+      await audio.play();
+    } catch (error) {
+      stopAtEnd();
+    }
+  });
 }
 
 async function loadLesson() {

@@ -310,6 +310,51 @@ body {
   max-width: 620px;
 }
 
+.audio-segment-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.audio-segment-list > h4 {
+  margin: 0;
+  color: #831843;
+}
+
+.audio-segment {
+  padding: 14px;
+  border: 1px solid #fbcfe8;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.audio-segment p {
+  margin: 8px 0;
+}
+
+.audio-segment-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.audio-segment-play {
+  padding: 7px 11px;
+  border: 1px solid #f9a8d4;
+  border-radius: 999px;
+  color: #9d174d;
+  background: #fdf2f8;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.audio-segment-play.is-playing {
+  color: #fff;
+  background: #db2777;
+}
+
 .reading-article-toolbar {
   display: flex;
   justify-content: flex-end;
