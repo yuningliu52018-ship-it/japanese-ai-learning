@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "第五課：どう行ったらいいでしょうか",
   "description": "第5課生字與文法：問路、推測、建議及表達嘗試",
-  "source": "課本第112–121頁",
+  "source": "課本第112–135頁",
   "sectionLabel": "文法・練習",
   "sectionChapter": "grammar",
   "catalog": { "listed": true, "order": 5, "description": "生字、指示詞、建議、位置、嘗試與推測句型" },
@@ -10,7 +10,8 @@
     { "id": "vocabulary", "number": "01", "title": "単語", "chinese": "單語", "pages": "112–113", "description": "第5課生字1–64：地點、方向、環境與抽象概念。" },
     { "id": "grammar", "number": "02", "title": "文法・練習", "chinese": "文法與練習", "pages": "114–121", "description": "依課本編號學習1–7的文法句型。" },
     { "id": "speaking", "number": "03", "title": "話す・聞く", "chinese": "會話與聽力", "pages": "122–127", "description": "練習詢問行進方式、說明路線，以及CD18問路會話。" },
-    { "id": "reading", "number": "04", "title": "読む・書く", "chinese": "閱讀與寫作", "pages": "128–131", "description": "閱讀〈地図〉，理解地圖方向、經緯度與位置平等。" }
+    { "id": "reading", "number": "04", "title": "読む・書く", "chinese": "閱讀與寫作", "pages": "128–131", "description": "閱讀〈地図〉，理解地圖方向、經緯度與位置平等。" },
+    { "id": "questions", "number": "05", "title": "問題", "chinese": "綜合問題", "pages": "132–135", "description": "閱讀挑戰、CD20～CD22聽力，以及本課文法總複習。" }
   ],
   "vocabulary": [
     {"japanese":"教科書","plainText":"教科書（きょうかしょ）","chinese":"教科書","examples":[{"plain":"日本語の教科書を買いました。","chinese":"我買了日文教科書。"}]},
@@ -80,6 +81,62 @@
   ],
   "supplementalSections": [
     {
+      "type": "audio_tracks",
+      "chapter": "speaking",
+      "title": "課本真人音源｜CD18",
+      "items": [
+        {
+          "track": "18",
+          "title": "話す・聞く：さくら芸術センターへの道順",
+          "pages": "123–125",
+          "duration": "1:38",
+          "src": "../../assets/audio/lesson-05-track-18.mp3?v=1"
+        }
+      ]
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "reading",
+      "title": "課本真人音源｜CD19",
+      "items": [
+        {
+          "track": "19",
+          "title": "読む：地図",
+          "pages": "130",
+          "duration": "1:47",
+          "src": "../../assets/audio/lesson-05-track-19.mp3?v=1"
+        }
+      ]
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "questions",
+      "title": "課本真人音源｜CD20・CD21・CD22",
+      "items": [
+        {
+          "track": "20",
+          "title": "問題 1：聽力作答",
+          "pages": "133",
+          "duration": "0:23",
+          "src": "../../assets/audio/lesson-05-track-20.mp3?v=1"
+        },
+        {
+          "track": "21",
+          "title": "問題 2：郵便局・書店への道順",
+          "pages": "133",
+          "duration": "1:09",
+          "src": "../../assets/audio/lesson-05-track-21.mp3?v=1"
+        },
+        {
+          "track": "22",
+          "title": "問題 3：聽力作答",
+          "pages": "133",
+          "duration": "1:28",
+          "src": "../../assets/audio/lesson-05-track-22.mp3?v=1"
+        }
+      ]
+    },
+    {
       "type": "scenario_practice", "chapter": "speaking", "title": "122頁｜行き方・道順の言い方",
       "items": [
         {"situation":"川沿いに進む","title":"沿著河川走","partner":"この道はどこへ続いていますか。","target":"川に沿ってまっすぐ行ってください。","swap":"大通りに出る／横断歩道を渡る"},
@@ -124,6 +181,59 @@
         {"question":"自從何時起，以北方在上方繪製地圖成為普遍習慣？","options":["開始使用經緯度之後","地圖A完成之後","南半球被發現之後"],"correct":0,"explanation":"課文說這是地圖開始使用經緯度後形成的習慣。"},
         {"question":"古代地圖的方向一定是北方朝上嗎？","options":["一定是","不是，也有很多南方朝上的地圖","只有東方朝上"],"correct":1,"explanation":"課文指出古老地圖中也有許多以南方為上的例子。"},
         {"question":"為什麼課文認為「位置の平等」很困難？","options":["任何配置仍可能讓某些地區居於不利位置","因為地圖不能使用左右","因為世界沒有經緯度"],"correct":0,"explanation":"即使改成左右配置，非洲與南美洲的位置仍會引發新的問題。"}
+      ]
+    },
+    {
+      "type": "scenario_practice", "chapter": "questions", "title": "132頁｜チャレンジしましょう",
+      "items": [
+        {"situation":"地図A・地図B","title":"比較不同方向的世界地圖","partner":"「地図A」と「地図B」を見て、どう思いますか。","target":"地図の上下を変えると、今まで気づかなかった見方ができると思います。","swap":"見やすさ／位置の平等／自分の常識"},
+        {"situation":"常識と不思議","title":"分享文化差異","partner":"自分では常識だと思っていたのに、ほかの人に不思議だと言われたことがありますか。","target":"はい。国や地域によって常識が違うことに気づきました。","swap":"生活習慣／時間／食事／地圖方向"}
+      ]
+    },
+    {
+      "type": "quiz_questions", "chapter": "questions", "title": "133頁｜CD20～CD22 聴解",
+      "items": [
+        {"question":"CD20 問題1：音訊內容を聞いて答えてください。","options":["播放上方CD20真人音檔後作答"],"explanation":"先完整聆聽CD20，再寫下第一題答案。"},
+        {"question":"CD20 問題2：音訊內容を聞いて答えてください。","options":["播放上方CD20真人音檔後作答"],"explanation":"再次播放CD20，將第二題聽到的重點寫下來。"},
+        {"question":"CD21 問題1：郵便局的位置是哪一張圖？","options":["①","②","③"],"explanation":"播放上方CD21真人音檔，依路線說明選圖。"},
+        {"question":"CD21 問題2：書店入口的位置是哪一張圖？","options":["①","②","③"],"explanation":"再次播放CD21，依方向說明選出正確入口。"},
+        {"question":"CD22 問題1：音訊內容に合う答えを選んでください。","options":["播放上方CD22真人音檔後作答"],"explanation":"先聆聽CD22真人原音，再依內容完成第一題。"},
+        {"question":"CD22 問題2：音訊內容に合う答えを選んでください。","options":["播放上方CD22真人音檔後作答"],"explanation":"重播CD22並抓取關鍵詞，再完成第二題。"}
+      ]
+    },
+    {
+      "type": "quiz_questions", "chapter": "questions", "title": "133頁｜指示詞 その・あの・それ・あれ・そこ・あそこ",
+      "items": [
+        {"question":"部長が会社を辞めるそうですよ。……（　）話、だれに聞いたんですか。","options":["その","あの"],"correct":0,"explanation":"對方剛提到的「那件事」使用その話。"},
+        {"question":"中国旅行、楽しかったね。……うん、（　）は去年の9月だったね。","options":["それ","あれ"],"correct":1,"explanation":"雙方共同回憶的過去經驗使用あれ。"},
+        {"question":"改札を出て右へ行くと、バス乗り場がありますから（　）で待っていてください。","options":["そこ","あそこ"],"correct":0,"explanation":"承接剛說明的巴士站位置，使用そこ。"}
+      ]
+    },
+    {
+      "type": "quiz_questions", "chapter": "questions", "title": "134頁｜～ところ與動詞活用",
+      "items": [
+        {"question":"まっすぐ50メートルぐらい行ったところに公園があります。此處的「ところ」是哪一種？","options":["a：時間階段（剛剛／正要）","b：動作後所在的位置"],"correct":1,"explanation":"走約50公尺後的那個地點有公園，表示位置。"},
+        {"question":"今、来たところなので、まだその話は聞いていません。此處的「ところ」是哪一種？","options":["a：時間階段（剛剛）","b：場所"],"correct":0,"explanation":"来たところ表示剛到。"},
+        {"question":"前から2両目の電車を降りたところで待っています。此處的「ところ」是哪一種？","options":["a：時間階段","b：下車後的地點"],"correct":1,"explanation":"表示在下車後所在的位置等待。"},
+        {"question":"電車を（　）としたら、ドアが閉まってしまった。","options":["降りよう","降りた","降りる"],"correct":0,"explanation":"意向形＋とする表示正要做某事。"},
+        {"question":"いくら聞いても、息子はけんかの原因を（　）としません。","options":["話そう","話した","話す"],"correct":0,"explanation":"話そうとしません表示不肯說。"},
+        {"question":"地球はいつ（　）のだろうか。","options":["できた","できよう","できるだ"],"correct":0,"explanation":"詢問地球何時形成，使用過去普通形＋のだろうか。"}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "questions", "title": "135頁｜助詞＋の 書き換え",
+      "items": [
+        {"title":"來源、場所與對象改寫","formula":"名詞＋助詞＋動詞修飾 → 名詞＋助詞＋の＋名詞","examples":[{"from":"東京から来る飛行機","to":"東京からの飛行機"},{"from":"日本でした経験","to":"日本での経験"},{"from":"国へかける電話代","to":"国への電話代"},{"from":"課長とするミーティング","to":"課長とのミーティング"},{"from":"駅から会場まで行くタクシー代","to":"駅から会場までのタクシー代"},{"from":"友達にあげるお土産","to":"友達へのお土産"}]}
+      ]
+    },
+    {
+      "type": "quiz_questions", "chapter": "questions", "title": "135頁｜そこで・わざと・無意識に・自然に・少なくとも",
+      "items": [
+        {"question":"会社は9時からだから、（　）8時に家を出ないと間に合わない。","options":["少なくとも","自然に","そこで"],"correct":0,"explanation":"表示最低限度，使用少なくとも。"},
+        {"question":"時計が起こしてくれるのだが、（　）止めて、また寝てしまう。止めたことも覚えていない。","options":["無意識に","わざと","そこで"],"correct":0,"explanation":"本人沒有察覺自己關掉鬧鐘，使用無意識に。"},
+        {"question":"いい方法がなかった。（　）、友達に聞いてみた。","options":["そこで","自然に","少なくとも"],"correct":0,"explanation":"前項形成原因，後項採取行動，使用そこで。"},
+        {"question":"ワンさんは、朝になると（　）目が覚めるそうだ。","options":["自然に","わざと","無意識に"],"correct":0,"explanation":"自然醒來使用自然に。"},
+        {"question":"イーさんは時計を（　）30分早くしておくと言っていた。","options":["わざと","自然に","そこで"],"correct":0,"explanation":"有意把時鐘調快，使用わざと。"}
       ]
     }
   ],
