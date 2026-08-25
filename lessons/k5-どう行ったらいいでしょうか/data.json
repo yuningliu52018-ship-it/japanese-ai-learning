@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "title": "第五課：どう行ったらいいでしょうか",
+  "description": "第5課生字與文法：問路、推測、建議及表達嘗試",
+  "source": "課本第112–121頁",
+  "sectionLabel": "文法・練習",
+  "sectionChapter": "grammar",
+  "catalog": { "listed": true, "order": 5, "description": "生字、指示詞、建議、位置、嘗試與推測句型" },
+  "chapters": [
+    { "id": "vocabulary", "number": "01", "title": "単語", "chinese": "單語", "pages": "112–113", "description": "第5課生字1–64：地點、方向、環境與抽象概念。" },
+    { "id": "grammar", "number": "02", "title": "文法・練習", "chinese": "文法與練習", "pages": "114–121", "description": "依課本編號學習1–7的文法句型。" }
+  ],
+  "vocabulary": [
+    {"japanese":"教科書","plainText":"教科書（きょうかしょ）","chinese":"教科書","examples":[{"plain":"日本語の教科書を買いました。","chinese":"我買了日文教科書。"}]},
+    {"japanese":"居酒屋","plainText":"居酒屋（いざかや）","chinese":"居酒屋、日式小酒館","examples":[{"plain":"駅前の居酒屋で食事しました。","chinese":"我在車站前的居酒屋吃了飯。"}]},
+    {"japanese":"焼き鳥","plainText":"焼き鳥（やきとり）","chinese":"烤雞肉串","examples":[{"plain":"この店の焼き鳥はおいしいです。","chinese":"這家店的烤雞肉串很好吃。"}]},
+    {"japanese":"画面","plainText":"画面（がめん）","chinese":"畫面、螢幕","examples":[{"plain":"このパソコンは画面がきれいです。","chinese":"這台電腦的畫面很漂亮。"}]},
+    {"japanese":"俳優","plainText":"俳優（はいゆう）","chinese":"演員","examples":[{"plain":"駅で有名な俳優を見ました。","chinese":"我在車站看見一位知名演員。"}]},
+    {"japanese":"そっくり","plainText":"そっくり","chinese":"一模一樣、非常相像","examples":[{"plain":"兄と弟はそっくりです。","chinese":"哥哥和弟弟長得一模一樣。"}]},
+    {"japanese":"コンビニ","plainText":"コンビニ","chinese":"便利商店","examples":[{"plain":"コンビニで切符を買いました。","chinese":"我在便利商店買了票。"}]},
+    {"japanese":"改札口","plainText":"改札口（かいさつぐち）","chinese":"驗票口、剪票口","examples":[{"plain":"改札口を出たところで待っています。","chinese":"我在走出驗票口的地方等。"}]},
+    {"japanese":"運転手","plainText":"運転手（うんてんしゅ）","chinese":"司機","examples":[{"plain":"運転手に道を聞きました。","chinese":"我向司機問了路。"}]},
+    {"japanese":"かかってくる","plainText":"かかってくる（電話が～）","chinese":"（電話）打過來","examples":[{"plain":"出かけようとしたとき、電話がかかってきました。","chinese":"正要出門時，電話打來了。"}]},
+    {"japanese":"切れる","plainText":"切れる（きれる／電話が～）","chinese":"（電話）中斷、斷線","examples":[{"plain":"電話に出ようとしたら、切れてしまいました。","chinese":"正要接電話時，電話斷了。"}]},
+    {"japanese":"挙げる","plainText":"挙げる（あげる／例を～）","chinese":"舉出（例子）","examples":[{"plain":"一つ例を挙げてください。","chinese":"請舉一個例子。"}]},
+    {"japanese":"未来","plainText":"未来（みらい）","chinese":"未來","examples":[{"plain":"地球の未来について考えます。","chinese":"思考地球的未來。"}]},
+    {"japanese":"なくす","plainText":"なくす（戦争を～）","chinese":"消除、使消失","examples":[{"plain":"世界から戦争をなくしたいです。","chinese":"希望讓戰爭從世界消失。"}]},
+    {"japanese":"不思議な","plainText":"不思議な（ふしぎな）","chinese":"不可思議的、奇妙的","examples":[{"plain":"不思議な夢を見ました。","chinese":"我做了一個不可思議的夢。"}]},
+    {"japanese":"増やす","plainText":"増やす（ふやす）","chinese":"增加","examples":[{"plain":"緑をもっと増やしましょう。","chinese":"讓我們增加更多綠地吧。"}]},
+    {"japanese":"今ごろ","plainText":"今ごろ（いまごろ）","chinese":"現在這個時候","examples":[{"plain":"今ごろ北海道は雪でしょう。","chinese":"北海道現在這個時候大概下雪吧。"}]},
+    {"japanese":"観光客","plainText":"観光客（かんこうきゃく）","chinese":"觀光客","examples":[{"plain":"この町は観光客が増えています。","chinese":"這座城鎮的觀光客正在增加。"}]},
+    {"japanese":"沿う","plainText":"沿う（そう／川に～）","chinese":"沿著","examples":[{"plain":"川に沿って歩きます。","chinese":"沿著河川步行。"}]},
+    {"japanese":"大通り","plainText":"大通り（おおどおり）","chinese":"大馬路、主要道路","examples":[{"plain":"大通りをまっすぐ行ってください。","chinese":"請沿著大馬路直走。"}]},
+    {"japanese":"出る","plainText":"出る（でる／大通りに～）","chinese":"到達、通到（大馬路）","examples":[{"plain":"この道を行くと大通りに出ます。","chinese":"走這條路會到大馬路。"}]},
+    {"japanese":"横断歩道","plainText":"横断歩道（おうだんほどう）","chinese":"行人穿越道、斑馬線","examples":[{"plain":"横断歩道を渡ってください。","chinese":"請走斑馬線過馬路。"}]},
+    {"japanese":"突き当たり","plainText":"突き当たり（つきあたり）","chinese":"道路盡頭","examples":[{"plain":"突き当たりを右へ曲がります。","chinese":"在道路盡頭右轉。"}]},
+    {"japanese":"線路","plainText":"線路（せんろ）","chinese":"鐵路、軌道","examples":[{"plain":"線路の向こう側に公園があります。","chinese":"鐵路對面有一座公園。"}]},
+    {"japanese":"向こう側","plainText":"向こう側（むこうがわ）","chinese":"對面、另一側","examples":[{"plain":"銀行は道の向こう側です。","chinese":"銀行在馬路對面。"}]},
+    {"japanese":"踏切","plainText":"踏切（ふみきり）","chinese":"平交道","examples":[{"plain":"踏切を渡って左へ曲がります。","chinese":"通過平交道後左轉。"}]},
+    {"japanese":"分かれる","plainText":"分かれる（わかれる／道が～）","chinese":"分岔","examples":[{"plain":"道が二つに分かれています。","chinese":"道路分成兩條。"}]},
+    {"japanese":"芸術","plainText":"芸術（げいじゅつ）","chinese":"藝術","examples":[{"plain":"芸術に興味があります。","chinese":"我對藝術有興趣。"}]},
+    {"japanese":"道順","plainText":"道順（みちじゅん）","chinese":"路線、前進方向","examples":[{"plain":"駅までの道順を教えてください。","chinese":"請告訴我到車站的走法。"}]},
+    {"japanese":"通行人","plainText":"通行人（つうこうにん）","chinese":"行人","examples":[{"plain":"通行人に病院の場所を聞きました。","chinese":"我向行人詢問醫院的位置。"}]},
+    {"japanese":"通り","plainText":"通り（とおり）","chinese":"街道、馬路","examples":[{"plain":"この通りには店が多いです。","chinese":"這條街上有很多店。"}]},
+    {"japanese":"川沿い","plainText":"川沿い（かわぞい）","chinese":"河畔、河岸一帶","examples":[{"plain":"川沿いを散歩しました。","chinese":"我沿著河邊散步。"}]},
+    {"japanese":"～沿い","plainText":"～沿い（～ぞい）","chinese":"沿著～、～沿線","examples":[{"plain":"線路沿いに店があります。","chinese":"鐵路沿線有商店。"}]},
+    {"japanese":"流れる","plainText":"流れる（ながれる）","chinese":"流動、流過","examples":[{"plain":"町の中央を川が流れています。","chinese":"河川流經城鎮中央。"}]},
+    {"japanese":"～先","plainText":"～先（～さき）","chinese":"前方、再往～處","examples":[{"plain":"百メートル先に信号があります。","chinese":"前方一百公尺有紅綠燈。"}]},
+    {"japanese":"～方","plainText":"～方（～ほう）","chinese":"～方向、～那一邊","examples":[{"plain":"右の方へ曲がってください。","chinese":"請往右邊轉。"}]},
+    {"japanese":"南北","plainText":"南北（なんぼく）","chinese":"南北","examples":[{"plain":"この道は南北に延びています。","chinese":"這條路向南北延伸。"}]},
+    {"japanese":"逆","plainText":"逆（ぎゃく）","chinese":"相反、反方向","examples":[{"plain":"駅は逆の方向です。","chinese":"車站在相反方向。"}]},
+    {"japanese":"南半球","plainText":"南半球（みなみはんきゅう）","chinese":"南半球","examples":[{"plain":"オーストラリアは南半球にあります。","chinese":"澳洲位於南半球。"}]},
+    {"japanese":"北半球","plainText":"北半球（きたはんきゅう）","chinese":"北半球","examples":[{"plain":"日本は北半球にあります。","chinese":"日本位於北半球。"}]},
+    {"japanese":"常識","plainText":"常識（じょうしき）","chinese":"常識","examples":[{"plain":"国によって常識が違います。","chinese":"常識會因國家而異。"}]},
+    {"japanese":"差別","plainText":"差別（さべつ）","chinese":"差別、歧視","examples":[{"plain":"差別のない社会を目指します。","chinese":"以沒有歧視的社會為目標。"}]},
+    {"japanese":"平等な","plainText":"平等な（びょうどうな）","chinese":"平等的","examples":[{"plain":"すべての人は平等です。","chinese":"所有人都是平等的。"}]},
+    {"japanese":"位置","plainText":"位置（いち）","chinese":"位置","examples":[{"plain":"地図で現在の位置を確認します。","chinese":"用地圖確認現在的位置。"}]},
+    {"japanese":"人間","plainText":"人間（にんげん）","chinese":"人類、人","examples":[{"plain":"人間と自然の関係を考えます。","chinese":"思考人與自然的關係。"}]},
+    {"japanese":"観察する","plainText":"観察する（かんさつする）","chinese":"觀察","examples":[{"plain":"鳥の様子を観察しました。","chinese":"觀察了鳥的情況。"}]},
+    {"japanese":"面","plainText":"面（めん）","chinese":"面、層面","examples":[{"plain":"物事にはいろいろな面があります。","chinese":"事情有各種不同的面向。"}]},
+    {"japanese":"中央","plainText":"中央（ちゅうおう）","chinese":"中央","examples":[{"plain":"公園の中央に池があります。","chinese":"公園中央有一座池塘。"}]},
+    {"japanese":"自然に","plainText":"自然に（しぜんに）","chinese":"自然地","examples":[{"plain":"日本語が自然に話せるようになりました。","chinese":"已經能自然地說日文了。"}]},
+    {"japanese":"努力する","plainText":"努力する（どりょくする）","chinese":"努力","examples":[{"plain":"夢のために努力しています。","chinese":"為了夢想持續努力。"}]},
+    {"japanese":"そこで","plainText":"そこで","chinese":"於是、因此","examples":[{"plain":"道に迷いました。そこで、通行人に聞きました。","chinese":"我迷路了，於是向行人問路。"}]},
+    {"japanese":"普通","plainText":"普通（ふつう）","chinese":"普通、一般","examples":[{"plain":"今日は普通に仕事をしました。","chinese":"今天照常工作。"}]},
+    {"japanese":"経緯度","plainText":"経緯度（けいいど）","chinese":"經緯度","examples":[{"plain":"経緯度で場所を表します。","chinese":"用經緯度表示地點。"}]},
+    {"japanese":"無意識に","plainText":"無意識に（むいしきに）","chinese":"無意識地、不知不覺地","examples":[{"plain":"無意識に同じ道を選びました。","chinese":"不知不覺選了同一條路。"}]},
+    {"japanese":"現れ","plainText":"現れ（あらわれ）","chinese":"表現、顯現","examples":[{"plain":"行動は気持ちの現れです。","chinese":"行動是心情的表現。"}]},
+    {"japanese":"上下","plainText":"上下（じょうげ）","chinese":"上下","examples":[{"plain":"写真の上下を確認してください。","chinese":"請確認照片的上下方向。"}]},
+    {"japanese":"左右","plainText":"左右（さゆう）","chinese":"左右","examples":[{"plain":"道を渡る前に左右を見ます。","chinese":"過馬路前看左右兩邊。"}]},
+    {"japanese":"少なくとも","plainText":"少なくとも（すくなくとも）","chinese":"至少","examples":[{"plain":"少なくとも一時間はかかります。","chinese":"至少需要一小時。"}]},
+    {"japanese":"文句","plainText":"文句（もんく）","chinese":"抱怨、不滿","examples":[{"plain":"文句を言わずに手伝ってください。","chinese":"請不要抱怨，幫個忙。"}]},
+    {"japanese":"わざと","plainText":"わざと","chinese":"故意地","examples":[{"plain":"わざと間違えたのではありません。","chinese":"我不是故意弄錯的。"}]},
+    {"japanese":"経度","plainText":"経度（けいど）","chinese":"經度","examples":[{"plain":"経度は東西の位置を示します。","chinese":"經度表示東西方向的位置。"}]},
+    {"japanese":"緯度","plainText":"緯度（いど）","chinese":"緯度","examples":[{"plain":"緯度は南北の位置を示します。","chinese":"緯度表示南北方向的位置。"}]},
+    {"japanese":"使用する","plainText":"使用する（しようする）","chinese":"使用","examples":[{"plain":"この機械を使用しないでください。","chinese":"請勿使用這台機器。"}]},
+    {"japanese":"東西","plainText":"東西（とうざい）","chinese":"東西","examples":[{"plain":"この線路は東西に走っています。","chinese":"這條鐵路東西向延伸。"}]}
+  ],
+  "supplementalSections": [],
+  "sections": [
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "1. あ～・そ～：指示內容與場所",
+      "items": [
+        {"title":"あ～：雙方都知道或提過的對象","formula":"あの＋名詞／あそこ／あのとき","examples":[{"from":"小川さんは転勤しました","to":"ああ、あの方ですね"},{"from":"函館へ行きます","to":"あそこはどんなところですか"}]},
+        {"title":"そ～：承接對方剛說的內容","formula":"その＋名詞／そこ／そのとき","examples":[{"from":"道を行くと交差点があります","to":"そこを右へ曲がってください"},{"from":"先月、結婚式がありました","to":"そのとき彼女と知り合いました"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "2. ～んじゃない？：提出推測或建議",
+      "items": [
+        {"title":"推測原因","formula":"普通形＋んじゃない（ですか）","examples":[{"from":"娘が電話に出ません","to":"携帯電話を忘れたんじゃないですか"},{"from":"最近、食欲がありません","to":"どこか悪いんじゃない？"}]},
+        {"title":"較口語的建議","formula":"動詞た形＋らいいんじゃない？","examples":[{"from":"図書館へ行く時間がありません","to":"インターネットで調べたらいいんじゃない？"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "3. ～たところに／で：動作完成後的場所",
+      "items": [
+        {"title":"位置說明","formula":"動詞た形＋ところに＋あります","examples":[{"from":"コンビニの角を曲がります","to":"曲がったところに病院があります"}]},
+        {"title":"約定或動作地點","formula":"動詞た形＋ところで＋動作","examples":[{"from":"駅の改札を出ます","to":"改札を出たところで待っています"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "4. ～（よ）うとする／しない：正要、試圖或不願",
+      "items": [
+        {"title":"正要做某事時","formula":"意向形＋としたとき／としたら","examples":[{"from":"今朝、出かけます","to":"出かけようとしたとき、電話がかかってきました"},{"from":"電話に出ます","to":"電話に出ようとしたら、切れてしまいました"}]},
+        {"title":"嘗試或意願","formula":"意向形＋とする／としない","examples":[{"from":"たばこをやめます","to":"やめようとしたが、やめられませんでした"},{"from":"彼は人の意見を聞きません","to":"彼はほかの人の意見を聞こうとしません"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "5. ～のだろうか：帶疑問或省思的推測",
+      "items": [
+        {"title":"對事情提出疑問","formula":"普通形＋のだろうか","examples":[{"from":"地球の未来","to":"地球の未来はどうなるのだろうか"},{"from":"戦争をなくす方法","to":"どうすれば戦争をなくすことができるのだろうか"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "6. 助詞＋の：省略後面的名詞",
+      "items": [
+        {"title":"避免重複相同名詞","formula":"との／での／からの／までの／への＋（省略名詞）","examples":[{"from":"友達と行った旅行","to":"友達との旅行"},{"from":"日本での生活","to":"日本での生活"},{"from":"母からもらった手紙","to":"母からの手紙"},{"from":"空港まで行くアクセス","to":"空港までのアクセス"},{"from":"恋人にあげるプレゼント","to":"恋人へのプレゼント"}]}
+      ]
+    },
+    {
+      "type": "grammar_notes", "chapter": "grammar", "title": "7. ～だろう／～だろうと思う：推測",
+      "items": [
+        {"title":"說話者的推測","formula":"普通形（な形・名詞去だ）＋だろう（と思う）","examples":[{"from":"世界の人口が増えすぎます","to":"地球環境はもっと悪くなるだろう"},{"from":"今ごろの北海道","to":"今ごろ北海道は雪だろう"},{"from":"彼の試験","to":"彼なら合格するだろうと思います"}]}
+      ]
+    }
+  ]
+}
