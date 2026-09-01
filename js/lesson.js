@@ -601,18 +601,31 @@ async function loadLesson() {
         };
       })
     }] : [];
+    const legacySections = data.hideLegacySections
+      ? []
+      : (data.sections || []).map((section) => ({
+          ...section,
+          chapter: data.sectionChapter,
+          title: `${data.sectionLabel || '話す・聞く'}｜${section.title || ''}`
+        }));
     const lessonSections = [
       ...vocabularySection,
       ...includedLessons.flat(),
       ...(data.supplementalSections || []),
-      ...(data.sections || []).map((section) => ({
-        ...section,
-        chapter: data.sectionChapter,
-        title: `${data.sectionLabel || '話す・聞く'}｜${section.title || ''}`
-      }))
+      ...legacySections
     ];
     data.sections = (data.chapters || []).flatMap((chapter) => {
       const sections = lessonSections.filter((section) => section.chapter === chapter.id);
+      if (data.sortSectionsByPage) {
+        sections.sort((left, right) => {
+          const pageOf = (section) => {
+            if (Number.isFinite(section.pageOrder)) return section.pageOrder;
+            const match = String(section.title || '').match(/(\d{3})(?:[–-]\d{3})?頁/);
+            return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+          };
+          return pageOf(left) - pageOf(right);
+        });
+      }
       return [{ type: 'chapter_heading', ...chapter, hasContent: sections.length > 0 }, ...sections];
     });
     document.title = `${data.title}｜日文互動學習平台`;
