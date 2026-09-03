@@ -1,6 +1,7 @@
 function plainText(value = '') {
   const container = document.createElement('div');
   container.innerHTML = String(value);
+  container.querySelectorAll('rt, rp').forEach((node) => node.remove());
   return (container.textContent || '').replace(/\s+/g, ' ').trim();
 }
 
@@ -69,14 +70,18 @@ function renderSpeechToolbar() {
         <span id="speech-status" class="speech-status" aria-live="polite">點選播放即可聆聽</span>
       </div>
       <div class="speech-controls">
+        <label for="speech-voice">日語語音</label>
+        <select id="speech-voice" disabled aria-describedby="speech-voice-help"><option>正在載入日語語音…</option></select>
+        <button class="speech-button" type="button" data-speak="${encodeURIComponent('明日は図書館で日本語を勉強します。')}" data-rate="0.95" disabled>▶ 試聽此語音</button>
         <label for="speech-rate">速度</label>
         <select id="speech-rate">
-          <option value="0.75">慢速 0.75×</option>
-          <option value="1" selected>正常 1×</option>
+          <option value="0.82">慢速 0.82×</option>
+          <option value="0.95" selected>正常 0.95×</option>
           <option value="1.25">快速 1.25×</option>
         </select>
         <button class="speech-stop" type="button" data-speech-stop>停止</button>
       </div>
+      <small id="speech-voice-help">選擇語音後按試聽；選項僅儲存在此裝置、此瀏覽器的本站，不會同步至手機或其他網址。</small>
     </aside>
     <aside class="shadowing-panel" id="shadowing-panel" hidden aria-live="polite">
       <div class="shadowing-heading">
@@ -85,8 +90,8 @@ function renderSpeechToolbar() {
       </div>
       <p class="shadow-target" id="shadow-target" lang="ja"></p>
       <div class="shadowing-controls">
-        <button type="button" class="speech-button" data-shadow-listen data-rate="1">▶ 正常示範</button>
-        <button type="button" class="speech-button" data-shadow-listen data-rate="0.7">🐢 慢速示範</button>
+        <button type="button" class="speech-button" data-shadow-listen data-rate="0.95">▶ 正常示範</button>
+        <button type="button" class="speech-button" data-shadow-listen data-rate="0.82">🐢 慢速示範</button>
         <button type="button" class="shadow-record" data-shadow-record>🎙 開始跟讀</button>
       </div>
       <p class="shadow-status" id="shadow-status">選擇一句日文開始練習。</p>
@@ -108,6 +113,12 @@ function setupSpeech(root) {
   const status = root.querySelector('#speech-status');
   const synthesis = window.speechSynthesis;
   let japaneseVoice = null;
+  const voiceSelect = root.querySelector('#speech-voice');
+  const voiceStorageKey = 'japanese-ai-learning.speech-voice.v1';
+  const voiceKey = (voice) => JSON.stringify([voice.voiceURI, voice.name, voice.lang, voice.localService]);
+  let savedVoiceKey = null;
+  try { savedVoiceKey = localStorage.getItem(voiceStorageKey); } catch { /* Storage may be blocked in private mode. */ }
+  let japaneseVoices = [];
   let shadowTarget = '';
   let recognition = null;
   let recognitionActive = false;
@@ -134,11 +145,12 @@ function setupSpeech(root) {
     microphoneStream = null;
   };
 
-  const playShadowTarget = (rate = 1) => {
-    if (!shadowTarget) return;
+  const playShadowTarget = (rate = 0.95) => {
+    if (!shadowTarget || !japaneseVoice) return;
     const utterance = new SpeechSynthesisUtterance(shadowTarget);
     utterance.lang = 'ja-JP';
     utterance.rate = rate;
+    utterance.pitch = 1;
     if (japaneseVoice) utterance.voice = japaneseVoice;
     synthesis.cancel();
     synthesis.speak(utterance);
@@ -147,20 +159,64 @@ function setupSpeech(root) {
 
   if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
     if (status) status.textContent = '此瀏覽器不支援語音播放';
-    root.querySelectorAll('.speech-button, .speech-stop').forEach((button) => {
+    root.querySelectorAll('.speech-button, .shadow-button, .speech-stop').forEach((button) => {
       button.disabled = true;
     });
     return;
   }
 
-  const selectVoice = () => {
-    const voices = synthesis.getVoices();
-    japaneseVoice = voices.find((voice) => voice.lang === 'ja-JP')
-      || voices.find((voice) => voice.lang?.toLowerCase().startsWith('ja'))
-      || null;
+  const setSpeechEnabled = (enabled) => {
+    root.querySelectorAll('.speech-button, .shadow-button').forEach((button) => { button.disabled = !enabled; });
+    voiceSelect.disabled = !enabled;
   };
+  let voiceTimer;
+  const selectVoice = (finished = false) => {
+    const voices = synthesis.getVoices();
+    const rank = (voice) => (voice.lang.toLowerCase() === 'ja-jp' ? 0 : 2) + (voice.localService ? 0 : 1);
+    japaneseVoices = voices.filter((voice) => /^ja(?:-|$)/i.test(voice.lang))
+      .sort((a, b) => rank(a) - rank(b) || Number(b.default) - Number(a.default)
+        || a.name.localeCompare(b.name) || String(a.voiceURI).localeCompare(String(b.voiceURI)));
+    japaneseVoice = japaneseVoices.find((voice) => voiceKey(voice) === savedVoiceKey) || japaneseVoices[0] || null;
+    voiceSelect.replaceChildren();
+    for (const voice of japaneseVoices) {
+      const option = document.createElement('option');
+      option.value = voiceKey(voice);
+      option.textContent = `${voice.name} (${voice.lang}・${voice.localService ? '本機' : '線上'})`;
+      voiceSelect.append(option);
+    }
+    if (japaneseVoice) {
+      clearTimeout(voiceTimer);
+      voiceSelect.value = voiceKey(japaneseVoice);
+      if (status) status.textContent = savedVoiceKey && voiceKey(japaneseVoice) !== savedVoiceKey
+        ? '原選語音目前不可用，暫用優先候選；可重新選擇。' : '日語語音已就緒，可選擇並試聽。';
+    } else {
+      const option = document.createElement('option');
+      option.textContent = finished || voices.length ? '此瀏覽器尚無可用日語語音' : '正在載入日語語音…';
+      voiceSelect.append(option);
+      if (status) status.textContent = finished || voices.length
+        ? '沒有可用日語語音；安裝或啟用後重新整理。' : '等待日語語音載入…';
+    }
+    setSpeechEnabled(Boolean(japaneseVoice));
+  };
+  setSpeechEnabled(false);
+  // Subscribe before reading: cached voices may be ready without another event.
+  // Playback stays disabled until an explicit Japanese voice is available.
+  synthesis.addEventListener('voiceschanged', () => selectVoice(true));
+  voiceTimer = setTimeout(() => selectVoice(true), 3000);
   selectVoice();
-  synthesis.addEventListener?.('voiceschanged', selectVoice);
+  voiceSelect.addEventListener('change', () => {
+    const selected = japaneseVoices.find((voice) => voiceKey(voice) === voiceSelect.value);
+    if (!selected) return;
+    synthesis.cancel();
+    japaneseVoice = selected;
+    savedVoiceKey = voiceKey(selected);
+    try {
+      localStorage.setItem(voiceStorageKey, savedVoiceKey);
+      if (status) status.textContent = `已記住：${selected.name}，按試聽即可比較。`;
+    } catch {
+      if (status) status.textContent = '語音已切換，但瀏覽器禁止儲存；本次有效。';
+    }
+  });
 
   root.addEventListener('click', async (event) => {
     const closeButton = event.target.closest('[data-shadow-close]');
@@ -173,6 +229,7 @@ function setupSpeech(root) {
 
     const shadowButton = event.target.closest('[data-shadow]');
     if (shadowButton) {
+      if (!japaneseVoice) return;
       shadowTarget = decodeURIComponent(shadowButton.dataset.shadow || '');
       targetElement.textContent = shadowTarget;
       shadowResult.hidden = true;
@@ -180,16 +237,16 @@ function setupSpeech(root) {
       panel.hidden = false;
       panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
       shadowStatus.textContent = '正在播放示範，聽完後請按「開始跟讀」。';
-      const utterance = playShadowTarget(Number(root.querySelector('#speech-rate')?.value || 1));
+      const utterance = playShadowTarget(Number(root.querySelector('#speech-rate')?.value || 0.95));
       utterance.onend = () => { shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。'; };
       return;
     }
 
     if (event.target.closest('[data-shadow-listen]')) {
-      if (!shadowTarget) return;
-      const requestedRate = Number(event.target.closest('[data-shadow-listen]').dataset.rate || 1);
+      if (!shadowTarget || !japaneseVoice) return;
+      const requestedRate = Number(event.target.closest('[data-shadow-listen]').dataset.rate || 0.95);
       playShadowTarget(requestedRate);
-      shadowStatus.textContent = requestedRate < 1 ? '正在播放慢速示範。請注意長音、促音與停頓。' : '正在播放正常速度示範。';
+      shadowStatus.textContent = requestedRate < 0.95 ? '正在播放慢速示範。請注意長音、促音與停頓。' : '正在播放正常速度示範。';
       return;
     }
 
@@ -322,7 +379,7 @@ function setupSpeech(root) {
     }
 
     const playButton = event.target.closest('[data-speak]');
-    if (!playButton) return;
+    if (!playButton || !japaneseVoice) return;
 
     const text = decodeURIComponent(playButton.dataset.speak || '');
     if (!text) return;
@@ -330,7 +387,8 @@ function setupSpeech(root) {
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'ja-JP';
-    utterance.rate = Number(root.querySelector('#speech-rate')?.value || 1);
+    utterance.rate = Number(playButton.dataset.rate || root.querySelector('#speech-rate')?.value || 0.95);
+    utterance.pitch = 1;
     if (japaneseVoice) utterance.voice = japaneseVoice;
     utterance.onstart = () => {
       root.querySelectorAll('.speech-button.is-playing').forEach((button) => button.classList.remove('is-playing'));

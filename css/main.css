@@ -637,6 +637,14 @@ body {
   min-width: 5.5rem;
 }
 
+#lesson-root { min-width: 0; }
+.speech-toolbar { flex-wrap: wrap; }
+.speech-controls { flex-wrap: wrap; min-width: 0; width: 100%; }
+.speech-toolbar > * { min-width: 0; max-width: 100%; }
+#speech-voice { width: 340px; max-width: 100%; min-width: 0; }
+#speech-voice-help { flex-basis: 100%; color: var(--muted); }
+.speech-button:disabled, .shadow-button:disabled { opacity: 0.55; cursor: not-allowed; }
+
 .shadow-candidates {
   color: var(--muted);
   font-size: 0.88rem;
