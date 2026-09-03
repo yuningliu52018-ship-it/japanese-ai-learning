@@ -643,6 +643,7 @@ async function loadLesson() {
     const vocabularySection = data.vocabulary?.length ? [{
       type: 'sentence_cards',
       chapter: 'vocabulary',
+      pageOrder: data.vocabularyPageOrder,
       title: `単語 1–${data.vocabulary.length}`,
       items: data.vocabulary.map((entry, index) => {
         const normalized = typeof entry === 'string'

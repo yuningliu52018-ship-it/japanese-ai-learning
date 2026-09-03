@@ -6,6 +6,7 @@
   "sectionLabel": "文法・練習",
   "sectionChapter": "grammar",
   "sortSectionsByPage": true,
+  "vocabularyPageOrder": 112,
   "hideLegacySections": true,
   "catalog": { "listed": true, "order": 5, "description": "生字、指示詞、建議、位置、嘗試與推測句型" },
   "chapters": [
