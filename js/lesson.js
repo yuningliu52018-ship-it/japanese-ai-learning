@@ -1,8 +1,10 @@
 function plainText(value = '') {
   const container = document.createElement('div');
   container.innerHTML = String(value);
-  container.querySelectorAll('rt, rp').forEach((node) => node.remove());
-  return (container.textContent || '').replace(/\s+/g, ' ').trim();
+  if (typeof container.querySelectorAll === 'function') {
+    container.querySelectorAll('rt, rp').forEach((node) => node.remove());
+  }
+  return (container.textContent || String(value)).replace(/\s+/g, ' ').trim();
 }
 
 function speechButton(text, label = '播放') {
@@ -62,6 +64,57 @@ function sectionSpeechText(section = {}) {
   return parts.filter(Boolean).map(plainText).join('。');
 }
 
+function splitJapaneseSentences(text = '') {
+  const clean = plainText(text);
+  if (!clean) return [];
+  if (Array.from(clean).length <= 120) return [clean];
+
+  const hardSlice = (str, maxLen = 120) => {
+    const cpChars = Array.from(str);
+    const slices = [];
+    for (let i = 0; i < cpChars.length; i += maxLen) {
+      slices.push(cpChars.slice(i, i + maxLen).join(''));
+    }
+    return slices;
+  };
+
+  const primary = clean.match(/[^。！？\n]+[。！？\n]*|[。！？\n]+/gu) || [clean];
+  const pieces = [];
+
+  for (const seg of primary) {
+    if (Array.from(seg).length <= 120) {
+      pieces.push(seg);
+    } else {
+      const secondary = seg.match(/[^、；]+[、；]*|[、；]+/gu) || [seg];
+      for (const sub of secondary) {
+        if (Array.from(sub).length <= 120) {
+          pieces.push(sub);
+        } else {
+          pieces.push(...hardSlice(sub, 120));
+        }
+      }
+    }
+  }
+
+  const chunks = [];
+  let current = '';
+  let currentLen = 0;
+  for (const piece of pieces) {
+    const pLen = Array.from(piece).length;
+    if (currentLen + pLen <= 120) {
+      current += piece;
+      currentLen += pLen;
+    } else {
+      if (current) chunks.push(current);
+      current = piece;
+      currentLen = pLen;
+    }
+  }
+  if (current) chunks.push(current);
+
+  return chunks.length ? chunks : [clean];
+}
+
 function renderSpeechToolbar() {
   return `
     <aside class="speech-toolbar" aria-label="日文 AI 發音導讀">
@@ -109,7 +162,19 @@ function renderSpeechToolbar() {
     </aside>`;
 }
 
+const speechRootCleanups = new WeakMap();
+let activeSpeechPagehideHandler = null;
+
 function setupSpeech(root) {
+  if (!root) return;
+  if (typeof root === 'object' && speechRootCleanups.has(root)) {
+    try {
+      speechRootCleanups.get(root)();
+    } catch {}
+    speechRootCleanups.delete(root);
+  }
+
+  let isCleanedUp = false;
   const status = root.querySelector('#speech-status');
   const synthesis = window.speechSynthesis;
   let japaneseVoice = null;
@@ -127,6 +192,8 @@ function setupSpeech(root) {
   let microphoneStream = null;
   let recordedChunks = [];
   let recordingUrl = '';
+  let recordGeneration = 0;
+  let requestingMicrophone = false;
   const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const panel = root.querySelector('#shadowing-panel');
   const targetElement = root.querySelector('#shadow-target');
@@ -139,25 +206,331 @@ function setupSpeech(root) {
   const playbackElement = root.querySelector('#shadow-playback');
   const recordedAudio = root.querySelector('#shadow-audio');
 
+  const revokeRecordingUrl = () => {
+    if (recordingUrl) {
+      try { URL.revokeObjectURL(recordingUrl); } catch {}
+      recordingUrl = '';
+    }
+  };
+
   const stopRecording = () => {
-    if (mediaRecorder?.state === 'recording') mediaRecorder.stop();
-    microphoneStream?.getTracks().forEach((track) => track.stop());
+    try {
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+    } catch {}
+    try {
+      microphoneStream?.getTracks().forEach((track) => track.stop());
+    } catch {}
     microphoneStream = null;
+    mediaRecorder = null;
   };
 
-  const playShadowTarget = (rate = 0.95) => {
-    if (!shadowTarget || !japaneseVoice) return;
-    const utterance = new SpeechSynthesisUtterance(shadowTarget);
-    utterance.lang = 'ja-JP';
-    utterance.rate = rate;
-    utterance.pitch = 1;
-    if (japaneseVoice) utterance.voice = japaneseVoice;
-    synthesis.cancel();
-    synthesis.speak(utterance);
-    return utterance;
+  const GOOGLE_VOICE_KEY = 'google-online';
+  const GOOGLE_VOICE_LABEL = 'Google 線上日語（自然語音）';
+  let useGoogleOnline = savedVoiceKey === null || savedVoiceKey === GOOGLE_VOICE_KEY;
+  let speechReady = false;
+  let currentPlaySession = 0;
+  let activeAudio = null;
+  let activeAudioCleanup = null;
+
+  const ensureNoReferrerMeta = () => {
+    if (typeof document === 'undefined' || !document.head) return;
+    if (!document.querySelector('meta[name="referrer"]')) {
+      const meta = document.createElement('meta');
+      meta.name = 'referrer';
+      meta.content = 'no-referrer';
+      document.head.appendChild(meta);
+    }
+  };
+  ensureNoReferrerMeta();
+
+  const stopPlayback = () => {
+    currentPlaySession++;
+    if (typeof activeAudioCleanup === 'function') {
+      try {
+        activeAudioCleanup();
+      } catch {}
+      activeAudioCleanup = null;
+    }
+    if (activeAudio) {
+      try {
+        activeAudio.pause();
+        activeAudio.currentTime = 0;
+        activeAudio.src = '';
+        if (typeof activeAudio.removeAttribute === 'function') {
+          activeAudio.removeAttribute('src');
+        }
+      } catch {}
+      activeAudio = null;
+    }
+    try {
+      synthesis?.cancel();
+    } catch {}
+    root.querySelectorAll('.speech-button.is-playing, .shadow-button.is-playing').forEach((button) => {
+      button.classList.remove('is-playing');
+    });
   };
 
-  if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
+  const handlePageHide = () => {
+    if (isCleanedUp) return;
+    recordGeneration++;
+    requestingMicrophone = false;
+    try { recognition?.abort(); } catch {}
+    recognitionActive = false;
+    clearTimeout(recognitionTimer);
+    stopPlayback();
+    stopRecording();
+    revokeRecordingUrl();
+    if (recordedAudio) {
+      try {
+        recordedAudio.pause();
+        recordedAudio.src = '';
+        if (typeof recordedAudio.removeAttribute === 'function') {
+          recordedAudio.removeAttribute('src');
+        }
+        if (typeof recordedAudio.load === 'function') {
+          recordedAudio.load();
+        }
+      } catch {}
+    }
+  };
+
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+    const prevHandler = activeSpeechPagehideHandler || window.__speechPagehideHandler;
+    if (typeof window.removeEventListener === 'function' && prevHandler) {
+      try { window.removeEventListener('pagehide', prevHandler); } catch {}
+    }
+    activeSpeechPagehideHandler = handlePageHide;
+    window.__speechPagehideHandler = handlePageHide;
+    window.addEventListener('pagehide', handlePageHide);
+  }
+
+  const speakText = (text, rate = 0.95, options = {}) => {
+    const { onStart, onEnd, onError, playButton } = options;
+    stopPlayback();
+    const session = currentPlaySession;
+
+    let fallbackTriggered = false;
+    let currentChunkIndex = 0;
+    let currentChunkToken = 0;
+    let chunks = [];
+
+    if (!text) {
+      onEnd?.();
+      return;
+    }
+
+    const startIndicator = () => {
+      if (session !== currentPlaySession) return;
+      root.querySelectorAll('.speech-button.is-playing, .shadow-button.is-playing').forEach((b) => b.classList.remove('is-playing'));
+      if (playButton) playButton.classList.add('is-playing');
+      if (status) status.textContent = `播放中：${text.slice(0, 34)}${text.length > 34 ? '…' : ''}`;
+      onStart?.();
+    };
+
+    const endIndicator = () => {
+      if (session !== currentPlaySession) return;
+      if (playButton) playButton.classList.remove('is-playing');
+      if (status) status.textContent = '播放完成';
+      onEnd?.();
+    };
+
+    const errorIndicator = (msg) => {
+      if (session !== currentPlaySession) return;
+      if (playButton) playButton.classList.remove('is-playing');
+      if (status) status.textContent = msg || '播放失敗';
+      onError?.();
+    };
+
+    const speakWithSynthesis = (targetText = text) => {
+      if (session !== currentPlaySession) return;
+      if (!synthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
+        errorIndicator('此瀏覽器不支援語音播放');
+        return;
+      }
+      try {
+        synthesis.cancel();
+      } catch {}
+      const utterance = new SpeechSynthesisUtterance(targetText);
+      utterance.lang = 'ja-JP';
+      utterance.rate = rate;
+      utterance.pitch = 1;
+      if (japaneseVoice) utterance.voice = japaneseVoice;
+
+      utterance.onstart = () => {
+        if (session !== currentPlaySession) return;
+        startIndicator();
+        if (fallbackTriggered && status) {
+          status.textContent = `自動改用本機語音播放中：${targetText.slice(0, 26)}${targetText.length > 26 ? '…' : ''}`;
+        }
+      };
+      utterance.onend = () => {
+        if (session !== currentPlaySession) return;
+        endIndicator();
+      };
+      utterance.onerror = () => {
+        if (session !== currentPlaySession) return;
+        errorIndicator('播放失敗，請確認裝置已安裝日文語音');
+      };
+      synthesis.speak(utterance);
+      return utterance;
+    };
+
+    if (!useGoogleOnline || typeof Audio === 'undefined') {
+      return speakWithSynthesis(text);
+    }
+
+    chunks = splitJapaneseSentences(text);
+    if (!chunks.length) {
+      endIndicator();
+      return;
+    }
+
+    const playNextChunk = () => {
+      if (session !== currentPlaySession) return;
+      if (currentChunkIndex >= chunks.length) {
+        endIndicator();
+        return;
+      }
+
+      const chunk = chunks[currentChunkIndex];
+      const chunkToken = ++currentChunkToken;
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(chunk)}`;
+      let audio;
+      try {
+        audio = new Audio();
+      } catch {
+        triggerFallback();
+        return;
+      }
+      audio.preload = 'auto';
+      activeAudio = audio;
+
+      let loadTimer = null;
+      let watchdogTimer = null;
+
+      const cleanup = () => {
+        if (loadTimer) {
+          clearTimeout(loadTimer);
+          loadTimer = null;
+        }
+        if (watchdogTimer) {
+          clearTimeout(watchdogTimer);
+          watchdogTimer = null;
+        }
+        audio.removeEventListener('loadedmetadata', onMeta);
+        audio.removeEventListener('playing', onPlaying);
+        audio.removeEventListener('ended', onEnded);
+        audio.removeEventListener('error', onErrorEvent);
+        if (activeAudioCleanup === cleanupHandler) {
+          activeAudioCleanup = null;
+        }
+      };
+
+      const cleanupHandler = () => {
+        cleanup();
+        try {
+          audio.pause();
+          audio.currentTime = 0;
+          audio.src = '';
+          if (typeof audio.removeAttribute === 'function') {
+            audio.removeAttribute('src');
+          }
+        } catch {}
+      };
+      activeAudioCleanup = cleanupHandler;
+
+      function triggerFallback() {
+        if (fallbackTriggered || session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+        fallbackTriggered = true;
+        cleanupHandler();
+        if (activeAudio === audio) activeAudio = null;
+        if (status) status.textContent = '線上語音無法載入，自動改用本機語音播放';
+        const remainingText = chunks.slice(currentChunkIndex).join('');
+        if (!remainingText) {
+          endIndicator();
+          return;
+        }
+        speakWithSynthesis(remainingText);
+      }
+
+      loadTimer = setTimeout(() => {
+        if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+        triggerFallback();
+      }, 6000);
+
+      function onMeta() {
+        if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+        audio.playbackRate = rate;
+      }
+
+      function onPlaying() {
+        if (loadTimer) {
+          clearTimeout(loadTimer);
+          loadTimer = null;
+        }
+        if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+        if (currentChunkIndex === 0) {
+          startIndicator();
+        }
+        const expectedSec = Number.isFinite(audio.duration) && audio.duration > 0
+          ? audio.duration / (rate || 1)
+          : Math.max(3, (Array.from(chunk).length / 3) / (rate || 1));
+        const watchdogMs = Math.max(6000, Math.ceil((expectedSec + 4) * 1000));
+        watchdogTimer = setTimeout(() => {
+          if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+          triggerFallback();
+        }, watchdogMs);
+      }
+
+      function onEnded() {
+        cleanup();
+        if (activeAudio === audio) activeAudio = null;
+        if (session !== currentPlaySession || chunkToken !== currentChunkToken) return;
+        currentChunkIndex++;
+        playNextChunk();
+      }
+
+      function onErrorEvent() {
+        if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+        triggerFallback();
+      }
+
+      audio.addEventListener('loadedmetadata', onMeta);
+      audio.addEventListener('playing', onPlaying);
+      audio.addEventListener('ended', onEnded);
+      audio.addEventListener('error', onErrorEvent);
+
+      audio.src = url;
+      audio.playbackRate = rate;
+
+      try {
+        const promise = audio.play();
+        if (promise && typeof promise.catch === 'function') {
+          promise.catch(() => {
+            if (session !== currentPlaySession || chunkToken !== currentChunkToken || activeAudio !== audio) return;
+            triggerFallback();
+          });
+        }
+      } catch {
+        triggerFallback();
+      }
+    };
+
+    playNextChunk();
+  };
+
+  const playShadowTarget = (rate = 0.95, onEnd) => {
+    if (!shadowTarget) return;
+    speakText(shadowTarget, rate, {
+      onEnd: () => {
+        onEnd?.();
+      }
+    });
+  };
+
+  const hasAudioSupport = typeof Audio !== 'undefined';
+  const hasSynthesisSupport = synthesis && typeof window.SpeechSynthesisUtterance === 'function';
+  if (!hasAudioSupport && !hasSynthesisSupport) {
     if (status) status.textContent = '此瀏覽器不支援語音播放';
     root.querySelectorAll('.speech-button, .shadow-button, .speech-stop').forEach((button) => {
       button.disabled = true;
@@ -166,48 +539,103 @@ function setupSpeech(root) {
   }
 
   const setSpeechEnabled = (enabled) => {
+    speechReady = enabled;
     root.querySelectorAll('.speech-button, .shadow-button').forEach((button) => { button.disabled = !enabled; });
     voiceSelect.disabled = !enabled;
   };
   let voiceTimer;
   const selectVoice = (finished = false) => {
-    const voices = synthesis.getVoices();
+    if (isCleanedUp) return;
+    const voices = synthesis?.getVoices ? synthesis.getVoices() : [];
     const rank = (voice) => (voice.lang.toLowerCase() === 'ja-jp' ? 0 : 2) + (voice.localService ? 0 : 1);
     japaneseVoices = voices.filter((voice) => /^ja(?:-|$)/i.test(voice.lang))
       .sort((a, b) => rank(a) - rank(b) || Number(b.default) - Number(a.default)
         || a.name.localeCompare(b.name) || String(a.voiceURI).localeCompare(String(b.voiceURI)));
-    japaneseVoice = japaneseVoices.find((voice) => voiceKey(voice) === savedVoiceKey) || japaneseVoices[0] || null;
+
+    if (!finished && !japaneseVoices.length) {
+      voiceSelect.replaceChildren();
+      const option = document.createElement('option');
+      option.textContent = '正在載入日語語音…';
+      voiceSelect.append(option);
+      if (status) status.textContent = '等待日語語音載入…';
+      setSpeechEnabled(false);
+      return;
+    }
+
+    const foundSavedBrowserVoice = savedVoiceKey && savedVoiceKey !== GOOGLE_VOICE_KEY
+      ? japaneseVoices.find((voice) => voiceKey(voice) === savedVoiceKey)
+      : null;
+
+    if (foundSavedBrowserVoice) {
+      japaneseVoice = foundSavedBrowserVoice;
+      useGoogleOnline = false;
+    } else if (savedVoiceKey === GOOGLE_VOICE_KEY || !savedVoiceKey) {
+      useGoogleOnline = true;
+      japaneseVoice = japaneseVoices[0] || null;
+    } else {
+      japaneseVoice = japaneseVoices[0] || null;
+      useGoogleOnline = false;
+    }
+
     voiceSelect.replaceChildren();
+
+    const googleOption = document.createElement('option');
+    googleOption.value = GOOGLE_VOICE_KEY;
+    googleOption.textContent = GOOGLE_VOICE_LABEL;
+    voiceSelect.append(googleOption);
+
     for (const voice of japaneseVoices) {
       const option = document.createElement('option');
       option.value = voiceKey(voice);
       option.textContent = `${voice.name} (${voice.lang}・${voice.localService ? '本機' : '線上'})`;
       voiceSelect.append(option);
     }
-    if (japaneseVoice) {
-      clearTimeout(voiceTimer);
+
+    clearTimeout(voiceTimer);
+    if (useGoogleOnline) {
+      voiceSelect.value = GOOGLE_VOICE_KEY;
+      if (status) status.textContent = '已就緒：Google 線上日語（自然語音），點選播放即可聆聽。';
+    } else if (japaneseVoice) {
       voiceSelect.value = voiceKey(japaneseVoice);
       if (status) status.textContent = savedVoiceKey && voiceKey(japaneseVoice) !== savedVoiceKey
         ? '原選語音目前不可用，暫用優先候選；可重新選擇。' : '日語語音已就緒，可選擇並試聽。';
     } else {
-      const option = document.createElement('option');
-      option.textContent = finished || voices.length ? '此瀏覽器尚無可用日語語音' : '正在載入日語語音…';
-      voiceSelect.append(option);
-      if (status) status.textContent = finished || voices.length
-        ? '沒有可用日語語音；安裝或啟用後重新整理。' : '等待日語語音載入…';
+      voiceSelect.value = GOOGLE_VOICE_KEY;
+      useGoogleOnline = true;
+      if (status) status.textContent = '已就緒：Google 線上日語（自然語音）。';
     }
-    setSpeechEnabled(Boolean(japaneseVoice));
+
+    setSpeechEnabled(true);
   };
   setSpeechEnabled(false);
-  // Subscribe before reading: cached voices may be ready without another event.
-  // Playback stays disabled until an explicit Japanese voice is available.
-  synthesis.addEventListener('voiceschanged', () => selectVoice(true));
+  const onVoicesChanged = () => {
+    if (isCleanedUp) return;
+    selectVoice(true);
+  };
+  if (synthesis?.addEventListener) {
+    synthesis.addEventListener('voiceschanged', onVoicesChanged);
+  }
   voiceTimer = setTimeout(() => selectVoice(true), 3000);
   selectVoice();
-  voiceSelect.addEventListener('change', () => {
+
+  const onVoiceChange = () => {
+    if (isCleanedUp) return;
+    stopPlayback();
+    if (voiceSelect.value === GOOGLE_VOICE_KEY) {
+      useGoogleOnline = true;
+      savedVoiceKey = GOOGLE_VOICE_KEY;
+      try {
+        localStorage.setItem(voiceStorageKey, GOOGLE_VOICE_KEY);
+        if (status) status.textContent = `已記住：${GOOGLE_VOICE_LABEL}，按試聽即可體驗。`;
+      } catch {
+        if (status) status.textContent = '語音已切換，但瀏覽器禁止儲存；本次有效。';
+      }
+      return;
+    }
+
     const selected = japaneseVoices.find((voice) => voiceKey(voice) === voiceSelect.value);
     if (!selected) return;
-    synthesis.cancel();
+    useGoogleOnline = false;
     japaneseVoice = selected;
     savedVoiceKey = voiceKey(selected);
     try {
@@ -216,44 +644,98 @@ function setupSpeech(root) {
     } catch {
       if (status) status.textContent = '語音已切換，但瀏覽器禁止儲存；本次有效。';
     }
-  });
+  };
+  if (voiceSelect && typeof voiceSelect.addEventListener === 'function') {
+    voiceSelect.addEventListener('change', onVoiceChange);
+  }
 
-  root.addEventListener('click', async (event) => {
+  const onRootClick = async (event) => {
+    if (isCleanedUp) return;
     const closeButton = event.target.closest('[data-shadow-close]');
     if (closeButton) {
-      recognition?.abort();
+      recordGeneration++;
+      requestingMicrophone = false;
+      const recordBtn = root.querySelector('[data-shadow-record]');
+      if (recordBtn) {
+        recordBtn.disabled = false;
+        recordBtn.classList.remove('is-recording');
+        recordBtn.textContent = '🎙 開始跟讀';
+      }
+      try { recognition?.abort(); } catch {}
+      recognitionActive = false;
+      clearTimeout(recognitionTimer);
+      stopPlayback();
       stopRecording();
+      revokeRecordingUrl();
+      if (recordedAudio) {
+        try {
+          recordedAudio.pause();
+          recordedAudio.src = '';
+          if (typeof recordedAudio.removeAttribute === 'function') {
+            recordedAudio.removeAttribute('src');
+          }
+          if (typeof recordedAudio.load === 'function') {
+            recordedAudio.load();
+          }
+        } catch {}
+      }
+      playbackElement.hidden = true;
       panel.hidden = true;
       return;
     }
 
     const shadowButton = event.target.closest('[data-shadow]');
     if (shadowButton) {
-      if (!japaneseVoice) return;
+      if (!speechReady) return;
       shadowTarget = decodeURIComponent(shadowButton.dataset.shadow || '');
       targetElement.textContent = shadowTarget;
       shadowResult.hidden = true;
       playbackElement.hidden = true;
+      revokeRecordingUrl();
+      if (recordedAudio) {
+        try {
+          recordedAudio.pause();
+          recordedAudio.src = '';
+          if (typeof recordedAudio.removeAttribute === 'function') {
+            recordedAudio.removeAttribute('src');
+          }
+          if (typeof recordedAudio.load === 'function') {
+            recordedAudio.load();
+          }
+        } catch {}
+      }
+      const recordBtn = root.querySelector('[data-shadow-record]');
+      if (recordBtn) {
+        recordBtn.disabled = false;
+        recordBtn.classList.remove('is-recording');
+        recordBtn.textContent = '🎙 開始跟讀';
+      }
       panel.hidden = false;
       panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
       shadowStatus.textContent = '正在播放示範，聽完後請按「開始跟讀」。';
-      const utterance = playShadowTarget(Number(root.querySelector('#speech-rate')?.value || 0.95));
-      utterance.onend = () => { shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。'; };
+      playShadowTarget(Number(root.querySelector('#speech-rate')?.value || 0.95), () => {
+        shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。';
+      });
       return;
     }
 
     if (event.target.closest('[data-shadow-listen]')) {
-      if (!shadowTarget || !japaneseVoice) return;
+      if (!shadowTarget || !speechReady) return;
       const requestedRate = Number(event.target.closest('[data-shadow-listen]').dataset.rate || 0.95);
-      playShadowTarget(requestedRate);
+      playShadowTarget(requestedRate, () => {
+        shadowStatus.textContent = '輪到你了：按「開始跟讀」並說出上面的句子。';
+      });
       shadowStatus.textContent = requestedRate < 0.95 ? '正在播放慢速示範。請注意長音、促音與停頓。' : '正在播放正常速度示範。';
       return;
     }
 
     const recordButton = event.target.closest('[data-shadow-record]');
     if (recordButton) {
+      if (requestingMicrophone) {
+        return;
+      }
       if (recognitionActive) {
-        recognition?.stop();
+        try { recognition?.stop(); } catch {}
         shadowStatus.textContent = '正在整理辨識結果…';
         return;
       }
@@ -265,34 +747,84 @@ function setupSpeech(root) {
         shadowStatus.textContent = '麥克風只能在 HTTPS 安全連線使用，請從正式 GitHub Pages 網址開啟。';
         return;
       }
-      synthesis.cancel();
+
+      stopPlayback();
+      revokeRecordingUrl();
+      stopRecording();
+
+      const thisGeneration = ++recordGeneration;
+      requestingMicrophone = true;
+      recordButton.disabled = true;
+      recordButton.textContent = '⏳ 正在取得麥克風權限…';
       shadowResult.hidden = true;
       shadowStatus.textContent = '正在確認麥克風權限…';
+
+      let stream = null;
       if (navigator.mediaDevices?.getUserMedia) {
         try {
-          microphoneStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          if (typeof MediaRecorder === 'function') {
-            recordedChunks = [];
-            mediaRecorder = new MediaRecorder(microphoneStream);
-            mediaRecorder.ondataavailable = (chunkEvent) => {
-              if (chunkEvent.data.size) recordedChunks.push(chunkEvent.data);
-            };
-            mediaRecorder.onstop = () => {
-              if (!recordedChunks.length) return;
-              if (recordingUrl) URL.revokeObjectURL(recordingUrl);
-              recordingUrl = URL.createObjectURL(new Blob(recordedChunks, { type: mediaRecorder.mimeType || 'audio/webm' }));
-              recordedAudio.src = recordingUrl;
-              playbackElement.hidden = false;
-            };
-          }
+          stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         } catch (permissionError) {
-          shadowStatus.textContent = permissionError.name === 'NotAllowedError'
-            ? '麥克風權限被拒絕。請按網址列左側圖示，將「麥克風」改成允許後重新整理。'
-            : '目前無法開啟麥克風，請確認沒有被其他程式占用。';
+          if (thisGeneration === recordGeneration) {
+            requestingMicrophone = false;
+            recordButton.disabled = false;
+            recordButton.textContent = '🎙 開始跟讀';
+            shadowStatus.textContent = permissionError.name === 'NotAllowedError'
+              ? '麥克風權限被拒絕。請按網址列左側圖示，將「麥克風」改成允許後重新整理。'
+              : '目前無法開啟麥克風，請確認沒有被其他程式占用。';
+          }
           return;
         }
       }
-      recognition?.abort();
+
+      if (thisGeneration !== recordGeneration || panel.hidden) {
+        requestingMicrophone = false;
+        if (stream) {
+          try {
+            stream.getTracks().forEach((track) => track.stop());
+          } catch {}
+        }
+        return;
+      }
+
+      requestingMicrophone = false;
+      recordButton.disabled = false;
+      recordButton.textContent = '🎙 開始跟讀';
+      microphoneStream = stream;
+
+      const recorderGen = thisGeneration;
+      let localChunks = [];
+      if (stream && typeof MediaRecorder === 'function') {
+        try {
+          mediaRecorder = new MediaRecorder(stream);
+          mediaRecorder.ondataavailable = (chunkEvent) => {
+            if (chunkEvent.data && chunkEvent.data.size > 0) {
+              localChunks.push(chunkEvent.data);
+            }
+          };
+          mediaRecorder.onstop = () => {
+            if (recorderGen !== recordGeneration || panel.hidden) {
+              localChunks = [];
+              return;
+            }
+            if (!localChunks.length) return;
+            revokeRecordingUrl();
+            try {
+              const blob = new Blob(localChunks, { type: mediaRecorder?.mimeType || 'audio/webm' });
+              localChunks = [];
+              const url = URL.createObjectURL(blob);
+              if (recorderGen !== recordGeneration || panel.hidden) {
+                try { URL.revokeObjectURL(url); } catch {}
+                return;
+              }
+              recordingUrl = url;
+              recordedAudio.src = recordingUrl;
+              playbackElement.hidden = false;
+            } catch {}
+          };
+        } catch {}
+      }
+
+      try { recognition?.abort(); } catch {}
       recognition = new Recognition();
       recognition.lang = 'ja-JP';
       recognition.interimResults = false;
@@ -301,14 +833,23 @@ function setupSpeech(root) {
       let recognitionHadResult = false;
       let recognitionError = '';
       recognition.onstart = () => {
+        if (thisGeneration !== recordGeneration || panel.hidden) {
+          try { recognition.abort(); } catch {}
+          stopRecording();
+          return;
+        }
         recognitionActive = true;
         recordButton.classList.add('is-recording');
         recordButton.textContent = '■ 說完請按停止';
         shadowStatus.textContent = '麥克風已開啟，請開始說日文（最長12秒）。';
-        if (mediaRecorder?.state === 'inactive') mediaRecorder.start();
+        if (mediaRecorder?.state === 'inactive') {
+          try { mediaRecorder.start(); } catch {}
+        }
         clearTimeout(recognitionTimer);
-        recognitionTimer = window.setTimeout(() => {
-          if (recognitionActive) recognition.stop();
+        recognitionTimer = setTimeout(() => {
+          if (recognitionActive) {
+            try { recognition.stop(); } catch {}
+          }
         }, 12000);
       };
       recognition.onaudiostart = () => { shadowStatus.textContent = '已連接麥克風，正在等待你說話…'; };
@@ -316,9 +857,12 @@ function setupSpeech(root) {
       recognition.onspeechstart = () => { shadowStatus.textContent = '正在聽你的日文…說完後請稍等。'; };
       recognition.onspeechend = () => {
         shadowStatus.textContent = '已收到語音，正在辨識日文…';
-        if (recognitionActive) recognition.stop();
+        if (recognitionActive) {
+          try { recognition.stop(); } catch {}
+        }
       };
       recognition.onresult = (resultEvent) => {
+        if (thisGeneration !== recordGeneration || panel.hidden) return;
         recognitionHadResult = true;
         const alternatives = Array.from(resultEvent.results[0]).map((result) => ({
           transcript: result.transcript,
@@ -335,6 +879,7 @@ function setupSpeech(root) {
         shadowResult.hidden = false;
       };
       recognition.onerror = (recognitionEvent) => {
+        if (thisGeneration !== recordGeneration || panel.hidden) return;
         recognitionError = recognitionEvent.error;
         const errorMessages = {
           'not-allowed': '麥克風權限未允許。請在網址列的網站設定中允許麥克風。',
@@ -346,6 +891,7 @@ function setupSpeech(root) {
         shadowStatus.textContent = errorMessages[recognitionEvent.error] || `語音辨識失敗（${recognitionEvent.error}），請再試一次。`;
       };
       recognition.onnomatch = () => {
+        if (thisGeneration !== recordGeneration || panel.hidden) return;
         recognitionError = 'no-match';
         shadowStatus.textContent = '有收到聲音，但無法判斷成日文。請先用慢速聽一次，再清楚重說。';
       };
@@ -353,58 +899,98 @@ function setupSpeech(root) {
         clearTimeout(recognitionTimer);
         stopRecording();
         recognitionActive = false;
-        recordButton.classList.remove('is-recording');
-        recordButton.textContent = '🎙 再說一次';
-        if (recognitionHadResult) {
-          shadowStatus.textContent = '完成！可查看結果，或再說一次。';
-        } else if (!recognitionError) {
-          shadowStatus.textContent = '錄音結束，但沒有取得辨識文字。請靠近麥克風並在按下後立即開始說。';
+        if (thisGeneration === recordGeneration && !panel.hidden) {
+          recordButton.classList.remove('is-recording');
+          recordButton.textContent = '🎙 再說一次';
+          if (recognitionHadResult) {
+            shadowStatus.textContent = '完成！可查看結果，或再說一次。';
+          } else if (!recognitionError) {
+            shadowStatus.textContent = '錄音結束，但沒有取得辨識文字。請靠近麥克風並在按下後立即開始說。';
+          }
         }
       };
       try {
         recognition.start();
-      } catch (startError) {
+      } catch {
         recognitionActive = false;
         stopRecording();
-        shadowStatus.textContent = '麥克風尚未準備好，請等待一秒後再按一次。';
+        if (thisGeneration === recordGeneration && !panel.hidden) {
+          recordButton.disabled = false;
+          recordButton.textContent = '🎙 開始跟讀';
+          shadowStatus.textContent = '麥克風尚未準備好，請等待一秒後再按一次。';
+        }
       }
       return;
     }
 
     const stopButton = event.target.closest('[data-speech-stop]');
     if (stopButton) {
-      synthesis.cancel();
+      stopPlayback();
       if (status) status.textContent = '已停止播放';
       return;
     }
 
     const playButton = event.target.closest('[data-speak]');
-    if (!playButton || !japaneseVoice) return;
+    if (!playButton || !speechReady) return;
 
     const text = decodeURIComponent(playButton.dataset.speak || '');
     if (!text) return;
-    synthesis.cancel();
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ja-JP';
-    utterance.rate = Number(playButton.dataset.rate || root.querySelector('#speech-rate')?.value || 0.95);
-    utterance.pitch = 1;
-    if (japaneseVoice) utterance.voice = japaneseVoice;
-    utterance.onstart = () => {
-      root.querySelectorAll('.speech-button.is-playing').forEach((button) => button.classList.remove('is-playing'));
-      playButton.classList.add('is-playing');
-      if (status) status.textContent = `播放中：${text.slice(0, 34)}${text.length > 34 ? '…' : ''}`;
-    };
-    utterance.onend = () => {
-      playButton.classList.remove('is-playing');
-      if (status) status.textContent = '播放完成';
-    };
-    utterance.onerror = () => {
-      playButton.classList.remove('is-playing');
-      if (status) status.textContent = '播放失敗，請確認裝置已安裝日文語音';
-    };
-    synthesis.speak(utterance);
-  });
+    const rate = Number(playButton.dataset.rate || root.querySelector('#speech-rate')?.value || 0.95);
+    speakText(text, rate, { playButton });
+  };
+  root.addEventListener('click', onRootClick);
+
+  const cleanup = () => {
+    if (isCleanedUp) return;
+    isCleanedUp = true;
+
+    if (typeof root.removeEventListener === 'function') {
+      try { root.removeEventListener('click', onRootClick); } catch {}
+    }
+    if (voiceSelect && typeof voiceSelect.removeEventListener === 'function') {
+      try { voiceSelect.removeEventListener('change', onVoiceChange); } catch {}
+    }
+    if (synthesis && typeof synthesis.removeEventListener === 'function') {
+      try { synthesis.removeEventListener('voiceschanged', onVoicesChanged); } catch {}
+    }
+    if (typeof window !== 'undefined' && typeof window.removeEventListener === 'function') {
+      if (activeSpeechPagehideHandler === handlePageHide) {
+        try { window.removeEventListener('pagehide', handlePageHide); } catch {}
+        activeSpeechPagehideHandler = null;
+        if (window.__speechPagehideHandler === handlePageHide) {
+          window.__speechPagehideHandler = null;
+        }
+      }
+    }
+
+    clearTimeout(voiceTimer);
+    clearTimeout(recognitionTimer);
+
+    recordGeneration++;
+    requestingMicrophone = false;
+    try { recognition?.abort(); } catch {}
+    recognitionActive = false;
+    stopPlayback();
+    stopRecording();
+    revokeRecordingUrl();
+    if (recordedAudio) {
+      try {
+        recordedAudio.pause();
+        recordedAudio.src = '';
+        if (typeof recordedAudio.removeAttribute === 'function') {
+          recordedAudio.removeAttribute('src');
+        }
+        if (typeof recordedAudio.load === 'function') {
+          recordedAudio.load();
+        }
+      } catch {}
+    }
+  };
+
+  if (typeof root === 'object') {
+    speechRootCleanups.set(root, cleanup);
+  }
 }
 
 function renderLesson(root, data) {
