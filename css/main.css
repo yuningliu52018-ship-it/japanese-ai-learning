@@ -814,10 +814,18 @@ body {
   line-height: 2;
 }
 
-.vocabulary-example-japanese rt {
+.lesson-page ruby {
+  ruby-position: over;
+}
+
+.lesson-page rt {
   color: #475569;
   font-size: 0.55em;
   font-weight: 500;
+}
+
+.chapter-heading rt {
+  color: inherit;
 }
 
 .vocabulary-example-chinese {

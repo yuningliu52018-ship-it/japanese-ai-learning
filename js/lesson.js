@@ -998,7 +998,7 @@ function renderLesson(root, data) {
 
   const html = [];
   if (!document.getElementById('lesson-page-title')) {
-    html.push(`<h2>${data.title}</h2>`);
+    html.push(`<h2>${data.titleRuby || data.title}</h2>`);
     html.push(`<p class="lesson-muted">${data.description || ''}</p>`);
   }
 
@@ -1078,7 +1078,7 @@ function renderLesson(root, data) {
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
         if (displayedJapanese) html.push(`<p lang="ja">${displayedJapanese}</p>`);
-        if (plainJapanese && plainJapanese !== displayedJapanese) {
+        if (!item.jpRuby && plainJapanese && plainJapanese !== displayedJapanese) {
           html.push(`<p class="lesson-muted" lang="ja">${plainJapanese}</p>`);
         }
         html.push(speechButton(itemSpeechText(item)));
@@ -1230,7 +1230,7 @@ async function loadLesson() {
       type: 'sentence_cards',
       chapter: 'vocabulary',
       pageOrder: data.vocabularyPageOrder,
-      title: `単語 1–${data.vocabulary.length}`,
+      title: `${data.chapters?.find((chapter) => chapter.id === 'vocabulary')?.title || '単語'} 1–${data.vocabulary.length}`,
       items: data.vocabulary.map((entry, index) => {
         const normalized = typeof entry === 'string'
           ? (() => {
@@ -1241,7 +1241,7 @@ async function loadLesson() {
         return {
           ...normalized,
           id: String(index + 1).padStart(2, '0'),
-          topic: `${index + 1}. ${normalized.japanese}`,
+          topic: `${index + 1}. ${normalized.jpRuby || normalized.japanese}`,
           plainText: normalized.plainText || normalized.japanese
         };
       })
@@ -1277,13 +1277,13 @@ async function loadLesson() {
 
     const pageTitle = document.getElementById('lesson-page-title');
     const pageDescription = document.getElementById('lesson-page-description');
-    if (pageTitle) pageTitle.textContent = data.title || '日文課程';
+    if (pageTitle) pageTitle.innerHTML = data.titleRuby || data.title || '日文課程';
     if (pageDescription) pageDescription.textContent = data.description || '';
 
     renderLesson(root, data);
     const toolbar = root.querySelector('.speech-toolbar');
     if (toolbar && data.chapters?.length) {
-      toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span>${chapter.title}<small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
+      toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
