@@ -1327,14 +1327,14 @@ async function loadLesson() {
     if (toolbar && data.chapters?.length) {
       toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
-    scrollToCurrentHash();
+    scrollToCurrentHash('auto');
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
     console.error(err);
   }
 }
 
-function scrollToCurrentHash() {
+function scrollToCurrentHash(behavior = 'auto') {
   if (typeof window === 'undefined' || !window.location || !window.location.hash) return;
   const rawHash = window.location.hash.slice(1);
   let targetId = rawHash;
@@ -1347,12 +1347,12 @@ function scrollToCurrentHash() {
   const target = document.getElementById(targetId);
   if (target) {
     requestAnimationFrame(() => {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior, block: 'start' });
     });
   }
 }
 
 document.addEventListener('DOMContentLoaded', loadLesson);
 if (typeof window !== 'undefined') {
-  window.addEventListener('hashchange', scrollToCurrentHash);
+  window.addEventListener('hashchange', () => scrollToCurrentHash('smooth'));
 }
