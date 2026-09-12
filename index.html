@@ -3,42 +3,115 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>japanese-ai-learning</title>
-  <meta name="description" content="Interactive Japanese Learning Platform with AI Chat, Speech, Quiz and JLPT Lessons." />
+  <title>Japanese AI Learning｜N3 日文自學入口</title>
+  <meta name="description" content="Japanese AI Learning：逐句學習、文法、單語、聽力、跟讀與情境會話的日文自學入口。" />
   <meta name="theme-color" content="#4f46e5" />
   <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/app-icon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/app-icon-180.png" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div>
-      <p class="eyebrow">Japanese AI Learning</p>
-      <h1>日文互動學習平台</h1>
-      <p class="lead">整合第四課教材、發音、測驗與 AI 對話，讓每一課都能持續擴充。</p>
-    </div>
-  </header>
+<body class="learning-home">
+  <main class="home-shell">
+    <section class="home-hero">
+      <div class="hero-main">
+        <p class="eyebrow">Japanese AI Learning</p>
+        <h1>N3 日文自學入口</h1>
+        <p>從「今天學什麼？」開始，把單語、文法、逐句理解、聽力與跟讀串成一條每天都能完成的學習路線。</p>
+        <div class="hero-actions">
+          <a class="primary-action" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">▶ 開始今天的學習</a>
+          <a class="secondary-action" href="#learning-hub">查看六大學習站</a>
+        </div>
+      </div>
 
-  <main class="layout">
-    <section class="card">
-      <h2>課程入口</h2>
-      <ul id="lesson-list"></ul>
+      <aside class="today-card" aria-label="今日學習">
+        <div>
+          <span class="today-date" data-today-date>今天</span>
+          <h2>今日 15 分鐘</h2>
+        </div>
+        <div class="today-list">
+          <div class="today-step"><span>🈶</span><strong>單語暖身</strong><small>3 分</small></div>
+          <div class="today-step"><span>🧠</span><strong>第 5 課文法</strong><small>4 分</small></div>
+          <div class="today-step"><span>🗣️</span><strong>逐句跟讀</strong><small>4 分</small></div>
+          <div class="today-step"><span>💬</span><strong>情境會話</strong><small>4 分</small></div>
+        </div>
+      </aside>
     </section>
 
-    <section class="card">
-      <h2>專案狀態</h2>
-      <p>第4課已整合為單一課程，並依教材順序整理文法、會話、閱讀、練習與日文 AI 發音導讀。</p>
+    <section id="learning-hub" aria-labelledby="learning-hub-title">
+      <div class="section-heading">
+        <h2 id="learning-hub-title">六大學習站</h2>
+        <p>第一版先連結到現有完整課程；之後再逐步拆成獨立練習模式。</p>
+      </div>
+
+      <div class="hub-grid">
+        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">
+          <span class="hub-icon">🎬</span>
+          <h3>逐句學習</h3>
+          <p>看原句、理解中文、拆文法，再用發音功能逐句吸收。</p>
+          <span class="hub-tag">第 5 課</span>
+        </a>
+
+        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">
+          <span class="hub-icon">🗣️</span>
+          <h3>口說・跟讀</h3>
+          <p>利用既有 Normal / Slow 語音與跟讀功能，從模仿到開口。</p>
+          <span class="hub-tag">現有功能</span>
+        </a>
+
+        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">
+          <span class="hub-icon">🧠</span>
+          <h3>文法站</h3>
+          <p>從 ～たらいい、～んじゃない 等句型，用例句直接理解。</p>
+          <span class="hub-tag">N3 核心</span>
+        </a>
+
+        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">
+          <span class="hub-icon">🈶</span>
+          <h3>單語站</h3>
+          <p>單字、意思、例句與日文發音放在同一個學習流程裡。</p>
+          <span class="hub-tag">生字複習</span>
+        </a>
+
+        <a class="hub-card" data-learning-link href="lessons/k4-伝言お願いできますか/index.html">
+          <span class="hub-icon">👂</span>
+          <h3>聽力站</h3>
+          <p>先聽、再看文字、慢速確認，最後回到正常速度。</p>
+          <span class="hub-tag">第 4 課</span>
+        </a>
+
+        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">
+          <span class="hub-icon">💬</span>
+          <h3>情境會話</h3>
+          <p>從問路、建議、推測等課內情境，逐步轉成真正能說的日文。</p>
+          <span class="hub-tag">會話練習</span>
+        </a>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>快速連結</h2>
-      <p><a href="lessons/k4-伝言お願いできますか/index.html">前往第4課完整教材</a></p>
-      <p><a href="lessons/k4-伝言お願いできますか/data.json">查看課程資料 JSON</a></p>
+    <section class="dashboard-grid" aria-label="學習進度與課程">
+      <div class="passport-card">
+        <p class="eyebrow">Learning Passport</p>
+        <h2>我的日文護照</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong data-active-days>1</strong><span>累積學習日</span></div>
+          <div class="stat"><strong data-visits>1</strong><span>首頁學習啟動</span></div>
+          <div class="stat"><strong data-lesson-count>2</strong><span>目前課程</span></div>
+        </div>
+        <p class="home-note">目前護照先做「輕量紀錄」。下一階段再加入單字熟悉度、跟讀句數、文法弱點與每日完成度。</p>
+      </div>
+
+      <div class="course-panel">
+        <p class="eyebrow">Courses</p>
+        <h2>所有課程</h2>
+        <ul id="lesson-list"></ul>
+      </div>
     </section>
   </main>
 
   <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
