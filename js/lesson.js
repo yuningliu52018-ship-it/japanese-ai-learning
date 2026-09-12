@@ -117,7 +117,7 @@ function splitJapaneseSentences(text = '') {
 
 function renderSpeechToolbar() {
   return `
-    <aside class="speech-toolbar" aria-label="日文 AI 發音導讀">
+    <aside class="speech-toolbar" id="speech-toolbar" aria-label="日文 AI 發音導讀">
       <div>
         <strong>日文 AI 發音導讀</strong>
         <span id="speech-status" class="speech-status" aria-live="polite">點選播放即可聆聽</span>
@@ -993,6 +993,40 @@ function setupSpeech(root) {
   }
 }
 
+function resolveSectionId(section, usedIds) {
+  if (section.id && !usedIds.has(section.id)) {
+    usedIds.add(section.id);
+    return section.id;
+  }
+  let baseId = null;
+  const title = plainText(section.title || '');
+  if (section.type === 'dialogue_lessons') {
+    baseId = 'section-dialogue';
+  } else if (section.type === 'scenario_practice') {
+    if (title.includes('尋ねる') || title.includes('教える')) baseId = 'section-scenario';
+    else if (title.includes('行き方') || title.includes('道順')) baseId = 'section-scenario-intro';
+    else baseId = 'section-scenario';
+  } else if (section.type === 'audio_tracks') {
+    if (title.includes('CD18')) baseId = 'section-listening';
+    else if (title.includes('CD19')) baseId = 'section-audio-cd19';
+    else if (title.includes('CD20')) baseId = 'section-audio-cd20';
+    else baseId = 'section-audio';
+  } else if (section.type === 'long_reading') {
+    baseId = 'section-reading';
+  } else if (title.includes('逐句翻譯')) {
+    baseId = 'section-reading-sentences';
+  }
+
+  if (!baseId) return null;
+  let candidate = baseId;
+  let counter = 2;
+  while (usedIds.has(candidate)) {
+    candidate = `${baseId}-${counter++}`;
+  }
+  usedIds.add(candidate);
+  return candidate;
+}
+
 function renderLesson(root, data) {
   if (!root || !data) return;
 
@@ -1012,9 +1046,14 @@ function renderLesson(root, data) {
     html.push(`<p class="empty-state">本課教材正在整理中，完成後會顯示在這裡。</p>`);
   }
 
+  const usedIds = new Set(['speech-toolbar']);
+  for (const chapter of data.chapters || []) {
+    usedIds.add(`chapter-${chapter.id}`);
+  }
+
   for (const section of data.sections || []) {
-    html.push(`<div class="lesson-section">`);
     if (section.type === 'chapter_heading') {
+      html.push(`<div class="lesson-section">`);
       html.push(`
         <header class="chapter-heading" id="chapter-${section.id}">
           <span class="chapter-number">${section.number}</span>
@@ -1030,6 +1069,9 @@ function renderLesson(root, data) {
       html.push(`</div>`);
       continue;
     }
+
+    const secId = resolveSectionId(section, usedIds);
+    html.push(`<div class="lesson-section"${secId ? ` id="${secId}"` : ''}>`);
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
 
     if (section.type === 'video_resource') {
@@ -1285,10 +1327,32 @@ async function loadLesson() {
     if (toolbar && data.chapters?.length) {
       toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
+    scrollToCurrentHash();
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;
     console.error(err);
   }
 }
 
+function scrollToCurrentHash() {
+  if (typeof window === 'undefined' || !window.location || !window.location.hash) return;
+  const rawHash = window.location.hash.slice(1);
+  let targetId = rawHash;
+  try {
+    targetId = decodeURIComponent(rawHash);
+  } catch (_) {
+    targetId = rawHash;
+  }
+  if (!targetId) return;
+  const target = document.getElementById(targetId);
+  if (target) {
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', loadLesson);
+if (typeof window !== 'undefined') {
+  window.addEventListener('hashchange', scrollToCurrentHash);
+}
