@@ -1,116 +1,63 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Japanese AI Learning｜N3 日文自學入口</title>
-  <meta name="description" content="Japanese AI Learning：逐句學習、文法、單語、聽力、跟讀與情境會話的日文自學入口。" />
-  <meta name="theme-color" content="#4f46e5" />
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/app-icon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/app-icon-180.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/home.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中級日本語・有聲電子課本｜Interactive Japanese Audio Textbook</title>
+  <meta name="description" content="聽見日語，讀懂文化。從單語、文法到會話，逐頁展開中級日本語的學習旅程。">
+  <meta name="theme-color" content="#F7F4ED">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/textbook.css">
 </head>
-<body class="learning-home">
-  <main class="home-shell">
-    <section class="home-hero">
-      <div class="hero-main">
-        <p class="eyebrow">Japanese AI Learning</p>
-        <h1>N3 日文自學入口</h1>
-        <p>從「今天學什麼？」開始，把單語、文法、逐句理解、聽力與跟讀串成一條每天都能完成的學習路線。</p>
-        <div class="hero-actions">
-          <a class="primary-action" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html">▶ 開始今天的學習</a>
-          <a class="secondary-action" href="#learning-hub">查看六大學習站</a>
+<body class="textbook textbook-home">
+  <a class="sr-only" href="#book-main">跳至主要內容</a>
+  <header class="book-masthead">
+    <div class="book-width book-masthead-inner">
+      <a class="book-brand" href="index.html"><svg class="book-mark" viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M24 8C17 2 9 3 3 5v29c7-3 14-2 21 3 7-5 14-6 21-3V5C39 3 31 2 24 8Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M24 8v29" stroke="currentColor" stroke-width="1.5"/></svg><span><strong>中級日本語・有聲電子課本</strong><small>Interactive Japanese Audio Textbook</small></span></a>
+      <nav class="book-menu" aria-label="主要導覽">
+        <a href="index.html" aria-current="page">首頁</a>
+        <a href="#contents">課程目次</a>
+        <a href="lessons/k5-どう行ったらいいでしょうか/index.html#section-listening" data-learning-link>音聲教材</a>
+      </nav>
+      <span class="book-edition">日本語を、日常へ。</span>
+    </div>
+  </header>
+  <main id="book-main">
+    <section class="book-hero" aria-labelledby="book-title">
+      <div class="book-width book-hero-inner">
+        <img class="hero-landscape" src="assets/textbook/fuji-watercolor.webp" alt="淡墨水彩中的富士山、湖畔與鳥居" fetchpriority="high">
+        <div class="book-hero-copy">
+          <p class="book-kicker" lang="ja">ことばで、もっと広い世界へ</p>
+          <h1 id="book-title">中級日本語・有聲電子課本</h1>
+          <p class="book-english" lang="en">Interactive Japanese Audio Textbook <span class="book-level">N3 レベル</span></p>
+          <p class="book-hero-note">聽見日語・讀懂文化・走向更寬廣的世界</p>
         </div>
-      </div>
-
-      <aside class="today-card" aria-label="今日學習">
-        <div>
-          <span class="today-date" data-today-date>今天</span>
-          <h2>今日 15 分鐘</h2>
-        </div>
-        <div class="today-list">
-          <a class="today-step" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-vocabulary"><span>🈶</span><strong>單語暖身</strong><small>3 分</small></a>
-          <a class="today-step" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-grammar"><span>🧠</span><strong>第 5 課文法</strong><small>4 分</small></a>
-          <a class="today-step" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#speech-toolbar"><span>🗣️</span><strong>逐句跟讀</strong><small>4 分</small></a>
-          <a class="today-step" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#section-scenario"><span>💬</span><strong>情境會話</strong><small>4 分</small></a>
-        </div>
-      </aside>
-    </section>
-
-    <section id="learning-hub" aria-labelledby="learning-hub-title">
-      <div class="section-heading">
-        <h2 id="learning-hub-title">六大學習站</h2>
-        <p>直達第 5 課各學習位置，無縫銜接單語、文法、逐句、跟讀、聽力與會話。</p>
-      </div>
-
-      <div class="hub-grid">
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#section-dialogue">
-          <span class="hub-icon">🎬</span>
-          <h3>逐句學習</h3>
-          <p>看原句、理解中文、拆文法，再用發音功能逐句吸收。</p>
-          <span class="hub-tag">第 5 課對話</span>
-        </a>
-
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#speech-toolbar">
-          <span class="hub-icon">🗣️</span>
-          <h3>口說・跟讀</h3>
-          <p>利用既有 Normal / Slow 語音與跟讀功能，從模仿到開口。</p>
-          <span class="hub-tag">發音與跟讀</span>
-        </a>
-
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-grammar">
-          <span class="hub-icon">🧠</span>
-          <h3>文法站</h3>
-          <p>從 ～たらいい、～んじゃない 等句型，用例句直接理解。</p>
-          <span class="hub-tag">N3 核心</span>
-        </a>
-
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-vocabulary">
-          <span class="hub-icon">🈶</span>
-          <h3>單語站</h3>
-          <p>單字、意思、例句與日文發音放在同一個學習流程裡。</p>
-          <span class="hub-tag">生字複習</span>
-        </a>
-
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#section-listening">
-          <span class="hub-icon">👂</span>
-          <h3>聽力站</h3>
-          <p>使用第 5 課聽說內容：先聽發音、再看文字確認、配合慢速聆聽。</p>
-          <span class="hub-tag">第 5 課聽說</span>
-        </a>
-
-        <a class="hub-card" data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#section-scenario">
-          <span class="hub-icon">💬</span>
-          <h3>情境會話</h3>
-          <p>從問路、建議、推測等課內情境，逐步轉成真正能說的日文。</p>
-          <span class="hub-tag">會話實戰</span>
-        </a>
+        <p class="hero-margin-note" lang="ja">学ぶことは、<br>新しい景色に出会うこと。</p>
       </div>
     </section>
-
-    <section class="dashboard-grid" aria-label="學習進度與課程">
-      <div class="passport-card">
-        <p class="eyebrow">Learning Passport</p>
-        <h2>我的日文護照</h2>
-        <div class="stat-grid">
-          <div class="stat"><strong data-active-days>1</strong><span>累積學習日</span></div>
-          <div class="stat"><strong data-visits>1</strong><span>首頁學習啟動</span></div>
-          <div class="stat"><strong data-lesson-count>2</strong><span>目前課程</span></div>
+    <section class="editorial-section book-width" aria-labelledby="continue-title">
+      <div class="editorial-heading"><h2 id="continue-title">繼續學習</h2><p lang="ja">前回の続きから、日本語の旅を。</p></div>
+      <div class="continue-spread">
+        <img class="continue-image" src="assets/textbook/coastal-train.webp" alt="地方電車沿著寧靜海岸行駛" width="480" height="250">
+        <div class="continue-copy">
+          <h3><span class="lesson-numeral">第 5 課</span><span lang="ja">どう行ったらいいでしょうか</span></h3>
+          <p>從問路的第一句，走進日常會話。</p>
+          <a class="book-button" data-continue-link data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-vocabulary"><span class="button-play" aria-hidden="true">▶</span>繼續學習<span aria-hidden="true">›</span></a>
         </div>
-        <p class="home-note">目前護照先做「輕量紀錄」。下一階段再加入單字熟悉度、跟讀句數、文法弱點與每日完成度。</p>
+        <aside class="margin-verse" aria-label="學習寄語"><p lang="ja">言葉は、<br>どこかへ行くための<br>切符です。</p><span></span><b class="margin-seal" aria-hidden="true">学</b></aside>
       </div>
-
-      <div class="course-panel">
-        <p class="eyebrow">Courses</p>
-        <h2>所有課程</h2>
-        <ul id="lesson-list"></ul>
+    </section>
+    <section class="contents-section editorial-section" id="contents" aria-labelledby="contents-title">
+      <div class="book-width">
+        <div class="editorial-heading"><h2 id="contents-title">目次</h2><p lang="ja">課ごとに、新しい世界が広がります。</p><a class="contents-link" href="#lesson-list">すべての課を見る →</a></div>
+        <ul id="lesson-list" aria-label="課程目錄"><li>正在載入課程目次…</li></ul>
       </div>
     </section>
   </main>
-
+  <footer class="book-footer">
+    <div class="book-width book-footer-inner"><a class="book-brand" href="index.html"><svg class="book-mark" viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M24 8C17 2 9 3 3 5v29c7-3 14-2 21 3 7-5 14-6 21-3V5C39 3 31 2 24 8Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M24 8v29" stroke="currentColor" stroke-width="1.5"/></svg><span><strong>中級日本語・有聲電子課本</strong><small>Interactive Japanese Audio Textbook</small></span></a><p lang="ja">—　ことばで、つながる。　—</p><p>聆聽・閱讀・練習</p></div>
+  </footer>
   <script src="js/app.js"></script>
   <script src="js/home.js"></script>
 </body>

@@ -1207,6 +1207,7 @@ function renderLesson(root, data) {
   }
 
   root.innerHTML = html.join('');
+  if (typeof window.presentAudioTextbook === 'function') window.presentAudioTextbook(root, data);
   setupSpeech(root);
   setupAudioSegments(root);
 }
@@ -1324,7 +1325,7 @@ async function loadLesson() {
 
     renderLesson(root, data);
     const toolbar = root.querySelector('.speech-toolbar');
-    if (toolbar && data.chapters?.length) {
+    if (toolbar && data.chapters?.length && !document.body.classList.contains('textbook-lesson')) {
       toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
     scrollToCurrentHash('auto');
