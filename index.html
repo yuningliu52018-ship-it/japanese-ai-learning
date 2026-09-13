@@ -1,44 +1,64 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>japanese-ai-learning</title>
-  <meta name="description" content="Interactive Japanese Learning Platform with AI Chat, Speech, Quiz and JLPT Lessons." />
-  <meta name="theme-color" content="#4f46e5" />
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/app-icon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/app-icon-180.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中級日本語・有聲電子課本｜Interactive Japanese Audio Textbook</title>
+  <meta name="description" content="聽見日語，讀懂文化。從單語、文法到會話，逐頁展開中級日本語的學習旅程。">
+  <meta name="theme-color" content="#F7F4ED">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/textbook.css">
 </head>
-<body>
-  <header class="site-header">
-    <div>
-      <p class="eyebrow">Japanese AI Learning</p>
-      <h1>日文互動學習平台</h1>
-      <p class="lead">整合第四課教材、發音、測驗與 AI 對話，讓每一課都能持續擴充。</p>
+<body class="textbook textbook-home">
+  <a class="sr-only" href="#book-main">跳至主要內容</a>
+  <header class="book-masthead">
+    <div class="book-width book-masthead-inner">
+      <a class="book-brand" href="index.html"><svg class="book-mark" viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M24 8C17 2 9 3 3 5v29c7-3 14-2 21 3 7-5 14-6 21-3V5C39 3 31 2 24 8Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M24 8v29" stroke="currentColor" stroke-width="1.5"/></svg><span><strong>中級日本語・有聲電子課本</strong><small>Interactive Japanese Audio Textbook</small></span></a>
+      <nav class="book-menu" aria-label="主要導覽">
+        <a href="index.html" aria-current="page">首頁</a>
+        <a href="#contents">課程目次</a>
+        <a href="lessons/k5-どう行ったらいいでしょうか/index.html#section-listening" data-learning-link>音聲教材</a>
+      </nav>
+      <span class="book-edition">日本語を、日常へ。</span>
     </div>
   </header>
-
-  <main class="layout">
-    <section class="card">
-      <h2>課程入口</h2>
-      <ul id="lesson-list"></ul>
+  <main id="book-main">
+    <section class="book-hero" aria-labelledby="book-title">
+      <div class="book-width book-hero-inner">
+        <img class="hero-landscape" src="assets/textbook/fuji-watercolor.webp" alt="淡墨水彩中的富士山、湖畔與鳥居" fetchpriority="high">
+        <div class="book-hero-copy">
+          <p class="book-kicker" lang="ja">ことばで、もっと広い世界へ</p>
+          <h1 id="book-title">中級日本語・有聲電子課本</h1>
+          <p class="book-english" lang="en">Interactive Japanese Audio Textbook <span class="book-level">N3 レベル</span></p>
+          <p class="book-hero-note">聽見日語・讀懂文化・走向更寬廣的世界</p>
+        </div>
+        <p class="hero-margin-note" lang="ja">学ぶことは、<br>新しい景色に出会うこと。</p>
+      </div>
     </section>
-
-    <section class="card">
-      <h2>專案狀態</h2>
-      <p>第4課已整合為單一課程，並依教材順序整理文法、會話、閱讀、練習與日文 AI 發音導讀。</p>
+    <section class="editorial-section book-width" aria-labelledby="continue-title">
+      <div class="editorial-heading"><h2 id="continue-title">繼續學習</h2><p lang="ja">前回の続きから、日本語の旅を。</p></div>
+      <div class="continue-spread">
+        <img class="continue-image" src="assets/textbook/coastal-train.webp" alt="地方電車沿著寧靜海岸行駛" width="480" height="250">
+        <div class="continue-copy">
+          <h3><span class="lesson-numeral">第 5 課</span><span lang="ja">どう行ったらいいでしょうか</span></h3>
+          <p>從問路的第一句，走進日常會話。</p>
+          <a class="book-button" data-continue-link data-learning-link href="lessons/k5-どう行ったらいいでしょうか/index.html#chapter-vocabulary"><span class="button-play" aria-hidden="true">▶</span>繼續學習<span aria-hidden="true">›</span></a>
+        </div>
+        <aside class="margin-verse" aria-label="學習寄語"><p lang="ja">言葉は、<br>どこかへ行くための<br>切符です。</p><span></span><b class="margin-seal" aria-hidden="true">学</b></aside>
+      </div>
     </section>
-
-    <section class="card">
-      <h2>快速連結</h2>
-      <p><a href="lessons/k4-伝言お願いできますか/index.html">前往第4課完整教材</a></p>
-      <p><a href="lessons/k4-伝言お願いできますか/data.json">查看課程資料 JSON</a></p>
+    <section class="contents-section editorial-section" id="contents" aria-labelledby="contents-title">
+      <div class="book-width">
+        <div class="editorial-heading"><h2 id="contents-title">目次</h2><p lang="ja">課ごとに、新しい世界が広がります。</p><a class="contents-link" href="#lesson-list">すべての課を見る →</a></div>
+        <ul id="lesson-list" aria-label="課程目錄"><li>正在載入課程目次…</li></ul>
+      </div>
     </section>
   </main>
-
+  <footer class="book-footer">
+    <div class="book-width book-footer-inner"><a class="book-brand" href="index.html"><svg class="book-mark" viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M24 8C17 2 9 3 3 5v29c7-3 14-2 21 3 7-5 14-6 21-3V5C39 3 31 2 24 8Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M24 8v29" stroke="currentColor" stroke-width="1.5"/></svg><span><strong>中級日本語・有聲電子課本</strong><small>Interactive Japanese Audio Textbook</small></span></a><p lang="ja">—　ことばで、つながる。　—</p><p>聆聽・閱讀・練習</p></div>
+  </footer>
   <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

@@ -138,6 +138,11 @@ body {
   margin-top: 1.5rem;
 }
 
+.lesson-section,
+.speech-toolbar {
+  scroll-margin-top: 110px;
+}
+
 .chapter-nav {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
