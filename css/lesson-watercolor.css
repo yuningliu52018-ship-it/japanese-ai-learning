@@ -1,0 +1,165 @@
+/* Lesson 05 only. Visual rules retained from 0c53123:css/textbook.css.
+ * Scoped without raising selector specificity; current renderer and speech core unchanged.
+ * Homepage, old table/sidebar renderer rules are intentionally excluded.
+ */
+.watercolor-current { --paper: #F7F4ED; --paper-light: #FCFBF8; --ink: #2C302E; --indigo: #1E3A5F; --deep: #172B45; --wash: #E7EDF3; --red: #B65A4A; --line: #dcdad2; --muted: #727773; --accent: var(--indigo); --accent-soft: var(--wash); --border: var(--line); --surface: var(--paper-light); --shadow: none; background: var(--paper-light); color: var(--ink); font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif CJK TC", PMingLiU, Georgia, serif; -webkit-font-smoothing: antialiased; }
+.watercolor-current * { box-sizing: border-box; }
+.watercolor-current a { color: inherit; text-decoration: none; }
+.watercolor-current button,  .watercolor-current select { font: inherit; }
+.watercolor-current button,  .watercolor-current a,  .watercolor-current summary { -webkit-tap-highlight-color: transparent; }
+.watercolor-current :focus-visible { outline: 2px solid var(--indigo); outline-offset: 4px; }
+.watercolor-current [hidden] { display: none !important; }
+:where(.watercolor-current) .book-width { width: min(1160px, 100% - 96px); margin-inline: auto; }
+:where(.watercolor-current) .book-masthead { height: 72px; border-bottom: 1px solid var(--line); background: var(--paper-light); }
+:where(.watercolor-current) .book-masthead-inner { height: 100%; display: flex; align-items: center; gap: 36px; }
+:where(.watercolor-current) .book-brand { display: flex; align-items: center; gap: 13px; flex-shrink: 0; color: var(--deep) !important; }
+:where(.watercolor-current) .book-mark { width: 42px; height: 36px; }
+:where(.watercolor-current) .book-brand strong { display: block; font-size: 16px; letter-spacing: 0.1em; line-height: 1.5; }
+:where(.watercolor-current) .book-brand small { display: block; font-size: 10px; letter-spacing: 0.08em; }
+:where(.watercolor-current) .book-menu { display: flex; align-items: center; gap: 34px; margin-left: auto; height: 100%; font-size: 14px; letter-spacing: 0.1em; }
+:where(.watercolor-current) .book-menu a { position: relative; padding-block: 23px; white-space: nowrap; }
+:where(.watercolor-current) .book-menu a[aria-current]::after { content: ""; position: absolute; bottom: 15px; height: 2px; background: var(--red); left: 0px; right: 0px; }
+:where(.watercolor-current) .book-edition { border-left: 1px solid var(--line); padding-left: 24px; font-size: 11px; letter-spacing: 0.18em; color: var(--muted); }
+:where(.watercolor-current) .book-breadcrumb { display: flex; gap: 12px; font-size: 12px; color: var(--muted); padding-block: 18px 8px; letter-spacing: 0.05em; }
+:where(.watercolor-current) .lesson-opening { background: var(--paper); position: relative; overflow: hidden; }
+:where(.watercolor-current) .lesson-opening-inner { min-height: 202px; position: relative; }
+:where(.watercolor-current) .lesson-opening-art { position: absolute; right: -9%; top: -40px; width: 46%; height: 315px; object-fit: cover; object-position: 62% 50%; mix-blend-mode: multiply; mask-image: linear-gradient(90deg, transparent, rgb(0, 0, 0) 30%); }
+:where(.watercolor-current) .lesson-title-group { display: flex; align-items: center; gap: 26px; padding: 24px 0px 33px; position: relative; z-index: 1; }
+:where(.watercolor-current) .lesson-stamp { width: 76px; height: 88px; flex: 0 0 76px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--red); color: rgb(255, 255, 255); border-radius: 3px; }
+:where(.watercolor-current) .lesson-stamp span { font-size: 11px; letter-spacing: 0.07em; }
+:where(.watercolor-current) .lesson-stamp strong { font-size: 46px; line-height: 1.15; font-weight: 400; }
+:where(.watercolor-current) .lesson-title-copy { max-width: 82%; }
+:where(.watercolor-current) .lesson-title-copy h1 { color: var(--deep); margin: 0px; font-size: 35px; line-height: 1.65; letter-spacing: 0.02em; font-weight: 700; }
+:where(.watercolor-current) .lesson-title-copy p { font-size: 16px; letter-spacing: 0.12em; margin: 8px 0px 0px; color: rgb(82, 93, 99); }
+.watercolor-current .lesson-title-copy rt { font-size: 0.36em; }
+.watercolor-current #lesson-root { background: none; border: 0px; padding: 0px; box-shadow: none; }
+.watercolor-current .speech-toolbar { position: relative; top: auto; margin: 20px 0px 22px; padding: 15px 18px; min-height: 94px; background: rgb(238, 236, 229); border: 0px; border-radius: 3px; box-shadow: none; backdrop-filter: none; display: grid; grid-template-columns: 146px minmax(180px, 1fr) 126px 195px 122px; gap: 17px; align-items: center; }
+.watercolor-current rt { font-size: 0.56em; color: rgb(117, 128, 119); font-weight: 400; }
+.watercolor-current ruby { ruby-position: over; }
+.watercolor-current .speech-actions { display: inline-flex; gap: 3px; }
+.watercolor-current .speech-button,  .watercolor-current .shadow-button { color: var(--indigo); background: transparent; border: 1px solid rgb(198, 205, 207); border-radius: 3px; min-height: 28px; padding: 3px 8px; font-size: 11px; cursor: pointer; }
+.watercolor-current .speech-button:hover,  .watercolor-current .shadow-button:hover { background: var(--wash); }
+.watercolor-current:not(.shadow-mode-on) .shadow-button { display: none; }
+.watercolor-current .shadowing-panel { position: fixed; bottom: 20px; right: 25px; width: min(490px, 100% - 32px); z-index: 40; max-height: 78vh; overflow: auto; background: var(--paper-light); border: 1px solid rgb(187, 195, 198); box-shadow: rgba(23, 43, 69, 0.125) 0px 6px 35px; border-radius: 5px; padding: 22px; }
+.watercolor-current .shadow-target { background: var(--wash); color: var(--deep); border-color: var(--line); }
+.watercolor-current .shadow-record { background: var(--indigo); border-color: var(--indigo); }
+.watercolor-current .shadowing-heading strong { color: var(--indigo); }
+@media (min-width: 761px) {
+.watercolor-current .book-masthead { height: 62px; }
+.watercolor-current .book-masthead-inner { gap: 30px; }
+.watercolor-current .book-menu { margin-left: clamp(24px, 8vw, 110px); gap: 38px; font-size: 15px; }
+.watercolor-current .book-menu a { padding-block: 18px; }
+.watercolor-current .book-menu a[aria-current]::after { bottom: 10px; }
+.watercolor-current .book-edition { margin-left: auto; }
+.watercolor-current .lesson-opening-inner { min-height: 0px; }
+.watercolor-current .book-breadcrumb { padding-block: 15px 5px; }
+.watercolor-current .lesson-title-group { gap: 27px; padding: 10px 0px 17px; }
+.watercolor-current .lesson-stamp { width: 85px; flex-basis: 85px; height: 88px; border-radius: 2px; }
+.watercolor-current .lesson-stamp span { font-size: 12px; }
+.watercolor-current .lesson-stamp strong { font-size: 49px; }
+.watercolor-current .lesson-title-copy h1 { font-size: clamp(29px, 3.44vw, 44px); line-height: 1.35; letter-spacing: 0.025em; }
+.watercolor-current .lesson-title-copy p { font-size: 19px; letter-spacing: 0.15em; margin-top: 10px; }
+.watercolor-current .lesson-opening-art { top: 6px; right: -6%; width: 43%; height: 250px; object-position: 66% 12%; opacity: 0.73; mask-image: linear-gradient(90deg, transparent, rgb(0, 0, 0) 36%), linear-gradient(transparent, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 92%, transparent); mask-composite: intersect; }
+.watercolor-current .speech-toolbar { min-height: 80px; margin-block: 14px 9px; padding: 10px 18px; grid-template-columns: 158px minmax(160px, 1fr) 138px 205px 128px; gap: 14px; border-radius: 0px; border-block: 1px solid rgb(224, 222, 213); background: rgb(241, 238, 231); }
+}
+@media (max-width: 760px) {
+.watercolor-current .book-width { width: calc(100% - 40px); min-width: 0px; }
+.watercolor-current img { max-width: 100%; }
+.watercolor-current .book-masthead { height: auto; }
+.watercolor-current .book-masthead-inner { flex-direction: column; align-items: stretch; gap: 10px; padding-block: 16px 10px; }
+.watercolor-current .book-brand { min-width: 0px; max-width: 100%; gap: 10px; }
+.watercolor-current .book-brand > span { min-width: 0px; }
+.watercolor-current .book-brand strong { font-size: 14px; letter-spacing: 0.04em; }
+.watercolor-current .book-brand small { font-size: 9px; letter-spacing: 0.02em; }
+.watercolor-current .book-mark { flex: 0 0 34px; width: 34px; height: 32px; }
+.watercolor-current .book-menu { display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 12px; margin: 0px; height: auto; font-size: 13px; }
+.watercolor-current .book-menu a { padding: 9px 0px; text-align: center; }
+.watercolor-current .book-menu a[aria-current]::after { bottom: 1px; }
+.watercolor-current .book-edition { border: 0px; padding: 0px; text-align: right; font-size: 10px; }
+ .watercolor-current .lesson-opening { min-height: 0px; overflow: visible; }
+.watercolor-current .lesson-opening-inner { display: flex; flex-direction: column; min-height: 0px; }
+.watercolor-current .book-breadcrumb { order: 0; flex-wrap: wrap; font-size: 11px; }
+.watercolor-current .lesson-title-group { order: 1; flex-direction: column; align-items: flex-start; min-width: 0px; gap: 17px; padding-block: 18px; }
+.watercolor-current .lesson-stamp { width: 61px; height: 70px; flex: 0 0 auto; }
+.watercolor-current .lesson-stamp strong { font-size: 36px; }
+.watercolor-current .lesson-title-copy { width: 100%; max-width: 100%; min-width: 0px; }
+.watercolor-current .lesson-title-copy h1 { font-size: 27px; line-height: 1.7; text-wrap: balance; }
+.watercolor-current .lesson-title-copy p { font-size: 13px; line-height: 1.8; }
+.watercolor-current .lesson-opening-art { order: 2; position: static; width: 100%; height: 180px; object-position: 65% 60%; mask-image: linear-gradient(transparent, black 20%); }
+.watercolor-current .speech-toolbar { width: 100%; min-width: 0px; grid-template-columns: minmax(0px, 1fr); gap: 16px; padding: 18px; }
+.watercolor-current .speech-toolbar > * { min-width: 0px; }
+.watercolor-current .shadowing-panel { right: 16px; padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+.watercolor-current * { scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* Integration with the current lesson structure. */
+.watercolor-current { --bg: var(--paper-light); --text: var(--ink); }
+.watercolor-current .layout { max-width: 1000px; padding-top: 0; }
+.watercolor-current #lesson-root { min-width: 0; }
+.watercolor-current .lesson-title-copy h1 { white-space: normal; }
+.watercolor-current .lesson-title-group { padding-bottom: 30px; }
+.watercolor-current .speech-toolbar {
+  display: flex; flex-wrap: wrap; position: static; min-height: 0;
+  margin: 20px 0; padding: 14px 16px; gap: 12px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 3px;
+}
+.watercolor-current .speech-toolbar-info,
+.watercolor-current .speech-controls { display: flex; flex-wrap: wrap; min-width: 0; gap: 8px; }
+.watercolor-current .speech-controls select { max-width: 100%; min-width: 0; }
+.watercolor-current .speech-toolbar small { flex-basis: 100%; }
+.watercolor-current .speech-actions { flex-wrap: wrap; margin-left: 0; }
+.watercolor-current #lesson-root.shadow-mode-active .shadow-button { display: inline-flex; }
+.watercolor-current .chapter-nav a { background: var(--paper); border-radius: 3px; }
+.watercolor-current .chapter-heading {
+  background: var(--paper); border-color: var(--line);
+  border-left-color: var(--red); border-radius: 3px; padding-right: 120px;
+  position: relative; min-height: 86px;
+}
+.watercolor-current .chapter-heading::after {
+  content: ""; position: absolute; inset: 4px 4px 4px auto; width: 108px;
+  background: url("../assets/textbook/fuji-watercolor.webp") center 55% / cover;
+  mix-blend-mode: multiply; opacity: .7; pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, #000 35%, #000 85%, transparent);
+}
+.watercolor-current .lesson-grid { grid-template-columns: minmax(0, 1fr); }
+.watercolor-current .lesson-item {
+  min-width: 0; background: var(--paper-light); border-color: var(--line);
+  border-radius: 3px; border-top: 2px solid #d7dfdf; box-shadow: none;
+}
+.watercolor-current .lesson-item h3 { color: var(--deep); }
+.watercolor-current .lesson-item:has(> details.lesson-examples-details) {
+  position: relative; background: var(--paper);
+}
+.watercolor-current .lesson-item:has(> details.lesson-examples-details)::before {
+  content: ""; position: absolute; right: 8px; top: 8px; width: 104px; height: 66px;
+  background: url("../assets/textbook/coastal-train.webp") 75% 65% / cover;
+  opacity: .5; mix-blend-mode: multiply; pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, #000 35%, #000 85%, transparent);
+}
+.watercolor-current .lesson-item:has(> details.lesson-examples-details) > h3 { padding-right: 105px; }
+.watercolor-current .lesson-kv {
+  background: #f0f1eb; border-color: var(--line); border-radius: 3px;
+}
+.watercolor-current details.lesson-examples-details summary {
+  color: var(--indigo); background: var(--wash); border-color: var(--line); border-radius: 3px;
+}
+.watercolor-current .vocabulary-example { background: var(--paper); border-color: var(--indigo); }
+.watercolor-current .lesson-supplement-note { background: var(--paper); border-left-color: var(--red); color: var(--ink); }
+.watercolor-current .lesson-section-heading { flex-wrap: wrap; }
+.watercolor-current img, .watercolor-current audio { max-width: 100%; }
+@media (max-width: 760px) {
+  .watercolor-current .layout { padding: 0 20px 48px; width: 100%; }
+  .watercolor-current .lesson-item { padding: 18px 14px; overflow-wrap: anywhere; }
+  .watercolor-current .lesson-item:has(> details.lesson-examples-details) > h3 { min-height: 58px; }
+  .watercolor-current .speech-toolbar { padding: 14px; }
+  .watercolor-current .speech-toolbar-info { align-items: flex-start; }
+  .watercolor-current .speech-controls { width: 100%; }
+  .watercolor-current .speech-controls select { flex-shrink: 1; }
+  .watercolor-current .chapter-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .watercolor-current .chapter-heading { padding-right: 80px; }
+  .watercolor-current .chapter-heading::after { width: 70px; opacity: .5; }
+  .watercolor-current .audio-track-card { grid-template-columns: minmax(0, 1fr); }
+  .watercolor-current .lesson-title-group { padding-bottom: 18px; }
+}

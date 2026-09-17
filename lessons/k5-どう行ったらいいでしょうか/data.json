@@ -73,8 +73,8 @@
     {"japanese":"それで","plainText":"それで","chinese":"因此、所以（承接自然結果）","grammarNote":"「原因A。それで，事實結果B」：B是由A自然導致的結果，通常不用來接說話者主觀選擇的命令、意志或對策。可和「そこで」比較。","examples":[{"plain":"雨が降りました。それで、道が込んでいます。","ruby":"<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りました。それで、<ruby>道<rt>みち</rt></ruby>が<ruby>込<rt>こ</rt></ruby>んでいます。","chinese":"下雨了，所以道路很擁擠。"},{"plain":"最近、太ってきました。それで、昔のズボンが全然入らなくなりました。","ruby":"<ruby>最近<rt>さいきん</rt></ruby>、<ruby>太<rt>ふと</rt></ruby>ってきました。それで、<ruby>昔<rt>むかし</rt></ruby>のズボンが<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>入<rt>はい</rt></ruby>らなくなりました。","chinese":"最近變胖了，所以以前的褲子完全穿不下了。"}],"jpRuby":"それで"},
     {"japanese":"普通","plainText":"普通（ふつう）","chinese":"普通、一般","examples":[{"plain":"今日は普通に仕事をしました。","ruby":"<ruby>今日<rt>きょう</rt></ruby>は<ruby>普通<rt>ふつう</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>をしました。","chinese":"今天照常工作。"}],"jpRuby":"<ruby>普通<rt>ふつう</rt></ruby>"},
     {"japanese":"経緯度","plainText":"経緯度（けいいど）","chinese":"經緯度","examples":[{"plain":"経緯度で場所を表します。","ruby":"<ruby>経緯度<rt>けいいど</rt></ruby>で<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>します。","chinese":"用經緯度表示地點。"}],"jpRuby":"<ruby>経緯度<rt>けいいど</rt></ruby>"},
-    {"japanese":"無意識に","plainText":"無意識に（むいしきに）","chinese":"無意識地、不知不覺地","examples":[{"plain":"無意識に同じ道を選びました。","ruby":"<ruby>無意識<rt>むいしき</rt></ruby>に<ruby>同<rt>おな</rt></ruby>じ<ruby>道<rt>みち</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びました。","chinese":"不知不覺選了同一條路。"}],"jpRuby":"<ruby>無意識<rt>むいしき</rt></ruby>に"},
-    {"japanese":"現れ","plainText":"現れ（あらわれ）","chinese":"表現、顯現","examples":[{"plain":"行動は気持ちの現れです。","ruby":"<ruby>行動<rt>こうどう</rt></ruby>は<ruby>気持<rt>きも</rt></ruby>ちの<ruby>現<rt>あらわ</rt></ruby>れです。","chinese":"行動是心情的表現。"}],"jpRuby":"<ruby>現<rt>あらわ</rt></ruby>れ"},
+    {"japanese":"無意識に","plainText":"無意識に（むいしきに）","chinese":"無意識地、不知不覺地","grammarNote":"表示在沒有自覺、不經思考的情況下做出的行動。","examples":[{"plain":"無意識に同じ道を選びました。","ruby":"<ruby>無意識<rt>むいしき</rt></ruby>に<ruby>同<rt>おな</rt></ruby>じ<ruby>道<rt>みち</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びました。","chinese":"不知不覺選了同一條路。"},{"plain":"緊張して無意識に髪を触ってしまう。","ruby":"<ruby>緊張<rt>きんちょう</rt></ruby>して<ruby>無意識<rt>むいしき</rt></ruby>に<ruby>髪<rt>かみ</rt></ruby>を<ruby>触<rt>さわ</rt></ruby>ってしまう。","chinese":"一緊張就下意識玩弄頭髮。"},{"plain":"暇な時、無意識にスマホを見てしまう。","ruby":"<ruby>暇<rt>ひま</rt></ruby>な<ruby>時<rt>とき</rt></ruby>、<ruby>無意識<rt>むいしき</rt></ruby>にスマホを<ruby>見<rt>み</rt></ruby>てしまう。","chinese":"空閒時不知不覺就滑起手機。"},{"plain":"勉強を重ねることで、無意識に正しい日本語が口から出てくるようになる。","ruby":"<ruby>勉強<rt>べんきょう</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねることで、<ruby>無意識<rt>むいしき</rt></ruby>に<ruby>正<rt>ただ</rt></ruby>しい<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>口<rt>くち</rt></ruby>から<ruby>出<rt>で</rt></ruby>てくるようになる。","chinese":"透過不斷累積學習，正確的日語會自然脫口而出。"}],"jpRuby":"<ruby>無意識<rt>むいしき</rt></ruby>に"},
+    {"japanese":"表れ","plainText":"表れ（あらわれ）","chinese":"表現、展現","grammarNote":"動詞「あらわれます」的名詞化形式。指抽象的心情、感情、態度或思想的流露與展現。","examples":[{"plain":"行動は気持ちの表れです。","ruby":"<ruby>行動<rt>こうどう</rt></ruby>は<ruby>気持<rt>きも</rt></ruby>ちの<ruby>表<rt>あらわ</rt></ruby>れです。","chinese":"行動是心情的展現。"},{"plain":"子供を心配するのは、母親の愛情の表れだ。","ruby":"<ruby>子供<rt>こども</rt></ruby>を<ruby>心配<rt>しんぱい</rt></ruby>するのは、<ruby>母親<rt>ははおや</rt></ruby>の<ruby>愛情<rt>あいじょう</rt></ruby>の<ruby>表<rt>あらわ</rt></ruby>れだ。","chinese":"擔心孩子是母親愛情的展現。"},{"plain":"彼の強い発言は、何としても試合に勝ちたいという気持ちの表れだ。","ruby":"<ruby>彼<rt>かれ</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>い<ruby>発言<rt>はつげん</rt></ruby>は、<ruby>何<rt>なに</rt></ruby>としても<ruby>試合<rt>しあい</rt></ruby>に<ruby>勝<rt>か</rt></ruby>ちたいという<ruby>気持<rt>きも</rt></ruby>ちの<ruby>表<rt>あらわ</rt></ruby>れだ。","chinese":"他強烈的發言，正是不管怎樣都想在比賽中獲勝的心情展現。"}],"jpRuby":"<ruby>表<rt>あらわ</rt></ruby>れ"},
     {"japanese":"上下","plainText":"上下（じょうげ）","chinese":"上下","examples":[{"plain":"写真の上下を確認してください。","ruby":"<ruby>写真<rt>しゃしん</rt></ruby>の<ruby>上下<rt>じょうげ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>してください。","chinese":"請確認照片的上下方向。"}],"jpRuby":"<ruby>上下<rt>じょうげ</rt></ruby>"},
     {"japanese":"左右","plainText":"左右（さゆう）","chinese":"左右","examples":[{"plain":"道を渡る前に左右を見ます。","ruby":"<ruby>道<rt>みち</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に<ruby>左右<rt>さゆう</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。","chinese":"過馬路前看左右兩邊。"}],"jpRuby":"<ruby>左右<rt>さゆう</rt></ruby>"},
     {"japanese":"少なくとも","plainText":"少なくとも（すくなくとも）","chinese":"至少","examples":[{"plain":"少なくとも一時間はかかります。","ruby":"<ruby>少<rt>すく</rt></ruby>なくとも<ruby>一時間<rt>いちじかん</rt></ruby>はかかります。","chinese":"至少需要一小時。"}],"jpRuby":"<ruby>少<rt>すく</rt></ruby>なくとも"},
@@ -179,18 +179,185 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "118–119頁｜4 ～（よ）うとする／しない 完整內容",
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "118–119頁｜4 ～（よ）うとする／～（よ）うとしない 核心概念",
       "items": [
-        {"topic":"課本例句｜正要出門","japanese":"今朝出かけようとしたとき、電話がかかってきた。","plainText":"今朝出かけようとしたとき、電話がかかってきた。","chinese":"今天早上正要出門時，電話打來了。","jpRuby":"<ruby>今朝<rt>けさ</rt></ruby><ruby>出<rt>で</rt></ruby>かけようとしたとき、<ruby>電話<rt>でんわ</rt></ruby>がかかってきた。"},
-        {"topic":"課本例句｜正要接電話","japanese":"電話に出ようとしたら、切れてしまった。","plainText":"電話に出ようとしたら、切れてしまった。","chinese":"正要接電話時，電話卻斷了。","jpRuby":"<ruby>電話<rt>でんわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>ようとしたら、<ruby>切<rt>き</rt></ruby>れてしまった。"},
-        {"topic":"練習例｜節目被打斷","japanese":"あの番組を見ようとしたら、息子が友達を連れて帰って来たんです。","plainText":"あの番組を見ようとしたら、息子が友達を連れて帰って来たんです。","chinese":"正要看那個節目時，兒子帶朋友回來了。","jpRuby":"あの<ruby>番組<rt>ばんぐみ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ようとしたら、<ruby>息子<rt>むすこ</rt></ruby>が<ruby>友達<rt>ともだち</rt></ruby>を<ruby>連<rt>つ</rt></ruby>れて<ruby>帰<rt>かえ</rt></ruby>って<ruby>来<rt>き</rt></ruby>たんです。"},
-        {"topic":"練習1｜正要回家","japanese":"昨日はすぐ帰ろうとしたら、課長に仕事を頼まれたんです。","plainText":"昨日はすぐ帰ろうとしたら、課長に仕事を頼まれたんです。","chinese":"昨天正要立刻回家時，卻被課長交付了工作。","jpRuby":"<ruby>昨日<rt>きのう</rt></ruby>はすぐ<ruby>帰<rt>かえ</rt></ruby>ろうとしたら、<ruby>課長<rt>かちょう</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>まれたんです。"},
-        {"topic":"練習2｜正要買衣服","japanese":"バーゲンセールであの服を買おうとしたら、ほかの人が持って行ってしまったんです。","plainText":"バーゲンセールであの服を買おうとしたら、ほかの人が持って行ってしまったんです。","chinese":"特賣時正要買那件衣服，卻被別人拿走了。","jpRuby":"バーゲンセールであの<ruby>服<rt>ふく</rt></ruby>を<ruby>買<rt>か</rt></ruby>おうとしたら、ほかの<ruby>人<rt>ひと</rt></ruby>が<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>ってしまったんです。"},
-        {"topic":"課本例句｜無法忘記","japanese":"彼女のことを忘れようとしたが、忘れられない。","plainText":"彼女のことを忘れようとしたが、忘れられない。","chinese":"雖然試著忘記她，卻忘不了。","jpRuby":"<ruby>彼女<rt>かのじょ</rt></ruby>のことを<ruby>忘<rt>わす</rt></ruby>れようとしたが、<ruby>忘<rt>わす</rt></ruby>れられない。"},
-        {"topic":"課本例句｜不肯聽意見","japanese":"彼はほかの人の意見を聞こうとしない。","plainText":"彼はほかの人の意見を聞こうとしない。","chinese":"他不肯聽別人的意見。","jpRuby":"<ruby>彼<rt>かれ</rt></ruby>はほかの<ruby>人<rt>ひと</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>こうとしない。"},
-        {"topic":"練習例｜戒菸","japanese":"たばこはやめましたか。――いいえ、やめようとしたんですが、やめられなかったんです。","plainText":"たばこはやめましたか。――いいえ、やめようとしたんですが、やめられなかったんです。","chinese":"戒菸了嗎？——沒有，雖然試著戒，但沒能戒掉。","jpRuby":"たばこはやめましたか。――いいえ、やめようとしたんですが、やめられなかったんです。"},
-        {"topic":"練習1｜表白","japanese":"彼女に好きだと言いましたか。――いいえ、言おうとしたんですが、言えなかったんです。","plainText":"彼女に好きだと言いましたか。――いいえ、言おうとしたんですが、言えなかったんです。","chinese":"有對她說喜歡她嗎？——沒有，雖然想說，卻說不出口。","jpRuby":"<ruby>彼女<rt>かのじょ</rt></ruby>に<ruby>好<rt>す</rt></ruby>きだと<ruby>言<rt>い</rt></ruby>いましたか。――いいえ、<ruby>言<rt>い</rt></ruby>おうとしたんですが、<ruby>言<rt>い</rt></ruby>えなかったんです。"},
-        {"topic":"練習2｜吃生魚片","japanese":"刺身を食べたことがありますか。――いいえ、食べようとしたんですが、食べられなかったんです。","plainText":"刺身を食べたことがありますか。――いいえ、食べようとしたんですが、食べられなかったんです。","chinese":"吃過生魚片嗎？——沒有，雖然試著吃，卻吃不下。","jpRuby":"<ruby>刺身<rt>さしみ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたことがありますか。――いいえ、<ruby>食<rt>た</rt></ruby>べようとしたんですが、<ruby>食<rt>た</rt></ruby>べられなかったんです。"}
+        {
+          "topic": "1. ～ようとする",
+          "japanese": "赤ちゃんが一生懸命立とうとしている。",
+          "jpRuby": "<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>立<rt>た</rt></ruby>とうとしている。",
+          "plainText": "赤ちゃんが一生懸命立とうとしている。",
+          "chinese": "試著～／準備要做～（小嬰兒正在努力試著站起來。）",
+          "grammarNote": "動詞意向形＋とする，表示嘗試進行某動作或正擺出動作架勢。",
+          "examples": [
+            {
+              "ruby": "<ruby>初恋<rt>はつこい</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>そうとしたが、<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せなかった。",
+              "plain": "初恋の人の名前を思い出そうとしたが、思い出せなかった。",
+              "chinese": "想努力回想初戀對象的名字，但想不起來。"
+            },
+            {
+              "ruby": "<ruby>猫<rt>ねこ</rt></ruby>を<ruby>撫<rt>な</rt></ruby>でようとしたが、<ruby>逃<rt>に</rt></ruby>げられた。",
+              "plain": "猫を撫でようとしたが、逃げられた。",
+              "chinese": "正想摸貓，結果牠跑掉了。"
+            },
+            {
+              "ruby": "<ruby>彼女<rt>かのじょ</rt></ruby>のことを<ruby>忘<rt>わす</rt></ruby>れようとしたが、<ruby>忘<rt>わす</rt></ruby>れられない。",
+              "plain": "彼女のことを忘れようとしたが、忘れられない。",
+              "chinese": "雖然試著忘記她，卻忘不了。（課本例句）"
+            },
+            {
+              "ruby": "<ruby>臭豆腐<rt>チョウドウフ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べようとしたが、やっぱり<ruby>無理<rt>むり</rt></ruby>だった。",
+              "plain": "臭豆腐を食べようとしたが、やっぱり無理だった。",
+              "chinese": "試著挑戰吃臭豆腐，但果然還是不行。"
+            },
+            {
+              "ruby": "<ruby>台北駅<rt>たいほくえき</rt></ruby>の<ruby>地下街<rt>ちかがい</rt></ruby>で<ruby>出口<rt>でぐち</rt></ruby>を<ruby>探<rt>さが</rt></ruby>そうとしたが、<ruby>迷路<rt>めいろ</rt></ruby>みたいで<ruby>迷<rt>まよ</rt></ruby>ってしまった。",
+              "plain": "台北駅の地下街で出口を探そうとしたが、迷路みたいで迷ってしまった。",
+              "chinese": "試著在台北車站地下街找出口，但像迷宮一樣迷路了。"
+            },
+            {
+              "ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>、<ruby>眠<rt>ねむ</rt></ruby>くて<ruby>目<rt>め</rt></ruby>が<ruby>閉<rt>と</rt></ruby>じそうになったが、なんとか<ruby>目<rt>め</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けようとした。",
+              "plain": "授業中、眠くて目が閉じそうになったが、なんとか目を開けようとした。",
+              "chinese": "上課時很睏快閉上眼睛，但努力想把眼睛睜開。"
+            },
+            {
+              "ruby": "たばこはやめましたか。――いいえ、やめようとしたんですが、やめられなかったんです。",
+              "plain": "たばこはやめましたか。――いいえ、やめようとしたんですが、やめられなかったんです。",
+              "chinese": "戒菸了嗎？——沒有，雖然試著戒，但沒能戒掉。（課本練習）"
+            },
+            {
+              "ruby": "<ruby>彼女<rt>かのじょ</rt></ruby>に<ruby>好<rt>す</rt></ruby>きだと<ruby>言<rt>い</rt></ruby>いましたか。――いいえ、<ruby>言<rt>い</rt></ruby>おうとしたんですが、<ruby>言<rt>い</rt></ruby>えなかったんです。",
+              "plain": "彼女に好きだと言いましたか。――いいえ、言おうとしたんですが、言えなかったんです。",
+              "chinese": "有對她說喜歡她嗎？——沒有，雖然想說，卻說不出口。（課本練習）"
+            },
+            {
+              "ruby": "<ruby>刺身<rt>さしみ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたことがありますか。――いいえ、<ruby>食<rt>た</rt></ruby>べようとしたんですが、<ruby>食<rt>た</rt></ruby>べられなかったんです。",
+              "plain": "刺身を食べたことがありますか。――いいえ、食べようとしたんですが、食べられなかったんです。",
+              "chinese": "吃過生魚片嗎？——沒有，雖然試著吃，卻吃不下。（課本練習）"
+            }
+          ]
+        },
+        {
+          "topic": "2. ～ようとしたとき／～ようとしたら",
+          "japanese": "出かけようとしたとき、地震が起きた。",
+          "jpRuby": "<ruby>出<rt>で</rt></ruby>かけようとしたとき、<ruby>地震<rt>じしん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きた。",
+          "plainText": "出かけようとしたとき、地震が起きた。",
+          "chinese": "正要～的時候……（正要出門的時候，發生了地震。）",
+          "examples": [
+            {
+              "ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ろうとしたら、ドアが<ruby>閉<rt>し</rt></ruby>まった。",
+              "plain": "電車に乗ろうとしたら、ドアが閉まった。",
+              "chinese": "正要上電車時，門關起來了。"
+            },
+            {
+              "ruby": "お<ruby>風呂<rt>ふろ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ろうとしたら、<ruby>電話<rt>でんわ</rt></ruby>がかかってきた。",
+              "plain": "お風呂に入ろうとしたら、電話がかかってきた。",
+              "chinese": "正要洗澡時，電話打來了。"
+            },
+            {
+              "ruby": "<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ようとしたら、<ruby>鍵<rt>かぎ</rt></ruby>がないことに<ruby>気<rt>き</rt></ruby>づいた。",
+              "plain": "家を出ようとしたら、鍵がないことに気づいた。",
+              "chinese": "正要出門時，才發現沒有鑰匙。"
+            },
+            {
+              "ruby": "悠遊カードにチャージしようとしたら、お金が足りなかった。",
+              "plain": "悠遊カードにチャージしようとしたら、お金が足りなかった。",
+              "chinese": "正要給悠遊卡加值時，發現錢不夠。"
+            },
+            {
+              "ruby": "スマホで<ruby>調<rt>しら</rt></ruby>べようとしたら、<ruby>何<rt>なに</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べるか<ruby>忘<rt>わす</rt></ruby>れてしまった。",
+              "plain": "スマホで調べようとしたら、何を調べるか忘れてしまった。",
+              "chinese": "正要用手機查時，忘了要查什麼。"
+            },
+            {
+              "ruby": "たこ<ruby>焼<rt>や</rt></ruby>きを<ruby>食<rt>た</rt></ruby>べようとしたら、<ruby>落<rt>お</rt></ruby>としてしまった。",
+              "plain": "たこ焼きを食べようとしたら、落としてしまった。",
+              "chinese": "正要吃章魚燒時，卻掉到地上去了。"
+            },
+            {
+              "ruby": "エレベーターに<ruby>乗<rt>の</rt></ruby>ろうとしたら、ドアが<ruby>閉<rt>し</rt></ruby>まって<ruby>乗<rt>の</rt></ruby>れなかった。",
+              "plain": "エレベーターに乗ろうとしたら、ドアが閉まって乗れなかった。",
+              "chinese": "正要搭電梯時，門關上沒搭成。"
+            },
+            {
+              "ruby": "<ruby>話<rt>はな</rt></ruby>そうとしたとき、<ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>うか<ruby>忘<rt>わす</rt></ruby>れてしまった。",
+              "plain": "話そうとしたとき、何を言うか忘れてしまった。",
+              "chinese": "正要開口說話時，忘記自己要說什麼了。"
+            },
+            {
+              "ruby": "<ruby>電話<rt>でんわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>ようとしたら、<ruby>切<rt>き</rt></ruby>れてしまった。",
+              "plain": "電話に出ようとしたら、切れてしまった。",
+              "chinese": "正要接電話時，電話卻斷了。（課本例句）"
+            },
+            {
+              "ruby": "あの<ruby>番組<rt>ばんぐみ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ようとしたら、<ruby>息子<rt>むすこ</rt></ruby>が<ruby>友達<rt>ともだち</rt></ruby>を<ruby>連<rt>つ</rt></ruby>れて<ruby>帰<rt>かえ</rt></ruby>って<ruby>来<rt>き</rt></ruby>たんです。",
+              "plain": "あの番組を見ようとしたら、息子が友達を連れて帰って来たんです。",
+              "chinese": "正要看那個節目時，兒子帶朋友回來了。（課本練習）"
+            },
+            {
+              "ruby": "<ruby>昨日<rt>きのう</rt></ruby>はすぐ<ruby>帰<rt>かえ</rt></ruby>ろうとしたら、<ruby>課長<rt>かちょう</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>まれたんです。",
+              "plain": "昨日はすぐ帰ろうとしたら、課長に仕事を頼まれたんです。",
+              "chinese": "昨天正要立刻回家時，卻被課長交付了工作。（課本練習）"
+            },
+            {
+              "ruby": "バーゲンセールであの<ruby>服<rt>ふく</rt></ruby>を<ruby>買<rt>か</rt></ruby>おうとしたら、ほかの<ruby>人<rt>ひと</rt></ruby>が<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>ってしまったんです。",
+              "plain": "バーゲンセールであの服を買おうとしたら、ほかの人が持って行ってしまったんです。",
+              "chinese": "特賣時正要買那件衣服，卻被別人拿走了。（課本練習）"
+            }
+          ],
+          "supplementNote": "<strong>語感提示：</strong>不要把「としたとき＝平鋪直敘」「としたら＝一定代表突發狀況」寫成絕對文法規則。兩者在生活中多有重疊，「としたら」往往帶有一點突發、沒料到的意外語感，可作為學習上的提示，但不宜視為絕對死板的公式。"
+        },
+        {
+          "topic": "3. ～ようとしない",
+          "japanese": "彼は自分の間違いを認めようとしない。",
+          "jpRuby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>自分<rt>じぶん</rt></ruby>の<ruby>間違<rt>まちが</rt></ruby>いを<ruby>認<rt>みと</rt></ruby>めようとしない。",
+          "plainText": "彼は自分の間違いを認めようとしない。",
+          "chinese": "不願意～／根本沒有要嘗試～（他就是不願意承認自己的錯誤。）",
+          "examples": [
+            {
+              "ruby": "<ruby>父<rt>ちち</rt></ruby>は<ruby>最近<rt>さいきん</rt></ruby><ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いのに、<ruby>病院<rt>びょういん</rt></ruby>に<ruby>行<rt>い</rt></ruby>こうとしない。",
+              "plain": "父は最近体調が悪いのに、病院に行こうとしない。",
+              "chinese": "爸爸最近身體不舒服，卻不肯去醫院。"
+            },
+            {
+              "ruby": "<ruby>彼<rt>かれ</rt></ruby>はタバコをやめようとしない。",
+              "plain": "彼はタバコをやめようとしない。",
+              "chinese": "他根本沒有打算戒菸。"
+            },
+            {
+              "ruby": "<ruby>目覚<rt>めざ</rt></ruby>ましが<ruby>鳴<rt>な</rt></ruby>っても、<ruby>彼<rt>かれ</rt></ruby>は<ruby>起<rt>お</rt></ruby>きようとしない。",
+              "plain": "目覚ましが鳴っても、彼は起きようとしない。",
+              "chinese": "就算鬧鐘響了，他也不起床。"
+            },
+            {
+              "ruby": "<ruby>彼<rt>かれ</rt></ruby>はほかの<ruby>人<rt>ひと</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>こうとしない。",
+              "plain": "彼はほかの人の意見を聞こうとしない。",
+              "chinese": "他不肯聽別人的意見。（課本例句）"
+            }
+          ],
+          "supplementNote": "<strong>進階補充：～ようともしない</strong><br>語氣比「～ようとしない」更強烈，表示主詞完全消極頑固、連一絲嘗試或配合的意向都沒有。<br>例：<ruby>彼女<rt>かのじょ</rt></ruby>と<ruby>仲直<rt>なかなお</rt></ruby>りしようとしたが、<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>こうともしなかった。（想試著跟女友和好，但她甚至連聽都不肯聽。）"
+        },
+        {
+          "topic": "4. ～ようとする VS ～ようにしている",
+          "japanese": "赤ちゃんが一生懸命立とうとしている。",
+          "jpRuby": "<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>立<rt>た</rt></ruby>とうとしている。",
+          "plainText": "赤ちゃんが一生懸命立とうとしている。",
+          "chinese": "當下「試圖做」 VS 平常有意識「維持習慣」",
+          "examples": [
+            {
+              "ruby": "<ruby>健康<rt>けんこう</rt></ruby>のために、<ruby>毎日<rt>まいにち</rt></ruby><ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるようにしている。",
+              "plain": "健康のために、毎日野菜を食べるようにしている。",
+              "chinese": "為了健康，平時都有意識維持多吃蔬菜的習慣。（～ようにしている：長期習慣）"
+            },
+            {
+              "ruby": "<ruby>最近<rt>さいきん</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るようにしている。",
+              "plain": "最近は早く寝るようにしている。",
+              "chinese": "最近都盡量維持早睡的習慣。（～ようにしている：長期習慣）"
+            }
+          ],
+          "supplementNote": "<strong>核心觀念對比：</strong><br>・<strong>～ようとする</strong>：指在某個特定當下「正準備要做／努力嘗試去做某個動作」（例：立とうとしている）。<br>・<strong>～ようにしている</strong>：指長期以來有意識地「努力維持或養成某種生活習慣」（例：毎日運動するようにしている）。<br>⚠️ 請勿將兩者混為一談，它們不是同一個句型的單純變形，表達的時間尺度與語義完全不同。"
+        }
       ]
     },
     {
@@ -204,21 +371,142 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "120頁｜6 <ruby>助詞<rt>じょし</rt></ruby>＋の 完整練習",
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "120頁｜6 助詞＋の 複合助詞修飾名詞",
       "items": [
-        {"topic":"課本例句｜<ruby>友達<rt>ともだち</rt></ruby>との<ruby>約束<rt>やくそく</rt></ruby>","japanese":"あしたは友達との約束があって、行けません。","plainText":"あしたは友達との約束があって、行けません。","chinese":"明天和朋友有約，所以不能去。","jpRuby":"あしたは<ruby>友達<rt>ともだち</rt></ruby>との<ruby>約束<rt>やくそく</rt></ruby>があって、<ruby>行<rt>い</rt></ruby>けません。"},
-        {"topic":"課本例句｜<ruby>日本<rt>にほん</rt></ruby>での<ruby>生活<rt>せいかつ</rt></ruby>","japanese":"日本での生活にもう慣れましたか。","plainText":"日本での生活にもう慣れましたか。","chinese":"已經習慣在日本的生活了嗎？","jpRuby":"<ruby>日本<rt>にほん</rt></ruby>での<ruby>生活<rt>せいかつ</rt></ruby>にもう<ruby>慣<rt>な</rt></ruby>れましたか。"},
-        {"topic":"課本例句｜<ruby>母<rt>はは</rt></ruby>からの<ruby>手紙<rt>てがみ</rt></ruby>","japanese":"母からの手紙は箱の中に大切にしまってあります。","plainText":"母からの手紙は箱の中に大切にしまってあります。","chinese":"母親寄來的信被珍藏在箱子裡。","jpRuby":"<ruby>母<rt>はは</rt></ruby>からの<ruby>手紙<rt>てがみ</rt></ruby>は<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>大切<rt>たいせつ</rt></ruby>にしまってあります。"},
-        {"topic":"課本例句｜<ruby>空港<rt>くうこう</rt></ruby>までのアクセス","japanese":"羽田は空港までのアクセスがよくて、人気があります。","plainText":"羽田は空港までのアクセスがよくて、人気があります。","chinese":"羽田前往機場的交通方便，因此很受歡迎。","jpRuby":"<ruby>羽田<rt>はねだ</rt></ruby>は<ruby>空港<rt>くうこう</rt></ruby>までのアクセスがよくて、<ruby>人気<rt>にんき</rt></ruby>があります。"},
-        {"topic":"課本例句｜<ruby>恋人<rt>こいびと</rt></ruby>へのプレゼント","japanese":"これは恋人へのプレゼントです。","plainText":"これは恋人へのプレゼントです。","chinese":"這是送給戀人的禮物。","jpRuby":"これは<ruby>恋人<rt>こいびと</rt></ruby>へのプレゼントです。"},
-        {"topic":"練習1","japanese":"東京までの切符は全部売り切れだった。","plainText":"東京までの切符は全部売り切れだった。","chinese":"到東京的車票全部售完了。","jpRuby":"<ruby>東京<rt>とうきょう</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れだった。"},
-        {"topic":"練習2","japanese":"友達との旅行はとても楽しかった。","plainText":"友達との旅行はとても楽しかった。","chinese":"和朋友一起的旅行非常愉快。","jpRuby":"<ruby>友達<rt>ともだち</rt></ruby>との<ruby>旅行<rt>りょこう</rt></ruby>はとても<ruby>楽<rt>たの</rt></ruby>しかった。"},
-        {"topic":"練習3","japanese":"IMCでの研修は役に立った。","plainText":"IMCでの研修は役に立った。","chinese":"在IMC接受的研修很有幫助。","jpRuby":"IMCでの<ruby>研修<rt>けんしゅう</rt></ruby>は<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>った。"},
-        {"topic":"練習4","japanese":"彼女へのプレゼントは5千円もした。","plainText":"彼女へのプレゼントは5千円もした。","chinese":"送給她的禮物竟然花了五千日圓。","jpRuby":"<ruby>彼女<rt>かのじょ</rt></ruby>へのプレゼントは5<ruby>千円<rt>せんえん</rt></ruby>もした。"}
+        {
+          "topic": "1. ～との",
+          "japanese": "あしたは友達との約束があって、行けません。",
+          "jpRuby": "あしたは<ruby>友達<rt>ともだち</rt></ruby>との<ruby>約束<rt>やくそく</rt></ruby>があって、<ruby>行<rt>い</rt></ruby>けません。",
+          "plainText": "あしたは友達との約束があって、行けません。",
+          "chinese": "和～的（明天和朋友有約，所以不能去。）",
+          "examples": [
+            {
+              "ruby": "<ruby>友達<rt>ともだち</rt></ruby>との<ruby>旅行<rt>りょこう</rt></ruby>はとても<ruby>楽<rt>たの</rt></ruby>しかった。",
+              "plain": "友達との旅行はとても楽しかった。",
+              "chinese": "和朋友一起的旅行非常愉快。"
+            },
+            {
+              "ruby": "<ruby>先生<rt>せんせい</rt></ruby>との<ruby>相談<rt>そうだん</rt></ruby>で、<ruby>進路<rt>しんろ</rt></ruby>を<ruby>決<rt>き</rt></ruby>めた。",
+              "plain": "先生との相談で、進路を決めた。",
+              "chinese": "與老師面談後決定了升學方向。"
+            },
+            {
+              "ruby": "<ruby>家族<rt>かぞく</rt></ruby>との<ruby>時間<rt>じかん</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にしたい。",
+              "plain": "家族との時間を大切にしたい。",
+              "chinese": "想珍惜與家人共處的時光。"
+            }
+          ]
+        },
+        {
+          "topic": "2. ～での",
+          "japanese": "日本での生活にもう慣れましたか。",
+          "jpRuby": "<ruby>日本<rt>にほん</rt></ruby>での<ruby>生活<rt>せいかつ</rt></ruby>にもう<ruby>慣<rt>な</rt></ruby>れましたか。",
+          "plainText": "日本での生活にもう慣れましたか。",
+          "chinese": "在～的（已經習慣在日本的生活了嗎？）",
+          "examples": [
+            {
+              "ruby": "IMCでの<ruby>研修<rt>けんしゅう</rt></ruby>は<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>った。",
+              "plain": "IMCでの研修は役に立った。",
+              "chinese": "在IMC接受的研修很有幫助。"
+            },
+            {
+              "ruby": "<ruby>台湾<rt>たいわん</rt></ruby>での<ruby>生活<rt>せいかつ</rt></ruby>はとても<ruby>便利<rt>べんり</rt></ruby>だ。",
+              "plain": "台湾での生活はとても便利だ。",
+              "chinese": "在台灣的生活非常方便。"
+            },
+            {
+              "ruby": "<ruby>図書館<rt>としょかん</rt></ruby>での<ruby>勉強<rt>べんきょう</rt></ruby>は<ruby>集中<rt>しゅうちゅう</rt></ruby>できる。",
+              "plain": "図書館での勉強は集中できる。",
+              "chinese": "在圖書館唸書能專心。"
+            }
+          ]
+        },
+        {
+          "topic": "3. ～への",
+          "japanese": "これは恋人へのプレゼントです。",
+          "jpRuby": "これは<ruby>恋人<rt>こいびと</rt></ruby>へのプレゼントです。",
+          "plainText": "これは恋人へのプレゼントです。",
+          "chinese": "往／給／朝向～的（這是送給戀人的禮物。）",
+          "examples": [
+            {
+              "ruby": "<ruby>彼女<rt>かのじょ</rt></ruby>へのプレゼントは5<ruby>千円<rt>せんえん</rt></ruby>もした。",
+              "plain": "彼女へのプレゼントは5千円もした。",
+              "chinese": "送給她的禮物竟然花了五千日圓。"
+            },
+            {
+              "ruby": "<ruby>未来<rt>みらい</rt></ruby>への<ruby>希望<rt>きぼう</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ。",
+              "plain": "未来への希望を持つ。",
+              "chinese": "抱持對未來的希望。"
+            },
+            {
+              "ruby": "<ruby>空港<rt>くうこう</rt></ruby>へのアクセスを<ruby>調<rt>しら</rt></ruby>べる。",
+              "plain": "空港へのアクセスを調べる。",
+              "chinese": "查詢前往機場的交通方式。"
+            },
+            {
+              "ruby": "<ruby>先生<rt>せんせい</rt></ruby>への<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>伝<rt>つた</rt></ruby>える。",
+              "plain": "先生への感謝の気持ちを伝える。",
+              "chinese": "傳達對老師的感謝之情。"
+            }
+          ],
+          "supplementNote": "<strong>名詞修飾時通常不能直接使用「にの」：</strong><br>表示方向、對象等關係時常使用「への」；其他情況依原本句型改寫。<br>・⭕️ <ruby>彼女<rt>かのじょ</rt></ruby><strong>への</strong>プレゼント<br>・❌ <ruby>彼女<rt>かのじょ</rt></ruby><strong>にの</strong>プレゼント"
+        },
+        {
+          "topic": "4. ～からの",
+          "japanese": "母からの手紙は箱の中に大切にしまってあります。",
+          "jpRuby": "<ruby>母<rt>はは</rt></ruby>からの<ruby>手紙<rt>てがみ</rt></ruby>は<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>大切<rt>たいせつ</rt></ruby>にしまってあります。",
+          "plainText": "母からの手紙は箱の中に大切にしまってあります。",
+          "chinese": "從～來的（母親寄來的信被珍藏在箱子裡。）",
+          "examples": [
+            {
+              "ruby": "<ruby>台湾<rt>たいわん</rt></ruby>からの<ruby>留学生<rt>りゅうがくせい</rt></ruby>がたくさんいる。",
+              "plain": "台湾からの留学生がたくさんいる。",
+              "chinese": "有許多來自台灣的留學生。"
+            },
+            {
+              "ruby": "<ruby>先生<rt>せんせい</rt></ruby>からのアドバイスを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す。",
+              "plain": "先生からのアドバイスを思い出す。",
+              "chinese": "回想起老師給的建議。"
+            },
+            {
+              "ruby": "<ruby>海外<rt>かいがい</rt></ruby>からの<ruby>観光客<rt>かんこうきゃく</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた。",
+              "plain": "海外からの観光客が増えた。",
+              "chinese": "來自海外的觀光客增加了。"
+            }
+          ]
+        },
+        {
+          "topic": "5. ～までの",
+          "japanese": "羽田は空港までのアクセスがよくて、人気があります。",
+          "jpRuby": "<ruby>羽田<rt>はねだ</rt></ruby>は<ruby>空港<rt>くうこう</rt></ruby>までのアクセスがよくて、<ruby>人気<rt>にんき</rt></ruby>があります。",
+          "plainText": "羽田は空港までのアクセスがよくて、人気があります。",
+          "chinese": "到～為止的（羽田前往機場的交通方便，因此很受歡迎。）",
+          "examples": [
+            {
+              "ruby": "<ruby>東京<rt>とうきょう</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れだった。",
+              "plain": "東京までの切符は全部売り切れだった。",
+              "chinese": "到東京的車票全部售完了。"
+            },
+            {
+              "ruby": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>道<rt>みち</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
+              "plain": "駅までの道を教えてください。",
+              "chinese": "請告訴我去車站的路。"
+            },
+            {
+              "ruby": "<ruby>締<rt>し</rt></ruby>め<ruby>切<rt>き</rt></ruby>りまでの<ruby>日数<rt>にっすう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない。",
+              "plain": "締め切りまでの日数が少ない。",
+              "chinese": "離截止日所剩天數不多。"
+            }
+          ]
+        }
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "121頁｜7 ～だろう／～だろうと<ruby>思<rt>おも</rt></ruby>う 完整內容",
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "121頁｜7 ～だろう／～だろうと<ruby>思<rt>おも</rt></ruby>う 完整內容",
       "items": [
         {"topic":"環境推測","japanese":"世界の人口が増えすぎると、地球環境はもっと悪くなるだろう。","plainText":"世界の人口が増えすぎると、地球環境はもっと悪くなるだろう。","chinese":"如果世界人口增加過多，地球環境可能會變得更糟。","jpRuby":"<ruby>世界<rt>せかい</rt></ruby>の<ruby>人口<rt>じんこう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えすぎると、<ruby>地球環境<rt>ちきゅうかんきょう</rt></ruby>はもっと<ruby>悪<rt>わる</rt></ruby>くなるだろう。"},
         {"topic":"天氣推測","japanese":"今ごろ北海道は雪だろう。","plainText":"今ごろ北海道は雪だろう。","chinese":"北海道現在大概正在下雪吧。","jpRuby":"<ruby>今<rt>いま</rt></ruby>ごろ<ruby>北海道<rt>ほっかいどう</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>だろう。"},

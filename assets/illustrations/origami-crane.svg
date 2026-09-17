@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="100%" height="100%" fill="none" aria-hidden="true">
+  <!-- 紙鶴折線線稿（日式極簡幾何線條） -->
+  <polygon points="50,12 36,46 50,40 64,46" stroke="#1e3a5f" stroke-width="1.2" fill="#fcfbf9" stroke-linejoin="round" />
+  <polygon points="50,40 18,34 36,46" stroke="#1e3a5f" stroke-width="1.2" fill="#edf2f7" stroke-linejoin="round" />
+  <polygon points="50,40 82,34 64,46" stroke="#1e3a5f" stroke-width="1.2" fill="#f8f6f0" stroke-linejoin="round" />
+  <!-- 鶴頭與鶴尾 -->
+  <polyline points="36,46 22,58 18,54" stroke="#1e3a5f" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="64,46 80,60" stroke="#1e3a5f" stroke-width="1.2" stroke-linecap="round" />
+  <!-- 尾端／冠羽微紅點綴 -->
+  <circle cx="18" cy="54" r="1.5" fill="#c53030" />
+</svg>
