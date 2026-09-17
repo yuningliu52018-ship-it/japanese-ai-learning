@@ -1,0 +1,20 @@
+.watercolor-current .lesson-section[hidden],
+.watercolor-current .chapter-nav[hidden],
+.watercolor-current .lesson-item[hidden] { display: none !important; }
+.watercolor-current .lesson-page-navigation {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin: 16px 0 24px; padding: 14px 0;
+  border-block: 1px solid #d8d8cd; scroll-margin-top: 16px;
+}
+.watercolor-current .lesson-page-navigation button,
+.watercolor-current .lesson-page-navigation select {
+  max-width: 100%; padding: 8px; color: #1e3a5f; background: #fcfbf8;
+  border: 1px solid #bcc8ce; border-radius: 4px; font: inherit;
+}
+.watercolor-current .lesson-page-navigation button:disabled { opacity: .4; }
+.watercolor-current .lesson-page-navigation label { min-width: 0; }
+.watercolor-current .chapter-nav a[aria-current="page"] { background: #1e3a5f; color: white; }
+@media (max-width: 600px) {
+  .watercolor-current .lesson-page-navigation label { order: -1; width: 100%; }
+  .watercolor-current .lesson-page-navigation select { width: 100%; }
+}

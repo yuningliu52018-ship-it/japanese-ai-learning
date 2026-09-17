@@ -1,19 +1,15 @@
 function renderTextbookContents(lessons) {
-  const chapters = [
-    ['01', '単語', 'chapter-vocabulary'], ['02', '文法', 'chapter-grammar'],
-    ['03', '会話', 'section-dialogue'], ['04', '聴解', 'section-listening'],
-    ['05', '情境練習', 'section-scenario']
-  ];
   return lessons.map((lesson) => {
     const current = lesson.href.includes('/k5-');
+    const entryHref = current ? `${lesson.href.split('#')[0]}#textbook-pages` : lesson.href;
     const number = current ? '第 5 課' : '第 4 課';
     const title = lesson.title.split('：').slice(1).join('：') || lesson.title;
     return `<li class="toc-lesson${current ? ' is-current' : ''}">
       <img class="toc-thumbnail${current ? '' : ' is-quiet'}" src="assets/textbook/${current ? 'coastal-train' : 'fuji-watercolor'}.webp" alt="" loading="lazy">
-      <div><a class="toc-title" data-learning-link href="${lesson.href}"><span class="toc-number">${number}</span><span lang="ja">${title}</span></a>
+      <div><a class="toc-title" data-learning-link href="${entryHref}"><span class="toc-number">${number}</span><span lang="ja">${title}</span></a>
       <p class="toc-description">${lesson.description}</p>
-      ${current ? `<nav class="toc-chapters" aria-label="第五課章節">${chapters.map(([n,label,id])=>`<a data-learning-link href="${lesson.href}#${id}"><span>${n}</span>　${label}</a>`).join('')}</nav>` : ''}</div>
-      <a class="toc-arrow" data-learning-link href="${lesson.href}" aria-label="開啟${number}">›</a>
+      </div>
+      <a class="toc-arrow" data-learning-link href="${entryHref}" aria-label="開啟${number}">›</a>
     </li>`;
   }).join('');
 }

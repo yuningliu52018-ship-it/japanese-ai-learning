@@ -118,21 +118,23 @@ function splitJapaneseSentences(text = '') {
 function renderSpeechToolbar() {
   return `
     <aside class="speech-toolbar" id="speech-toolbar" aria-label="日文 AI 發音導讀">
-      <div>
-        <strong>日文 AI 發音導讀</strong>
-        <span id="speech-status" class="speech-status" aria-live="polite">點選播放即可聆聽</span>
+      <div class="speech-toolbar-info">
+        <span class="toolbar-tag">AUDIO</span>
+        <strong>教材隨身有聲伴讀</strong>
+        <span id="speech-status" class="speech-status" aria-live="polite">點選 ▶ 即可播放</span>
       </div>
       <div class="speech-controls">
-        <label for="speech-voice">日語語音</label>
+        <label for="speech-voice">語音</label>
         <select id="speech-voice" disabled aria-describedby="speech-voice-help"><option>正在載入日語語音…</option></select>
-        <button class="speech-button" type="button" data-speak="${encodeURIComponent('明日は図書館で日本語を勉強します。')}" data-rate="0.95" disabled>▶ 試聽此語音</button>
+        <button class="speech-button" type="button" data-speak="${encodeURIComponent('明日は図書館で日本語を勉強します。')}" data-rate="0.95" disabled>▶ 試聽</button>
         <label for="speech-rate">速度</label>
         <select id="speech-rate">
           <option value="0.82">慢速 0.82×</option>
           <option value="0.95" selected>正常 0.95×</option>
           <option value="1.25">快速 1.25×</option>
         </select>
-        <button class="speech-stop" type="button" data-speech-stop>停止</button>
+        <button class="speech-button shadow-toggle-btn" type="button" data-shadow-mode-toggle>🎙 開啟跟讀</button>
+        <button class="speech-stop" type="button" data-speech-stop>■ 停止</button>
       </div>
       <small id="speech-voice-help">選擇語音後按試聽；選項僅儲存在此裝置、此瀏覽器的本站，不會同步至手機或其他網址。</small>
     </aside>
@@ -681,12 +683,41 @@ function setupSpeech(root) {
       }
       playbackElement.hidden = true;
       panel.hidden = true;
+      root.classList?.remove?.('shadow-mode-active');
+      const toggleOnClose = root.querySelector?.('[data-shadow-mode-toggle]');
+      if (toggleOnClose) {
+        toggleOnClose.textContent = '🎙 開啟跟讀';
+        toggleOnClose.classList.remove('is-active');
+      }
+      return;
+    }
+
+    const shadowToggle = event.target.closest('[data-shadow-mode-toggle]');
+    if (shadowToggle) {
+      const active = root.classList?.contains?.('shadow-mode-active');
+      if (active) {
+        root.classList?.remove?.('shadow-mode-active');
+        shadowToggle.textContent = '🎙 開啟跟讀';
+        shadowToggle.classList.remove('is-active');
+        if (status) status.textContent = '已返回一般閱讀模式';
+      } else {
+        root.classList?.add?.('shadow-mode-active');
+        shadowToggle.textContent = '✓ 關閉跟讀模式';
+        shadowToggle.classList.add('is-active');
+        if (status) status.textContent = '跟讀模式已開啟，每句皆可點選跟讀';
+      }
       return;
     }
 
     const shadowButton = event.target.closest('[data-shadow]');
     if (shadowButton) {
       if (!speechReady) return;
+      root.classList?.add?.('shadow-mode-active');
+      const toggleOnOpen = root.querySelector?.('[data-shadow-mode-toggle]');
+      if (toggleOnOpen) {
+        toggleOnOpen.textContent = '✓ 關閉跟讀模式';
+        toggleOnOpen.classList.add('is-active');
+      }
       shadowTarget = decodeURIComponent(shadowButton.dataset.shadow || '');
       targetElement.textContent = shadowTarget;
       shadowResult.hidden = true;
@@ -1127,11 +1158,22 @@ function renderLesson(root, data) {
         if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
         if (item.examples?.length) {
-          html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">例句</strong>`);
+          const isCollapsible = section.chapter !== 'vocabulary';
+          const summaryLabel = item.examplesTitle || `更多例句／補充（點擊展開 ${item.examples.length} 句）`;
+          if (isCollapsible) {
+            html.push(`<details class="vocabulary-examples lesson-examples-details"><summary class="vocabulary-examples-title">${summaryLabel}</summary>`);
+          } else {
+            html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">例句</strong>`);
+          }
           for (const example of item.examples) {
             html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
           }
-          html.push(`</div>`);
+          if (isCollapsible && item.supplementNote) {
+            html.push(`<div class="lesson-kv lesson-supplement-note">${item.supplementNote}</div>`);
+          }
+          html.push(isCollapsible ? `</details>` : `</div>`);
+        } else if (item.supplementNote) {
+          html.push(`<details class="vocabulary-examples lesson-examples-details"><summary class="vocabulary-examples-title">${item.examplesTitle || '更多說明／補充'}</summary><div class="lesson-kv lesson-supplement-note">${item.supplementNote}</div></details>`);
         }
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
         if (item.dialoguePrompts) html.push(`<div class="lesson-kv"><strong>演練提示</strong>${item.dialoguePrompts.join(' / ')}</div>`);
@@ -1207,7 +1249,6 @@ function renderLesson(root, data) {
   }
 
   root.innerHTML = html.join('');
-  if (typeof window.presentAudioTextbook === 'function') window.presentAudioTextbook(root, data);
   setupSpeech(root);
   setupAudioSegments(root);
 }
@@ -1325,7 +1366,7 @@ async function loadLesson() {
 
     renderLesson(root, data);
     const toolbar = root.querySelector('.speech-toolbar');
-    if (toolbar && data.chapters?.length && !document.body.classList.contains('textbook-lesson')) {
+    if (toolbar && data.chapters?.length) {
       toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
     scrollToCurrentHash('auto');
