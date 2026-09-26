@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <title>第 6 課｜上課頁碼直達</title>
+  <link rel="icon" href="../../assets/icons/favicon.ico">
+  <link rel="stylesheet" href="../../css/textbook-base.css">
+  <link rel="stylesheet" href="../../css/textbook.css">
+  <link rel="stylesheet" href="../../css/lesson-k6.css">
+</head>
+<body class="textbook k6">
+  <header class="book-masthead"><div class="book-width book-masthead-inner">
+    <a class="book-brand" href="../../index.html">中級日本語・有聲電子課本</a>
+    <nav class="book-menu" aria-label="主要導覽"><a href="../../index.html">首頁</a><a href="#page-picker">選頁</a></nav>
+  </div></header>
+  <main class="book-width" id="main">
+    <div class="k6-intro"><p class="book-kicker">LESSON 06 · 上課模式</p><h1>行かせていただきたいんですが</h1><p>老師說第幾頁，就直接打開那一頁。</p></div>
+    <form id="page-form" class="page-form"><label for="page-number">老師說第幾頁？</label><div><input id="page-number" type="number" min="136" max="164" inputmode="numeric" placeholder="136–164" required><button type="submit">前往</button></div></form>
+    <nav id="page-picker" class="page-picker" aria-label="第六課頁碼"></nav>
+    <section id="current-page" aria-live="polite"><h2>正在載入…</h2></section>
+  </main>
+  <nav class="classroom-bar" aria-label="上課快捷操作">
+    <button type="button" id="previous">← 上一頁</button><button type="button" id="jump">頁碼</button><button type="button" id="translation">中譯</button><button type="button" id="answers">答案</button><button type="button" id="next">下一頁 →</button>
+  </nav>
+  <script src="../../js/lesson-k6.js" defer></script>
+</body>
+</html>

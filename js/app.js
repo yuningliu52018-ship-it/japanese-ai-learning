@@ -1,8 +1,8 @@
 function renderTextbookContents(lessons) {
   return lessons.map((lesson) => {
-    const current = lesson.href.includes('/k5-');
-    const entryHref = current ? `${lesson.href.split('#')[0]}#textbook-pages` : lesson.href;
-    const number = current ? '第 5 課' : '第 4 課';
+    const current = lesson.href.includes('/k5-') || lesson.href.includes('/k6-');
+    const entryHref = lesson.href.includes('/k5-') ? `${lesson.href.split('#')[0]}#textbook-pages` : lesson.href;
+    const number = lesson.title.split('：')[0];
     const title = lesson.title.split('：').slice(1).join('：') || lesson.title;
     return `<li class="toc-lesson${current ? ' is-current' : ''}">
       <img class="toc-thumbnail${current ? '' : ' is-quiet'}" src="assets/textbook/${current ? 'coastal-train' : 'fuji-watercolor'}.webp" alt="" loading="lazy">
