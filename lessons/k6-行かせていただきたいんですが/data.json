@@ -462,553 +462,1098 @@
   "hideLegacySections": true,
   "hideVocabularySection": true,
   "sortSectionsByPage": true,
-  "vocabularyExamplesOptional": true,
   "vocabulary": [
     {
       "japanese": "一期一会",
       "plainText": "一期一会",
       "jpRuby": "<ruby>一期一会<rt>いちごいちえ</rt></ruby>",
       "reading": "いちごいちえ",
-      "chinese": "一生僅此一次的相遇；珍惜每次相會"
+      "chinese": "一生僅此一次的相遇；珍惜每次相會",
+      "examples": [
+        {
+          "plain": "人との出会いは一期一会だと思います。",
+          "ruby": "人との出会いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと思います。",
+          "chinese": "我認為與人的每次相遇都值得珍惜。"
+        }
+      ]
     },
     {
       "japanese": "フクロウ",
       "plainText": "フクロウ",
       "jpRuby": "フクロウ",
       "reading": "フクロウ",
-      "chinese": "貓頭鷹"
+      "chinese": "貓頭鷹",
+      "examples": [
+        {
+          "plain": "夜、森でフクロウの声を聞きました。",
+          "ruby": "夜、森でフクロウの声を聞きました。",
+          "chinese": "夜裡我在森林聽見貓頭鷹的叫聲。"
+        }
+      ]
     },
     {
       "japanese": "学ぶ",
       "plainText": "学ぶ",
       "jpRuby": "<ruby>学ぶ<rt>まなぶ</rt></ruby>",
       "reading": "まなぶ",
-      "chinese": "學習"
+      "chinese": "學習",
+      "examples": [
+        {
+          "plain": "日本語を学ぶのは楽しいです。",
+          "ruby": "日本語を<ruby>学ぶ<rt>まなぶ</rt></ruby>のは楽しいです。",
+          "chinese": "學日語很有趣。"
+        }
+      ]
     },
     {
       "japanese": "一生",
       "plainText": "一生",
       "jpRuby": "<ruby>一生<rt>いっしょう</rt></ruby>",
       "reading": "いっしょう",
-      "chinese": "一生"
+      "chinese": "一生",
+      "examples": [
+        {
+          "plain": "一生忘れられない旅行になりました。",
+          "ruby": "<ruby>一生<rt>いっしょう</rt></ruby>忘れられない旅行になりました。",
+          "chinese": "那成了我一生難忘的旅行。"
+        }
+      ]
     },
     {
       "japanese": "店員",
       "plainText": "店員",
       "jpRuby": "<ruby>店員<rt>てんいん</rt></ruby>",
       "reading": "てんいん",
-      "chinese": "店員"
+      "chinese": "店員",
+      "examples": [
+        {
+          "plain": "店員に商品の場所を聞きました。",
+          "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に商品の場所を聞きました。",
+          "chinese": "我向店員詢問商品在哪裡。"
+        }
+      ]
     },
     {
       "japanese": "就職する",
       "plainText": "就職する",
       "jpRuby": "<ruby>就職する<rt>しゅうしょくする</rt></ruby>",
       "reading": "しゅうしょくする",
-      "chinese": "就職"
+      "chinese": "就職",
+      "examples": [
+        {
+          "plain": "来年、日本の会社に就職したいです。",
+          "ruby": "来年、日本の会社に就職したいです。",
+          "chinese": "明年我想進入日本公司工作。"
+        }
+      ]
     },
     {
       "japanese": "自分では",
       "plainText": "自分では",
       "jpRuby": "<ruby>自分では<rt>じぶんでは</rt></ruby>",
       "reading": "じぶんでは",
-      "chinese": "自己認為；就自己而言"
+      "chinese": "自己認為；就自己而言",
+      "examples": [
+        {
+          "plain": "自分ではよくできたと思います。",
+          "ruby": "<ruby>自分では<rt>じぶんでは</rt></ruby>よくできたと思います。",
+          "chinese": "我自己覺得做得很好。"
+        }
+      ]
     },
     {
       "japanese": "ゲーム",
       "plainText": "ゲーム",
       "jpRuby": "ゲーム",
       "reading": "ゲーム",
-      "chinese": "遊戲"
+      "chinese": "遊戲",
+      "examples": [
+        {
+          "plain": "週末は友達とゲームをします。",
+          "ruby": "週末は友達とゲームをします。",
+          "chinese": "週末我和朋友玩遊戲。"
+        }
+      ]
     },
     {
       "japanese": "うがい",
       "plainText": "うがい",
       "jpRuby": "うがい",
       "reading": "うがい",
-      "chinese": "漱口"
+      "chinese": "漱口",
+      "examples": [
+        {
+          "plain": "家に帰ったら、うがいをします。",
+          "ruby": "家に帰ったら、うがいをします。",
+          "chinese": "回家後我會漱口。"
+        }
+      ]
     },
     {
       "japanese": "ビタミンＣ",
       "plainText": "ビタミンＣ",
       "jpRuby": "ビタミンＣ",
       "reading": "ビタミンシー",
-      "chinese": "維生素 C"
+      "chinese": "維生素 C",
+      "examples": [
+        {
+          "plain": "毎日、果物からビタミンＣを取っています。",
+          "ruby": "毎日、果物からビタミンＣを取っています。",
+          "chinese": "我每天從水果攝取維生素 C。"
+        }
+      ]
     },
     {
       "japanese": "取る",
       "plainText": "取る",
       "jpRuby": "<ruby>取る<rt>とる</rt></ruby>",
       "reading": "とる",
-      "chinese": "攝取（維生素等）"
+      "chinese": "攝取（維生素等）",
+      "examples": [
+        {
+          "plain": "野菜を食べて、十分に栄養を取ってください。",
+          "ruby": "野菜を食べて、十分に栄養を取ってください。",
+          "chinese": "請吃蔬菜並攝取足夠的營養。"
+        }
+      ]
     },
     {
       "japanese": "遠く",
       "plainText": "遠く",
       "jpRuby": "<ruby>遠く<rt>とおく</rt></ruby>",
       "reading": "とおく",
-      "chinese": "遠處"
+      "chinese": "遠處",
+      "examples": [
+        {
+          "plain": "遠くに富士山が見えます。",
+          "ruby": "<ruby>遠く<rt>とおく</rt></ruby>に富士山が見えます。",
+          "chinese": "遠處看得見富士山。"
+        }
+      ]
     },
     {
       "japanese": "太鼓",
       "plainText": "太鼓",
       "jpRuby": "<ruby>太鼓<rt>たいこ</rt></ruby>",
       "reading": "たいこ",
-      "chinese": "太鼓"
+      "chinese": "太鼓",
+      "examples": [
+        {
+          "plain": "祭りで大きな太鼓をたたきました。",
+          "ruby": "祭りで大きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
+          "chinese": "我在祭典上敲了大太鼓。"
+        }
+      ]
     },
     {
       "japanese": "稽古",
       "plainText": "稽古",
       "jpRuby": "<ruby>稽古<rt>けいこ</rt></ruby>",
       "reading": "けいこ",
-      "chinese": "練習"
+      "chinese": "練習",
+      "examples": [
+        {
+          "plain": "毎週、茶道の稽古をしています。",
+          "ruby": "毎週、茶道の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
+          "chinese": "我每週練習茶道。"
+        }
+      ]
     },
     {
       "japanese": "サケ",
       "plainText": "サケ",
       "jpRuby": "サケ",
       "reading": "サケ",
-      "chinese": "鮭魚"
+      "chinese": "鮭魚",
+      "examples": [
+        {
+          "plain": "川を泳ぐサケを見ました。",
+          "ruby": "川を泳ぐサケを見ました。",
+          "chinese": "我看見鮭魚在河裡游。"
+        }
+      ]
     },
     {
       "japanese": "着陸する",
       "plainText": "着陸する",
       "jpRuby": "<ruby>着陸する<rt>ちゃくりくする</rt></ruby>",
       "reading": "ちゃくりくする",
-      "chinese": "著陸"
+      "chinese": "著陸",
+      "examples": [
+        {
+          "plain": "飛行機は予定どおり空港に着陸しました。",
+          "ruby": "飛行機は予定どおり空港に着陸しました。",
+          "chinese": "飛機依照預定時間降落機場。"
+        }
+      ]
     },
     {
       "japanese": "振る",
       "plainText": "振る",
       "jpRuby": "<ruby>振る<rt>ふる</rt></ruby>",
       "reading": "ふる",
-      "chinese": "揮動（手等）"
+      "chinese": "揮動（手等）",
+      "examples": [
+        {
+          "plain": "友達を見つけて、手を振りました。",
+          "ruby": "友達を見つけて、手を振りました。",
+          "chinese": "看到朋友後，我揮了揮手。"
+        }
+      ]
     },
     {
       "japanese": "タラップ",
       "plainText": "タラップ",
       "jpRuby": "タラップ",
       "reading": "タラップ",
-      "chinese": "飛機舷梯"
+      "chinese": "飛機舷梯",
+      "examples": [
+        {
+          "plain": "乗客はタラップを下りてきました。",
+          "ruby": "乗客はタラップを下りてきました。",
+          "chinese": "乘客從飛機舷梯走下來。"
+        }
+      ]
     },
     {
       "japanese": "ようこそ",
       "plainText": "ようこそ",
       "jpRuby": "ようこそ",
       "reading": "ようこそ",
-      "chinese": "歡迎"
+      "chinese": "歡迎",
+      "examples": [
+        {
+          "plain": "台湾へようこそ。",
+          "ruby": "台湾へようこそ。",
+          "chinese": "歡迎來臺灣。"
+        }
+      ]
     },
     {
       "japanese": "ビジネスマナー",
       "plainText": "ビジネスマナー",
       "jpRuby": "ビジネスマナー",
       "reading": "ビジネスマナー",
-      "chinese": "商務禮儀"
+      "chinese": "商務禮儀",
+      "examples": [
+        {
+          "plain": "新入社員はビジネスマナーを学びます。",
+          "ruby": "新入社員はビジネスマナーを学びます。",
+          "chinese": "新進員工學習商務禮儀。"
+        }
+      ]
     },
     {
       "japanese": "セミナー",
       "plainText": "セミナー",
       "jpRuby": "セミナー",
       "reading": "セミナー",
-      "chinese": "研討會"
+      "chinese": "研討會",
+      "examples": [
+        {
+          "plain": "来週、仕事のセミナーに参加します。",
+          "ruby": "来週、仕事のセミナーに参加します。",
+          "chinese": "下週我要參加工作相關的研討會。"
+        }
+      ]
     },
     {
       "japanese": "案内",
       "plainText": "案内",
       "jpRuby": "<ruby>案内<rt>あんない</rt></ruby>",
       "reading": "あんない",
-      "chinese": "介紹；引導"
+      "chinese": "介紹；引導",
+      "examples": [
+        {
+          "plain": "受付の人が会場を案内してくれました。",
+          "ruby": "受付の人が会場を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
+          "chinese": "接待人員帶我到會場。"
+        }
+      ]
     },
     {
       "japanese": "費用",
       "plainText": "費用",
       "jpRuby": "<ruby>費用<rt>ひよう</rt></ruby>",
       "reading": "ひよう",
-      "chinese": "費用"
+      "chinese": "費用",
+      "examples": [
+        {
+          "plain": "旅行の費用はいくらかかりますか。",
+          "ruby": "旅行の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
+          "chinese": "旅行費用需要多少？"
+        }
+      ]
     },
     {
       "japanese": "交渉する",
       "plainText": "交渉する",
       "jpRuby": "<ruby>交渉する<rt>こうしょうする</rt></ruby>",
       "reading": "こうしょうする",
-      "chinese": "交涉"
+      "chinese": "交涉",
+      "examples": [
+        {
+          "plain": "会社と授業料について交渉しました。",
+          "ruby": "会社と授業料について交渉しました。",
+          "chinese": "我和公司商量學費的事。"
+        }
+      ]
     },
     {
       "japanese": "条件",
       "plainText": "条件",
       "jpRuby": "<ruby>条件<rt>じょうけん</rt></ruby>",
       "reading": "じょうけん",
-      "chinese": "條件"
+      "chinese": "條件",
+      "examples": [
+        {
+          "plain": "この条件なら、参加できます。",
+          "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、参加できます。",
+          "chinese": "如果是這個條件，我就能參加。"
+        }
+      ]
     },
     {
       "japanese": "制度",
       "plainText": "制度",
       "jpRuby": "<ruby>制度<rt>せいど</rt></ruby>",
       "reading": "せいど",
-      "chinese": "制度"
+      "chinese": "制度",
+      "examples": [
+        {
+          "plain": "会社には研修の制度があります。",
+          "ruby": "会社には研修の<ruby>制度<rt>せいど</rt></ruby>があります。",
+          "chinese": "公司有培訓制度。"
+        }
+      ]
     },
     {
       "japanese": "メンタルトレーニング",
       "plainText": "メンタルトレーニング",
       "jpRuby": "メンタルトレーニング",
       "reading": "メンタルトレーニング",
-      "chinese": "心理訓練"
+      "chinese": "心理訓練",
+      "examples": [
+        {
+          "plain": "試合の前にメンタルトレーニングをします。",
+          "ruby": "試合の前にメンタルトレーニングをします。",
+          "chinese": "比賽前我會做心理訓練。"
+        }
+      ]
     },
     {
       "japanese": "取り入れる",
       "plainText": "取り入れる",
       "jpRuby": "<ruby>取り入れる<rt>とりいれる</rt></ruby>",
       "reading": "とりいれる",
-      "chinese": "採用；引進"
+      "chinese": "採用；引進",
+      "examples": [
+        {
+          "plain": "新しい方法を授業に取り入れました。",
+          "ruby": "新しい方法を授業に取り入れました。",
+          "chinese": "我們把新方法引進課堂。"
+        }
+      ]
     },
     {
       "japanese": "ビジネス",
       "plainText": "ビジネス",
       "jpRuby": "ビジネス",
       "reading": "ビジネス",
-      "chinese": "商務"
+      "chinese": "商務",
+      "examples": [
+        {
+          "plain": "彼は海外でビジネスをしています。",
+          "ruby": "彼は海外でビジネスをしています。",
+          "chinese": "他在海外從事商業活動。"
+        }
+      ]
     },
     {
       "japanese": "レベル",
       "plainText": "レベル",
       "jpRuby": "レベル",
       "reading": "レベル",
-      "chinese": "程度"
+      "chinese": "程度",
+      "examples": [
+        {
+          "plain": "もっと高いレベルの日本語を学びたいです。",
+          "ruby": "もっと高いレベルの日本語を学びたいです。",
+          "chinese": "我想學更高程度的日語。"
+        }
+      ]
     },
     {
       "japanese": "週",
       "plainText": "週",
       "jpRuby": "<ruby>週<rt>しゅう</rt></ruby>",
       "reading": "しゅう",
-      "chinese": "週"
+      "chinese": "週",
+      "examples": [
+        {
+          "plain": "週に二回、日本語学校へ通います。",
+          "ruby": "<ruby>週<rt>しゅう</rt></ruby>に二回、日本語学校へ通います。",
+          "chinese": "我一週去日語學校兩次。"
+        }
+      ]
     },
     {
       "japanese": "全額",
       "plainText": "全額",
       "jpRuby": "<ruby>全額<rt>ぜんがく</rt></ruby>",
       "reading": "ぜんがく",
-      "chinese": "全額"
+      "chinese": "全額",
+      "examples": [
+        {
+          "plain": "会社が費用の全額を出してくれます。",
+          "ruby": "会社が費用の<ruby>全額<rt>ぜんがく</rt></ruby>を出してくれます。",
+          "chinese": "公司會支付全部費用。"
+        }
+      ]
     },
     {
       "japanese": "半額",
       "plainText": "半額",
       "jpRuby": "<ruby>半額<rt>はんがく</rt></ruby>",
       "reading": "はんがく",
-      "chinese": "半額"
+      "chinese": "半額",
+      "examples": [
+        {
+          "plain": "この映画館では学生は半額です。",
+          "ruby": "この映画館では学生は<ruby>半額<rt>はんがく</rt></ruby>です。",
+          "chinese": "這家電影院學生半價。"
+        }
+      ]
     },
     {
       "japanese": "出す",
       "plainText": "出す",
       "jpRuby": "<ruby>出す<rt>だす</rt></ruby>",
       "reading": "だす",
-      "chinese": "支付（費用等）"
+      "chinese": "支付（費用等）",
+      "examples": [
+        {
+          "plain": "会社が研修の費用を出します。",
+          "ruby": "会社が研修の費用を出します。",
+          "chinese": "公司支付培訓費用。"
+        }
+      ]
     },
     {
       "japanese": "それでは",
       "plainText": "それでは",
       "jpRuby": "それでは",
       "reading": "それでは",
-      "chinese": "那麼；既然如此"
+      "chinese": "那麼；既然如此",
+      "examples": [
+        {
+          "plain": "それでは、来週またお会いしましょう。",
+          "ruby": "それでは、来週またお会いしましょう。",
+          "chinese": "那麼，下週再見。"
+        }
+      ]
     },
     {
       "japanese": "期間",
       "plainText": "期間",
       "jpRuby": "<ruby>期間<rt>きかん</rt></ruby>",
       "reading": "きかん",
-      "chinese": "期間"
+      "chinese": "期間",
+      "examples": [
+        {
+          "plain": "申し込みの期間は一か月です。",
+          "ruby": "申し込みの<ruby>期間<rt>きかん</rt></ruby>は一か月です。",
+          "chinese": "報名期間是一個月。"
+        }
+      ]
     },
     {
       "japanese": "日時",
       "plainText": "日時",
       "jpRuby": "<ruby>日時<rt>にちじ</rt></ruby>",
       "reading": "にちじ",
-      "chinese": "日期和時間"
+      "chinese": "日期和時間",
+      "examples": [
+        {
+          "plain": "面接の日時を教えてください。",
+          "ruby": "面接の<ruby>日時<rt>にちじ</rt></ruby>を教えてください。",
+          "chinese": "請告訴我面試的日期和時間。"
+        }
+      ]
     },
     {
       "japanese": "授業料",
       "plainText": "授業料",
       "jpRuby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>",
       "reading": "じゅぎょうりょう",
-      "chinese": "學費"
+      "chinese": "學費",
+      "examples": [
+        {
+          "plain": "授業料は月に一万円です。",
+          "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は月に一万円です。",
+          "chinese": "學費每個月一萬日圓。"
+        }
+      ]
     },
     {
       "japanese": "～料",
       "plainText": "～料",
       "jpRuby": "<ruby>～料<rt>りょう</rt></ruby>",
       "reading": "りょう",
-      "chinese": "～費"
+      "chinese": "～費",
+      "examples": [
+        {
+          "plain": "ホテルの宿泊料を払いました。",
+          "ruby": "ホテルの宿泊料を払いました。",
+          "chinese": "我付了飯店住宿費。"
+        }
+      ]
     },
     {
       "japanese": "日にち",
       "plainText": "日にち",
       "jpRuby": "<ruby>日にち<rt>ひにち</rt></ruby>",
       "reading": "ひにち",
-      "chinese": "日期"
+      "chinese": "日期",
+      "examples": [
+        {
+          "plain": "試験の日にちを確認しました。",
+          "ruby": "試験の<ruby>日にち<rt>ひにち</rt></ruby>を確認しました。",
+          "chinese": "我確認了考試日期。"
+        }
+      ]
     },
     {
       "japanese": "担当者",
       "plainText": "担当者",
       "jpRuby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>",
       "reading": "たんとうしゃ",
-      "chinese": "負責人"
+      "chinese": "負責人",
+      "examples": [
+        {
+          "plain": "担当者に詳しいことを聞いてください。",
+          "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に詳しいことを聞いてください。",
+          "chinese": "請向負責人詢問詳情。"
+        }
+      ]
     },
     {
       "japanese": "延期する",
       "plainText": "延期する",
       "jpRuby": "<ruby>延期する<rt>えんきする</rt></ruby>",
       "reading": "えんきする",
-      "chinese": "延期"
+      "chinese": "延期",
+      "examples": [
+        {
+          "plain": "雨で運動会を延期しました。",
+          "ruby": "雨で運動会を延期しました。",
+          "chinese": "因為下雨，運動會延期了。"
+        }
+      ]
     },
     {
       "japanese": "買い換える",
       "plainText": "買い換える",
       "jpRuby": "<ruby>買い換える<rt>かいかえる</rt></ruby>",
       "reading": "かいかえる",
-      "chinese": "換購"
+      "chinese": "換購",
+      "examples": [
+        {
+          "plain": "古いパソコンを買い換えました。",
+          "ruby": "古いパソコンを買い換えました。",
+          "chinese": "我把舊電腦換成新電腦。"
+        }
+      ]
     },
     {
       "japanese": "講演会",
       "plainText": "講演会",
       "jpRuby": "<ruby>講演会<rt>こうえんかい</rt></ruby>",
       "reading": "こうえんかい",
-      "chinese": "演講會"
+      "chinese": "演講會",
+      "examples": [
+        {
+          "plain": "土曜日の講演会を聞きに行きます。",
+          "ruby": "土曜日の<ruby>講演会<rt>こうえんかい</rt></ruby>を聞きに行きます。",
+          "chinese": "星期六我要去聽演講。"
+        }
+      ]
     },
     {
       "japanese": "～会",
       "plainText": "～会",
       "jpRuby": "<ruby>～会<rt>かい</rt></ruby>",
       "reading": "かい",
-      "chinese": "～會"
+      "chinese": "～會",
+      "examples": [
+        {
+          "plain": "来月、家族の食事会があります。",
+          "ruby": "来月、家族の食事会があります。",
+          "chinese": "下個月有一場家庭聚餐。"
+        }
+      ]
     },
     {
       "japanese": "上司",
       "plainText": "上司",
       "jpRuby": "<ruby>上司<rt>じょうし</rt></ruby>",
       "reading": "じょうし",
-      "chinese": "上司"
+      "chinese": "上司",
+      "examples": [
+        {
+          "plain": "上司に休みをお願いしました。",
+          "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に休みをお願いしました。",
+          "chinese": "我向上司請假。"
+        }
+      ]
     },
     {
       "japanese": "つかむ",
       "plainText": "つかむ",
       "jpRuby": "つかむ",
       "reading": "つかむ",
-      "chinese": "抓住"
+      "chinese": "抓住",
+      "examples": [
+        {
+          "plain": "チャンスをつかむために勉強します。",
+          "ruby": "チャンスをつかむために勉強します。",
+          "chinese": "為了抓住機會，我努力學習。"
+        }
+      ]
     },
     {
       "japanese": "そのような",
       "plainText": "そのような",
       "jpRuby": "そのような",
       "reading": "そのような",
-      "chinese": "那樣的"
+      "chinese": "那樣的",
+      "examples": [
+        {
+          "plain": "そのような考え方も大切です。",
+          "ruby": "そのような考え方も大切です。",
+          "chinese": "那樣的想法也很重要。"
+        }
+      ]
     },
     {
       "japanese": "想像する",
       "plainText": "想像する",
       "jpRuby": "<ruby>想像する<rt>そうぞうする</rt></ruby>",
       "reading": "そうぞうする",
-      "chinese": "想像"
+      "chinese": "想像",
+      "examples": [
+        {
+          "plain": "十年後の生活を想像してください。",
+          "ruby": "十年後の生活を想像してください。",
+          "chinese": "請想像十年後的生活。"
+        }
+      ]
     },
     {
       "japanese": "イメージする",
       "plainText": "イメージする",
       "jpRuby": "イメージする",
       "reading": "イメージする",
-      "chinese": "想像"
+      "chinese": "想像",
+      "examples": [
+        {
+          "plain": "将来の自分をイメージしてください。",
+          "ruby": "将来の自分をイメージしてください。",
+          "chinese": "請想像將來的自己。"
+        }
+      ]
     },
     {
       "japanese": "具体的な",
       "plainText": "具体的な",
       "jpRuby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>",
       "reading": "ぐたいてきな",
-      "chinese": "具體的"
+      "chinese": "具體的",
+      "examples": [
+        {
+          "plain": "具体的な計画を立てましょう。",
+          "ruby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>計画を立てましょう。",
+          "chinese": "來擬定具體的計畫吧。"
+        }
+      ]
     },
     {
       "japanese": "理想",
       "plainText": "理想",
       "jpRuby": "<ruby>理想<rt>りそう</rt></ruby>",
       "reading": "りそう",
-      "chinese": "理想"
+      "chinese": "理想",
+      "examples": [
+        {
+          "plain": "理想の自分に少しずつ近づきたいです。",
+          "ruby": "<ruby>理想<rt>りそう</rt></ruby>の自分に少しずつ近づきたいです。",
+          "chinese": "我想逐漸接近理想中的自己。"
+        }
+      ]
     },
     {
       "japanese": "近づく",
       "plainText": "近づく",
       "jpRuby": "<ruby>近づく<rt>ちかづく</rt></ruby>",
       "reading": "ちかづく",
-      "chinese": "接近"
+      "chinese": "接近",
+      "examples": [
+        {
+          "plain": "駅に近づくと、海が見えました。",
+          "ruby": "駅に<ruby>近づく<rt>ちかづく</rt></ruby>と、海が見えました。",
+          "chinese": "接近車站時，我看見了海。"
+        }
+      ]
     },
     {
       "japanese": "こそあど",
       "plainText": "こそあど",
       "jpRuby": "こそあど",
       "reading": "こそあど",
-      "chinese": "こ、そ、あ、ど系指示詞總稱"
+      "chinese": "こ、そ、あ、ど系指示詞總稱",
+      "examples": [
+        {
+          "plain": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+          "ruby": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+          "chinese": "「これ、 それ、 あれ、 どれ」是「こそあど」類的詞。"
+        }
+      ]
     },
     {
       "japanese": "指す",
       "plainText": "指す",
       "jpRuby": "<ruby>指す<rt>さす</rt></ruby>",
       "reading": "さす",
-      "chinese": "指示；指向"
+      "chinese": "指示；指向",
+      "examples": [
+        {
+          "plain": "「それ」は前に話したものを指します。",
+          "ruby": "「それ」は前に話したものを指します。",
+          "chinese": "「それ」指的是前面提過的東西。"
+        }
+      ]
     },
     {
       "japanese": "記者会見",
       "plainText": "記者会見",
       "jpRuby": "<ruby>記者会見<rt>きしゃかいけん</rt></ruby>",
       "reading": "きしゃかいけん",
-      "chinese": "記者會"
+      "chinese": "記者會",
+      "examples": [
+        {
+          "plain": "作家が記者会見で新しい本について話しました。",
+          "ruby": "作家が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で新しい本について話しました。",
+          "chinese": "作家在記者會上談了新書。"
+        }
+      ]
     },
     {
       "japanese": "記者",
       "plainText": "記者",
       "jpRuby": "<ruby>記者<rt>きしゃ</rt></ruby>",
       "reading": "きしゃ",
-      "chinese": "記者"
+      "chinese": "記者",
+      "examples": [
+        {
+          "plain": "記者が作家に質問しました。",
+          "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が作家に質問しました。",
+          "chinese": "記者向作家提問。"
+        }
+      ]
     },
     {
       "japanese": "会見",
       "plainText": "会見",
       "jpRuby": "<ruby>会見<rt>かいけん</rt></ruby>",
       "reading": "かいけん",
-      "chinese": "會面；會見"
+      "chinese": "會面；會見",
+      "examples": [
+        {
+          "plain": "午後、社長が記者と会見します。",
+          "ruby": "午後、社長が記者と<ruby>会見<rt>かいけん</rt></ruby>します。",
+          "chinese": "下午社長會與記者會面。"
+        }
+      ]
     },
     {
       "japanese": "～ごっこ",
       "plainText": "～ごっこ",
       "jpRuby": "～ごっこ",
       "reading": "ごっこ",
-      "chinese": "模仿～的遊戲"
+      "chinese": "模仿～的遊戲",
+      "examples": [
+        {
+          "plain": "子どもたちはお店屋さんごっこをしています。",
+          "ruby": "子どもたちはお店屋さんごっこをしています。",
+          "chinese": "孩子們在玩扮家家酒，模仿開店。"
+        }
+      ]
     },
     {
       "japanese": "キャベツ",
       "plainText": "キャベツ",
       "jpRuby": "キャベツ",
       "reading": "キャベツ",
-      "chinese": "高麗菜"
+      "chinese": "高麗菜",
+      "examples": [
+        {
+          "plain": "キャベツを切ってサラダを作ります。",
+          "ruby": "キャベツを切ってサラダを作ります。",
+          "chinese": "我切高麗菜做沙拉。"
+        }
+      ]
     },
     {
       "japanese": "暗い",
       "plainText": "暗い",
       "jpRuby": "<ruby>暗い<rt>くらい</rt></ruby>",
       "reading": "くらい",
-      "chinese": "黑暗；陰沉"
+      "chinese": "黑暗；陰沉",
+      "examples": [
+        {
+          "plain": "この部屋は少し暗いですね。",
+          "ruby": "この部屋は少し<ruby>暗い<rt>くらい</rt></ruby>ですね。",
+          "chinese": "這個房間有點暗呢。"
+        }
+      ]
     },
     {
       "japanese": "世の中",
       "plainText": "世の中",
       "jpRuby": "<ruby>世の中<rt>よのなか</rt></ruby>",
       "reading": "よのなか",
-      "chinese": "世上"
+      "chinese": "世上",
+      "examples": [
+        {
+          "plain": "世の中にはいろいろな仕事があります。",
+          "ruby": "<ruby>世の中<rt>よのなか</rt></ruby>にはいろいろな仕事があります。",
+          "chinese": "這世上有各種各樣的工作。"
+        }
+      ]
     },
     {
       "japanese": "アホ",
       "plainText": "アホ",
       "jpRuby": "アホ",
       "reading": "アホ",
-      "chinese": "笨蛋"
+      "chinese": "笨蛋",
+      "examples": [
+        {
+          "plain": "そんなアホなことは言わないでください。",
+          "ruby": "そんなアホなことは言わないでください。",
+          "chinese": "請別說那種傻話。"
+        }
+      ]
     },
     {
       "japanese": "見える",
       "plainText": "見える",
       "jpRuby": "<ruby>見える<rt>みえる</rt></ruby>",
       "reading": "みえる",
-      "chinese": "看得見；顯得"
+      "chinese": "看得見；顯得",
+      "examples": [
+        {
+          "plain": "ここから海がよく見えます。",
+          "ruby": "ここから海がよく見えます。",
+          "chinese": "從這裡能清楚看見海。"
+        }
+      ]
     },
     {
       "japanese": "ビジネスマン",
       "plainText": "ビジネスマン",
       "jpRuby": "ビジネスマン",
       "reading": "ビジネスマン",
-      "chinese": "商人；商務人士"
+      "chinese": "商人；商務人士",
+      "examples": [
+        {
+          "plain": "父は毎日電車で通勤するビジネスマンです。",
+          "ruby": "父は毎日電車で通勤するビジネスマンです。",
+          "chinese": "父親是每天搭電車通勤的上班族。"
+        }
+      ]
     },
     {
       "japanese": "同じような",
       "plainText": "同じような",
       "jpRuby": "<ruby>同じような<rt>おなじような</rt></ruby>",
       "reading": "おなじような",
-      "chinese": "類似的"
+      "chinese": "類似的",
+      "examples": [
+        {
+          "plain": "私も同じような経験があります。",
+          "ruby": "私も<ruby>同じような<rt>おなじような</rt></ruby>経験があります。",
+          "chinese": "我也有類似的經驗。"
+        }
+      ]
     },
     {
       "japanese": "閉じる",
       "plainText": "閉じる",
       "jpRuby": "<ruby>閉じる<rt>とじる</rt></ruby>",
       "reading": "とじる",
-      "chinese": "關閉"
+      "chinese": "關閉",
+      "examples": [
+        {
+          "plain": "静かに目を閉じてください。",
+          "ruby": "静かに目を閉じてください。",
+          "chinese": "請安靜地閉上眼睛。"
+        }
+      ]
     },
     {
       "japanese": "トレーニング",
       "plainText": "トレーニング",
       "jpRuby": "トレーニング",
       "reading": "トレーニング",
-      "chinese": "訓練"
+      "chinese": "訓練",
+      "examples": [
+        {
+          "plain": "毎朝、走るトレーニングをしています。",
+          "ruby": "毎朝、走るトレーニングをしています。",
+          "chinese": "我每天早上都做跑步訓練。"
+        }
+      ]
     },
     {
       "japanese": "つまり",
       "plainText": "つまり",
       "jpRuby": "つまり",
       "reading": "つまり",
-      "chinese": "也就是說"
+      "chinese": "也就是說",
+      "examples": [
+        {
+          "plain": "つまり、もう一度やってみるということですね。",
+          "ruby": "つまり、もう一度やってみるということですね。",
+          "chinese": "也就是說，要再試一次，對吧？"
+        }
+      ]
     },
     {
       "japanese": "過去",
       "plainText": "過去",
       "jpRuby": "<ruby>過去<rt>かこ</rt></ruby>",
       "reading": "かこ",
-      "chinese": "過去"
+      "chinese": "過去",
+      "examples": [
+        {
+          "plain": "過去の失敗から学びました。",
+          "ruby": "<ruby>過去<rt>かこ</rt></ruby>の失敗から学びました。",
+          "chinese": "我從過去的失敗中學到教訓。"
+        }
+      ]
     },
     {
       "japanese": "向き合う",
       "plainText": "向き合う",
       "jpRuby": "<ruby>向き合う<rt>むきあう</rt></ruby>",
       "reading": "むきあう",
-      "chinese": "面對"
+      "chinese": "面對",
+      "examples": [
+        {
+          "plain": "自分の弱点と向き合うことが大切です。",
+          "ruby": "自分の弱点と<ruby>向き合う<rt>むきあう</rt></ruby>ことが大切です。",
+          "chinese": "面對自己的弱點很重要。"
+        }
+      ]
     },
     {
       "japanese": "そうすれば",
       "plainText": "そうすれば",
       "jpRuby": "そうすれば",
       "reading": "そうすれば",
-      "chinese": "如此一來"
+      "chinese": "如此一來",
+      "examples": [
+        {
+          "plain": "毎日練習しましょう。そうすれば、上手になります。",
+          "ruby": "毎日練習しましょう。そうすれば、上手になります。",
+          "chinese": "每天練習吧。這樣就會進步。"
+        }
+      ]
     },
     {
       "japanese": "現在",
       "plainText": "現在",
       "jpRuby": "<ruby>現在<rt>げんざい</rt></ruby>",
       "reading": "げんざい",
-      "chinese": "現在"
+      "chinese": "現在",
+      "examples": [
+        {
+          "plain": "現在、東京で働いています。",
+          "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、東京で働いています。",
+          "chinese": "我現在在東京工作。"
+        }
+      ]
     },
     {
       "japanese": "そこから",
       "plainText": "そこから",
       "jpRuby": "そこから",
       "reading": "そこから",
-      "chinese": "從那裡開始"
+      "chinese": "從那裡開始",
+      "examples": [
+        {
+          "plain": "そこから今の自分を見てみましょう。",
+          "ruby": "そこから今の自分を見てみましょう。",
+          "chinese": "試著從那裡看看現在的自己。"
+        }
+      ]
     },
     {
       "japanese": "解決する",
       "plainText": "解決する",
       "jpRuby": "<ruby>解決する<rt>かいけつする</rt></ruby>",
       "reading": "かいけつする",
-      "chinese": "解決"
+      "chinese": "解決",
+      "examples": [
+        {
+          "plain": "問題を一つずつ解決しましょう。",
+          "ruby": "問題を一つずつ解決しましょう。",
+          "chinese": "讓我們一個一個解決問題。"
+        }
+      ]
     },
     {
       "japanese": "プラン",
       "plainText": "プラン",
       "jpRuby": "プラン",
       "reading": "プラン",
-      "chinese": "計畫"
+      "chinese": "計畫",
+      "examples": [
+        {
+          "plain": "旅行のプランを立てています。",
+          "ruby": "旅行のプランを立てています。",
+          "chinese": "我正在擬定旅行計畫。"
+        }
+      ]
     },
     {
       "japanese": "立てる",
       "plainText": "立てる",
       "jpRuby": "<ruby>立てる<rt>たてる</rt></ruby>",
       "reading": "たてる",
-      "chinese": "擬定（計畫等）"
+      "chinese": "擬定（計畫等）",
+      "examples": [
+        {
+          "plain": "来年の目標を立てました。",
+          "ruby": "来年の目標を立てました。",
+          "chinese": "我訂好了明年的目標。"
+        }
+      ]
     },
     {
       "japanese": "順番",
       "plainText": "順番",
       "jpRuby": "<ruby>順番<rt>じゅんばん</rt></ruby>",
       "reading": "じゅんばん",
-      "chinese": "順序"
+      "chinese": "順序",
+      "examples": [
+        {
+          "plain": "正しい順番に並べてください。",
+          "ruby": "正しい<ruby>順番<rt>じゅんばん</rt></ruby>に並べてください。",
+          "chinese": "請依正確順序排列。"
+        }
+      ]
     }
   ],
   "supplementalSections": [
@@ -1023,287 +1568,615 @@
           "japanese": "一期一会",
           "jpRuby": "<ruby>一期一会<rt>いちごいちえ</rt></ruby>",
           "jpPlain": "一期一会",
-          "chinese": "一生僅此一次的相遇；珍惜每次相會"
+          "chinese": "一生僅此一次的相遇；珍惜每次相會",
+          "examples": [
+            {
+              "plain": "人との出会いは一期一会だと思います。",
+              "ruby": "人との出会いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと思います。",
+              "chinese": "我認為與人的每次相遇都值得珍惜。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "2. フクロウ",
           "japanese": "フクロウ",
           "jpRuby": "フクロウ",
           "jpPlain": "フクロウ",
-          "chinese": "貓頭鷹"
+          "chinese": "貓頭鷹",
+          "examples": [
+            {
+              "plain": "夜、森でフクロウの声を聞きました。",
+              "ruby": "夜、森でフクロウの声を聞きました。",
+              "chinese": "夜裡我在森林聽見貓頭鷹的叫聲。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "3. <ruby>学ぶ<rt>まなぶ</rt></ruby>",
           "japanese": "学ぶ",
           "jpRuby": "<ruby>学ぶ<rt>まなぶ</rt></ruby>",
           "jpPlain": "学ぶ",
-          "chinese": "學習"
+          "chinese": "學習",
+          "examples": [
+            {
+              "plain": "日本語を学ぶのは楽しいです。",
+              "ruby": "日本語を<ruby>学ぶ<rt>まなぶ</rt></ruby>のは楽しいです。",
+              "chinese": "學日語很有趣。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "4. <ruby>一生<rt>いっしょう</rt></ruby>",
           "japanese": "一生",
           "jpRuby": "<ruby>一生<rt>いっしょう</rt></ruby>",
           "jpPlain": "一生",
-          "chinese": "一生"
+          "chinese": "一生",
+          "examples": [
+            {
+              "plain": "一生忘れられない旅行になりました。",
+              "ruby": "<ruby>一生<rt>いっしょう</rt></ruby>忘れられない旅行になりました。",
+              "chinese": "那成了我一生難忘的旅行。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "5. <ruby>店員<rt>てんいん</rt></ruby>",
           "japanese": "店員",
           "jpRuby": "<ruby>店員<rt>てんいん</rt></ruby>",
           "jpPlain": "店員",
-          "chinese": "店員"
+          "chinese": "店員",
+          "examples": [
+            {
+              "plain": "店員に商品の場所を聞きました。",
+              "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に商品の場所を聞きました。",
+              "chinese": "我向店員詢問商品在哪裡。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "6. <ruby>就職する<rt>しゅうしょくする</rt></ruby>",
           "japanese": "就職する",
           "jpRuby": "<ruby>就職する<rt>しゅうしょくする</rt></ruby>",
           "jpPlain": "就職する",
-          "chinese": "就職"
+          "chinese": "就職",
+          "examples": [
+            {
+              "plain": "来年、日本の会社に就職したいです。",
+              "ruby": "来年、日本の会社に就職したいです。",
+              "chinese": "明年我想進入日本公司工作。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "7. <ruby>自分では<rt>じぶんでは</rt></ruby>",
           "japanese": "自分では",
           "jpRuby": "<ruby>自分では<rt>じぶんでは</rt></ruby>",
           "jpPlain": "自分では",
-          "chinese": "自己認為；就自己而言"
+          "chinese": "自己認為；就自己而言",
+          "examples": [
+            {
+              "plain": "自分ではよくできたと思います。",
+              "ruby": "<ruby>自分では<rt>じぶんでは</rt></ruby>よくできたと思います。",
+              "chinese": "我自己覺得做得很好。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "8. ゲーム",
           "japanese": "ゲーム",
           "jpRuby": "ゲーム",
           "jpPlain": "ゲーム",
-          "chinese": "遊戲"
+          "chinese": "遊戲",
+          "examples": [
+            {
+              "plain": "週末は友達とゲームをします。",
+              "ruby": "週末は友達とゲームをします。",
+              "chinese": "週末我和朋友玩遊戲。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "9. うがい",
           "japanese": "うがい",
           "jpRuby": "うがい",
           "jpPlain": "うがい",
-          "chinese": "漱口"
+          "chinese": "漱口",
+          "examples": [
+            {
+              "plain": "家に帰ったら、うがいをします。",
+              "ruby": "家に帰ったら、うがいをします。",
+              "chinese": "回家後我會漱口。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "10. ビタミンＣ",
           "japanese": "ビタミンＣ",
           "jpRuby": "ビタミンＣ",
           "jpPlain": "ビタミンＣ",
-          "chinese": "維生素 C"
+          "chinese": "維生素 C",
+          "examples": [
+            {
+              "plain": "毎日、果物からビタミンＣを取っています。",
+              "ruby": "毎日、果物からビタミンＣを取っています。",
+              "chinese": "我每天從水果攝取維生素 C。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "11. <ruby>取る<rt>とる</rt></ruby>",
           "japanese": "取る",
           "jpRuby": "<ruby>取る<rt>とる</rt></ruby>",
           "jpPlain": "取る",
-          "chinese": "攝取（維生素等）"
+          "chinese": "攝取（維生素等）",
+          "examples": [
+            {
+              "plain": "野菜を食べて、十分に栄養を取ってください。",
+              "ruby": "野菜を食べて、十分に栄養を取ってください。",
+              "chinese": "請吃蔬菜並攝取足夠的營養。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "12. <ruby>遠く<rt>とおく</rt></ruby>",
           "japanese": "遠く",
           "jpRuby": "<ruby>遠く<rt>とおく</rt></ruby>",
           "jpPlain": "遠く",
-          "chinese": "遠處"
+          "chinese": "遠處",
+          "examples": [
+            {
+              "plain": "遠くに富士山が見えます。",
+              "ruby": "<ruby>遠く<rt>とおく</rt></ruby>に富士山が見えます。",
+              "chinese": "遠處看得見富士山。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "13. <ruby>太鼓<rt>たいこ</rt></ruby>",
           "japanese": "太鼓",
           "jpRuby": "<ruby>太鼓<rt>たいこ</rt></ruby>",
           "jpPlain": "太鼓",
-          "chinese": "太鼓"
+          "chinese": "太鼓",
+          "examples": [
+            {
+              "plain": "祭りで大きな太鼓をたたきました。",
+              "ruby": "祭りで大きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
+              "chinese": "我在祭典上敲了大太鼓。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "14. <ruby>稽古<rt>けいこ</rt></ruby>",
           "japanese": "稽古",
           "jpRuby": "<ruby>稽古<rt>けいこ</rt></ruby>",
           "jpPlain": "稽古",
-          "chinese": "練習"
+          "chinese": "練習",
+          "examples": [
+            {
+              "plain": "毎週、茶道の稽古をしています。",
+              "ruby": "毎週、茶道の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
+              "chinese": "我每週練習茶道。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "15. サケ",
           "japanese": "サケ",
           "jpRuby": "サケ",
           "jpPlain": "サケ",
-          "chinese": "鮭魚"
+          "chinese": "鮭魚",
+          "examples": [
+            {
+              "plain": "川を泳ぐサケを見ました。",
+              "ruby": "川を泳ぐサケを見ました。",
+              "chinese": "我看見鮭魚在河裡游。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "16. <ruby>着陸する<rt>ちゃくりくする</rt></ruby>",
           "japanese": "着陸する",
           "jpRuby": "<ruby>着陸する<rt>ちゃくりくする</rt></ruby>",
           "jpPlain": "着陸する",
-          "chinese": "著陸"
+          "chinese": "著陸",
+          "examples": [
+            {
+              "plain": "飛行機は予定どおり空港に着陸しました。",
+              "ruby": "飛行機は予定どおり空港に着陸しました。",
+              "chinese": "飛機依照預定時間降落機場。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "17. <ruby>振る<rt>ふる</rt></ruby>",
           "japanese": "振る",
           "jpRuby": "<ruby>振る<rt>ふる</rt></ruby>",
           "jpPlain": "振る",
-          "chinese": "揮動（手等）"
+          "chinese": "揮動（手等）",
+          "examples": [
+            {
+              "plain": "友達を見つけて、手を振りました。",
+              "ruby": "友達を見つけて、手を振りました。",
+              "chinese": "看到朋友後，我揮了揮手。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "18. タラップ",
           "japanese": "タラップ",
           "jpRuby": "タラップ",
           "jpPlain": "タラップ",
-          "chinese": "飛機舷梯"
+          "chinese": "飛機舷梯",
+          "examples": [
+            {
+              "plain": "乗客はタラップを下りてきました。",
+              "ruby": "乗客はタラップを下りてきました。",
+              "chinese": "乘客從飛機舷梯走下來。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "19. ようこそ",
           "japanese": "ようこそ",
           "jpRuby": "ようこそ",
           "jpPlain": "ようこそ",
-          "chinese": "歡迎"
+          "chinese": "歡迎",
+          "examples": [
+            {
+              "plain": "台湾へようこそ。",
+              "ruby": "台湾へようこそ。",
+              "chinese": "歡迎來臺灣。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "20. ビジネスマナー",
           "japanese": "ビジネスマナー",
           "jpRuby": "ビジネスマナー",
           "jpPlain": "ビジネスマナー",
-          "chinese": "商務禮儀"
+          "chinese": "商務禮儀",
+          "examples": [
+            {
+              "plain": "新入社員はビジネスマナーを学びます。",
+              "ruby": "新入社員はビジネスマナーを学びます。",
+              "chinese": "新進員工學習商務禮儀。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "21. セミナー",
           "japanese": "セミナー",
           "jpRuby": "セミナー",
           "jpPlain": "セミナー",
-          "chinese": "研討會"
+          "chinese": "研討會",
+          "examples": [
+            {
+              "plain": "来週、仕事のセミナーに参加します。",
+              "ruby": "来週、仕事のセミナーに参加します。",
+              "chinese": "下週我要參加工作相關的研討會。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "22. <ruby>案内<rt>あんない</rt></ruby>",
           "japanese": "案内",
           "jpRuby": "<ruby>案内<rt>あんない</rt></ruby>",
           "jpPlain": "案内",
-          "chinese": "介紹；引導"
+          "chinese": "介紹；引導",
+          "examples": [
+            {
+              "plain": "受付の人が会場を案内してくれました。",
+              "ruby": "受付の人が会場を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
+              "chinese": "接待人員帶我到會場。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "23. <ruby>費用<rt>ひよう</rt></ruby>",
           "japanese": "費用",
           "jpRuby": "<ruby>費用<rt>ひよう</rt></ruby>",
           "jpPlain": "費用",
-          "chinese": "費用"
+          "chinese": "費用",
+          "examples": [
+            {
+              "plain": "旅行の費用はいくらかかりますか。",
+              "ruby": "旅行の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
+              "chinese": "旅行費用需要多少？"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "24. <ruby>交渉する<rt>こうしょうする</rt></ruby>",
           "japanese": "交渉する",
           "jpRuby": "<ruby>交渉する<rt>こうしょうする</rt></ruby>",
           "jpPlain": "交渉する",
-          "chinese": "交涉"
+          "chinese": "交涉",
+          "examples": [
+            {
+              "plain": "会社と授業料について交渉しました。",
+              "ruby": "会社と授業料について交渉しました。",
+              "chinese": "我和公司商量學費的事。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "25. <ruby>条件<rt>じょうけん</rt></ruby>",
           "japanese": "条件",
           "jpRuby": "<ruby>条件<rt>じょうけん</rt></ruby>",
           "jpPlain": "条件",
-          "chinese": "條件"
+          "chinese": "條件",
+          "examples": [
+            {
+              "plain": "この条件なら、参加できます。",
+              "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、参加できます。",
+              "chinese": "如果是這個條件，我就能參加。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "26. <ruby>制度<rt>せいど</rt></ruby>",
           "japanese": "制度",
           "jpRuby": "<ruby>制度<rt>せいど</rt></ruby>",
           "jpPlain": "制度",
-          "chinese": "制度"
+          "chinese": "制度",
+          "examples": [
+            {
+              "plain": "会社には研修の制度があります。",
+              "ruby": "会社には研修の<ruby>制度<rt>せいど</rt></ruby>があります。",
+              "chinese": "公司有培訓制度。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "27. メンタルトレーニング",
           "japanese": "メンタルトレーニング",
           "jpRuby": "メンタルトレーニング",
           "jpPlain": "メンタルトレーニング",
-          "chinese": "心理訓練"
+          "chinese": "心理訓練",
+          "examples": [
+            {
+              "plain": "試合の前にメンタルトレーニングをします。",
+              "ruby": "試合の前にメンタルトレーニングをします。",
+              "chinese": "比賽前我會做心理訓練。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "28. <ruby>取り入れる<rt>とりいれる</rt></ruby>",
           "japanese": "取り入れる",
           "jpRuby": "<ruby>取り入れる<rt>とりいれる</rt></ruby>",
           "jpPlain": "取り入れる",
-          "chinese": "採用；引進"
+          "chinese": "採用；引進",
+          "examples": [
+            {
+              "plain": "新しい方法を授業に取り入れました。",
+              "ruby": "新しい方法を授業に取り入れました。",
+              "chinese": "我們把新方法引進課堂。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "29. ビジネス",
           "japanese": "ビジネス",
           "jpRuby": "ビジネス",
           "jpPlain": "ビジネス",
-          "chinese": "商務"
+          "chinese": "商務",
+          "examples": [
+            {
+              "plain": "彼は海外でビジネスをしています。",
+              "ruby": "彼は海外でビジネスをしています。",
+              "chinese": "他在海外從事商業活動。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "30. レベル",
           "japanese": "レベル",
           "jpRuby": "レベル",
           "jpPlain": "レベル",
-          "chinese": "程度"
+          "chinese": "程度",
+          "examples": [
+            {
+              "plain": "もっと高いレベルの日本語を学びたいです。",
+              "ruby": "もっと高いレベルの日本語を学びたいです。",
+              "chinese": "我想學更高程度的日語。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "31. <ruby>週<rt>しゅう</rt></ruby>",
           "japanese": "週",
           "jpRuby": "<ruby>週<rt>しゅう</rt></ruby>",
           "jpPlain": "週",
-          "chinese": "週"
+          "chinese": "週",
+          "examples": [
+            {
+              "plain": "週に二回、日本語学校へ通います。",
+              "ruby": "<ruby>週<rt>しゅう</rt></ruby>に二回、日本語学校へ通います。",
+              "chinese": "我一週去日語學校兩次。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "32. <ruby>全額<rt>ぜんがく</rt></ruby>",
           "japanese": "全額",
           "jpRuby": "<ruby>全額<rt>ぜんがく</rt></ruby>",
           "jpPlain": "全額",
-          "chinese": "全額"
+          "chinese": "全額",
+          "examples": [
+            {
+              "plain": "会社が費用の全額を出してくれます。",
+              "ruby": "会社が費用の<ruby>全額<rt>ぜんがく</rt></ruby>を出してくれます。",
+              "chinese": "公司會支付全部費用。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "33. <ruby>半額<rt>はんがく</rt></ruby>",
           "japanese": "半額",
           "jpRuby": "<ruby>半額<rt>はんがく</rt></ruby>",
           "jpPlain": "半額",
-          "chinese": "半額"
+          "chinese": "半額",
+          "examples": [
+            {
+              "plain": "この映画館では学生は半額です。",
+              "ruby": "この映画館では学生は<ruby>半額<rt>はんがく</rt></ruby>です。",
+              "chinese": "這家電影院學生半價。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "34. <ruby>出す<rt>だす</rt></ruby>",
           "japanese": "出す",
           "jpRuby": "<ruby>出す<rt>だす</rt></ruby>",
           "jpPlain": "出す",
-          "chinese": "支付（費用等）"
+          "chinese": "支付（費用等）",
+          "examples": [
+            {
+              "plain": "会社が研修の費用を出します。",
+              "ruby": "会社が研修の費用を出します。",
+              "chinese": "公司支付培訓費用。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "35. それでは",
           "japanese": "それでは",
           "jpRuby": "それでは",
           "jpPlain": "それでは",
-          "chinese": "那麼；既然如此"
+          "chinese": "那麼；既然如此",
+          "examples": [
+            {
+              "plain": "それでは、来週またお会いしましょう。",
+              "ruby": "それでは、来週またお会いしましょう。",
+              "chinese": "那麼，下週再見。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "36. <ruby>期間<rt>きかん</rt></ruby>",
           "japanese": "期間",
           "jpRuby": "<ruby>期間<rt>きかん</rt></ruby>",
           "jpPlain": "期間",
-          "chinese": "期間"
+          "chinese": "期間",
+          "examples": [
+            {
+              "plain": "申し込みの期間は一か月です。",
+              "ruby": "申し込みの<ruby>期間<rt>きかん</rt></ruby>は一か月です。",
+              "chinese": "報名期間是一個月。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "37. <ruby>日時<rt>にちじ</rt></ruby>",
           "japanese": "日時",
           "jpRuby": "<ruby>日時<rt>にちじ</rt></ruby>",
           "jpPlain": "日時",
-          "chinese": "日期和時間"
+          "chinese": "日期和時間",
+          "examples": [
+            {
+              "plain": "面接の日時を教えてください。",
+              "ruby": "面接の<ruby>日時<rt>にちじ</rt></ruby>を教えてください。",
+              "chinese": "請告訴我面試的日期和時間。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "38. <ruby>授業料<rt>じゅぎょうりょう</rt></ruby>",
           "japanese": "授業料",
           "jpRuby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>",
           "jpPlain": "授業料",
-          "chinese": "學費"
+          "chinese": "學費",
+          "examples": [
+            {
+              "plain": "授業料は月に一万円です。",
+              "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は月に一万円です。",
+              "chinese": "學費每個月一萬日圓。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "39. <ruby>～料<rt>りょう</rt></ruby>",
           "japanese": "～料",
           "jpRuby": "<ruby>～料<rt>りょう</rt></ruby>",
           "jpPlain": "～料",
-          "chinese": "～費"
+          "chinese": "～費",
+          "examples": [
+            {
+              "plain": "ホテルの宿泊料を払いました。",
+              "ruby": "ホテルの宿泊料を払いました。",
+              "chinese": "我付了飯店住宿費。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "40. <ruby>日にち<rt>ひにち</rt></ruby>",
           "japanese": "日にち",
           "jpRuby": "<ruby>日にち<rt>ひにち</rt></ruby>",
           "jpPlain": "日にち",
-          "chinese": "日期"
+          "chinese": "日期",
+          "examples": [
+            {
+              "plain": "試験の日にちを確認しました。",
+              "ruby": "試験の<ruby>日にち<rt>ひにち</rt></ruby>を確認しました。",
+              "chinese": "我確認了考試日期。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "41. <ruby>担当者<rt>たんとうしゃ</rt></ruby>",
           "japanese": "担当者",
           "jpRuby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>",
           "jpPlain": "担当者",
-          "chinese": "負責人"
+          "chinese": "負責人",
+          "examples": [
+            {
+              "plain": "担当者に詳しいことを聞いてください。",
+              "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に詳しいことを聞いてください。",
+              "chinese": "請向負責人詢問詳情。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         }
       ],
       "sourcePhoto": "pages/136.jpeg",
@@ -1320,259 +2193,555 @@
           "japanese": "延期する",
           "jpRuby": "<ruby>延期する<rt>えんきする</rt></ruby>",
           "jpPlain": "延期する",
-          "chinese": "延期"
+          "chinese": "延期",
+          "examples": [
+            {
+              "plain": "雨で運動会を延期しました。",
+              "ruby": "雨で運動会を延期しました。",
+              "chinese": "因為下雨，運動會延期了。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "43. <ruby>買い換える<rt>かいかえる</rt></ruby>",
           "japanese": "買い換える",
           "jpRuby": "<ruby>買い換える<rt>かいかえる</rt></ruby>",
           "jpPlain": "買い換える",
-          "chinese": "換購"
+          "chinese": "換購",
+          "examples": [
+            {
+              "plain": "古いパソコンを買い換えました。",
+              "ruby": "古いパソコンを買い換えました。",
+              "chinese": "我把舊電腦換成新電腦。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "44. <ruby>講演会<rt>こうえんかい</rt></ruby>",
           "japanese": "講演会",
           "jpRuby": "<ruby>講演会<rt>こうえんかい</rt></ruby>",
           "jpPlain": "講演会",
-          "chinese": "演講會"
+          "chinese": "演講會",
+          "examples": [
+            {
+              "plain": "土曜日の講演会を聞きに行きます。",
+              "ruby": "土曜日の<ruby>講演会<rt>こうえんかい</rt></ruby>を聞きに行きます。",
+              "chinese": "星期六我要去聽演講。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "45. <ruby>～会<rt>かい</rt></ruby>",
           "japanese": "～会",
           "jpRuby": "<ruby>～会<rt>かい</rt></ruby>",
           "jpPlain": "～会",
-          "chinese": "～會"
+          "chinese": "～會",
+          "examples": [
+            {
+              "plain": "来月、家族の食事会があります。",
+              "ruby": "来月、家族の食事会があります。",
+              "chinese": "下個月有一場家庭聚餐。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "46. <ruby>上司<rt>じょうし</rt></ruby>",
           "japanese": "上司",
           "jpRuby": "<ruby>上司<rt>じょうし</rt></ruby>",
           "jpPlain": "上司",
-          "chinese": "上司"
+          "chinese": "上司",
+          "examples": [
+            {
+              "plain": "上司に休みをお願いしました。",
+              "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に休みをお願いしました。",
+              "chinese": "我向上司請假。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "47. つかむ",
           "japanese": "つかむ",
           "jpRuby": "つかむ",
           "jpPlain": "つかむ",
-          "chinese": "抓住"
+          "chinese": "抓住",
+          "examples": [
+            {
+              "plain": "チャンスをつかむために勉強します。",
+              "ruby": "チャンスをつかむために勉強します。",
+              "chinese": "為了抓住機會，我努力學習。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "48. そのような",
           "japanese": "そのような",
           "jpRuby": "そのような",
           "jpPlain": "そのような",
-          "chinese": "那樣的"
+          "chinese": "那樣的",
+          "examples": [
+            {
+              "plain": "そのような考え方も大切です。",
+              "ruby": "そのような考え方も大切です。",
+              "chinese": "那樣的想法也很重要。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "49. <ruby>想像する<rt>そうぞうする</rt></ruby>",
           "japanese": "想像する",
           "jpRuby": "<ruby>想像する<rt>そうぞうする</rt></ruby>",
           "jpPlain": "想像する",
-          "chinese": "想像"
+          "chinese": "想像",
+          "examples": [
+            {
+              "plain": "十年後の生活を想像してください。",
+              "ruby": "十年後の生活を想像してください。",
+              "chinese": "請想像十年後的生活。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "50. イメージする",
           "japanese": "イメージする",
           "jpRuby": "イメージする",
           "jpPlain": "イメージする",
-          "chinese": "想像"
+          "chinese": "想像",
+          "examples": [
+            {
+              "plain": "将来の自分をイメージしてください。",
+              "ruby": "将来の自分をイメージしてください。",
+              "chinese": "請想像將來的自己。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "51. <ruby>具体的な<rt>ぐたいてきな</rt></ruby>",
           "japanese": "具体的な",
           "jpRuby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>",
           "jpPlain": "具体的な",
-          "chinese": "具體的"
+          "chinese": "具體的",
+          "examples": [
+            {
+              "plain": "具体的な計画を立てましょう。",
+              "ruby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>計画を立てましょう。",
+              "chinese": "來擬定具體的計畫吧。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "52. <ruby>理想<rt>りそう</rt></ruby>",
           "japanese": "理想",
           "jpRuby": "<ruby>理想<rt>りそう</rt></ruby>",
           "jpPlain": "理想",
-          "chinese": "理想"
+          "chinese": "理想",
+          "examples": [
+            {
+              "plain": "理想の自分に少しずつ近づきたいです。",
+              "ruby": "<ruby>理想<rt>りそう</rt></ruby>の自分に少しずつ近づきたいです。",
+              "chinese": "我想逐漸接近理想中的自己。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "53. <ruby>近づく<rt>ちかづく</rt></ruby>",
           "japanese": "近づく",
           "jpRuby": "<ruby>近づく<rt>ちかづく</rt></ruby>",
           "jpPlain": "近づく",
-          "chinese": "接近"
+          "chinese": "接近",
+          "examples": [
+            {
+              "plain": "駅に近づくと、海が見えました。",
+              "ruby": "駅に<ruby>近づく<rt>ちかづく</rt></ruby>と、海が見えました。",
+              "chinese": "接近車站時，我看見了海。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "54. こそあど",
           "japanese": "こそあど",
           "jpRuby": "こそあど",
           "jpPlain": "こそあど",
-          "chinese": "こ、そ、あ、ど系指示詞總稱"
+          "chinese": "こ、そ、あ、ど系指示詞總稱",
+          "examples": [
+            {
+              "plain": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+              "ruby": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+              "chinese": "「これ、 それ、 あれ、 どれ」是「こそあど」類的詞。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "55. <ruby>指す<rt>さす</rt></ruby>",
           "japanese": "指す",
           "jpRuby": "<ruby>指す<rt>さす</rt></ruby>",
           "jpPlain": "指す",
-          "chinese": "指示；指向"
+          "chinese": "指示；指向",
+          "examples": [
+            {
+              "plain": "「それ」は前に話したものを指します。",
+              "ruby": "「それ」は前に話したものを指します。",
+              "chinese": "「それ」指的是前面提過的東西。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "56. <ruby>記者会見<rt>きしゃかいけん</rt></ruby>",
           "japanese": "記者会見",
           "jpRuby": "<ruby>記者会見<rt>きしゃかいけん</rt></ruby>",
           "jpPlain": "記者会見",
-          "chinese": "記者會"
+          "chinese": "記者會",
+          "examples": [
+            {
+              "plain": "作家が記者会見で新しい本について話しました。",
+              "ruby": "作家が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で新しい本について話しました。",
+              "chinese": "作家在記者會上談了新書。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "57. <ruby>記者<rt>きしゃ</rt></ruby>",
           "japanese": "記者",
           "jpRuby": "<ruby>記者<rt>きしゃ</rt></ruby>",
           "jpPlain": "記者",
-          "chinese": "記者"
+          "chinese": "記者",
+          "examples": [
+            {
+              "plain": "記者が作家に質問しました。",
+              "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が作家に質問しました。",
+              "chinese": "記者向作家提問。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "58. <ruby>会見<rt>かいけん</rt></ruby>",
           "japanese": "会見",
           "jpRuby": "<ruby>会見<rt>かいけん</rt></ruby>",
           "jpPlain": "会見",
-          "chinese": "會面；會見"
+          "chinese": "會面；會見",
+          "examples": [
+            {
+              "plain": "午後、社長が記者と会見します。",
+              "ruby": "午後、社長が記者と<ruby>会見<rt>かいけん</rt></ruby>します。",
+              "chinese": "下午社長會與記者會面。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "59. ～ごっこ",
           "japanese": "～ごっこ",
           "jpRuby": "～ごっこ",
           "jpPlain": "～ごっこ",
-          "chinese": "模仿～的遊戲"
+          "chinese": "模仿～的遊戲",
+          "examples": [
+            {
+              "plain": "子どもたちはお店屋さんごっこをしています。",
+              "ruby": "子どもたちはお店屋さんごっこをしています。",
+              "chinese": "孩子們在玩扮家家酒，模仿開店。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "60. キャベツ",
           "japanese": "キャベツ",
           "jpRuby": "キャベツ",
           "jpPlain": "キャベツ",
-          "chinese": "高麗菜"
+          "chinese": "高麗菜",
+          "examples": [
+            {
+              "plain": "キャベツを切ってサラダを作ります。",
+              "ruby": "キャベツを切ってサラダを作ります。",
+              "chinese": "我切高麗菜做沙拉。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "61. <ruby>暗い<rt>くらい</rt></ruby>",
           "japanese": "暗い",
           "jpRuby": "<ruby>暗い<rt>くらい</rt></ruby>",
           "jpPlain": "暗い",
-          "chinese": "黑暗；陰沉"
+          "chinese": "黑暗；陰沉",
+          "examples": [
+            {
+              "plain": "この部屋は少し暗いですね。",
+              "ruby": "この部屋は少し<ruby>暗い<rt>くらい</rt></ruby>ですね。",
+              "chinese": "這個房間有點暗呢。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "62. <ruby>世の中<rt>よのなか</rt></ruby>",
           "japanese": "世の中",
           "jpRuby": "<ruby>世の中<rt>よのなか</rt></ruby>",
           "jpPlain": "世の中",
-          "chinese": "世上"
+          "chinese": "世上",
+          "examples": [
+            {
+              "plain": "世の中にはいろいろな仕事があります。",
+              "ruby": "<ruby>世の中<rt>よのなか</rt></ruby>にはいろいろな仕事があります。",
+              "chinese": "這世上有各種各樣的工作。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "63. アホ",
           "japanese": "アホ",
           "jpRuby": "アホ",
           "jpPlain": "アホ",
-          "chinese": "笨蛋"
+          "chinese": "笨蛋",
+          "examples": [
+            {
+              "plain": "そんなアホなことは言わないでください。",
+              "ruby": "そんなアホなことは言わないでください。",
+              "chinese": "請別說那種傻話。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "64. <ruby>見える<rt>みえる</rt></ruby>",
           "japanese": "見える",
           "jpRuby": "<ruby>見える<rt>みえる</rt></ruby>",
           "jpPlain": "見える",
-          "chinese": "看得見；顯得"
+          "chinese": "看得見；顯得",
+          "examples": [
+            {
+              "plain": "ここから海がよく見えます。",
+              "ruby": "ここから海がよく見えます。",
+              "chinese": "從這裡能清楚看見海。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "65. ビジネスマン",
           "japanese": "ビジネスマン",
           "jpRuby": "ビジネスマン",
           "jpPlain": "ビジネスマン",
-          "chinese": "商人；商務人士"
+          "chinese": "商人；商務人士",
+          "examples": [
+            {
+              "plain": "父は毎日電車で通勤するビジネスマンです。",
+              "ruby": "父は毎日電車で通勤するビジネスマンです。",
+              "chinese": "父親是每天搭電車通勤的上班族。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "66. <ruby>同じような<rt>おなじような</rt></ruby>",
           "japanese": "同じような",
           "jpRuby": "<ruby>同じような<rt>おなじような</rt></ruby>",
           "jpPlain": "同じような",
-          "chinese": "類似的"
+          "chinese": "類似的",
+          "examples": [
+            {
+              "plain": "私も同じような経験があります。",
+              "ruby": "私も<ruby>同じような<rt>おなじような</rt></ruby>経験があります。",
+              "chinese": "我也有類似的經驗。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "67. <ruby>閉じる<rt>とじる</rt></ruby>",
           "japanese": "閉じる",
           "jpRuby": "<ruby>閉じる<rt>とじる</rt></ruby>",
           "jpPlain": "閉じる",
-          "chinese": "關閉"
+          "chinese": "關閉",
+          "examples": [
+            {
+              "plain": "静かに目を閉じてください。",
+              "ruby": "静かに目を閉じてください。",
+              "chinese": "請安靜地閉上眼睛。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "68. トレーニング",
           "japanese": "トレーニング",
           "jpRuby": "トレーニング",
           "jpPlain": "トレーニング",
-          "chinese": "訓練"
+          "chinese": "訓練",
+          "examples": [
+            {
+              "plain": "毎朝、走るトレーニングをしています。",
+              "ruby": "毎朝、走るトレーニングをしています。",
+              "chinese": "我每天早上都做跑步訓練。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "69. つまり",
           "japanese": "つまり",
           "jpRuby": "つまり",
           "jpPlain": "つまり",
-          "chinese": "也就是說"
+          "chinese": "也就是說",
+          "examples": [
+            {
+              "plain": "つまり、もう一度やってみるということですね。",
+              "ruby": "つまり、もう一度やってみるということですね。",
+              "chinese": "也就是說，要再試一次，對吧？"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "70. <ruby>過去<rt>かこ</rt></ruby>",
           "japanese": "過去",
           "jpRuby": "<ruby>過去<rt>かこ</rt></ruby>",
           "jpPlain": "過去",
-          "chinese": "過去"
+          "chinese": "過去",
+          "examples": [
+            {
+              "plain": "過去の失敗から学びました。",
+              "ruby": "<ruby>過去<rt>かこ</rt></ruby>の失敗から学びました。",
+              "chinese": "我從過去的失敗中學到教訓。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "71. <ruby>向き合う<rt>むきあう</rt></ruby>",
           "japanese": "向き合う",
           "jpRuby": "<ruby>向き合う<rt>むきあう</rt></ruby>",
           "jpPlain": "向き合う",
-          "chinese": "面對"
+          "chinese": "面對",
+          "examples": [
+            {
+              "plain": "自分の弱点と向き合うことが大切です。",
+              "ruby": "自分の弱点と<ruby>向き合う<rt>むきあう</rt></ruby>ことが大切です。",
+              "chinese": "面對自己的弱點很重要。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "72. そうすれば",
           "japanese": "そうすれば",
           "jpRuby": "そうすれば",
           "jpPlain": "そうすれば",
-          "chinese": "如此一來"
+          "chinese": "如此一來",
+          "examples": [
+            {
+              "plain": "毎日練習しましょう。そうすれば、上手になります。",
+              "ruby": "毎日練習しましょう。そうすれば、上手になります。",
+              "chinese": "每天練習吧。這樣就會進步。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "73. <ruby>現在<rt>げんざい</rt></ruby>",
           "japanese": "現在",
           "jpRuby": "<ruby>現在<rt>げんざい</rt></ruby>",
           "jpPlain": "現在",
-          "chinese": "現在"
+          "chinese": "現在",
+          "examples": [
+            {
+              "plain": "現在、東京で働いています。",
+              "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、東京で働いています。",
+              "chinese": "我現在在東京工作。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "74. そこから",
           "japanese": "そこから",
           "jpRuby": "そこから",
           "jpPlain": "そこから",
-          "chinese": "從那裡開始"
+          "chinese": "從那裡開始",
+          "examples": [
+            {
+              "plain": "そこから今の自分を見てみましょう。",
+              "ruby": "そこから今の自分を見てみましょう。",
+              "chinese": "試著從那裡看看現在的自己。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "75. <ruby>解決する<rt>かいけつする</rt></ruby>",
           "japanese": "解決する",
           "jpRuby": "<ruby>解決する<rt>かいけつする</rt></ruby>",
           "jpPlain": "解決する",
-          "chinese": "解決"
+          "chinese": "解決",
+          "examples": [
+            {
+              "plain": "問題を一つずつ解決しましょう。",
+              "ruby": "問題を一つずつ解決しましょう。",
+              "chinese": "讓我們一個一個解決問題。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "76. プラン",
           "japanese": "プラン",
           "jpRuby": "プラン",
           "jpPlain": "プラン",
-          "chinese": "計畫"
+          "chinese": "計畫",
+          "examples": [
+            {
+              "plain": "旅行のプランを立てています。",
+              "ruby": "旅行のプランを立てています。",
+              "chinese": "我正在擬定旅行計畫。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "77. <ruby>立てる<rt>たてる</rt></ruby>",
           "japanese": "立てる",
           "jpRuby": "<ruby>立てる<rt>たてる</rt></ruby>",
           "jpPlain": "立てる",
-          "chinese": "擬定（計畫等）"
+          "chinese": "擬定（計畫等）",
+          "examples": [
+            {
+              "plain": "来年の目標を立てました。",
+              "ruby": "来年の目標を立てました。",
+              "chinese": "我訂好了明年的目標。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         },
         {
           "topic": "78. <ruby>順番<rt>じゅんばん</rt></ruby>",
           "japanese": "順番",
           "jpRuby": "<ruby>順番<rt>じゅんばん</rt></ruby>",
           "jpPlain": "順番",
-          "chinese": "順序"
+          "chinese": "順序",
+          "examples": [
+            {
+              "plain": "正しい順番に並べてください。",
+              "ruby": "正しい<ruby>順番<rt>じゅんばん</rt></ruby>に並べてください。",
+              "chinese": "請依正確順序排列。"
+            }
+          ],
+          "examplesTitle": "自編補充例句"
         }
       ],
       "sourcePhoto": "pages/137.jpeg",

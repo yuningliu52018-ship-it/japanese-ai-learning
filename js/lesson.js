@@ -1165,7 +1165,7 @@ function renderLesson(root, data) {
           if (isCollapsible) {
             html.push(`<details class="vocabulary-examples lesson-examples-details"><summary class="vocabulary-examples-title">${summaryLabel}</summary>`);
           } else {
-            html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">例句</strong>`);
+            html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">${item.examplesTitle || '例句'}</strong>`);
           }
           for (const example of item.examples) {
             html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
@@ -1306,7 +1306,7 @@ async function loadLesson() {
   if (!root) return;
 
   try {
-    const res = await fetch(document.documentElement.classList.contains('lesson-k6') ? './data.json?v=2' : './data.json');
+    const res = await fetch(document.documentElement.classList.contains('lesson-k6') ? './data.json?v=3' : './data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     const includedLessons = await Promise.all(
