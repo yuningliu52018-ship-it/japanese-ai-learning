@@ -1306,7 +1306,7 @@ async function loadLesson() {
   if (!root) return;
 
   try {
-    const res = await fetch(document.documentElement.classList.contains('lesson-k6') ? './data.json?v=5' : './data.json');
+    const res = await fetch(document.documentElement.classList.contains('lesson-k6') ? './data.json?v=6' : './data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     const includedLessons = await Promise.all(
