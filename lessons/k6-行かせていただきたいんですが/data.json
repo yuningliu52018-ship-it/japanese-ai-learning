@@ -472,7 +472,7 @@
       "examples": [
         {
           "plain": "人との出会いは一期一会だと思います。",
-          "ruby": "人との出会いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと思います。",
+          "ruby": "<ruby>人<rt>ひと</rt></ruby>との<ruby>出会<rt>であ</rt></ruby>いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>います。",
           "chinese": "我認為與人的每次相遇都值得珍惜。"
         }
       ]
@@ -486,7 +486,7 @@
       "examples": [
         {
           "plain": "夜、森でフクロウの声を聞きました。",
-          "ruby": "夜、森でフクロウの声を聞きました。",
+          "ruby": "<ruby>夜<rt>よる</rt></ruby>、<ruby>森<rt>もり</rt></ruby>でフクロウの<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きました。",
           "chinese": "夜裡我在森林聽見貓頭鷹的叫聲。"
         }
       ]
@@ -500,7 +500,7 @@
       "examples": [
         {
           "plain": "日本語を学ぶのは楽しいです。",
-          "ruby": "日本語を<ruby>学ぶ<rt>まなぶ</rt></ruby>のは楽しいです。",
+          "ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶのは<ruby>楽<rt>たの</rt></ruby>しいです。",
           "chinese": "學日語很有趣。"
         }
       ]
@@ -514,7 +514,7 @@
       "examples": [
         {
           "plain": "一生忘れられない旅行になりました。",
-          "ruby": "<ruby>一生<rt>いっしょう</rt></ruby>忘れられない旅行になりました。",
+          "ruby": "<ruby>一生<rt>いっしょう</rt></ruby><ruby>忘<rt>わす</rt></ruby>れられない<ruby>旅行<rt>りょこう</rt></ruby>になりました。",
           "chinese": "那成了我一生難忘的旅行。"
         }
       ]
@@ -528,7 +528,7 @@
       "examples": [
         {
           "plain": "店員に商品の場所を聞きました。",
-          "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に商品の場所を聞きました。",
+          "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きました。",
           "chinese": "我向店員詢問商品在哪裡。"
         }
       ]
@@ -542,7 +542,7 @@
       "examples": [
         {
           "plain": "来年、日本の会社に就職したいです。",
-          "ruby": "来年、日本の会社に就職したいです。",
+          "ruby": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>したいです。",
           "chinese": "明年我想進入日本公司工作。"
         }
       ]
@@ -556,7 +556,7 @@
       "examples": [
         {
           "plain": "自分ではよくできたと思います。",
-          "ruby": "<ruby>自分では<rt>じぶんでは</rt></ruby>よくできたと思います。",
+          "ruby": "<ruby>自分<rt>じぶん</rt></ruby>ではよくできたと<ruby>思<rt>おも</rt></ruby>います。",
           "chinese": "我自己覺得做得很好。"
         }
       ]
@@ -570,7 +570,7 @@
       "examples": [
         {
           "plain": "週末は友達とゲームをします。",
-          "ruby": "週末は友達とゲームをします。",
+          "ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>友達<rt>ともだち</rt></ruby>とゲームをします。",
           "chinese": "週末我和朋友玩遊戲。"
         }
       ]
@@ -584,7 +584,7 @@
       "examples": [
         {
           "plain": "家に帰ったら、うがいをします。",
-          "ruby": "家に帰ったら、うがいをします。",
+          "ruby": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、うがいをします。",
           "chinese": "回家後我會漱口。"
         }
       ]
@@ -598,7 +598,7 @@
       "examples": [
         {
           "plain": "毎日、果物からビタミンＣを取っています。",
-          "ruby": "毎日、果物からビタミンＣを取っています。",
+          "ruby": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>果物<rt>くだもの</rt></ruby>からビタミンＣを<ruby>取<rt>と</rt></ruby>っています。",
           "chinese": "我每天從水果攝取維生素 C。"
         }
       ]
@@ -612,7 +612,7 @@
       "examples": [
         {
           "plain": "野菜を食べて、十分に栄養を取ってください。",
-          "ruby": "野菜を食べて、十分に栄養を取ってください。",
+          "ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べて、<ruby>十分<rt>じゅうぶん</rt></ruby>に<ruby>栄養<rt>えいよう</rt></ruby>を<ruby>取<rt>と</rt></ruby>ってください。",
           "chinese": "請吃蔬菜並攝取足夠的營養。"
         }
       ]
@@ -626,7 +626,7 @@
       "examples": [
         {
           "plain": "遠くに富士山が見えます。",
-          "ruby": "<ruby>遠く<rt>とおく</rt></ruby>に富士山が見えます。",
+          "ruby": "<ruby>遠<rt>とお</rt></ruby>くに<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。",
           "chinese": "遠處看得見富士山。"
         }
       ]
@@ -640,7 +640,7 @@
       "examples": [
         {
           "plain": "祭りで大きな太鼓をたたきました。",
-          "ruby": "祭りで大きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
+          "ruby": "<ruby>祭<rt>まつ</rt></ruby>りで<ruby>大<rt>おお</rt></ruby>きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
           "chinese": "我在祭典上敲了大太鼓。"
         }
       ]
@@ -654,7 +654,7 @@
       "examples": [
         {
           "plain": "毎週、茶道の稽古をしています。",
-          "ruby": "毎週、茶道の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
+          "ruby": "<ruby>毎週<rt>まいしゅう</rt></ruby>、<ruby>茶道<rt>さどう</rt></ruby>の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
           "chinese": "我每週練習茶道。"
         }
       ]
@@ -668,7 +668,7 @@
       "examples": [
         {
           "plain": "川を泳ぐサケを見ました。",
-          "ruby": "川を泳ぐサケを見ました。",
+          "ruby": "<ruby>川<rt>かわ</rt></ruby>を<ruby>泳<rt>およ</rt></ruby>ぐサケを<ruby>見<rt>み</rt></ruby>ました。",
           "chinese": "我看見鮭魚在河裡游。"
         }
       ]
@@ -682,7 +682,7 @@
       "examples": [
         {
           "plain": "飛行機は予定どおり空港に着陸しました。",
-          "ruby": "飛行機は予定どおり空港に着陸しました。",
+          "ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>は<ruby>予定<rt>よてい</rt></ruby>どおり<ruby>空港<rt>くうこう</rt></ruby>に<ruby>着陸<rt>ちゃくりく</rt></ruby>しました。",
           "chinese": "飛機依照預定時間降落機場。"
         }
       ]
@@ -696,7 +696,7 @@
       "examples": [
         {
           "plain": "友達を見つけて、手を振りました。",
-          "ruby": "友達を見つけて、手を振りました。",
+          "ruby": "<ruby>友達<rt>ともだち</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけて、<ruby>手<rt>て</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>りました。",
           "chinese": "看到朋友後，我揮了揮手。"
         }
       ]
@@ -710,7 +710,7 @@
       "examples": [
         {
           "plain": "乗客はタラップを下りてきました。",
-          "ruby": "乗客はタラップを下りてきました。",
+          "ruby": "<ruby>乗客<rt>じょうきゃく</rt></ruby>はタラップを<ruby>下<rt>お</rt></ruby>りてきました。",
           "chinese": "乘客從飛機舷梯走下來。"
         }
       ]
@@ -724,7 +724,7 @@
       "examples": [
         {
           "plain": "台湾へようこそ。",
-          "ruby": "台湾へようこそ。",
+          "ruby": "<ruby>台湾<rt>たいわん</rt></ruby>へようこそ。",
           "chinese": "歡迎來臺灣。"
         }
       ]
@@ -738,7 +738,7 @@
       "examples": [
         {
           "plain": "新入社員はビジネスマナーを学びます。",
-          "ruby": "新入社員はビジネスマナーを学びます。",
+          "ruby": "<ruby>新入社員<rt>しんにゅうしゃいん</rt></ruby>はビジネスマナーを<ruby>学<rt>まな</rt></ruby>びます。",
           "chinese": "新進員工學習商務禮儀。"
         }
       ]
@@ -752,7 +752,7 @@
       "examples": [
         {
           "plain": "来週、仕事のセミナーに参加します。",
-          "ruby": "来週、仕事のセミナーに参加します。",
+          "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>仕事<rt>しごと</rt></ruby>のセミナーに<ruby>参加<rt>さんか</rt></ruby>します。",
           "chinese": "下週我要參加工作相關的研討會。"
         }
       ]
@@ -766,7 +766,7 @@
       "examples": [
         {
           "plain": "受付の人が会場を案内してくれました。",
-          "ruby": "受付の人が会場を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
+          "ruby": "<ruby>受付<rt>うけつけ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>会場<rt>かいじょう</rt></ruby>を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
           "chinese": "接待人員帶我到會場。"
         }
       ]
@@ -780,7 +780,7 @@
       "examples": [
         {
           "plain": "旅行の費用はいくらかかりますか。",
-          "ruby": "旅行の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
+          "ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
           "chinese": "旅行費用需要多少？"
         }
       ]
@@ -794,7 +794,7 @@
       "examples": [
         {
           "plain": "会社と授業料について交渉しました。",
-          "ruby": "会社と授業料について交渉しました。",
+          "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>と<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>について<ruby>交渉<rt>こうしょう</rt></ruby>しました。",
           "chinese": "我和公司商量學費的事。"
         }
       ]
@@ -808,7 +808,7 @@
       "examples": [
         {
           "plain": "この条件なら、参加できます。",
-          "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、参加できます。",
+          "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、<ruby>参加<rt>さんか</rt></ruby>できます。",
           "chinese": "如果是這個條件，我就能參加。"
         }
       ]
@@ -822,7 +822,7 @@
       "examples": [
         {
           "plain": "会社には研修の制度があります。",
-          "ruby": "会社には研修の<ruby>制度<rt>せいど</rt></ruby>があります。",
+          "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>には<ruby>研修<rt>けんしゅう</rt></ruby>の<ruby>制度<rt>せいど</rt></ruby>があります。",
           "chinese": "公司有培訓制度。"
         }
       ]
@@ -836,7 +836,7 @@
       "examples": [
         {
           "plain": "試合の前にメンタルトレーニングをします。",
-          "ruby": "試合の前にメンタルトレーニングをします。",
+          "ruby": "<ruby>試合<rt>しあい</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にメンタルトレーニングをします。",
           "chinese": "比賽前我會做心理訓練。"
         }
       ]
@@ -850,7 +850,7 @@
       "examples": [
         {
           "plain": "新しい方法を授業に取り入れました。",
-          "ruby": "新しい方法を授業に取り入れました。",
+          "ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>入<rt>い</rt></ruby>れました。",
           "chinese": "我們把新方法引進課堂。"
         }
       ]
@@ -864,7 +864,7 @@
       "examples": [
         {
           "plain": "彼は海外でビジネスをしています。",
-          "ruby": "彼は海外でビジネスをしています。",
+          "ruby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>海外<rt>かいがい</rt></ruby>でビジネスをしています。",
           "chinese": "他在海外從事商業活動。"
         }
       ]
@@ -878,7 +878,7 @@
       "examples": [
         {
           "plain": "もっと高いレベルの日本語を学びたいです。",
-          "ruby": "もっと高いレベルの日本語を学びたいです。",
+          "ruby": "もっと<ruby>高<rt>たか</rt></ruby>いレベルの<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>びたいです。",
           "chinese": "我想學更高程度的日語。"
         }
       ]
@@ -892,7 +892,7 @@
       "examples": [
         {
           "plain": "週に二回、日本語学校へ通います。",
-          "ruby": "<ruby>週<rt>しゅう</rt></ruby>に二回、日本語学校へ通います。",
+          "ruby": "<ruby>週<rt>しゅう</rt></ruby>に<ruby>二回<rt>にかい</rt></ruby>、<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>へ<ruby>通<rt>かよ</rt></ruby>います。",
           "chinese": "我一週去日語學校兩次。"
         }
       ]
@@ -906,7 +906,7 @@
       "examples": [
         {
           "plain": "会社が費用の全額を出してくれます。",
-          "ruby": "会社が費用の<ruby>全額<rt>ぜんがく</rt></ruby>を出してくれます。",
+          "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>費用<rt>ひよう</rt></ruby>の<ruby>全額<rt>ぜんがく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してくれます。",
           "chinese": "公司會支付全部費用。"
         }
       ]
@@ -920,7 +920,7 @@
       "examples": [
         {
           "plain": "この映画館では学生は半額です。",
-          "ruby": "この映画館では学生は<ruby>半額<rt>はんがく</rt></ruby>です。",
+          "ruby": "この<ruby>映画館<rt>えいがかん</rt></ruby>では<ruby>学生<rt>がくせい</rt></ruby>は<ruby>半額<rt>はんがく</rt></ruby>です。",
           "chinese": "這家電影院學生半價。"
         }
       ]
@@ -934,7 +934,7 @@
       "examples": [
         {
           "plain": "会社が研修の費用を出します。",
-          "ruby": "会社が研修の費用を出します。",
+          "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>研修<rt>けんしゅう</rt></ruby>の<ruby>費用<rt>ひよう</rt></ruby>を<ruby>出<rt>だ</rt></ruby>します。",
           "chinese": "公司支付培訓費用。"
         }
       ]
@@ -948,7 +948,7 @@
       "examples": [
         {
           "plain": "それでは、来週またお会いしましょう。",
-          "ruby": "それでは、来週またお会いしましょう。",
+          "ruby": "それでは、<ruby>来週<rt>らいしゅう</rt></ruby>またお<ruby>会<rt>あ</rt></ruby>いしましょう。",
           "chinese": "那麼，下週再見。"
         }
       ]
@@ -962,7 +962,7 @@
       "examples": [
         {
           "plain": "申し込みの期間は一か月です。",
-          "ruby": "申し込みの<ruby>期間<rt>きかん</rt></ruby>は一か月です。",
+          "ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みの<ruby>期間<rt>きかん</rt></ruby>は<ruby>一<rt>いっ</rt></ruby>か<ruby>月<rt>げつ</rt></ruby>です。",
           "chinese": "報名期間是一個月。"
         }
       ]
@@ -976,7 +976,7 @@
       "examples": [
         {
           "plain": "面接の日時を教えてください。",
-          "ruby": "面接の<ruby>日時<rt>にちじ</rt></ruby>を教えてください。",
+          "ruby": "<ruby>面接<rt>めんせつ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
           "chinese": "請告訴我面試的日期和時間。"
         }
       ]
@@ -990,7 +990,7 @@
       "examples": [
         {
           "plain": "授業料は月に一万円です。",
-          "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は月に一万円です。",
+          "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は<ruby>月<rt>つき</rt></ruby>に<ruby>一万円<rt>いちまんえん</rt></ruby>です。",
           "chinese": "學費每個月一萬日圓。"
         }
       ]
@@ -1004,7 +1004,7 @@
       "examples": [
         {
           "plain": "ホテルの宿泊料を払いました。",
-          "ruby": "ホテルの宿泊料を払いました。",
+          "ruby": "ホテルの<ruby>宿泊料<rt>しゅくはくりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>いました。",
           "chinese": "我付了飯店住宿費。"
         }
       ]
@@ -1018,7 +1018,7 @@
       "examples": [
         {
           "plain": "試験の日にちを確認しました。",
-          "ruby": "試験の<ruby>日にち<rt>ひにち</rt></ruby>を確認しました。",
+          "ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>にちを<ruby>確認<rt>かくにん</rt></ruby>しました。",
           "chinese": "我確認了考試日期。"
         }
       ]
@@ -1032,7 +1032,7 @@
       "examples": [
         {
           "plain": "担当者に詳しいことを聞いてください。",
-          "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に詳しいことを聞いてください。",
+          "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に<ruby>詳<rt>くわ</rt></ruby>しいことを<ruby>聞<rt>き</rt></ruby>いてください。",
           "chinese": "請向負責人詢問詳情。"
         }
       ]
@@ -1046,7 +1046,7 @@
       "examples": [
         {
           "plain": "雨で運動会を延期しました。",
-          "ruby": "雨で運動会を延期しました。",
+          "ruby": "<ruby>雨<rt>あめ</rt></ruby>で<ruby>運動会<rt>うんどうかい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>しました。",
           "chinese": "因為下雨，運動會延期了。"
         }
       ]
@@ -1060,7 +1060,7 @@
       "examples": [
         {
           "plain": "古いパソコンを買い換えました。",
-          "ruby": "古いパソコンを買い換えました。",
+          "ruby": "<ruby>古<rt>ふる</rt></ruby>いパソコンを<ruby>買<rt>か</rt></ruby>い<ruby>換<rt>か</rt></ruby>えました。",
           "chinese": "我把舊電腦換成新電腦。"
         }
       ]
@@ -1074,7 +1074,7 @@
       "examples": [
         {
           "plain": "土曜日の講演会を聞きに行きます。",
-          "ruby": "土曜日の<ruby>講演会<rt>こうえんかい</rt></ruby>を聞きに行きます。",
+          "ruby": "<ruby>土曜日<rt>どようび</rt></ruby>の<ruby>講演会<rt>こうえんかい</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きに<ruby>行<rt>い</rt></ruby>きます。",
           "chinese": "星期六我要去聽演講。"
         }
       ]
@@ -1088,7 +1088,7 @@
       "examples": [
         {
           "plain": "来月、家族の食事会があります。",
-          "ruby": "来月、家族の食事会があります。",
+          "ruby": "<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>家族<rt>かぞく</rt></ruby>の<ruby>食事会<rt>しょくじかい</rt></ruby>があります。",
           "chinese": "下個月有一場家庭聚餐。"
         }
       ]
@@ -1102,7 +1102,7 @@
       "examples": [
         {
           "plain": "上司に休みをお願いしました。",
-          "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に休みをお願いしました。",
+          "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に<ruby>休<rt>やす</rt></ruby>みをお<ruby>願<rt>ねが</rt></ruby>いしました。",
           "chinese": "我向上司請假。"
         }
       ]
@@ -1116,7 +1116,7 @@
       "examples": [
         {
           "plain": "チャンスをつかむために勉強します。",
-          "ruby": "チャンスをつかむために勉強します。",
+          "ruby": "チャンスをつかむために<ruby>勉強<rt>べんきょう</rt></ruby>します。",
           "chinese": "為了抓住機會，我努力學習。"
         }
       ]
@@ -1130,7 +1130,7 @@
       "examples": [
         {
           "plain": "そのような考え方も大切です。",
-          "ruby": "そのような考え方も大切です。",
+          "ruby": "そのような<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>も<ruby>大切<rt>たいせつ</rt></ruby>です。",
           "chinese": "那樣的想法也很重要。"
         }
       ]
@@ -1144,7 +1144,7 @@
       "examples": [
         {
           "plain": "十年後の生活を想像してください。",
-          "ruby": "十年後の生活を想像してください。",
+          "ruby": "<ruby>十年後<rt>じゅうねんご</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>してください。",
           "chinese": "請想像十年後的生活。"
         }
       ]
@@ -1158,7 +1158,7 @@
       "examples": [
         {
           "plain": "将来の自分をイメージしてください。",
-          "ruby": "将来の自分をイメージしてください。",
+          "ruby": "<ruby>将来<rt>しょうらい</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>をイメージしてください。",
           "chinese": "請想像將來的自己。"
         }
       ]
@@ -1172,7 +1172,7 @@
       "examples": [
         {
           "plain": "具体的な計画を立てましょう。",
-          "ruby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>計画を立てましょう。",
+          "ruby": "<ruby>具体的<rt>ぐたいてき</rt></ruby>な<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てましょう。",
           "chinese": "來擬定具體的計畫吧。"
         }
       ]
@@ -1186,7 +1186,7 @@
       "examples": [
         {
           "plain": "理想の自分に少しずつ近づきたいです。",
-          "ruby": "<ruby>理想<rt>りそう</rt></ruby>の自分に少しずつ近づきたいです。",
+          "ruby": "<ruby>理想<rt>りそう</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>近<rt>ちか</rt></ruby>づきたいです。",
           "chinese": "我想逐漸接近理想中的自己。"
         }
       ]
@@ -1200,7 +1200,7 @@
       "examples": [
         {
           "plain": "駅に近づくと、海が見えました。",
-          "ruby": "駅に<ruby>近づく<rt>ちかづく</rt></ruby>と、海が見えました。",
+          "ruby": "<ruby>駅<rt>えき</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>づくと、<ruby>海<rt>うみ</rt></ruby>が<ruby>見<rt>み</rt></ruby>えました。",
           "chinese": "接近車站時，我看見了海。"
         }
       ]
@@ -1214,7 +1214,7 @@
       "examples": [
         {
           "plain": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
-          "ruby": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+          "ruby": "「これ・それ・あれ・どれ」は、こそあどの<ruby>言葉<rt>ことば</rt></ruby>です。",
           "chinese": "「これ、 それ、 あれ、 どれ」是「こそあど」類的詞。"
         }
       ]
@@ -1228,7 +1228,7 @@
       "examples": [
         {
           "plain": "「それ」は前に話したものを指します。",
-          "ruby": "「それ」は前に話したものを指します。",
+          "ruby": "「それ」は<ruby>前<rt>まえ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>したものを<ruby>指<rt>さ</rt></ruby>します。",
           "chinese": "「それ」指的是前面提過的東西。"
         }
       ]
@@ -1242,7 +1242,7 @@
       "examples": [
         {
           "plain": "作家が記者会見で新しい本について話しました。",
-          "ruby": "作家が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で新しい本について話しました。",
+          "ruby": "<ruby>作家<rt>さっか</rt></ruby>が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で<ruby>新<rt>あたら</rt></ruby>しい<ruby>本<rt>ほん</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しました。",
           "chinese": "作家在記者會上談了新書。"
         }
       ]
@@ -1256,7 +1256,7 @@
       "examples": [
         {
           "plain": "記者が作家に質問しました。",
-          "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が作家に質問しました。",
+          "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が<ruby>作家<rt>さっか</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>しました。",
           "chinese": "記者向作家提問。"
         }
       ]
@@ -1270,7 +1270,7 @@
       "examples": [
         {
           "plain": "午後、社長が記者と会見します。",
-          "ruby": "午後、社長が記者と<ruby>会見<rt>かいけん</rt></ruby>します。",
+          "ruby": "<ruby>午後<rt>ごご</rt></ruby>、<ruby>社長<rt>しゃちょう</rt></ruby>が<ruby>記者<rt>きしゃ</rt></ruby>と<ruby>会見<rt>かいけん</rt></ruby>します。",
           "chinese": "下午社長會與記者會面。"
         }
       ]
@@ -1284,7 +1284,7 @@
       "examples": [
         {
           "plain": "子どもたちはお店屋さんごっこをしています。",
-          "ruby": "子どもたちはお店屋さんごっこをしています。",
+          "ruby": "<ruby>子<rt>こ</rt></ruby>どもたちはお<ruby>店屋<rt>みせや</rt></ruby>さんごっこをしています。",
           "chinese": "孩子們在玩扮家家酒，模仿開店。"
         }
       ]
@@ -1298,7 +1298,7 @@
       "examples": [
         {
           "plain": "キャベツを切ってサラダを作ります。",
-          "ruby": "キャベツを切ってサラダを作ります。",
+          "ruby": "キャベツを<ruby>切<rt>き</rt></ruby>ってサラダを<ruby>作<rt>つく</rt></ruby>ります。",
           "chinese": "我切高麗菜做沙拉。"
         }
       ]
@@ -1312,7 +1312,7 @@
       "examples": [
         {
           "plain": "この部屋は少し暗いですね。",
-          "ruby": "この部屋は少し<ruby>暗い<rt>くらい</rt></ruby>ですね。",
+          "ruby": "この<ruby>部屋<rt>へや</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>暗<rt>くら</rt></ruby>いですね。",
           "chinese": "這個房間有點暗呢。"
         }
       ]
@@ -1326,7 +1326,7 @@
       "examples": [
         {
           "plain": "世の中にはいろいろな仕事があります。",
-          "ruby": "<ruby>世の中<rt>よのなか</rt></ruby>にはいろいろな仕事があります。",
+          "ruby": "<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にはいろいろな<ruby>仕事<rt>しごと</rt></ruby>があります。",
           "chinese": "這世上有各種各樣的工作。"
         }
       ]
@@ -1340,7 +1340,7 @@
       "examples": [
         {
           "plain": "そんなアホなことは言わないでください。",
-          "ruby": "そんなアホなことは言わないでください。",
+          "ruby": "そんなアホなことは<ruby>言<rt>い</rt></ruby>わないでください。",
           "chinese": "請別說那種傻話。"
         }
       ]
@@ -1354,7 +1354,7 @@
       "examples": [
         {
           "plain": "ここから海がよく見えます。",
-          "ruby": "ここから海がよく見えます。",
+          "ruby": "ここから<ruby>海<rt>うみ</rt></ruby>がよく<ruby>見<rt>み</rt></ruby>えます。",
           "chinese": "從這裡能清楚看見海。"
         }
       ]
@@ -1368,7 +1368,7 @@
       "examples": [
         {
           "plain": "父は毎日電車で通勤するビジネスマンです。",
-          "ruby": "父は毎日電車で通勤するビジネスマンです。",
+          "ruby": "<ruby>父<rt>ちち</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>するビジネスマンです。",
           "chinese": "父親是每天搭電車通勤的上班族。"
         }
       ]
@@ -1382,7 +1382,7 @@
       "examples": [
         {
           "plain": "私も同じような経験があります。",
-          "ruby": "私も<ruby>同じような<rt>おなじような</rt></ruby>経験があります。",
+          "ruby": "<ruby>私<rt>わたし</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じような<ruby>経験<rt>けいけん</rt></ruby>があります。",
           "chinese": "我也有類似的經驗。"
         }
       ]
@@ -1396,7 +1396,7 @@
       "examples": [
         {
           "plain": "静かに目を閉じてください。",
-          "ruby": "静かに目を閉じてください。",
+          "ruby": "<ruby>静<rt>しず</rt></ruby>かに<ruby>目<rt>め</rt></ruby>を<ruby>閉<rt>と</rt></ruby>じてください。",
           "chinese": "請安靜地閉上眼睛。"
         }
       ]
@@ -1410,7 +1410,7 @@
       "examples": [
         {
           "plain": "毎朝、走るトレーニングをしています。",
-          "ruby": "毎朝、走るトレーニングをしています。",
+          "ruby": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>走<rt>はし</rt></ruby>るトレーニングをしています。",
           "chinese": "我每天早上都做跑步訓練。"
         }
       ]
@@ -1424,7 +1424,7 @@
       "examples": [
         {
           "plain": "つまり、もう一度やってみるということですね。",
-          "ruby": "つまり、もう一度やってみるということですね。",
+          "ruby": "つまり、もう<ruby>一度<rt>いちど</rt></ruby>やってみるということですね。",
           "chinese": "也就是說，要再試一次，對吧？"
         }
       ]
@@ -1438,7 +1438,7 @@
       "examples": [
         {
           "plain": "過去の失敗から学びました。",
-          "ruby": "<ruby>過去<rt>かこ</rt></ruby>の失敗から学びました。",
+          "ruby": "<ruby>過去<rt>かこ</rt></ruby>の<ruby>失敗<rt>しっぱい</rt></ruby>から<ruby>学<rt>まな</rt></ruby>びました。",
           "chinese": "我從過去的失敗中學到教訓。"
         }
       ]
@@ -1452,7 +1452,7 @@
       "examples": [
         {
           "plain": "自分の弱点と向き合うことが大切です。",
-          "ruby": "自分の弱点と<ruby>向き合う<rt>むきあう</rt></ruby>ことが大切です。",
+          "ruby": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>弱点<rt>じゃくてん</rt></ruby>と<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>です。",
           "chinese": "面對自己的弱點很重要。"
         }
       ]
@@ -1466,7 +1466,7 @@
       "examples": [
         {
           "plain": "毎日練習しましょう。そうすれば、上手になります。",
-          "ruby": "毎日練習しましょう。そうすれば、上手になります。",
+          "ruby": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>しましょう。そうすれば、<ruby>上手<rt>じょうず</rt></ruby>になります。",
           "chinese": "每天練習吧。這樣就會進步。"
         }
       ]
@@ -1480,7 +1480,7 @@
       "examples": [
         {
           "plain": "現在、東京で働いています。",
-          "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、東京で働いています。",
+          "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いています。",
           "chinese": "我現在在東京工作。"
         }
       ]
@@ -1494,7 +1494,7 @@
       "examples": [
         {
           "plain": "そこから今の自分を見てみましょう。",
-          "ruby": "そこから今の自分を見てみましょう。",
+          "ruby": "そこから<ruby>今<rt>いま</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>を<ruby>見<rt>み</rt></ruby>てみましょう。",
           "chinese": "試著從那裡看看現在的自己。"
         }
       ]
@@ -1508,7 +1508,7 @@
       "examples": [
         {
           "plain": "問題を一つずつ解決しましょう。",
-          "ruby": "問題を一つずつ解決しましょう。",
+          "ruby": "<ruby>問題<rt>もんだい</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つずつ<ruby>解決<rt>かいけつ</rt></ruby>しましょう。",
           "chinese": "讓我們一個一個解決問題。"
         }
       ]
@@ -1522,7 +1522,7 @@
       "examples": [
         {
           "plain": "旅行のプランを立てています。",
-          "ruby": "旅行のプランを立てています。",
+          "ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のプランを<ruby>立<rt>た</rt></ruby>てています。",
           "chinese": "我正在擬定旅行計畫。"
         }
       ]
@@ -1536,7 +1536,7 @@
       "examples": [
         {
           "plain": "来年の目標を立てました。",
-          "ruby": "来年の目標を立てました。",
+          "ruby": "<ruby>来年<rt>らいねん</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>を<ruby>立<rt>た</rt></ruby>てました。",
           "chinese": "我訂好了明年的目標。"
         }
       ]
@@ -1550,7 +1550,7 @@
       "examples": [
         {
           "plain": "正しい順番に並べてください。",
-          "ruby": "正しい<ruby>順番<rt>じゅんばん</rt></ruby>に並べてください。",
+          "ruby": "<ruby>正<rt>ただ</rt></ruby>しい<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>べてください。",
           "chinese": "請依正確順序排列。"
         }
       ]
@@ -1572,7 +1572,7 @@
           "examples": [
             {
               "plain": "人との出会いは一期一会だと思います。",
-              "ruby": "人との出会いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと思います。",
+              "ruby": "<ruby>人<rt>ひと</rt></ruby>との<ruby>出会<rt>であ</rt></ruby>いは<ruby>一期一会<rt>いちごいちえ</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>います。",
               "chinese": "我認為與人的每次相遇都值得珍惜。"
             }
           ],
@@ -1587,7 +1587,7 @@
           "examples": [
             {
               "plain": "夜、森でフクロウの声を聞きました。",
-              "ruby": "夜、森でフクロウの声を聞きました。",
+              "ruby": "<ruby>夜<rt>よる</rt></ruby>、<ruby>森<rt>もり</rt></ruby>でフクロウの<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きました。",
               "chinese": "夜裡我在森林聽見貓頭鷹的叫聲。"
             }
           ],
@@ -1602,7 +1602,7 @@
           "examples": [
             {
               "plain": "日本語を学ぶのは楽しいです。",
-              "ruby": "日本語を<ruby>学ぶ<rt>まなぶ</rt></ruby>のは楽しいです。",
+              "ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶのは<ruby>楽<rt>たの</rt></ruby>しいです。",
               "chinese": "學日語很有趣。"
             }
           ],
@@ -1617,7 +1617,7 @@
           "examples": [
             {
               "plain": "一生忘れられない旅行になりました。",
-              "ruby": "<ruby>一生<rt>いっしょう</rt></ruby>忘れられない旅行になりました。",
+              "ruby": "<ruby>一生<rt>いっしょう</rt></ruby><ruby>忘<rt>わす</rt></ruby>れられない<ruby>旅行<rt>りょこう</rt></ruby>になりました。",
               "chinese": "那成了我一生難忘的旅行。"
             }
           ],
@@ -1632,7 +1632,7 @@
           "examples": [
             {
               "plain": "店員に商品の場所を聞きました。",
-              "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に商品の場所を聞きました。",
+              "ruby": "<ruby>店員<rt>てんいん</rt></ruby>に<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きました。",
               "chinese": "我向店員詢問商品在哪裡。"
             }
           ],
@@ -1647,7 +1647,7 @@
           "examples": [
             {
               "plain": "来年、日本の会社に就職したいです。",
-              "ruby": "来年、日本の会社に就職したいです。",
+              "ruby": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>したいです。",
               "chinese": "明年我想進入日本公司工作。"
             }
           ],
@@ -1662,7 +1662,7 @@
           "examples": [
             {
               "plain": "自分ではよくできたと思います。",
-              "ruby": "<ruby>自分では<rt>じぶんでは</rt></ruby>よくできたと思います。",
+              "ruby": "<ruby>自分<rt>じぶん</rt></ruby>ではよくできたと<ruby>思<rt>おも</rt></ruby>います。",
               "chinese": "我自己覺得做得很好。"
             }
           ],
@@ -1677,7 +1677,7 @@
           "examples": [
             {
               "plain": "週末は友達とゲームをします。",
-              "ruby": "週末は友達とゲームをします。",
+              "ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>友達<rt>ともだち</rt></ruby>とゲームをします。",
               "chinese": "週末我和朋友玩遊戲。"
             }
           ],
@@ -1692,7 +1692,7 @@
           "examples": [
             {
               "plain": "家に帰ったら、うがいをします。",
-              "ruby": "家に帰ったら、うがいをします。",
+              "ruby": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、うがいをします。",
               "chinese": "回家後我會漱口。"
             }
           ],
@@ -1707,7 +1707,7 @@
           "examples": [
             {
               "plain": "毎日、果物からビタミンＣを取っています。",
-              "ruby": "毎日、果物からビタミンＣを取っています。",
+              "ruby": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>果物<rt>くだもの</rt></ruby>からビタミンＣを<ruby>取<rt>と</rt></ruby>っています。",
               "chinese": "我每天從水果攝取維生素 C。"
             }
           ],
@@ -1722,7 +1722,7 @@
           "examples": [
             {
               "plain": "野菜を食べて、十分に栄養を取ってください。",
-              "ruby": "野菜を食べて、十分に栄養を取ってください。",
+              "ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べて、<ruby>十分<rt>じゅうぶん</rt></ruby>に<ruby>栄養<rt>えいよう</rt></ruby>を<ruby>取<rt>と</rt></ruby>ってください。",
               "chinese": "請吃蔬菜並攝取足夠的營養。"
             }
           ],
@@ -1737,7 +1737,7 @@
           "examples": [
             {
               "plain": "遠くに富士山が見えます。",
-              "ruby": "<ruby>遠く<rt>とおく</rt></ruby>に富士山が見えます。",
+              "ruby": "<ruby>遠<rt>とお</rt></ruby>くに<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。",
               "chinese": "遠處看得見富士山。"
             }
           ],
@@ -1752,7 +1752,7 @@
           "examples": [
             {
               "plain": "祭りで大きな太鼓をたたきました。",
-              "ruby": "祭りで大きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
+              "ruby": "<ruby>祭<rt>まつ</rt></ruby>りで<ruby>大<rt>おお</rt></ruby>きな<ruby>太鼓<rt>たいこ</rt></ruby>をたたきました。",
               "chinese": "我在祭典上敲了大太鼓。"
             }
           ],
@@ -1767,7 +1767,7 @@
           "examples": [
             {
               "plain": "毎週、茶道の稽古をしています。",
-              "ruby": "毎週、茶道の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
+              "ruby": "<ruby>毎週<rt>まいしゅう</rt></ruby>、<ruby>茶道<rt>さどう</rt></ruby>の<ruby>稽古<rt>けいこ</rt></ruby>をしています。",
               "chinese": "我每週練習茶道。"
             }
           ],
@@ -1782,7 +1782,7 @@
           "examples": [
             {
               "plain": "川を泳ぐサケを見ました。",
-              "ruby": "川を泳ぐサケを見ました。",
+              "ruby": "<ruby>川<rt>かわ</rt></ruby>を<ruby>泳<rt>およ</rt></ruby>ぐサケを<ruby>見<rt>み</rt></ruby>ました。",
               "chinese": "我看見鮭魚在河裡游。"
             }
           ],
@@ -1797,7 +1797,7 @@
           "examples": [
             {
               "plain": "飛行機は予定どおり空港に着陸しました。",
-              "ruby": "飛行機は予定どおり空港に着陸しました。",
+              "ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>は<ruby>予定<rt>よてい</rt></ruby>どおり<ruby>空港<rt>くうこう</rt></ruby>に<ruby>着陸<rt>ちゃくりく</rt></ruby>しました。",
               "chinese": "飛機依照預定時間降落機場。"
             }
           ],
@@ -1812,7 +1812,7 @@
           "examples": [
             {
               "plain": "友達を見つけて、手を振りました。",
-              "ruby": "友達を見つけて、手を振りました。",
+              "ruby": "<ruby>友達<rt>ともだち</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけて、<ruby>手<rt>て</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>りました。",
               "chinese": "看到朋友後，我揮了揮手。"
             }
           ],
@@ -1827,7 +1827,7 @@
           "examples": [
             {
               "plain": "乗客はタラップを下りてきました。",
-              "ruby": "乗客はタラップを下りてきました。",
+              "ruby": "<ruby>乗客<rt>じょうきゃく</rt></ruby>はタラップを<ruby>下<rt>お</rt></ruby>りてきました。",
               "chinese": "乘客從飛機舷梯走下來。"
             }
           ],
@@ -1842,7 +1842,7 @@
           "examples": [
             {
               "plain": "台湾へようこそ。",
-              "ruby": "台湾へようこそ。",
+              "ruby": "<ruby>台湾<rt>たいわん</rt></ruby>へようこそ。",
               "chinese": "歡迎來臺灣。"
             }
           ],
@@ -1857,7 +1857,7 @@
           "examples": [
             {
               "plain": "新入社員はビジネスマナーを学びます。",
-              "ruby": "新入社員はビジネスマナーを学びます。",
+              "ruby": "<ruby>新入社員<rt>しんにゅうしゃいん</rt></ruby>はビジネスマナーを<ruby>学<rt>まな</rt></ruby>びます。",
               "chinese": "新進員工學習商務禮儀。"
             }
           ],
@@ -1872,7 +1872,7 @@
           "examples": [
             {
               "plain": "来週、仕事のセミナーに参加します。",
-              "ruby": "来週、仕事のセミナーに参加します。",
+              "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>仕事<rt>しごと</rt></ruby>のセミナーに<ruby>参加<rt>さんか</rt></ruby>します。",
               "chinese": "下週我要參加工作相關的研討會。"
             }
           ],
@@ -1887,7 +1887,7 @@
           "examples": [
             {
               "plain": "受付の人が会場を案内してくれました。",
-              "ruby": "受付の人が会場を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
+              "ruby": "<ruby>受付<rt>うけつけ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>会場<rt>かいじょう</rt></ruby>を<ruby>案内<rt>あんない</rt></ruby>してくれました。",
               "chinese": "接待人員帶我到會場。"
             }
           ],
@@ -1902,7 +1902,7 @@
           "examples": [
             {
               "plain": "旅行の費用はいくらかかりますか。",
-              "ruby": "旅行の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
+              "ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>費用<rt>ひよう</rt></ruby>はいくらかかりますか。",
               "chinese": "旅行費用需要多少？"
             }
           ],
@@ -1917,7 +1917,7 @@
           "examples": [
             {
               "plain": "会社と授業料について交渉しました。",
-              "ruby": "会社と授業料について交渉しました。",
+              "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>と<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>について<ruby>交渉<rt>こうしょう</rt></ruby>しました。",
               "chinese": "我和公司商量學費的事。"
             }
           ],
@@ -1932,7 +1932,7 @@
           "examples": [
             {
               "plain": "この条件なら、参加できます。",
-              "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、参加できます。",
+              "ruby": "この<ruby>条件<rt>じょうけん</rt></ruby>なら、<ruby>参加<rt>さんか</rt></ruby>できます。",
               "chinese": "如果是這個條件，我就能參加。"
             }
           ],
@@ -1947,7 +1947,7 @@
           "examples": [
             {
               "plain": "会社には研修の制度があります。",
-              "ruby": "会社には研修の<ruby>制度<rt>せいど</rt></ruby>があります。",
+              "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>には<ruby>研修<rt>けんしゅう</rt></ruby>の<ruby>制度<rt>せいど</rt></ruby>があります。",
               "chinese": "公司有培訓制度。"
             }
           ],
@@ -1962,7 +1962,7 @@
           "examples": [
             {
               "plain": "試合の前にメンタルトレーニングをします。",
-              "ruby": "試合の前にメンタルトレーニングをします。",
+              "ruby": "<ruby>試合<rt>しあい</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にメンタルトレーニングをします。",
               "chinese": "比賽前我會做心理訓練。"
             }
           ],
@@ -1977,7 +1977,7 @@
           "examples": [
             {
               "plain": "新しい方法を授業に取り入れました。",
-              "ruby": "新しい方法を授業に取り入れました。",
+              "ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>入<rt>い</rt></ruby>れました。",
               "chinese": "我們把新方法引進課堂。"
             }
           ],
@@ -1992,7 +1992,7 @@
           "examples": [
             {
               "plain": "彼は海外でビジネスをしています。",
-              "ruby": "彼は海外でビジネスをしています。",
+              "ruby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>海外<rt>かいがい</rt></ruby>でビジネスをしています。",
               "chinese": "他在海外從事商業活動。"
             }
           ],
@@ -2007,7 +2007,7 @@
           "examples": [
             {
               "plain": "もっと高いレベルの日本語を学びたいです。",
-              "ruby": "もっと高いレベルの日本語を学びたいです。",
+              "ruby": "もっと<ruby>高<rt>たか</rt></ruby>いレベルの<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>びたいです。",
               "chinese": "我想學更高程度的日語。"
             }
           ],
@@ -2022,7 +2022,7 @@
           "examples": [
             {
               "plain": "週に二回、日本語学校へ通います。",
-              "ruby": "<ruby>週<rt>しゅう</rt></ruby>に二回、日本語学校へ通います。",
+              "ruby": "<ruby>週<rt>しゅう</rt></ruby>に<ruby>二回<rt>にかい</rt></ruby>、<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>へ<ruby>通<rt>かよ</rt></ruby>います。",
               "chinese": "我一週去日語學校兩次。"
             }
           ],
@@ -2037,7 +2037,7 @@
           "examples": [
             {
               "plain": "会社が費用の全額を出してくれます。",
-              "ruby": "会社が費用の<ruby>全額<rt>ぜんがく</rt></ruby>を出してくれます。",
+              "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>費用<rt>ひよう</rt></ruby>の<ruby>全額<rt>ぜんがく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してくれます。",
               "chinese": "公司會支付全部費用。"
             }
           ],
@@ -2052,7 +2052,7 @@
           "examples": [
             {
               "plain": "この映画館では学生は半額です。",
-              "ruby": "この映画館では学生は<ruby>半額<rt>はんがく</rt></ruby>です。",
+              "ruby": "この<ruby>映画館<rt>えいがかん</rt></ruby>では<ruby>学生<rt>がくせい</rt></ruby>は<ruby>半額<rt>はんがく</rt></ruby>です。",
               "chinese": "這家電影院學生半價。"
             }
           ],
@@ -2067,7 +2067,7 @@
           "examples": [
             {
               "plain": "会社が研修の費用を出します。",
-              "ruby": "会社が研修の費用を出します。",
+              "ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>研修<rt>けんしゅう</rt></ruby>の<ruby>費用<rt>ひよう</rt></ruby>を<ruby>出<rt>だ</rt></ruby>します。",
               "chinese": "公司支付培訓費用。"
             }
           ],
@@ -2082,7 +2082,7 @@
           "examples": [
             {
               "plain": "それでは、来週またお会いしましょう。",
-              "ruby": "それでは、来週またお会いしましょう。",
+              "ruby": "それでは、<ruby>来週<rt>らいしゅう</rt></ruby>またお<ruby>会<rt>あ</rt></ruby>いしましょう。",
               "chinese": "那麼，下週再見。"
             }
           ],
@@ -2097,7 +2097,7 @@
           "examples": [
             {
               "plain": "申し込みの期間は一か月です。",
-              "ruby": "申し込みの<ruby>期間<rt>きかん</rt></ruby>は一か月です。",
+              "ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みの<ruby>期間<rt>きかん</rt></ruby>は<ruby>一<rt>いっ</rt></ruby>か<ruby>月<rt>げつ</rt></ruby>です。",
               "chinese": "報名期間是一個月。"
             }
           ],
@@ -2112,7 +2112,7 @@
           "examples": [
             {
               "plain": "面接の日時を教えてください。",
-              "ruby": "面接の<ruby>日時<rt>にちじ</rt></ruby>を教えてください。",
+              "ruby": "<ruby>面接<rt>めんせつ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
               "chinese": "請告訴我面試的日期和時間。"
             }
           ],
@@ -2127,7 +2127,7 @@
           "examples": [
             {
               "plain": "授業料は月に一万円です。",
-              "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は月に一万円です。",
+              "ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>は<ruby>月<rt>つき</rt></ruby>に<ruby>一万円<rt>いちまんえん</rt></ruby>です。",
               "chinese": "學費每個月一萬日圓。"
             }
           ],
@@ -2142,7 +2142,7 @@
           "examples": [
             {
               "plain": "ホテルの宿泊料を払いました。",
-              "ruby": "ホテルの宿泊料を払いました。",
+              "ruby": "ホテルの<ruby>宿泊料<rt>しゅくはくりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>いました。",
               "chinese": "我付了飯店住宿費。"
             }
           ],
@@ -2157,7 +2157,7 @@
           "examples": [
             {
               "plain": "試験の日にちを確認しました。",
-              "ruby": "試験の<ruby>日にち<rt>ひにち</rt></ruby>を確認しました。",
+              "ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>にちを<ruby>確認<rt>かくにん</rt></ruby>しました。",
               "chinese": "我確認了考試日期。"
             }
           ],
@@ -2172,7 +2172,7 @@
           "examples": [
             {
               "plain": "担当者に詳しいことを聞いてください。",
-              "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に詳しいことを聞いてください。",
+              "ruby": "<ruby>担当者<rt>たんとうしゃ</rt></ruby>に<ruby>詳<rt>くわ</rt></ruby>しいことを<ruby>聞<rt>き</rt></ruby>いてください。",
               "chinese": "請向負責人詢問詳情。"
             }
           ],
@@ -2197,7 +2197,7 @@
           "examples": [
             {
               "plain": "雨で運動会を延期しました。",
-              "ruby": "雨で運動会を延期しました。",
+              "ruby": "<ruby>雨<rt>あめ</rt></ruby>で<ruby>運動会<rt>うんどうかい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>しました。",
               "chinese": "因為下雨，運動會延期了。"
             }
           ],
@@ -2212,7 +2212,7 @@
           "examples": [
             {
               "plain": "古いパソコンを買い換えました。",
-              "ruby": "古いパソコンを買い換えました。",
+              "ruby": "<ruby>古<rt>ふる</rt></ruby>いパソコンを<ruby>買<rt>か</rt></ruby>い<ruby>換<rt>か</rt></ruby>えました。",
               "chinese": "我把舊電腦換成新電腦。"
             }
           ],
@@ -2227,7 +2227,7 @@
           "examples": [
             {
               "plain": "土曜日の講演会を聞きに行きます。",
-              "ruby": "土曜日の<ruby>講演会<rt>こうえんかい</rt></ruby>を聞きに行きます。",
+              "ruby": "<ruby>土曜日<rt>どようび</rt></ruby>の<ruby>講演会<rt>こうえんかい</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きに<ruby>行<rt>い</rt></ruby>きます。",
               "chinese": "星期六我要去聽演講。"
             }
           ],
@@ -2242,7 +2242,7 @@
           "examples": [
             {
               "plain": "来月、家族の食事会があります。",
-              "ruby": "来月、家族の食事会があります。",
+              "ruby": "<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>家族<rt>かぞく</rt></ruby>の<ruby>食事会<rt>しょくじかい</rt></ruby>があります。",
               "chinese": "下個月有一場家庭聚餐。"
             }
           ],
@@ -2257,7 +2257,7 @@
           "examples": [
             {
               "plain": "上司に休みをお願いしました。",
-              "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に休みをお願いしました。",
+              "ruby": "<ruby>上司<rt>じょうし</rt></ruby>に<ruby>休<rt>やす</rt></ruby>みをお<ruby>願<rt>ねが</rt></ruby>いしました。",
               "chinese": "我向上司請假。"
             }
           ],
@@ -2272,7 +2272,7 @@
           "examples": [
             {
               "plain": "チャンスをつかむために勉強します。",
-              "ruby": "チャンスをつかむために勉強します。",
+              "ruby": "チャンスをつかむために<ruby>勉強<rt>べんきょう</rt></ruby>します。",
               "chinese": "為了抓住機會，我努力學習。"
             }
           ],
@@ -2287,7 +2287,7 @@
           "examples": [
             {
               "plain": "そのような考え方も大切です。",
-              "ruby": "そのような考え方も大切です。",
+              "ruby": "そのような<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>も<ruby>大切<rt>たいせつ</rt></ruby>です。",
               "chinese": "那樣的想法也很重要。"
             }
           ],
@@ -2302,7 +2302,7 @@
           "examples": [
             {
               "plain": "十年後の生活を想像してください。",
-              "ruby": "十年後の生活を想像してください。",
+              "ruby": "<ruby>十年後<rt>じゅうねんご</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>してください。",
               "chinese": "請想像十年後的生活。"
             }
           ],
@@ -2317,7 +2317,7 @@
           "examples": [
             {
               "plain": "将来の自分をイメージしてください。",
-              "ruby": "将来の自分をイメージしてください。",
+              "ruby": "<ruby>将来<rt>しょうらい</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>をイメージしてください。",
               "chinese": "請想像將來的自己。"
             }
           ],
@@ -2332,7 +2332,7 @@
           "examples": [
             {
               "plain": "具体的な計画を立てましょう。",
-              "ruby": "<ruby>具体的な<rt>ぐたいてきな</rt></ruby>計画を立てましょう。",
+              "ruby": "<ruby>具体的<rt>ぐたいてき</rt></ruby>な<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てましょう。",
               "chinese": "來擬定具體的計畫吧。"
             }
           ],
@@ -2347,7 +2347,7 @@
           "examples": [
             {
               "plain": "理想の自分に少しずつ近づきたいです。",
-              "ruby": "<ruby>理想<rt>りそう</rt></ruby>の自分に少しずつ近づきたいです。",
+              "ruby": "<ruby>理想<rt>りそう</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>近<rt>ちか</rt></ruby>づきたいです。",
               "chinese": "我想逐漸接近理想中的自己。"
             }
           ],
@@ -2362,7 +2362,7 @@
           "examples": [
             {
               "plain": "駅に近づくと、海が見えました。",
-              "ruby": "駅に<ruby>近づく<rt>ちかづく</rt></ruby>と、海が見えました。",
+              "ruby": "<ruby>駅<rt>えき</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>づくと、<ruby>海<rt>うみ</rt></ruby>が<ruby>見<rt>み</rt></ruby>えました。",
               "chinese": "接近車站時，我看見了海。"
             }
           ],
@@ -2377,7 +2377,7 @@
           "examples": [
             {
               "plain": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
-              "ruby": "「これ・それ・あれ・どれ」は、こそあどの言葉です。",
+              "ruby": "「これ・それ・あれ・どれ」は、こそあどの<ruby>言葉<rt>ことば</rt></ruby>です。",
               "chinese": "「これ、 それ、 あれ、 どれ」是「こそあど」類的詞。"
             }
           ],
@@ -2392,7 +2392,7 @@
           "examples": [
             {
               "plain": "「それ」は前に話したものを指します。",
-              "ruby": "「それ」は前に話したものを指します。",
+              "ruby": "「それ」は<ruby>前<rt>まえ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>したものを<ruby>指<rt>さ</rt></ruby>します。",
               "chinese": "「それ」指的是前面提過的東西。"
             }
           ],
@@ -2407,7 +2407,7 @@
           "examples": [
             {
               "plain": "作家が記者会見で新しい本について話しました。",
-              "ruby": "作家が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で新しい本について話しました。",
+              "ruby": "<ruby>作家<rt>さっか</rt></ruby>が<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で<ruby>新<rt>あたら</rt></ruby>しい<ruby>本<rt>ほん</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しました。",
               "chinese": "作家在記者會上談了新書。"
             }
           ],
@@ -2422,7 +2422,7 @@
           "examples": [
             {
               "plain": "記者が作家に質問しました。",
-              "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が作家に質問しました。",
+              "ruby": "<ruby>記者<rt>きしゃ</rt></ruby>が<ruby>作家<rt>さっか</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>しました。",
               "chinese": "記者向作家提問。"
             }
           ],
@@ -2437,7 +2437,7 @@
           "examples": [
             {
               "plain": "午後、社長が記者と会見します。",
-              "ruby": "午後、社長が記者と<ruby>会見<rt>かいけん</rt></ruby>します。",
+              "ruby": "<ruby>午後<rt>ごご</rt></ruby>、<ruby>社長<rt>しゃちょう</rt></ruby>が<ruby>記者<rt>きしゃ</rt></ruby>と<ruby>会見<rt>かいけん</rt></ruby>します。",
               "chinese": "下午社長會與記者會面。"
             }
           ],
@@ -2452,7 +2452,7 @@
           "examples": [
             {
               "plain": "子どもたちはお店屋さんごっこをしています。",
-              "ruby": "子どもたちはお店屋さんごっこをしています。",
+              "ruby": "<ruby>子<rt>こ</rt></ruby>どもたちはお<ruby>店屋<rt>みせや</rt></ruby>さんごっこをしています。",
               "chinese": "孩子們在玩扮家家酒，模仿開店。"
             }
           ],
@@ -2467,7 +2467,7 @@
           "examples": [
             {
               "plain": "キャベツを切ってサラダを作ります。",
-              "ruby": "キャベツを切ってサラダを作ります。",
+              "ruby": "キャベツを<ruby>切<rt>き</rt></ruby>ってサラダを<ruby>作<rt>つく</rt></ruby>ります。",
               "chinese": "我切高麗菜做沙拉。"
             }
           ],
@@ -2482,7 +2482,7 @@
           "examples": [
             {
               "plain": "この部屋は少し暗いですね。",
-              "ruby": "この部屋は少し<ruby>暗い<rt>くらい</rt></ruby>ですね。",
+              "ruby": "この<ruby>部屋<rt>へや</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>暗<rt>くら</rt></ruby>いですね。",
               "chinese": "這個房間有點暗呢。"
             }
           ],
@@ -2497,7 +2497,7 @@
           "examples": [
             {
               "plain": "世の中にはいろいろな仕事があります。",
-              "ruby": "<ruby>世の中<rt>よのなか</rt></ruby>にはいろいろな仕事があります。",
+              "ruby": "<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にはいろいろな<ruby>仕事<rt>しごと</rt></ruby>があります。",
               "chinese": "這世上有各種各樣的工作。"
             }
           ],
@@ -2512,7 +2512,7 @@
           "examples": [
             {
               "plain": "そんなアホなことは言わないでください。",
-              "ruby": "そんなアホなことは言わないでください。",
+              "ruby": "そんなアホなことは<ruby>言<rt>い</rt></ruby>わないでください。",
               "chinese": "請別說那種傻話。"
             }
           ],
@@ -2527,7 +2527,7 @@
           "examples": [
             {
               "plain": "ここから海がよく見えます。",
-              "ruby": "ここから海がよく見えます。",
+              "ruby": "ここから<ruby>海<rt>うみ</rt></ruby>がよく<ruby>見<rt>み</rt></ruby>えます。",
               "chinese": "從這裡能清楚看見海。"
             }
           ],
@@ -2542,7 +2542,7 @@
           "examples": [
             {
               "plain": "父は毎日電車で通勤するビジネスマンです。",
-              "ruby": "父は毎日電車で通勤するビジネスマンです。",
+              "ruby": "<ruby>父<rt>ちち</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>するビジネスマンです。",
               "chinese": "父親是每天搭電車通勤的上班族。"
             }
           ],
@@ -2557,7 +2557,7 @@
           "examples": [
             {
               "plain": "私も同じような経験があります。",
-              "ruby": "私も<ruby>同じような<rt>おなじような</rt></ruby>経験があります。",
+              "ruby": "<ruby>私<rt>わたし</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じような<ruby>経験<rt>けいけん</rt></ruby>があります。",
               "chinese": "我也有類似的經驗。"
             }
           ],
@@ -2572,7 +2572,7 @@
           "examples": [
             {
               "plain": "静かに目を閉じてください。",
-              "ruby": "静かに目を閉じてください。",
+              "ruby": "<ruby>静<rt>しず</rt></ruby>かに<ruby>目<rt>め</rt></ruby>を<ruby>閉<rt>と</rt></ruby>じてください。",
               "chinese": "請安靜地閉上眼睛。"
             }
           ],
@@ -2587,7 +2587,7 @@
           "examples": [
             {
               "plain": "毎朝、走るトレーニングをしています。",
-              "ruby": "毎朝、走るトレーニングをしています。",
+              "ruby": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>走<rt>はし</rt></ruby>るトレーニングをしています。",
               "chinese": "我每天早上都做跑步訓練。"
             }
           ],
@@ -2602,7 +2602,7 @@
           "examples": [
             {
               "plain": "つまり、もう一度やってみるということですね。",
-              "ruby": "つまり、もう一度やってみるということですね。",
+              "ruby": "つまり、もう<ruby>一度<rt>いちど</rt></ruby>やってみるということですね。",
               "chinese": "也就是說，要再試一次，對吧？"
             }
           ],
@@ -2617,7 +2617,7 @@
           "examples": [
             {
               "plain": "過去の失敗から学びました。",
-              "ruby": "<ruby>過去<rt>かこ</rt></ruby>の失敗から学びました。",
+              "ruby": "<ruby>過去<rt>かこ</rt></ruby>の<ruby>失敗<rt>しっぱい</rt></ruby>から<ruby>学<rt>まな</rt></ruby>びました。",
               "chinese": "我從過去的失敗中學到教訓。"
             }
           ],
@@ -2632,7 +2632,7 @@
           "examples": [
             {
               "plain": "自分の弱点と向き合うことが大切です。",
-              "ruby": "自分の弱点と<ruby>向き合う<rt>むきあう</rt></ruby>ことが大切です。",
+              "ruby": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>弱点<rt>じゃくてん</rt></ruby>と<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>です。",
               "chinese": "面對自己的弱點很重要。"
             }
           ],
@@ -2647,7 +2647,7 @@
           "examples": [
             {
               "plain": "毎日練習しましょう。そうすれば、上手になります。",
-              "ruby": "毎日練習しましょう。そうすれば、上手になります。",
+              "ruby": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>しましょう。そうすれば、<ruby>上手<rt>じょうず</rt></ruby>になります。",
               "chinese": "每天練習吧。這樣就會進步。"
             }
           ],
@@ -2662,7 +2662,7 @@
           "examples": [
             {
               "plain": "現在、東京で働いています。",
-              "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、東京で働いています。",
+              "ruby": "<ruby>現在<rt>げんざい</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いています。",
               "chinese": "我現在在東京工作。"
             }
           ],
@@ -2677,7 +2677,7 @@
           "examples": [
             {
               "plain": "そこから今の自分を見てみましょう。",
-              "ruby": "そこから今の自分を見てみましょう。",
+              "ruby": "そこから<ruby>今<rt>いま</rt></ruby>の<ruby>自分<rt>じぶん</rt></ruby>を<ruby>見<rt>み</rt></ruby>てみましょう。",
               "chinese": "試著從那裡看看現在的自己。"
             }
           ],
@@ -2692,7 +2692,7 @@
           "examples": [
             {
               "plain": "問題を一つずつ解決しましょう。",
-              "ruby": "問題を一つずつ解決しましょう。",
+              "ruby": "<ruby>問題<rt>もんだい</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つずつ<ruby>解決<rt>かいけつ</rt></ruby>しましょう。",
               "chinese": "讓我們一個一個解決問題。"
             }
           ],
@@ -2707,7 +2707,7 @@
           "examples": [
             {
               "plain": "旅行のプランを立てています。",
-              "ruby": "旅行のプランを立てています。",
+              "ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のプランを<ruby>立<rt>た</rt></ruby>てています。",
               "chinese": "我正在擬定旅行計畫。"
             }
           ],
@@ -2722,7 +2722,7 @@
           "examples": [
             {
               "plain": "来年の目標を立てました。",
-              "ruby": "来年の目標を立てました。",
+              "ruby": "<ruby>来年<rt>らいねん</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>を<ruby>立<rt>た</rt></ruby>てました。",
               "chinese": "我訂好了明年的目標。"
             }
           ],
@@ -2737,7 +2737,7 @@
           "examples": [
             {
               "plain": "正しい順番に並べてください。",
-              "ruby": "正しい<ruby>順番<rt>じゅんばん</rt></ruby>に並べてください。",
+              "ruby": "<ruby>正<rt>ただ</rt></ruby>しい<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>べてください。",
               "chinese": "請依正確順序排列。"
             }
           ],
