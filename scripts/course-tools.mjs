@@ -62,7 +62,7 @@ function validateLesson(file, data) {
     if (!entry?.japanese || !entry?.chinese) errors.push(`${label}：vocabulary[${index}] 缺少 japanese 或 chinese`);
     if (!entry?.plainText) warnings.push(`${label}：${entry?.japanese || `vocabulary[${index}]`} 缺少 plainText 讀音`);
     if (!Array.isArray(entry?.examples) || entry.examples.length === 0) {
-      warnings.push(`${label}：${entry?.japanese || `vocabulary[${index}]`} 缺少例句`);
+      if (!data.vocabularyExamplesOptional) warnings.push(`${label}：${entry?.japanese || `vocabulary[${index}]`} 缺少例句`);
     } else {
       entry.examples.forEach((example, exampleIndex) => {
         if (!(example?.plain || example?.japanese || example?.ruby) || !example?.chinese) {
@@ -74,7 +74,7 @@ function validateLesson(file, data) {
 
   const allowedTypes = new Set([
     'sentence_cards', 'picture_lessons', 'dialogue_lessons', 'grammar_notes',
-    'quiz_questions', 'long_reading', 'video_resource', 'audio_tracks', 'scenario_practice'
+    'quiz_questions', 'answer_key', 'long_reading', 'video_resource', 'audio_tracks', 'scenario_practice'
   ]);
   for (const [index, section] of [...(data.sections || []), ...(data.supplementalSections || [])].entries()) {
     if (!section?.type) errors.push(`${label}：section[${index}] 缺少 type`);

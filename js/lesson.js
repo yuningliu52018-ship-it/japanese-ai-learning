@@ -1102,8 +1102,10 @@ function renderLesson(root, data) {
     }
 
     const secId = resolveSectionId(section, usedIds);
-    html.push(`<div class="lesson-section"${secId ? ` id="${secId}"` : ''}>`);
+    const pageAttribute = Number.isInteger(section.pageOrder) ? ` data-page="${section.pageOrder}"` : '';
+    html.push(`<div class="lesson-section"${secId ? ` id="${secId}"` : ''}${pageAttribute}>`);
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
+    if (section.notice) html.push(`<p class="lesson-muted">${section.notice}</p>`);
 
     if (section.type === 'video_resource') {
       const start = Number(section.start) || 0;
@@ -1231,6 +1233,12 @@ function renderLesson(root, data) {
         html.push(`</article>`);
       }
       html.push(`</div>`);
+    } else if (section.type === 'answer_key') {
+      html.push(`<div class="lesson-grid">`);
+      for (const item of section.items || []) {
+        html.push(`<details class="lesson-item lesson-answer"><summary>${item.label}</summary><p><strong>答案：</strong>${item.answer}</p>${item.reason ? `<p>${item.reason}</p>` : ''}</details>`);
+      }
+      html.push(`</div>`);
     } else if (section.type === 'scenario_practice') {
       html.push(`<div class="scenario-grid">`);
       for (const item of section.items || []) {
@@ -1245,6 +1253,9 @@ function renderLesson(root, data) {
       html.push(`</div>`);
     }
 
+    if (section.sourcePhoto) {
+      html.push(`<details class="lesson-source-photo"><summary>查看第 ${section.pageOrder} 頁課本照片</summary><a href="${section.sourcePhoto}" target="_blank" rel="noopener"><img src="${section.sourcePhoto}" alt="第 ${section.pageOrder} 頁原課本照片" loading="lazy"></a></details>`);
+    }
     html.push(`</div>`);
   }
 
@@ -1310,7 +1321,7 @@ async function loadLesson() {
         }));
       })
     );
-    const vocabularySection = data.vocabulary?.length ? [{
+    const vocabularySection = data.vocabulary?.length && !data.hideVocabularySection ? [{
       type: 'sentence_cards',
       chapter: 'vocabulary',
       pageOrder: data.vocabularyPageOrder,

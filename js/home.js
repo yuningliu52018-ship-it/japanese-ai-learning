@@ -2,9 +2,10 @@
   const key = 'audio-textbook.last-position';
   const continueLink = document.querySelector('[data-continue-link]');
   // Resume the last visited Lesson 06 page when there is one.
-  const lastK6 = Number(localStorage.getItem('japanese-ai-learning.k6.page'));
+  let lastK6 = 0;
+  try { lastK6 = Number(localStorage.getItem('japanese-ai-learning.k6.page')); } catch {}
   if (continueLink && lastK6 >= 136 && lastK6 <= 164) {
-    continueLink.href = `lessons/k6-行かせていただきたいんですが/index.html#p${lastK6}`;
+    continueLink.href = `lessons/k6-行かせていただきたいんですが/index.html#page-${lastK6}`;
     document.querySelector('.continue-copy h3').innerHTML = `<span class="lesson-numeral">第 6 課・第 ${lastK6} 頁</span><span lang="ja">行かせていただきたいんですが</span>`;
     document.querySelector('.continue-copy p').textContent = '從上次上課的頁碼接著看。';
   } else if (continueLink) continueLink.hash = 'textbook-pages';
