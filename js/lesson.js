@@ -1120,7 +1120,7 @@ function renderLesson(root, data) {
       for (const item of section.items || []) {
         html.push(`<article class="audio-track-card">`);
         html.push(`<div class="audio-track-badge"><span>CD</span>${item.track}</div>`);
-        html.push(`<div class="audio-track-content"><p class="audio-track-meta">課本 ${item.pages} 頁・${item.duration}</p><h3>${item.title}</h3><audio controls preload="metadata" src="${item.src}">您的瀏覽器不支援音訊播放。</audio><p class="lesson-muted">真人教材音源。播放後可搭配下方逐句「跟讀」練習。</p>`);
+        html.push(`<div class="audio-track-content"><p class="audio-track-meta">課本 ${item.pages} 頁・${item.duration}</p><h3>${item.title}</h3><audio controls preload="metadata" src="${item.src}">您的瀏覽器不支援音訊播放。</audio><p class="lesson-muted">${item.segments?.length ? '真人教材音源。播放後可搭配下方逐句「跟讀」練習。' : '真人教材原音。可搭配本頁文字與課本照片聆聽練習。'}</p>`);
         if (item.segments?.length) {
           html.push(`<div class="audio-segment-list"><h4>逐句真人原音與解說</h4>`);
           for (const segment of item.segments) {

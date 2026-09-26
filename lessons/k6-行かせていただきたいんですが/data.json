@@ -165,7 +165,7 @@
       ]
     },
     "149": {
-      "note": "CD23 聽力理解題；尚未取得錄音或標準解答，因此三個理解題不提供猜測答案。",
+      "note": "CD23 原音已附於本頁，可先聆聽再回答三個理解題；標準解答尚未核對。",
       "sentences": [
         {
           "jp": "ミラーさんはどうして日本語学校へ行きたいと思ったのですか。",
@@ -175,7 +175,7 @@
       ]
     },
     "150": {
-      "note": "這一頁是 CD23 聽力填空。照片沒有錄音與標準答案，①～⑥待音檔或解答核對。",
+      "note": "請返回第149頁播放 CD23，聆聽後完成①～⑥填空；標準答案尚未核對。",
       "sentences": [
         {
           "jp": "もう一度聞きましょう。",
@@ -307,7 +307,7 @@
       ]
     },
     "161": {
-      "note": "這頁的題目依賴 CD25、CD26 錄音；尚未提供音檔，無法核對聽力答案。"
+      "note": "CD25 與 CD26 原音已附於本頁，請聆聽並對照課本題目及圖片作答；標準解答尚未核對。"
     },
     "162": {
       "sentences": [
@@ -2043,7 +2043,22 @@
         }
       ],
       "sourcePhoto": "pages/149.jpeg",
-      "notice": "CD23 聽力理解題；尚未取得錄音或標準解答，因此三個理解題不提供猜測答案。"
+      "notice": "CD23 原音已附於本頁，可先聆聽再回答三個理解題；標準解答尚未核對。"
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "speaking",
+      "pageOrder": 149,
+      "title": "149頁｜課本真人原音",
+      "items": [
+        {
+          "track": "23",
+          "title": "話す・聞く：ミラーさんの相談",
+          "pages": "149–150",
+          "duration": "1:36",
+          "src": "../../assets/audio/lesson-06-track-23.mp3?v=1"
+        }
+      ]
     },
     {
       "type": "sentence_cards",
@@ -2123,7 +2138,7 @@
         }
       ],
       "sourcePhoto": "pages/150.jpeg",
-      "notice": "這一頁是 CD23 聽力填空。照片沒有錄音與標準答案，①～⑥待音檔或解答核對。"
+      "notice": "請返回第149頁播放 CD23，聆聽後完成①～⑥填空；標準答案尚未核對。"
     },
     {
       "type": "sentence_cards",
@@ -2374,6 +2389,21 @@
       "sourcePhoto": "pages/158.jpeg"
     },
     {
+      "type": "audio_tracks",
+      "chapter": "reading",
+      "pageOrder": 158,
+      "title": "158頁｜課本真人原音",
+      "items": [
+        {
+          "track": "24",
+          "title": "読む：メンタルトレーニング",
+          "pages": "158",
+          "duration": "2:11",
+          "src": "../../assets/audio/lesson-06-track-24.mp3?v=1"
+        }
+      ]
+    },
+    {
       "type": "sentence_cards",
       "chapter": "reading",
       "pageOrder": 159,
@@ -2437,7 +2467,29 @@
       "title": "161頁｜問題",
       "items": [],
       "sourcePhoto": "pages/161.jpeg",
-      "notice": "這頁的題目依賴 CD25、CD26 錄音；尚未提供音檔，無法核對聽力答案。"
+      "notice": "CD25 與 CD26 原音已附於本頁，請聆聽並對照課本題目及圖片作答；標準解答尚未核對。"
+    },
+    {
+      "type": "audio_tracks",
+      "chapter": "questions",
+      "pageOrder": 161,
+      "title": "161頁｜課本真人原音",
+      "items": [
+        {
+          "track": "25",
+          "title": "問題 1：聽力作答",
+          "pages": "161",
+          "duration": "0:24",
+          "src": "../../assets/audio/lesson-06-track-25.mp3?v=1"
+        },
+        {
+          "track": "26",
+          "title": "問題 2：聽力作答",
+          "pages": "161",
+          "duration": "1:58",
+          "src": "../../assets/audio/lesson-06-track-26.mp3?v=1"
+        }
+      ]
     },
     {
       "type": "sentence_cards",
