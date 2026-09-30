@@ -87,6 +87,260 @@
   ],
   "supplementalSections": [
     {
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "119頁補充講義｜のだろうか／のでしょうか",
+      "pageOrder": 119.2,
+      "items": [
+        {
+          "topic": "のだろうか｜根據眼前情況自問、疑惑",
+          "japanese": "彼、全然返信してくれない。もう私のことが嫌いになったのだろうか。",
+          "plainText": "彼、全然返信してくれない。もう私のことが嫌いになったのだろうか。",
+          "jpRuby": "<ruby>彼<rt>かれ</rt></ruby>、<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>返信<rt>へんしん</rt></ruby>してくれない。もう<ruby>私<rt>わたし</rt></ruby>のことが<ruby>嫌<rt>きら</rt></ruby>いになったのだろうか。",
+          "chinese": "他完全不回覆我。難道已經討厭我了嗎？",
+          "grammarNote": "普通形＋のだろうか／のでしょうか；名詞、な形容詞現在肯定用「なのだろうか」。常表示帶背景的自問、思索或疑惑，也可含不安或反問；不一定是不安。「んだろうか」較口語。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "悲しいニュースがずっと続いていて、学校のいじめ問題は、本当に減っているのでしょうか。",
+              "ruby": "<ruby>悲<rt>かな</rt></ruby>しいニュースがずっと<ruby>続<rt>つづ</rt></ruby>いていて、<ruby>学校<rt>がっこう</rt></ruby>のいじめ<ruby>問題<rt>もんだい</rt></ruby>は、<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>減<rt>へ</rt></ruby>っているのでしょうか。",
+              "chinese": "悲傷的新聞接連不斷，校園霸凌問題真的正在減少嗎？"
+            },
+            {
+              "plain": "昼まで寝ていたのに、どうしてまだこんなに眠いのだろうか。",
+              "ruby": "<ruby>昼<rt>ひる</rt></ruby>まで<ruby>寝<rt>ね</rt></ruby>ていたのに、どうしてまだこんなに<ruby>眠<rt>ねむ</rt></ruby>いのだろうか。",
+              "chinese": "明明睡到中午了，為什麼還這麼睏呢？"
+            },
+            {
+              "plain": "最近、彼女の返信が遅いんだ。僕たちはもうダメなのだろうか。",
+              "ruby": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>彼女<rt>かのじょ</rt></ruby>の<ruby>返信<rt>へんしん</rt></ruby>が<ruby>遅<rt>おそ</rt></ruby>いんだ。<ruby>僕<rt>ぼく</rt></ruby>たちはもうダメなのだろうか。",
+              "chinese": "最近她回訊息很慢。我們是不是已經沒希望了呢？"
+            },
+            {
+              "plain": "A：これ、安かったからたくさん買ったんだ。かわいいでしょう。 B：うん……かわいい……けど、置く場所はあるのでしょうか。",
+              "ruby": "A：これ、<ruby>安<rt>やす</rt></ruby>かったからたくさん<ruby>買<rt>か</rt></ruby>ったんだ。かわいいでしょう。 B：うん……かわいい……けど、<ruby>置<rt>お</rt></ruby>く<ruby>場所<rt>ばしょ</rt></ruby>はあるのでしょうか。",
+              "chinese": "A：這個很便宜，所以買了很多。很可愛吧？ B：嗯……是很可愛……不過有地方放嗎？"
+            },
+            {
+              "plain": "A：このニュース見て、実はAIが作った偽物の動画なんだよ。 B：うそ、本物だと思った！AIはこれ以上進んでいいのだろうか。本当に必要なのだろうか。",
+              "ruby": "A：このニュース<ruby>見<rt>み</rt></ruby>て、<ruby>実<rt>じつ</rt></ruby>はAIが<ruby>作<rt>つく</rt></ruby>った<ruby>偽物<rt>にせもの</rt></ruby>の<ruby>動画<rt>どうが</rt></ruby>なんだよ。 B：うそ、<ruby>本物<rt>ほんもの</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>った！AIはこれ<ruby>以上<rt>いじょう</rt></ruby><ruby>進<rt>すす</rt></ruby>んでいいのだろうか。<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>なのだろうか。",
+              "chinese": "A：看這則新聞，其實是 AI 製作的假影片。 B：不會吧，我以為是真的！AI 繼續發展下去真的好嗎？真的有必要嗎？"
+            }
+          ],
+          "supplementNote": "「だろうか」直接提出疑問或推測；「のだろうか」常帶有對背景或原因的探究。兩者都可以有依據，不能單以『有無依據』區分。禮貌形式是「のでしょうか」。"
+        }
+      ]
+    },
+    {
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "120頁補充講義｜アクセス",
+      "pageOrder": 120.2,
+      "items": [
+        {
+          "topic": "アクセス｜交通方式與便利性",
+          "japanese": "このホテルは、駅から近くて、アクセスがいいですね。",
+          "plainText": "このホテルは、駅から近くて、アクセスがいいですね。",
+          "jpRuby": "このホテルは、<ruby>駅<rt>えき</rt></ruby>から<ruby>近<rt>ちか</rt></ruby>くて、アクセスがいいですね。",
+          "chinese": "這間飯店離車站近，交通很方便呢。",
+          "grammarNote": "表示前往某地的交通方式、可達性或交通便利程度。「アクセスがいい／悪い」表示交通方便／不便。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "この遊園地はアクセスが悪いので、来る人が少ないです。",
+              "ruby": "この<ruby>遊園地<rt>ゆうえんち</rt></ruby>はアクセスが<ruby>悪<rt>わる</rt></ruby>いので、<ruby>来<rt>く</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないです。",
+              "chinese": "這座遊樂園交通不便，因此來的人很少。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sentence_cards",
+      "chapter": "grammar",
+      "title": "121頁補充講義｜だろう／だろうと思う",
+      "pageOrder": 121.2,
+      "items": [
+        {
+          "topic": "だろう｜對事情的推測",
+          "japanese": "物価が上がると、生活は厳しくなるだろう。",
+          "plainText": "物価が上がると、生活は厳しくなるだろう。",
+          "jpRuby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がると、<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>厳<rt>きび</rt></ruby>しくなるだろう。",
+          "chinese": "物價上漲的話，生活會變得艱難吧。",
+          "grammarNote": "普通形＋だろう；名詞、な形容詞現在肯定不加「だ」。「だろう」是「でしょう」的普通體，常見於文章與評論，也用於口語；並非必然客觀或高把握。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "天気予報によると、明日は曇りだろう。",
+              "ruby": "<ruby>天気予報<rt>てんきよほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>曇<rt>くも</rt></ruby>りだろう。",
+              "chinese": "根據天氣預報，明天大概是陰天吧。"
+            },
+            {
+              "plain": "AI技術がこれ以上進んだら、多くの職業がなくなるだろう。",
+              "ruby": "AI<ruby>技術<rt>ぎじゅつ</rt></ruby>がこれ<ruby>以上<rt>いじょう</rt></ruby><ruby>進<rt>すす</rt></ruby>んだら、<ruby>多<rt>おお</rt></ruby>くの<ruby>職業<rt>しょくぎょう</rt></ruby>がなくなるだろう。",
+              "chinese": "AI 技術若持續進步，許多職業可能會消失吧。"
+            }
+          ]
+        },
+        {
+          "topic": "だろうと思う｜明示個人推測",
+          "japanese": "A：日本語の試験、合格できるかな……。 B：たくさん勉強していたんだから、きっと大丈夫だろうと思うよ。",
+          "plainText": "A：日本語の試験、合格できるかな……。 B：たくさん勉強していたんだから、きっと大丈夫だろうと思うよ。",
+          "jpRuby": "A：<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>、<ruby>合格<rt>ごうかく</rt></ruby>できるかな……。 B：たくさん<ruby>勉強<rt>べんきょう</rt></ruby>していたんだから、きっと<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だろうと<ruby>思<rt>おも</rt></ruby>うよ。",
+          "chinese": "A：日文考試能及格嗎……？ B：你讀了那麼多，我想一定沒問題吧。",
+          "grammarNote": "普通形＋だろうと思う；名詞、な形容詞現在肯定不加「だ」。加上「と思う」表明這是自己的看法，往往較委婉；確信程度仍由上下文決定。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "A：藤井さん、最近元気がないね。 B：仕事が忙しすぎて、ゆっくり休めないだろうと思う。 A：それは大変だね。毎日残業で、かなり疲れてるだろうと思う。",
+              "ruby": "A：<ruby>藤井<rt>ふじい</rt></ruby>さん、<ruby>最近<rt>さいきん</rt></ruby><ruby>元気<rt>げんき</rt></ruby>がないね。 B：<ruby>仕事<rt>しごと</rt></ruby>が<ruby>忙<rt>いそが</rt></ruby>しすぎて、ゆっくり<ruby>休<rt>やす</rt></ruby>めないだろうと<ruby>思<rt>おも</rt></ruby>う。 A：それは<ruby>大変<rt>たいへん</rt></ruby>だね。<ruby>毎日<rt>まいにち</rt></ruby><ruby>残業<rt>ざんぎょう</rt></ruby>で、かなり<ruby>疲<rt>つか</rt></ruby>れてるだろうと<ruby>思<rt>おも</rt></ruby>う。",
+              "chinese": "A：藤井最近沒什麼精神呢。 B：我想是工作太忙，沒辦法好好休息吧。 A：真辛苦。每天加班，我想他一定相當疲倦。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sentence_cards",
+      "chapter": "reading",
+      "title": "129頁補充講義｜方向＋に長い",
+      "pageOrder": 129.2,
+      "items": [
+        {
+          "topic": "に長い｜沿某方向延伸",
+          "japanese": "この川は東西に長い。",
+          "plainText": "この川は東西に長い。",
+          "jpRuby": "この<ruby>川<rt>かわ</rt></ruby>は<ruby>東西<rt>とうざい</rt></ruby>に<ruby>長<rt>なが</rt></ruby>い。",
+          "chinese": "這條河沿東西方向延伸得很長。",
+          "grammarNote": "方向／空間＋に長い，表示朝某方向延伸得很長，例如東西に長い、横に長い。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "ダックスフントは横に長い犬です。",
+              "ruby": "ダックスフントは<ruby>横<rt>よこ</rt></ruby>に<ruby>長<rt>なが</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です。",
+              "chinese": "臘腸犬是身體橫向很長的狗。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sentence_cards",
+      "chapter": "reading",
+      "title": "130頁補充講義｜少なくとも・文句・なければならない",
+      "pageOrder": 130.2,
+      "items": [
+        {
+          "topic": "少なくとも｜至少、最低限度",
+          "japanese": "うちから駅まで歩いて、少なくとも10分はかかる。",
+          "plainText": "うちから駅まで歩いて、少なくとも10分はかかる。",
+          "jpRuby": "うちから<ruby>駅<rt>えき</rt></ruby>まで<ruby>歩<rt>ある</rt></ruby>いて、<ruby>少<rt>すく</rt></ruby>なくとも10<ruby>分<rt>ぷん</rt></ruby>はかかる。",
+          "chinese": "從家裡走到車站，至少要十分鐘。",
+          "grammarNote": "可表示數量的最低限度，也可用於提出最低要求、退一步的建議。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "どんなに忙しくても、少なくとも週に一回はジムに通ってる。",
+              "ruby": "どんなに<ruby>忙<rt>いそが</rt></ruby>しくても、<ruby>少<rt>すく</rt></ruby>なくとも<ruby>週<rt>しゅう</rt></ruby>に<ruby>一回<rt>いっかい</rt></ruby>はジムに<ruby>通<rt>かよ</rt></ruby>ってる。",
+              "chinese": "不管多忙，每週至少都會去一次健身房。"
+            },
+            {
+              "plain": "秋葉原に行くなら、少なくともメイドカフェは行ってみてね。",
+              "ruby": "<ruby>秋葉原<rt>あきはばら</rt></ruby>に<ruby>行<rt>い</rt></ruby>くなら、<ruby>少<rt>すく</rt></ruby>なくともメイドカフェは<ruby>行<rt>い</rt></ruby>ってみてね。",
+              "chinese": "如果去秋葉原，至少要試著去一次女僕咖啡廳喔。"
+            },
+            {
+              "plain": "日本語が完璧じゃなくてもいい、少なくとも話すようにしてね。",
+              "ruby": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>完璧<rt>かんぺき</rt></ruby>じゃなくてもいい、<ruby>少<rt>すく</rt></ruby>なくとも<ruby>話<rt>はな</rt></ruby>すようにしてね。",
+              "chinese": "日文不完美也沒關係，至少要試著開口說喔。"
+            }
+          ]
+        },
+        {
+          "topic": "文句｜抱怨、不滿",
+          "japanese": "子供：またカレー？もう飽きたよ。 母：文句言わない！早く食べなさい。",
+          "plainText": "子供：またカレー？もう飽きたよ。 母：文句言わない！早く食べなさい。",
+          "jpRuby": "<ruby>子供<rt>こども</rt></ruby>：またカレー？もう<ruby>飽<rt>あ</rt></ruby>きたよ。 <ruby>母<rt>はは</rt></ruby>：<ruby>文句<rt>もんく</rt></ruby><ruby>言<rt>い</rt></ruby>わない！<ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べなさい。",
+          "chinese": "孩子：又是咖哩？已經吃膩了。 母親：別抱怨！快吃。",
+          "grammarNote": "文句を言う＝抱怨；文句がある＝有不滿。可以當面提出，也可以向第三者抱怨，不限定必須直接對當事人說。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "夫：この味付け、薄くない？ 妻：文句ある？自分でやればいい。",
+              "ruby": "<ruby>夫<rt>おっと</rt></ruby>：この<ruby>味付<rt>あじつ</rt></ruby>け、<ruby>薄<rt>うす</rt></ruby>くない？ <ruby>妻<rt>つま</rt></ruby>：<ruby>文句<rt>もんく</rt></ruby>ある？<ruby>自分<rt>じぶん</rt></ruby>でやればいい。",
+              "chinese": "丈夫：這個調味不會太淡嗎？ 妻子：有意見？那你自己做。"
+            }
+          ]
+        },
+        {
+          "topic": "なければならない／なければなりません｜必須",
+          "japanese": "寝るところは毎日掃除しなければならない。",
+          "plainText": "寝るところは毎日掃除しなければならない。",
+          "jpRuby": "<ruby>寝<rt>ね</rt></ruby>るところは<ruby>毎日<rt>まいにち</rt></ruby><ruby>掃除<rt>そうじ</rt></ruby>しなければならない。",
+          "chinese": "睡覺的地方必須每天打掃。",
+          "grammarNote": "動詞：ない形去ない＋なければならない。い形容詞：去い＋くなければならない。名詞／な形容詞：＋でなければならない。「なりません」為禮貌形式。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "寝るところは暗くなければならない。",
+              "ruby": "<ruby>寝<rt>ね</rt></ruby>るところは<ruby>暗<rt>くら</rt></ruby>くなければならない。",
+              "chinese": "睡覺的地方必須是昏暗的。"
+            },
+            {
+              "plain": "寝るところは自分のベッドでなければならない。",
+              "ruby": "<ruby>寝<rt>ね</rt></ruby>るところは<ruby>自分<rt>じぶん</rt></ruby>のベッドでなければならない。",
+              "chinese": "睡覺的地方必須是自己的床。"
+            },
+            {
+              "plain": "寝るところは静かでなければならない。",
+              "ruby": "<ruby>寝<rt>ね</rt></ruby>るところは<ruby>静<rt>しず</rt></ruby>かでなければならない。",
+              "chinese": "睡覺的地方必須安靜。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sentence_cards",
+      "chapter": "questions",
+      "title": "135頁補充講義｜わざと／わざわざ",
+      "pageOrder": 135.2,
+      "items": [
+        {
+          "topic": "わざと｜故意、有意地",
+          "japanese": "この試合、わざと負けたんですか。",
+          "plainText": "この試合、わざと負けたんですか。",
+          "jpRuby": "この<ruby>試合<rt>しあい</rt></ruby>、わざと<ruby>負<rt>ま</rt></ruby>けたんですか。",
+          "chinese": "這場比賽，你是故意輸的嗎？",
+          "grammarNote": "わざと＋動作，表示有意為之。常用於責備或負面情境，但也可中性地表示為了某個目的刻意做，不一定含惡意。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "A：なんでわざとコップを落としたの？ B：わざとじゃないよ！手が滑ったんだ。",
+              "ruby": "A：なんでわざとコップを<ruby>落<rt>お</rt></ruby>としたの？ B：わざとじゃないよ！<ruby>手<rt>て</rt></ruby>が<ruby>滑<rt>すべ</rt></ruby>ったんだ。",
+              "chinese": "A：你為什麼故意把杯子摔下去？ B：不是故意的！是手滑了。"
+            }
+          ]
+        },
+        {
+          "topic": "わざわざ｜特地、費心",
+          "japanese": "わざわざ来てくれてありがとう。",
+          "plainText": "わざわざ来てくれてありがとう。",
+          "jpRuby": "わざわざ<ruby>来<rt>き</rt></ruby>てくれてありがとう。",
+          "chinese": "謝謝你特地過來。",
+          "grammarNote": "わざわざ＋動作，強調特地花時間或精力去做。感謝語境很常見，但也可帶『何必特地』的不滿，要看上下文。",
+          "examplesTitle": "更多例句與補充說明",
+          "examples": [
+            {
+              "plain": "A：資料を持ってきました。 B：あ、わざわざすみません。",
+              "ruby": "A：<ruby>資料<rt>しりょう</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってきました。 B：あ、わざわざすみません。",
+              "chinese": "A：我把資料帶來了。 B：啊，還麻煩你特地送來，真不好意思。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "sentence_cards", "chapter": "grammar", "title": "114頁｜1（1）あ～・そ～ 完整例句與練習",
       "items": [
         {"topic":"課本例句｜あの<ruby>方<rt>かた</rt></ruby>","japanese":"小川さんにしばらくお会いしていないんですよ。――ああ、あの方、今年の4月に転勤されましたよ。","plainText":"小川さんにしばらくお会いしていないんですよ。――ああ、あの方、今年の4月に転勤されましたよ。","chinese":"我好一陣子沒見到小川先生了。——啊，那位先生今年四月調職了。","grammarNote":"雙方都知道小川先生，因此用「あの<ruby>方<rt>かた</rt></ruby>」。","jpRuby":"<ruby>小川<rt>おがわ</rt></ruby>さんにしばらくお<ruby>会<rt>あ</rt></ruby>いしていないんですよ。――ああ、あの<ruby>方<rt>かた</rt></ruby>、<ruby>今年<rt>ことし</rt></ruby>の4<ruby>月<rt>がつ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>されましたよ。"},
