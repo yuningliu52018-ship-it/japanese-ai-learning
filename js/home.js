@@ -1,47 +1,51 @@
 (() => {
-  const key = 'audio-textbook.last-position';
-  const continueLink = document.querySelector('[data-continue-link]');
-  // Resume the last visited Lesson 06 page when there is one.
-  let lastK6 = 0;
-  try { lastK6 = Number(localStorage.getItem('japanese-ai-learning.k6.page')); } catch {}
-  if (continueLink && lastK6 >= 136 && lastK6 <= 164) {
-    continueLink.href = `lessons/k6-行かせていただきたいんですが/index.html#page-${lastK6}`;
-    document.querySelector('.continue-copy h3').innerHTML = `<span class="lesson-numeral">第 6 課・第 ${lastK6} 頁</span><span lang="ja">行かせていただきたいんですが</span>`;
-    document.querySelector('.continue-copy p').textContent = '從上次上課的頁碼接著看。';
-  } else if (continueLink) continueLink.hash = 'textbook-pages';
-  // Preserve the existing prototype passport without changing the entry target.
-  const passportKey = 'japanese-ai-learning-passport-v1';
-  const day = new Date().toISOString().slice(0, 10);
-  let passport = {};
-  try { passport = JSON.parse(localStorage.getItem(passportKey) || '{}') || {}; } catch {}
-  if (typeof passport !== 'object' || Array.isArray(passport)) passport = {};
-  passport.activeDays = Array.isArray(passport.activeDays) ? passport.activeDays : [];
-  if (!passport.activeDays.includes(day)) passport.activeDays.push(day);
-  passport.activeDays = passport.activeDays.slice(-60);
-  passport.visits = (Number.isFinite(Number(passport.visits)) ? Number(passport.visits) : 0) + 1;
-  passport.lastVisit = day;
-  const savePassport = () => {
-    try { localStorage.setItem(passportKey, JSON.stringify(passport)); } catch {}
+  const read = (key) => {
+    try { return JSON.parse(localStorage.getItem(key) || 'null'); } catch { return null; }
   };
-  savePassport();
-  const activeDays = document.querySelector('[data-active-days]');
-  const visits = document.querySelector('[data-visits]');
-  const count = document.querySelector('[data-lesson-count]');
-  if (activeDays) activeDays.textContent = passport.activeDays.length;
-  if (visits) visits.textContent = passport.visits;
-  document.querySelectorAll('[data-today-date]').forEach(element => {
-    element.textContent = new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', weekday: 'short' }).format(new Date());
-  });
-  if (count) fetch('data/lessons.json').then(response => response.ok ? response.json() : [])
-    .then(lessons => { count.textContent = lessons.length; }).catch(() => {});
+  const savedPage = (id) => {
+    try { return localStorage.getItem(`japanese-ai-learning.${id}.page`); } catch { return null; }
+  };
+  let catalogue = [];
+  function showContinue(lessons) {
+    catalogue = lessons;
+    const link = document.querySelector('[data-continue-link]');
+    if (!link || !lessons.length) return;
+    const recent = read('japanese-ai-learning.last-read');
+    const legacy = read('japanese-ai-learning-passport-v1');
+    const lesson = lessons.find((entry) => entry.id === recent?.lessonId)
+      || lessons.find((entry) => legacy?.lastLesson?.split('#')[0] === entry.href.split('#')[0])
+      || lessons[0];
+    const image = window.JapaneseTextbookArtwork(lesson);
+    const page = savedPage(lesson.id);
+    const number = lesson.title.split('：')[0];
+    const name = lesson.title.split('：').slice(1).join('：') || lesson.title;
+    const heading = document.querySelector('.continue-copy h3');
+    heading.replaceChildren();
+    const label = document.createElement('span');
+    label.className = 'lesson-numeral';
+    label.textContent = `${number}${/^\d+$/.test(page || '') ? `・第 ${page} 頁` : ''}`;
+    const title = document.createElement('span');
+    title.lang = 'ja'; title.textContent = name;
+    heading.append(label, title);
+    const picture = document.querySelector('.continue-image');
+    picture.src = image.src; picture.alt = image.alt;
+    link.href = `${lesson.href.split('#')[0]}${/^\d+$/.test(page || '') ? `#page-${page}` : ''}`;
+    document.querySelector('.continue-copy p').textContent = page
+      ? '接著上次閱讀的課本頁，繼續聆聽與練習。'
+      : '從這一課開始，逐頁聆聽、閱讀與練習。';
+    document.querySelectorAll('.toc-lesson').forEach((entry) => {
+      entry.classList.toggle('is-current', entry.dataset.lessonId === lesson.id);
+    });
+  }
+  document.addEventListener('lessons:loaded', (event) => showContinue(event.detail.lessons));
+  window.addEventListener('pageshow', () => { if (catalogue.length) showContinue(catalogue); });
   document.addEventListener('click', (event) => {
     const link = event.target.closest('a[data-learning-link]');
     if (!link) return;
-    const href = link.getAttribute('href') || '';
-    passport.lastLesson = href;
-    savePassport();
-    if (href.startsWith('lessons/k5-')) {
-      try { localStorage.setItem(key, href); } catch {}
+    const href = link.getAttribute('href').split('#')[0];
+    const lesson = catalogue.find((entry) => entry.href.split('#')[0] === href);
+    if (lesson) {
+      try { localStorage.setItem('japanese-ai-learning.last-read', JSON.stringify({ lessonId: lesson.id })); } catch {}
     }
   });
 })();

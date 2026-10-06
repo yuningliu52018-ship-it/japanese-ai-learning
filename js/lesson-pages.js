@@ -289,6 +289,7 @@
       });
       if (rememberPage) {
         try { localStorage.setItem(storageKey, page.key); } catch {}
+        try { localStorage.setItem('japanese-ai-learning.last-read', JSON.stringify({ lessonId, pageKey: page.key })); } catch {}
       }
       if (scroll) nav.scrollIntoView({ behavior: 'smooth', block: 'start' });
       if (changed && navigationRegistered) window.JapaneseLesson?._notifyLocation?.(locations[index], source);

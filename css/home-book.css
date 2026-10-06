@@ -1,0 +1,39 @@
+/* Homepage illustrations share one palette and retain their complete scenes. */
+.textbook-home .hero-margin-note { display: none; }
+.textbook-home .hero-landscape {
+  width: 62%;
+  height: 100%;
+  right: -4%;
+  bottom: 0;
+  object-fit: cover;
+  object-position: right center;
+  opacity: 1;
+  mask-image: linear-gradient(to right, transparent, #000 25%);
+}
+.textbook-home .continue-image {
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.textbook-home .toc-lesson {
+  grid-template-columns: 180px minmax(0, 1fr) 26px;
+  padding-block: 20px;
+}
+.textbook-home .toc-thumbnail {
+  width: 180px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  filter: none;
+}
+@media (max-width: 760px) {
+  .textbook-home .book-menu { display: flex; }
+  .textbook-home .hero-landscape {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    mask-image: none;
+  }
+  .textbook-home .toc-lesson { grid-template-columns: minmax(0, 1fr) 26px; }
+  .textbook-home .toc-thumbnail { width: 100%; grid-column: 1 / -1; }
+}
