@@ -1663,7 +1663,7 @@
       "type": "sentence_cards",
       "chapter": "speaking",
       "title": "98頁｜3. もう一度聞きましょう｜会話1［昼間 会社で］",
-      "notice": "課本指示：＿＿の部分にことばを書いてください。保留五處填空；參考答案依既有CD14逐句資料整理，本次未重新聽核音檔。手寫內容不作為印刷原文。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p98-1",
@@ -1688,15 +1688,16 @@
           "jpPlain": "あ、いつもお世話になっております。①＿＿＿＿ 松本は出張しておりますが。",
           "zh": "啊，平時承蒙您照顧。①＿＿＿＿，松本正在出差。",
           "grammarNote": "あいにく表示不巧；對外提及公司同事不加職稱，以おります自謙。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "あ、いつもお世話になっております。あいにく、松本は出張しておりますが。",
               "ruby": "あ、いつもお<ruby>世話<rt>せわ</rt></ruby>になっております。あいにく、<ruby>松本<rt>まつもと</rt></ruby>は<ruby>出張<rt>しゅっちょう</rt></ruby>しておりますが。",
-              "chinese": "啊，平時承蒙您照顧。不巧，松本正在出差。①參考答案：あいにく。"
+              "chinese": "啊，平時承蒙您照顧。不巧，松本正在出差。①提供解答：あいにく。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p98-4",
@@ -1721,15 +1722,16 @@
           "jpPlain": "いえ。あのう、②＿＿＿＿、③＿＿＿＿。",
           "zh": "不用。那個，②＿＿＿＿，③＿＿＿＿。",
           "grammarNote": "恐れ入りますが作為請求前的客氣緩衝語；お願いできますか委婉請求。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "いえ。あのう、恐れ入りますが、伝言をお願いできますか。",
-              "ruby": "いえ。あのう、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>伝言<rt>でんごん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いできますか。",
-              "chinese": "不用。那個，不好意思，可以麻煩您轉告嗎？②恐れ入りますが；③伝言をお願いできますか。"
+              "plain": "いえ。あのう、恐れ入りますが、伝言、お願いできますか。",
+              "ruby": "いえ。あのう、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>伝言<rt>でんごん</rt></ruby>、<ruby>お願<rt>ねが</rt></ruby>いできますか。",
+              "chinese": "不用。那個，不好意思，可以請您代為轉告嗎？②恐れ入りますが；③伝言、お願いできますか。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p98-7",
@@ -1762,15 +1764,16 @@
           "jpPlain": "申し訳ありませんが、そのように④＿＿＿＿。",
           "zh": "非常抱歉，可以請您照這樣④＿＿＿＿嗎？",
           "grammarNote": "お＋動詞ます形去ます＋いただけますか：鄭重請求對方替自己做事。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "申し訳ありませんが、そのようにお伝えいただけますか。",
               "ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、そのようにお<ruby>伝<rt>つた</rt></ruby>えいただけますか。",
-              "chinese": "非常抱歉，可以請您照這樣轉告嗎？④參考答案：お伝えいただけますか。"
+              "chinese": "非常抱歉，可以請您照這樣轉告嗎？④提供解答：お伝えいただけますか。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p98-11",
@@ -1779,15 +1782,16 @@
           "jpPlain": "はい。あさっての金曜日はご都合が悪くなった⑤＿＿＿＿。",
           "zh": "好的。後天星期五變得不方便了，⑤＿＿＿＿。",
           "grammarNote": "ということですね重述並確認對方的訊息。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "はい。あさっての金曜日はご都合が悪くなったということですね。",
               "ruby": "はい。あさっての<ruby>金曜日<rt>きんようび</rt></ruby>はご<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったということですね。",
-              "chinese": "好的。也就是後天星期五變得不方便了，對吧？⑤參考答案：ということですね。"
+              "chinese": "好的。也就是後天星期五變得不方便了，對吧？⑤提供解答：ということですね。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p98-12",
@@ -1903,15 +1907,16 @@
           "jpPlain": "彼は性格が明るくて、ユーモアがあって、クラスの人気者だ。 → ＿＿＿＿＿＿",
           "zh": "他個性開朗又有幽默感，是班上的人氣人物。",
           "grammarNote": "明るくて → 明るく；あって → あり。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "彼は性格が明るく、ユーモアがあり、クラスの人気者だ。",
               "ruby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>性格<rt>せいかく</rt></ruby>が<ruby>明<rt>あか</rt></ruby>るく、ユーモアがあり、クラスの<ruby>人気者<rt>にんきもの</rt></ruby>だ。",
               "chinese": "他個性開朗又有幽默感，是班上的人氣人物。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p93-cont-2",
@@ -1920,15 +1925,16 @@
           "jpPlain": "地震で壊れた建物には多くの人が残っていて、けがをしている人もいるようだ。 → ＿＿＿＿＿＿",
           "zh": "地震毀損的建築物裡仍有許多人，似乎也有人受傷。",
           "grammarNote": "残っていて → 残っており；後半句保留。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "地震で壊れた建物には多くの人が残っており、けがをしている人もいるようだ。",
               "ruby": "<ruby>地震<rt>じしん</rt></ruby>で<ruby>壊<rt>こわ</rt></ruby>れた<ruby>建物<rt>たてもの</rt></ruby>には<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>っており、けがをしている<ruby>人<rt>ひと</rt></ruby>もいるようだ。",
               "chinese": "地震毀損的建築物裡仍有許多人，似乎也有人受傷。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         }
       ]
     },
@@ -1995,15 +2001,16 @@
           "jpPlain": "姉・雷の音を聞くと、怖い → ＿＿＿＿＿＿",
           "zh": "姐姐・一聽到雷聲就害怕。",
           "grammarNote": "怖い → 怖がる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "姉は雷の音を聞くと、怖がります。",
               "ruby": "<ruby>姉<rt>あね</rt></ruby>は<ruby>雷<rt>かみなり</rt></ruby>の<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くと、<ruby>怖<rt>こわ</rt></ruby>がります。",
               "chinese": "姐姐一聽到雷聲就顯得害怕。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p93-garu-q2",
@@ -2012,15 +2019,16 @@
           "jpPlain": "弟・おふろに入るのが嫌だ → ＿＿＿＿＿＿",
           "zh": "弟弟・不喜歡洗澡。",
           "grammarNote": "嫌（だ）＋がる → 嫌がる；の將入る名詞化。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "弟はおふろに入るのを嫌がります。",
               "ruby": "<ruby>弟<rt>おとうと</rt></ruby>はおふろに<ruby>入<rt>はい</rt></ruby>るのを<ruby>嫌<rt>いや</rt></ruby>がります。",
               "chinese": "弟弟不願意洗澡。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p93-garu-q3",
@@ -2029,15 +2037,16 @@
           "jpPlain": "うちの子ども・月曜日、学校へ行きたくない → ＿＿＿＿＿＿",
           "zh": "我家的孩子・星期一不想去學校。",
           "grammarNote": "行きたい → 行きたがる；否定為行きたがらない。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "うちの子どもは月曜日、学校へ行きたがりません。",
               "ruby": "うちの<ruby>子ども<rt>こども</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>、<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたがりません。",
               "chinese": "我家的孩子星期一不想去學校。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         }
       ]
     },
@@ -2123,15 +2132,16 @@
           "jpPlain": "１）＿＿＿＿＿＿",
           "zh": "圖示：嬰兒哭著，想到喝奶的情境。請用～たがっています描述。",
           "grammarNote": "飲みたい → 飲みたがっている。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "赤ちゃんはミルクを飲みたがっています。",
-              "ruby": "<ruby>赤<rt>あか</rt></ruby>ちゃんはミルクを<ruby>飲<rt>の</rt></ruby>みたがっています。",
-              "chinese": "嬰兒想喝奶。"
+              "plain": "赤ちゃんはミルクを欲しがっています。",
+              "ruby": "<ruby>赤<rt>あか</rt></ruby>ちゃんはミルクを<ruby>欲<rt>ほ</rt></ruby>しがっています。",
+              "chinese": "嬰兒想要喝奶。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p94-picture-2",
@@ -2140,15 +2150,16 @@
           "jpPlain": "２）＿＿＿＿＿＿",
           "zh": "圖示：狗看著牽繩，想到與主人散步。請用～たがっています描述。",
           "grammarNote": "散歩に行きたい → 散歩に行きたがっている。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "犬は散歩に行きたがっています。",
               "ruby": "<ruby>犬<rt>いぬ</rt></ruby>は<ruby>散歩<rt>さんぽ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたがっています。",
               "chinese": "狗想去散步。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p94-picture-3",
@@ -2157,15 +2168,16 @@
           "jpPlain": "３）＿＿＿＿＿＿",
           "zh": "圖示：主人指向回家的路，狗卻不願往回走。請用否定形式描述。",
           "grammarNote": "帰りたがっている的否定為帰りたがっていない。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "犬は家に帰りたがっていません。",
-              "ruby": "<ruby>犬<rt>いぬ</rt></ruby>は<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>りたがっていません。",
-              "chinese": "狗不想回家。"
+              "plain": "犬は散歩から帰るのをいやがっています。",
+              "ruby": "<ruby>犬<rt>いぬ</rt></ruby>は<ruby>散歩<rt>さんぽ</rt></ruby>から<ruby>帰<rt>かえ</rt></ruby>るのをいやがっています。",
+              "chinese": "狗不願意散步後回家。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         }
       ]
     },
@@ -2244,7 +2256,7 @@
           "zh": "請針對你認為朋友不知道的事提出問題。",
           "grammarNote": "某項事實＋ということを知っていますか，用來詢問是否知道這件事。",
           "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "plain": "富士山は日本で最も高い山だということを知っていますか。",
@@ -2285,15 +2297,16 @@
           "jpPlain": "『ノルウェイの森』、もう読んだ？（うん、昨日全部）",
           "zh": "《挪威的森林》已經讀了嗎？（嗯，昨天全部）",
           "grammarNote": "読んでしまった → 読んじゃった；以縮略形式完成回答。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "うん、昨日全部読んじゃった。",
-              "ruby": "うん、<ruby>昨日<rt>きのう</rt></ruby><ruby>全部<rt>ぜんぶ</rt></ruby><ruby>読ん<rt>よん</rt></ruby>じゃった。",
+              "plain": "うん、きのう全部読んじゃった。",
+              "ruby": "うん、きのう<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>読ん<rt>よん</rt></ruby>じゃった。",
               "chinese": "嗯，昨天全部讀完了。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         },
         {
           "id": "p90-short-2",
@@ -2302,15 +2315,16 @@
           "jpPlain": "晩ご飯、何か作っとこうか？（うん、カレー）",
           "zh": "晚餐要不要先做點什麼？（嗯，咖哩）",
           "grammarNote": "作っておこう → 作っとこう；作っておいて → 作っといて。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "うん、カレー作っといて。",
-              "ruby": "うん、カレー<ruby>作<rt>つく</rt></ruby>っといて。",
-              "chinese": "嗯，請先做咖哩備著。"
+              "plain": "うん、カレー、作っといて／カレー、作っといてくれる？",
+              "ruby": "うん、カレー、<ruby>作<rt>つく</rt></ruby>っといて／カレー、<ruby>作<rt>つく</rt></ruby>っといてくれる？",
+              "chinese": "嗯，請先做好咖哩／可以幫我先做好咖哩嗎？"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         },
         {
           "id": "p90-short-3",
@@ -2319,15 +2333,16 @@
           "jpPlain": "レストラン、込んでた？（ううん）…",
           "zh": "餐廳剛才很擠嗎？（沒有）……",
           "grammarNote": "込んでいた → 込んでた；否定過去式為込んでなかった。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "ううん、込んでなかったよ。",
-              "ruby": "ううん、<ruby>込<rt>こ</rt></ruby>んでなかったよ。",
-              "chinese": "沒有，剛才不擠喔。"
+              "plain": "ううん、込んでなかった。",
+              "ruby": "ううん、<ruby>込<rt>こ</rt></ruby>んでなかった。",
+              "chinese": "沒有，不擠。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         }
       ]
     },
@@ -2394,15 +2409,16 @@
           "jpPlain": "幼稚園のとき・父 → ＿＿＿＿＿＿",
           "zh": "幼稚園時・父親。請依圖用使役受身回答。",
           "grammarNote": "父に：由父親要求；遊ぶ → 遊ばせられる／遊ばされる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "幼稚園のとき、父に外で遊ばされました。",
-              "ruby": "<ruby>幼稚園<rt>ようちえん</rt></ruby>のとき、<ruby>父<rt>ちち</rt></ruby>に<ruby>外<rt>そと</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>ばされました。",
-              "chinese": "幼稚園時，被父親要求在外面玩。依圖片的教學參考作答。"
+              "ruby": "<ruby>幼稚園<rt>ようちえん</rt></ruby>のとき、<ruby>父<rt>とう</rt></ruby>に<ruby>外<rt>そと</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>ばされました。",
+              "chinese": "幼稚園時，父親要求我到外面玩。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         },
         {
           "id": "p90-pr1-2",
@@ -2411,15 +2427,16 @@
           "jpPlain": "小学校のとき・両親 → ＿＿＿＿＿＿",
           "zh": "小學時・父母。請依圖用使役受身回答。",
           "grammarNote": "圖示是電腦操作；する → させられる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "小学校のとき、両親にパソコンの練習をさせられました。",
-              "ruby": "<ruby>小学校<rt>しょうがっこう</rt></ruby>のとき、<ruby>両親<rt>りょうしん</rt></ruby>にパソコンの<ruby>練習<rt>れんしゅう</rt></ruby>をさせられました。",
-              "chinese": "小學時，被父母要求練習電腦操作。"
+              "plain": "小学校のとき、両親にそろばんを習わされました。",
+              "ruby": "<ruby>小学校<rt>しょうがっこう</rt></ruby>のとき、<ruby>両親<rt>りょうしん</rt></ruby>にそろばんを<ruby>習<rt>なら</rt></ruby>わされました。",
+              "chinese": "小學時，父母要求我學珠算。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         },
         {
           "id": "p90-pr1-3",
@@ -2428,15 +2445,16 @@
           "jpPlain": "お正月に・祖母 → ＿＿＿＿＿＿",
           "zh": "過年時・祖母。請依圖用使役受身回答。",
           "grammarNote": "正座する → 正座させられる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "お正月に、祖母に正座させられました。",
-              "ruby": "お<ruby>正月<rt>しょうがつ</rt></ruby>に、<ruby>祖母<rt>そぼ</rt></ruby>に<ruby>正座<rt>せいざ</rt></ruby>させられました。",
-              "chinese": "過年時，被祖母要求端正跪坐。"
+              "plain": "お正月に、祖母に正座してあいさつをさせられました。",
+              "ruby": "お<ruby>正月<rt>しょうがつ</rt></ruby>に、<ruby>祖母<rt>そぼ</rt></ruby>に<ruby>正座<rt>せいざ</rt></ruby>して<ruby>あいさつ<rt>あいさつ</rt></ruby>をさせられました。",
+              "chinese": "過年時，祖母要求我正坐問候。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         }
       ]
     },
@@ -2503,15 +2521,16 @@
           "jpPlain": "声が変ですね。（課長・カラオケで歌う）…",
           "zh": "聲音聽起來不太一樣呢。（課長・在KTV唱歌）……",
           "grammarNote": "歌う → 歌わせられる → 歌わされる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ええ。課長にカラオケで歌わされたんです。",
               "ruby": "ええ。<ruby>課長<rt>かちょう</rt></ruby>にカラオケで<ruby>歌<rt>うた</rt></ruby>わされたんです。",
-              "chinese": "是的，我在KTV被課長要求唱歌。"
+              "chinese": "是的，我被課長要求在KTV唱歌。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg"
         },
         {
           "id": "p91-pr2-2",
@@ -2520,15 +2539,16 @@
           "jpPlain": "足が痛いんですか。（先輩・運動場を走る）…",
           "zh": "腳痛嗎？（前輩・在操場跑步）……",
           "grammarNote": "走る → 走らせられる → 走らされる；「を」標示經過的場所。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ええ。先輩に運動場を走らされたんです。",
               "ruby": "ええ。<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>運動場<rt>うんどうじょう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らされたんです。",
               "chinese": "是的，被前輩要求在操場跑步。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         },
         {
           "id": "p91-pr2-3",
@@ -2537,15 +2557,16 @@
           "jpPlain": "たばこを吸わないんですか。（妻・やめる）…",
           "zh": "不抽菸嗎？（妻子・戒掉）……",
           "grammarNote": "やめる → やめさせられる。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ええ。妻にやめさせられたんです。",
               "ruby": "ええ。<ruby>妻<rt>つま</rt></ruby>にやめさせられたんです。",
-              "chinese": "是的，被妻子要求戒掉了。"
+              "chinese": "是的，被妻子要求戒菸了。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         }
       ]
     },
@@ -2636,15 +2657,16 @@
           "jpPlain": "「駅」という字は「馬」と「尺」を合わせてできた漢字です。もともと「うまや」と読まれ、馬を乗り換えるところという意味でした。昔、馬に荷物や人を運ばせ、馬が疲れると、「うまや」で別の馬に乗り換えたのです。",
           "zh": "「駅」這個字是把「馬」與「尺」組合而成的漢字。原本讀作「うまや」，意思是換馬的地方。從前讓馬運送貨物或人，馬累了，就在「うまや」換另一匹馬。",
           "grammarNote": "です → である；でした → であった；のです → のである。其他已是普通體的部分保留。",
-          "answerType": "suggested",
-          "examplesTitle": "參考作答（點擊展開）",
+          "answerType": "verified",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "「駅」という字は「馬」と「尺」を合わせてできた漢字である。もともと「うまや」と読まれ、馬を乗り換えるところという意味であった。昔、馬に荷物や人を運ばせ、馬が疲れると、「うまや」で別の馬に乗り換えたのである。",
               "ruby": "「<ruby>駅<rt>えき</rt></ruby>」という<ruby>字<rt>じ</rt></ruby>は「<ruby>馬<rt>うま</rt></ruby>」と「<ruby>尺<rt>しゃく</rt></ruby>」を<ruby>合わせ<rt>あわせ</rt></ruby>てできた<ruby>漢字<rt>かんじ</rt></ruby>である。もともと「うまや」と<ruby>読まれ<rt>よまれ</rt></ruby>、<ruby>馬<rt>うま</rt></ruby>を<ruby>乗り換える<rt>のりかえる</rt></ruby>ところという<ruby>意味<rt>いみ</rt></ruby>であった。<ruby>昔<rt>むかし</rt></ruby>、<ruby>馬<rt>うま</rt></ruby>に<ruby>荷物<rt>にもつ</rt></ruby>や人を<ruby>運<rt>はこ</rt></ruby>ばせ、<ruby>馬<rt>うま</rt></ruby>が<ruby>疲<rt>つか</rt></ruby>れると、「うまや」で<ruby>別<rt>べつ</rt></ruby>の<ruby>馬<rt>うま</rt></ruby>に<ruby>乗り換えた<rt>のりかえた</rt></ruby>のである。",
-              "chinese": "已將三處丁寧體改成「である」文；課本沒有印刷答案。"
+              "chinese": "已依提供的解答本核對，三處改為「である／であった／のである」。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-107.jpg"
         }
       ]
     },
@@ -2710,7 +2732,7 @@
       "type": "sentence_cards",
       "chapter": "speaking",
       "title": "2. 聞いてみましょう｜聞くポイント",
-      "notice": "聞くポイントを確認してから、聞きましょう。照片中的手寫內容不是課本印刷答案，因此未收錄。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p97-c1-q1",
@@ -2718,7 +2740,17 @@
           "jpRuby": "<ruby>松本部長<rt>まつもとぶちょう</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>来<rt>き</rt></ruby>ていますか。",
           "jpPlain": "松本部長は今日会社に来ていますか。",
           "zh": "松本部長今天有來公司嗎？",
-          "grammarNote": "聽會話後判斷內容；課本此處為開放式作答。"
+          "grammarNote": "聽會話後判斷內容；課本此處為開放式作答。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-107.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "いいえ、来ていません。",
+              "ruby": "いいえ、<ruby>来<rt>こ</rt></ruby>ていません。",
+              "chinese": "沒有，他沒來公司。"
+            }
+          ]
         },
         {
           "id": "p97-c1-q2",
@@ -2726,7 +2758,17 @@
           "jpRuby": "<ruby>松本部長<rt>まつもとぶちょう</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>シュミットさんに<ruby>電話<rt>でんわ</rt></ruby>をしますか。",
           "jpPlain": "松本部長は今日シュミットさんに電話をしますか。",
           "zh": "松本部長今天會打電話給施密特先生嗎？",
-          "grammarNote": "注意電話的時間與動作主體；課本此處為開放式作答。"
+          "grammarNote": "注意電話的時間與動作主體；課本此處為開放式作答。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-107.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "いいえ、しません。",
+              "ruby": "いいえ、しません。",
+              "chinese": "不會。"
+            }
+          ]
         },
         {
           "id": "p97-c1-q3",
@@ -2734,7 +2776,17 @@
           "jpRuby": "シュミットさんはあさって<ruby>松本部長<rt>まつもとぶちょう</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いますか。",
           "jpPlain": "シュミットさんはあさって松本部長に会いますか。",
           "zh": "施密特先生後天會和松本部長見面嗎？",
-          "grammarNote": "注意原定計畫後來是否改變；課本此處為開放式作答。"
+          "grammarNote": "注意原定計畫後來是否改變；課本此處為開放式作答。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-107.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "いいえ、会いません。",
+              "ruby": "いいえ、<ruby>会<rt>あ</rt></ruby>いません。",
+              "chinese": "不會見面。"
+            }
+          ]
         },
         {
           "id": "p97-c1-e1",
@@ -2742,7 +2794,17 @@
           "jpRuby": "シュミットさんが<ruby>伝言<rt>でんごん</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>むとき",
           "jpPlain": "シュミットさんが伝言を頼むとき",
           "zh": "施密特先生拜託對方代為留言時。",
-          "grammarNote": "請從音源聽出原話；網站不以推測內容代替課本答案。"
+          "grammarNote": "請從音源聽出原話；網站不以推測內容代替課本答案。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-107.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "恐れ入りますが、伝言、お願いできますか。",
+              "ruby": "<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>伝言<rt>でんごん</rt></ruby>、<ruby>お願<rt>ねが</rt></ruby>いできますか。",
+              "chinese": "不好意思，可以請您代為轉告嗎？"
+            }
+          ]
         },
         {
           "id": "p97-c1-e2",
@@ -2750,7 +2812,17 @@
           "jpRuby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>伝言<rt>でんごん</rt></ruby>を<ruby>受<rt>う</rt></ruby>けて、<ruby>確認<rt>かくにん</rt></ruby>するとき",
           "jpPlain": "会社の人が伝言を受けて、確認するとき",
           "zh": "公司人員接下留言並確認內容時。",
-          "grammarNote": "請從音源聽出確認留言時所使用的原話。"
+          "grammarNote": "請從音源聽出確認留言時所使用的原話。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-107.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "はい。あさっての金曜日はご都合が悪くなったということですね。",
+              "ruby": "はい。あさっての<ruby>金曜日<rt>きんようび</rt></ruby>はご<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったということですね。",
+              "chinese": "好的，也就是後天星期五不方便了，對吧？"
+            }
+          ]
         },
         {
           "id": "p97-c2-q1",
@@ -2758,7 +2830,17 @@
           "jpRuby": "だれがどんなメッセージを<ruby>入<rt>い</rt></ruby>れましたか。",
           "jpPlain": "だれがどんなメッセージを入れましたか。",
           "zh": "是誰留下了什麼樣的留言？",
-          "grammarNote": "聽出留言者與留言內容；課本此處為開放式作答。"
+          "grammarNote": "聽出留言者與留言內容；課本此處為開放式作答。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-108.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "けい子さんが、今日急な仕事が入って遅くなりそうなので、晩ご飯を先に食べるようにというメッセージを入れました。",
+              "ruby": "けい<ruby>子<rt>こ</rt></ruby>さんが、<ruby>今日<rt>きょう</rt></ruby><ruby>急<rt>きゅう</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>が<ruby>入<rt>い</rt></ruby>って<ruby>遅<rt>おそ</rt></ruby>くなりそうなので、<ruby>晩ご飯<rt>ばんごはん</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>食べ<rt>たべ</rt></ruby>るようにというメッセージを<ruby>入<rt>い</rt></ruby>れました。",
+              "chinese": "惠子留言說，今天臨時有工作，可能晚回家，請先吃晚餐。"
+            }
+          ]
         },
         {
           "id": "p97-c2-e1",
@@ -2766,7 +2848,17 @@
           "jpRuby": "<ruby>留守番電話<rt>るすばんでんわ</rt></ruby>にメッセージを<ruby>入<rt>い</rt></ruby>れるとき、<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>いましたか。",
           "jpPlain": "留守番電話にメッセージを入れるとき、最初に何を言いましたか。",
           "zh": "在語音信箱留言時，一開始說了什麼？",
-          "grammarNote": "請從音源聽出留言開頭的原話。"
+          "grammarNote": "請從音源聽出留言開頭的原話。",
+          "answerType": "verified",
+          "answerSource": "pages/answers-108.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "自分（メッセージを入れている人）の名前を言いました。",
+              "ruby": "<ruby>自分<rt>じぶん</rt></ruby>（メッセージを<ruby>入<rt>い</rt></ruby>れている<ruby>人<rt>ひと</rt></ruby>）の<ruby>名前<rt>なまえ</rt></ruby>を<ruby>言<rt>い</rt></ruby>いました。",
+              "chinese": "說了自己的名字，也就是留言者的姓名。"
+            }
+          ]
         }
       ]
     },
@@ -2775,7 +2867,7 @@
       "type": "sentence_cards",
       "chapter": "speaking",
       "title": "100頁｜5. 練習をしましょう 1）",
-      "notice": "課本空欄維持原樣；下方可展開的答案是依句型整理的參考作答，不是照片中的印刷答案。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p100-example",
@@ -2787,37 +2879,39 @@
         },
         {
           "id": "p100-q1",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "（1）食パンは売り切れだ（●：お客さん）",
           "jpRuby": "●：すみません。<ruby>食<rt>しょく</rt></ruby>パンはありませんか。<br>○：＿＿＿＿＿＿<br>●：そうですか。",
           "jpPlain": "すみません。食パンはありませんか。そうですか。",
           "zh": "客人詢問是否有吐司；請完成○的婉轉回答。",
           "grammarNote": "使用「あいにく～んですが」說明吐司已售完。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "あいにく<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れてしまったんですが、……。",
               "plain": "あいにく売り切れてしまったんですが、……。",
-              "chinese": "很不巧，已經賣完了……。"
+              "ruby": "あいにく<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れてしまったんですが、……。",
+              "chinese": "很不巧，已經售完了……。（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p100-q2",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "（2）今、千円札しか持っていない（●：友達）",
           "jpRuby": "●：ごめん。<ruby>細<rt>こま</rt></ruby>かいお<ruby>金<rt>かね</rt></ruby>あったら、<ruby>貸<rt>か</rt></ruby>してもらえない？<br>○：＿＿＿＿＿＿<br>●：そう。じゃ、いいよ。",
           "jpPlain": "ごめん。細かいお金あったら、貸してもらえない？そう。じゃ、いいよ。",
           "zh": "朋友想借零錢；請完成○的婉轉回答。",
           "grammarNote": "「～しか持っていない」表示除了該物之外沒有其他可用的東西。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "あいにく<ruby>今<rt>いま</rt></ruby>、<ruby>千円札<rt>せんえんさつ</rt></ruby>しか<ruby>持<rt>も</rt></ruby>っていないんだけど、……。",
-              "plain": "あいにく今、千円札しか持っていないんだけど、……。",
-              "chinese": "很不巧，我現在只有一千圓鈔……。"
+              "plain": "あいにく千円札しか持っていないんだ。",
+              "ruby": "あいにく<ruby>千円札<rt>せんえんさつ</rt></ruby>しか<ruby>持<rt>も</rt></ruby>っていないんだ。",
+              "chinese": "不巧，我只有一千圓鈔。（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         }
       ]
     },
@@ -2826,7 +2920,7 @@
       "type": "sentence_cards",
       "chapter": "speaking",
       "title": "101頁｜5. 練習をしましょう 2）",
-      "notice": "課本空欄維持原樣；下方可展開的答案是依例句整理的參考作答，不是照片中的鉛筆文字。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p101-example",
@@ -2838,37 +2932,39 @@
         },
         {
           "id": "p101-q1",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "（1）バーゲンセールの案内状を送りたい（●：デパートのお客さん）",
           "jpRuby": "○：＿＿＿＿＿＿<br>●：はい。",
           "jpPlain": "はい。",
           "zh": "百貨公司想寄送特賣會通知函；請完成○對客人的鄭重請求。",
           "grammarNote": "先說明想寄通知函，再使用「恐れ入りますが」詢問地址。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "バーゲンセールの<ruby>案内状<rt>あんないじょう</rt></ruby>をお<ruby>送<rt>おく</rt></ruby>りしたいので、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、ご<ruby>住所<rt>じゅうしょ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
-              "plain": "バーゲンセールの案内状をお送りしたいので、恐れ入りますが、ご住所を教えていただけませんか。",
-              "chinese": "我們想寄送特賣會通知函，冒昧請問能否告訴我們您的地址？"
+              "plain": "あのう、バーゲンセールのご案内状をお送りしたいので、恐れ入りますが、ご住所をこちらにお書きいただけませんか。",
+              "ruby": "あのう、バーゲンセールのご<ruby>案内状<rt>あんないじょう</rt></ruby>をお<ruby>送<rt>おく</rt></ruby>りしたいので、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、ご<ruby>住所<rt>じゅうしょ</rt></ruby>をこちらにお<ruby>書<rt>か</rt></ruby>きいただけませんか。",
+              "chinese": "我們想寄特賣通知函，不好意思，可以請您把地址寫在這裡嗎？（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p101-q2",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "（2）電話が遠い（●：取引先の人）",
           "jpRuby": "○：＿＿＿＿＿＿<br>●：あ、わかりました。もしもし、……。",
           "jpPlain": "あ、わかりました。もしもし、……。",
           "zh": "電話聲音太小、聽不清楚；請完成○對客戶的鄭重請求。",
           "grammarNote": "「電話が遠い」表示電話聲音小或聽不清楚，不是物理距離很遠。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>電話<rt>でんわ</rt></ruby>が<ruby>遠<rt>とお</rt></ruby>いようですので、もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>話<rt>はな</rt></ruby>しいただけませんか。",
-              "plain": "恐れ入りますが、電話が遠いようですので、もう一度お話しいただけませんか。",
-              "chinese": "不好意思，電話好像有點聽不清楚，能否請您再說一次？"
+              "plain": "もしもし、電話が遠いので、恐れ入りますが、もう少し大きい声で話していただけませんか。",
+              "ruby": "もしもし、<ruby>電話<rt>でんわ</rt></ruby>が<ruby>遠<rt>とお</rt></ruby>いので、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、もう少し<ruby>大<rt>おお</rt></ruby>きい<ruby>声<rt>こえ</rt></ruby>で<ruby>話<rt>はなし</rt></ruby>していただけませんか。",
+              "chinese": "喂，電話聲音不清楚，不好意思，可以請您大聲一點說嗎？（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         }
       ]
     },
@@ -2920,7 +3016,7 @@
           "jpPlain": "電話に出た人に丁寧に伝言を頼んでください。また、電話に出た人は伝言を受けてください。例：子どもが熱を出したので、今日は学校を休ませる。",
           "zh": "請禮貌地拜託接電話的人轉達留言；接電話的人也要接下並確認留言。",
           "grammarNote": "可使用「恐れ入りますが、～とお伝えいただけますか」請託，再用「～ということですね」確認。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "ruby": "<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>子<rt>こ</rt></ruby>どもが<ruby>熱<rt>ねつ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>したので、<ruby>今日<rt>きょう</rt></ruby>は<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>ませると<ruby>先生<rt>せんせい</rt></ruby>にお<ruby>伝<rt>つた</rt></ruby>えいただけますか。",
@@ -2942,7 +3038,7 @@
           "jpPlain": "留守番電話にメッセージを入れてください。例：今晩帰るのが遅くなる。",
           "zh": "請在語音信箱留言；情境是今晚會晚回家。",
           "grammarNote": "留言先說姓名，再說明「～そうなので」的情況與希望對方採取的行動。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "ruby": "○○です。<ruby>今晩<rt>こんばん</rt></ruby><ruby>帰<rt>かえ</rt></ruby>るのが<ruby>遅<rt>おそ</rt></ruby>くなりそうなので、<ruby>先<rt>さき</rt></ruby>に<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べていてください。",
@@ -2958,7 +3054,7 @@
       "type": "sentence_cards",
       "chapter": "reading",
       "title": "104頁｜電話嫌い｜1. 考えてみましょう",
-      "notice": "照片下方括號原本都是空白；排序與回答均以可展開的參考作答呈現，不採用照片中的鉛筆字。圖片來源註記：①②④⑤の写真は逓信総合博物館提供。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p104-reading-focus",
@@ -2970,19 +3066,20 @@
         },
         {
           "id": "p104-q1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "1）依年代排列電話機",
           "jpRuby": "いろいろな<ruby>時代<rt>じだい</rt></ruby>の<ruby>電話機<rt>でんわき</rt></ruby>です。<ruby>古<rt>ふる</rt></ruby>い<ruby>物<rt>もの</rt></ruby>から<ruby>順<rt>じゅん</rt></ruby>に<ruby>番号<rt>ばんごう</rt></ruby>をつけてください。<br>①（　）　②（　）　③（　）　④（　）　⑤（　）",
           "jpPlain": "いろいろな時代の電話機です。古い物から順に番号をつけてください。①、②、③、④、⑤。",
           "zh": "這些是不同时代的電話機，請從最古老的開始編號。",
           "grammarNote": "古い物から順に：按照從舊到新的順序。圖示辨識：①有高台座與橫桿；②兩個直立木箱與外接話筒；③掀蓋式行動電話；④黑色旋轉撥盤桌上電話；⑤木製箱形、側面有手搖把。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "古い順：⑤ → ② → ① → ④ → ③。括號依序為①3、②2、③5、④4、⑤1。",
               "chinese": "最早的是⑤，之後依序為②、①、④，最後是行動電話③。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p104-q2",
@@ -2992,7 +3089,7 @@
           "jpPlain": "電話が好きか嫌いか、どうして好きなのか嫌いなのか、話してみましょう。",
           "zh": "談談你喜歡或討厭電話，以及理由。",
           "grammarNote": "「どうして～のか」用來提出要說明的疑問內容。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "ruby": "<ruby>私<rt>わたし</rt></ruby>は<ruby>電話<rt>でんわ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。<ruby>離<rt>はな</rt></ruby>れている<ruby>家族<rt>かぞく</rt></ruby>や<ruby>友達<rt>ともだち</rt></ruby>とすぐに<ruby>話<rt>はな</rt></ruby>せるからです。",
@@ -3012,108 +3109,115 @@
       "items": [
         {
           "id": "p105-q1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "1）手を（　　　）",
           "jpRuby": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>子<rt>こ</rt></ruby>と<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>が<ruby>手<rt>て</rt></ruby>を（　　　　）<ruby>公園<rt>こうえん</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていた。",
           "jpPlain": "男の子と女の子が手を（　）公園を歩いていた。",
           "zh": "男孩和女孩手（　）在公園散步。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "キ．つないで",
               "chinese": "手をつないで：牽著手。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q2",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "2）用事があるので（　　　）",
           "jpRuby": "<ruby>林<rt>はやし</rt></ruby>さんにパーティーに<ruby>誘<rt>さそ</rt></ruby>われたが、<ruby>用事<rt>ようじ</rt></ruby>があるので（　　　　）しまった。",
           "jpPlain": "林さんにパーティーに誘われたが、用事があるので（　）しまった。",
           "zh": "雖然林先生邀我參加派對，但因為有事而（　）了。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "イ．断って",
               "chinese": "断ってしまった：拒絕了。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q3",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3）寂しさを（　　　）います",
           "jpRuby": "<ruby>日本<rt>にほん</rt></ruby>へ<ruby>一人<rt>ひとり</rt></ruby>で<ruby>来<rt>き</rt></ruby>て、<ruby>初<rt>はじ</rt></ruby>めて<ruby>家族<rt>かぞく</rt></ruby>のいない<ruby>寂<rt>さび</rt></ruby>しさを（　　　　）います。",
           "jpPlain": "日本へ一人で来て、初めて家族のいない寂しさを（　）います。",
           "zh": "獨自來到日本後，第一次（　）家人不在身邊的寂寞。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "カ．味わって",
               "chinese": "寂しさを味わっています：正在體會寂寞。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q4",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "4）彼は（　　　）帰った",
           "jpRuby": "「あなたの<ruby>意見<rt>いけん</rt></ruby>には<ruby>賛成<rt>さんせい</rt></ruby>できない」と<ruby>言<rt>い</rt></ruby>ったら、<ruby>彼<rt>かれ</rt></ruby>は（　　　　）<ruby>帰<rt>かえ</rt></ruby>ってしまった。",
           "jpPlain": "「あなたの意見には賛成できない」と言ったら、彼は（　）帰ってしまった。",
           "zh": "我說無法贊成他的意見後，他（　）回去了。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "エ．腹を立てて",
               "chinese": "腹を立てて：生氣地。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q5",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "5）友人が（　　　）くれた",
           "jpRuby": "<ruby>日本<rt>にほん</rt></ruby>を<ruby>旅行<rt>りょこう</rt></ruby>するときは<ruby>日光<rt>にっこう</rt></ruby>へも<ruby>行<rt>い</rt></ruby>ったほうがいいと、<ruby>友人<rt>ゆうじん</rt></ruby>が（　　　　）くれた。",
           "jpPlain": "日本を旅行するときは日光へも行ったほうがいいと、友人が（　）くれた。",
           "zh": "朋友（　）我在日本旅行時也應該去日光。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ウ．勧めて",
               "chinese": "勧めてくれた：為我提出建議。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q6",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "6）パソコンの（　　　）",
           "jpRuby": "パソコンの（　　　　）に<ruby>慣<rt>な</rt></ruby>れてしまうと、パソコンがない<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>考<rt>かんが</rt></ruby>えられない。",
           "jpPlain": "パソコンの（　）に慣れてしまうと、パソコンがない生活は考えられない。",
           "zh": "一旦習慣電腦的（　），就無法想像沒有電腦的生活。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "オ．便利さ",
               "chinese": "便利さ：方便、便利之處。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p105-q7",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "7）年齢を聞くのは（　　　）",
           "jpRuby": "<ruby>女性<rt>じょせい</rt></ruby>に<ruby>年齢<rt>ねんれい</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くのは（　　　　）。",
           "jpPlain": "女性に年齢を聞くのは（　）。",
           "zh": "詢問女性的年齡是（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ア．失礼だ",
               "chinese": "失礼だ：不禮貌。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         }
       ]
     },
@@ -3373,7 +3477,7 @@
               "start": 44.88,
               "end": 49.02,
               "japanese": "山田先生のクラスの小川よねです。",
-              "chinese": "我是山田老師班上的小川米音。",
+              "chinese": "我是山田老師班上的小川よね。",
               "note": "先說明所屬班級與姓名，讓櫃檯能確認身分。"
             },
             {
@@ -3417,76 +3521,81 @@
             }
           ]
         }
-      ]
+      ],
+      "notice": "CD16、CD17逐句原音與文字已依提供的解答本核對；題目與答案放在下方，不另重複列出整段會話。<a href=\"pages/answers-109.jpg\" target=\"_blank\" rel=\"noopener\">查看解答本109頁</a>。"
     },
     {
       "id": "page109-exercises",
       "type": "sentence_cards",
       "chapter": "questions",
       "title": "109頁｜問題 1–3",
-      "notice": "課本作答線、留言欄與括號維持空白；照片中的鉛筆內容未收錄。CD16、CD17可在本頁上方播放。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p109-cd16-q1",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "1. CD16｜1）",
-          "jpRuby": "1）＿＿＿＿＿＿＿＿＿＿",
+          "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>がおもちゃを<ruby>欲<rt>ほ</rt></ruby>しがったら、すぐ<ruby>買<rt>か</rt></ruby>ってあげるのはいいことだと<ruby>思<rt>おも</rt></ruby>いますか。それはどうしてですか。",
           "jpPlain": "子どもがおもちゃを欲しがったら、すぐ買ってあげるのはいいことだと思いますか。それはどうしてですか。",
-          "zh": "聽CD16第1題後作答。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "zh": "孩子想要玩具時，立刻買給他好嗎？為什麼？",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "すぐに<ruby>買<rt>か</rt></ruby>ってあげるのはよくないと<ruby>思<rt>おも</rt></ruby>います。<ruby>欲<rt>ほ</rt></ruby>しい<ruby>物<rt>もの</rt></ruby>を<ruby>我慢<rt>がまん</rt></ruby>することも<ruby>大切<rt>たいせつ</rt></ruby>だからです。",
-              "plain": "すぐに買ってあげるのはよくないと思います。欲しい物を我慢することも大切だからです。",
-              "chinese": "我認為不應立刻買給孩子，因為學會忍耐也很重要。"
+              "plain": "いいえ、よくないことだと思います。子どもは欲しがれば何でも買ってもらえると思いますから。",
+              "ruby": "いいえ、よくないことだと<ruby>思<rt>おも</rt></ruby>います。<ruby>子ども<rt>こども</rt></ruby>は<ruby>欲<rt>ほ</rt></ruby>しがれば<ruby>何<rt>なん</rt></ruby>でも<ruby>買<rt>か</rt></ruby>ってもらえると<ruby>思<rt>おも</rt></ruby>いますから。",
+              "chinese": "我認為不好。因為孩子會以為只要想要，任何東西都會有人買給他。（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-cd16-q2",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "1. CD16｜2）",
-          "jpRuby": "2）＿＿＿＿＿＿＿＿＿＿",
+          "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>のときにさせられたことで、いちばん<ruby>嫌<rt>きら</rt></ruby>だったことは<ruby>何<rt>なん</rt></ruby>ですか。",
           "jpPlain": "子どものときにさせられたことで、いちばん嫌だったことは何ですか。",
-          "zh": "聽CD16第2題後作答。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "zh": "小時候被要求做的事情中，最討厭的是什麼？",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "ピアノを<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>させられたことです。",
-              "plain": "ピアノを毎日練習させられたことです。",
-              "chinese": "是小時候被要求每天練習鋼琴。"
+              "plain": "テレビを見たいのに、早く寝させられたことです。",
+              "ruby": "テレビを<ruby>見<rt>み</rt></ruby>たいのに、<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>させられたことです。",
+              "chinese": "明明想看電視，卻被要求早點睡。（解答例）"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-cd17-memo1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "2. CD17｜1）留守メモ",
           "jpRuby": "<ruby>留守<rt>るす</rt></ruby>メモ　5<ruby>月<rt>がつ</rt></ruby>11<ruby>日<rt>にち</rt></ruby><br>① ＿＿＿ <ruby>様<rt>さま</rt></ruby><br>② ＿＿＿ <ruby>様<rt>さま</rt></ruby>からお<ruby>電話<rt>でんわ</rt></ruby>がありました。<br>□ <ruby>後<rt>あと</rt></ruby>で<ruby>電話<rt>でんわ</rt></ruby>します。　□ <ruby>電話<rt>でんわ</rt></ruby>をください。<br><ruby>連絡先<rt>れんらくさき</rt></ruby>：③ ＿＿＿－＿＿＿－＿＿＿<br><ruby>田中<rt>たなか</rt></ruby>が<ruby>受<rt>う</rt></ruby>けました。",
           "jpPlain": "留守メモ。5月11日。何々様。何々様からお電話がありました。後で電話します。電話をください。連絡先。田中が受けました。",
           "zh": "聽CD17會話1，填寫收件人、來電者、回電要求與聯絡電話。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "① ワット　② ミラー　「電話をください」にチェック　③ 8729－36－0541",
               "chinese": "依CD17會話內容整理。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-cd17-memo2",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "2. CD17｜2）伝言メモ",
           "jpRuby": "<ruby>伝言<rt>でんごん</rt></ruby>メモ　2<ruby>月<rt>がつ</rt></ruby>21<ruby>日<rt>にち</rt></ruby><br>① ＿＿＿ <ruby>様<rt>さま</rt></ruby><br>② ＿＿＿ <ruby>様<rt>さま</rt></ruby>からお<ruby>電話<rt>でんわ</rt></ruby>がありました。<br>③ ＿＿＿＿＿＿＿＿＿＿<br><ruby>小林<rt>こばやし</rt></ruby>が<ruby>受<rt>う</rt></ruby>けました。",
           "jpPlain": "伝言メモ。2月21日。何々様。何々様からお電話がありました。伝言。小林が受けました。",
           "zh": "聽CD17會話2，填寫收件人、來電者與留言內容。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "① 山田　② 小川　③ 風邪をひいたので、今日の練習は休む。",
               "chinese": "依CD17會話內容簡要記錄：小川因感冒，今天的練習請假。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-q3-example",
@@ -3497,48 +3606,51 @@
         },
         {
           "id": "p109-q3-1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3｜1）",
           "jpRuby": "<ruby>息子<rt>むすこ</rt></ruby>は<ruby>試験<rt>しけん</rt></ruby>で100<ruby>点<rt>てん</rt></ruby>を<ruby>取<rt>と</rt></ruby>れないと、（　　　　）ます。",
           "jpPlain": "息子は試験で100点を取れないと、空欄、ます。",
           "zh": "兒子考試沒拿到100分時，就會（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "悔しがり",
               "chinese": "完整句：悔しがります（顯得懊悔）。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-q3-2",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3｜2）",
           "jpRuby": "<ruby>田舎<rt>いなか</rt></ruby>の<ruby>母<rt>はは</rt></ruby>は<ruby>将来<rt>しょうらい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>のことを<ruby>考<rt>かんが</rt></ruby>えて、とても（　　　　）います。",
           "jpPlain": "田舎の母は将来の生活のことを考えて、とても、空欄、います。",
           "zh": "鄉下的母親想到未來生活，顯得非常（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "不安がって",
               "chinese": "完整句：不安がっています（顯得很不安）。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p109-q3-3",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3｜3）",
           "jpRuby": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>子<rt>こ</rt></ruby>は<ruby>高校生<rt>こうこうせい</rt></ruby>になると、<ruby>母親<rt>ははおや</rt></ruby>といっしょに（　　　　）ません。",
           "jpPlain": "男の子は高校生になると、母親といっしょに、空欄、ません。",
           "zh": "男孩上高中後，不想和母親一起（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "出かけたがり",
               "chinese": "完整句：出かけたがりません（不想出門）。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         }
       ]
     },
@@ -3547,69 +3659,73 @@
       "type": "sentence_cards",
       "chapter": "questions",
       "title": "110頁｜問題 3–6",
-      "notice": "問題3的選項沿用109頁：不安な／寂しい／悔しい／知りたい／留学したい／出かけたい。照片中的鉛筆答案未收錄；課本括號與改寫欄維持空白，答案收合顯示。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p110-q3-4",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3｜4）",
           "jpRuby": "<ruby>中国語<rt>ちゅうごくご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>している<ruby>友達<rt>ともだち</rt></ruby>は<ruby>中国<rt>ちゅうごく</rt></ruby>に（　　　　）います。",
           "jpPlain": "中国語を勉強している友達は中国に、空欄、います。",
           "zh": "正在學中文的朋友顯得想去中國（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "留学したがって",
               "chinese": "完整句：留学したがっています（顯得想留學）。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-109.jpg"
         },
         {
           "id": "p110-q3-5",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3｜5）",
           "jpRuby": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもはいろいろなことに<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>何<rt>なん</rt></ruby>でも（　　　　）ます。",
           "jpPlain": "小さい子どもはいろいろなことに興味を持って何でも、空欄、ます。",
           "zh": "小孩子對各種事情感興趣，什麼都想（　）。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "知りたがり",
               "chinese": "完整句：知りたがります（什麼都想知道）。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p110-q4",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "4. 使役受身形",
           "jpRuby": "<ruby>例<rt>れい</rt></ruby>：<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>かされる<br>1）<ruby>飲<rt>の</rt></ruby>む → ＿＿＿＿　2）<ruby>急<rt>いそ</rt></ruby>ぐ → ＿＿＿＿　3）<ruby>払<rt>はら</rt></ruby>う → ＿＿＿＿<br>4）<ruby>立<rt>た</rt></ruby>つ → ＿＿＿＿　5）<ruby>話<rt>はな</rt></ruby>す → ＿＿＿＿　6）<ruby>食<rt>た</rt></ruby>べる → ＿＿＿＿<br>7）いる → ＿＿＿＿　8）<ruby>勉強<rt>べんきょう</rt></ruby>する → ＿＿＿＿　9）<ruby>来<rt>く</rt></ruby>る → ＿＿＿＿",
           "jpPlain": "例、行く、行かされる。飲む、急ぐ、払う、立つ、話す、食べる、いる、勉強する、来る。",
           "zh": "依照例子，將九個動詞改成使役被動形。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "ruby": "1）<ruby>飲<rt>の</rt></ruby>まされる　2）<ruby>急<rt>いそ</rt></ruby>がされる　3）<ruby>払<rt>はら</rt></ruby>わされる　4）<ruby>立<rt>た</rt></ruby>たされる　5）<ruby>話<rt>はな</rt></ruby>させられる<br>6）<ruby>食<rt>た</rt></ruby>べさせられる　7）いさせられる　8）<ruby>勉強<rt>べんきょう</rt></ruby>させられる　9）<ruby>来<rt>こ</rt></ruby>させられる",
               "plain": "飲まされる、急がされる、払わされる、立たされる、話させられる、食べさせられる、いさせられる、勉強させられる、来させられる。",
               "chinese": "依序為九個動詞的使役被動形。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p110-q5",
-          "answerType": "suggested",
+          "answerType": "verified",
           "topic": "5. 相撲の世界",
           "jpRuby": "<ruby>相撲<rt>すもう</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>は<ruby>厳<rt>きび</rt></ruby>しい。この<ruby>世界<rt>せかい</rt></ruby>に<ruby>後<rt>あと</rt></ruby>から<ruby>入<rt>はい</rt></ruby>った<ruby>者<rt>もの</rt></ruby>は<ruby>先輩<rt>せんぱい</rt></ruby>の<ruby>世話<rt>せわ</rt></ruby>を（<ruby>例<rt>れい</rt></ruby>：させられ）る。<ruby>朝<rt>あさ</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きて、<ruby>先輩<rt>せんぱい</rt></ruby>のご<ruby>飯<rt>はん</rt></ruby>を（①　　　　）る。それから<ruby>先輩<rt>せんぱい</rt></ruby>の<ruby>着物<rt>きもの</rt></ruby>や<ruby>服<rt>ふく</rt></ruby>を（②　　　　）。<ruby>出<rt>で</rt></ruby>かけるときは、<ruby>荷物<rt>にもつ</rt></ruby>を（③　　　　）る。<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>にも（④　　　　）る。<ruby>厳<rt>きび</rt></ruby>しい<ruby>経験<rt>けいけん</rt></ruby>が<ruby>心<rt>こころ</rt></ruby>と<ruby>体<rt>からだ</rt></ruby>を<ruby>強<rt>つよ</rt></ruby>くすると<ruby>考<rt>かんが</rt></ruby>えられているのだ。",
           "jpPlain": "相撲の世界は厳しい。この世界に後から入った者は先輩の世話を、例、させられ、る。朝は早く起きて、先輩のご飯を、かっこいち、る。それから先輩の着物や服を、かっこに。出かけるときは、荷物を、かっこさん、る。買い物にも、かっこよん、る。厳しい経験が心と体を強くすると考えられているのだ。",
           "zh": "依語境填入使役被動形；四個空格維持未作答狀態。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "① <ruby>作<rt>つく</rt></ruby>らされ　② <ruby>洗<rt>あら</rt></ruby>わされる　③ <ruby>持<rt>も</rt></ruby>たされ　④ <ruby>行<rt>い</rt></ruby>かされ",
-              "plain": "①作らされ、②洗わされる、③持たされ、④行かされ。",
-              "chinese": "完整形式依序為：被迫做飯、被迫洗衣服、被迫拿行李、被迫去買東西。②依課堂用字也可表達為「洗濯させられる」。"
+              "plain": "①作らされ　②洗濯させられ／洗わされ／準備させられ　③持たされ　④行かされ",
+              "ruby": "①<ruby>作<rt>つく</rt></ruby>らされ　②<ruby>洗濯<rt>せんたく</rt></ruby>させられ／<ruby>洗<rt>あら</rt></ruby>わされ／<ruby>準備<rt>じゅんび</rt></ruby>させられ　③<ruby>持<rt>も</rt></ruby>たされ　④<ruby>行<rt>い</rt></ruby>かされ",
+              "chinese": "解答本列的是填入部分。完整形式：作らされる、洗濯させられる／洗わされる／準備させられる、持たされる、行かされる。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p110-q6-example",
@@ -3620,33 +3736,35 @@
         },
         {
           "id": "p110-q6-1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "6｜1）",
           "jpRuby": "ここは<ruby>夏<rt>なつ</rt></ruby>は<ruby>涼<rt>すず</rt></ruby>しく、<ruby>交通<rt>こうつう</rt></ruby>も<ruby>便利<rt>べんり</rt></ruby>だ。<ruby>住<rt>す</rt></ruby>みやすいところだ。<br>→ ＿＿＿＿＿＿＿＿＿＿",
           "jpPlain": "ここは夏は涼しく、交通も便利だ。住みやすいところだ。",
           "zh": "將兩句改寫成一句。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "ここは夏は涼しく、交通も便利で、住みやすいところだ。",
               "chinese": "這裡夏天涼爽、交通也方便，是適合居住的地方。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p110-q6-2",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "6｜2）",
           "jpRuby": "<ruby>東京<rt>とうきょう</rt></ruby>には<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まっている。<ruby>人<rt>ひと</rt></ruby>と<ruby>物<rt>もの</rt></ruby>が24<ruby>時間<rt>じかん</rt></ruby><ruby>動<rt>うご</rt></ruby>いている。<br>→ ＿＿＿＿＿＿＿＿＿＿",
           "jpPlain": "東京には世界中の情報が集まっている。人と物が24時間動いている。",
           "zh": "將兩句改寫成一句。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "東京には世界中の情報が集まっており、人と物が24時間動いている。",
               "chinese": "東京匯集世界各地的資訊，人與物一天24小時都在流動。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         }
       ]
     },
@@ -3655,53 +3773,56 @@
       "type": "sentence_cards",
       "chapter": "questions",
       "title": "111頁｜問題 7–9",
-      "notice": "課本改寫線與括號維持空白；照片中的鉛筆答案未收錄，答案收合顯示。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p111-q7",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "7. 次のように書き換えてください",
           "jpRuby": "<ruby>例<rt>れい</rt></ruby>：<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>好<rt>す</rt></ruby>きな<ruby>山<rt>やま</rt></ruby>は<ruby>富士山<rt>ふじさん</rt></ruby>だ。<br>→ <ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>好<rt>す</rt></ruby>きな<ruby>山<rt>やま</rt></ruby>は<ruby>富士山<rt>ふじさん</rt></ruby>である。<br><br><ruby>富士山<rt>ふじさん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>で<ruby>最も<rt>もっとも</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>だ。<ruby>夏<rt>なつ</rt></ruby>の<ruby>晴<rt>は</rt></ruby>れた<ruby>朝<rt>あさ</rt></ruby>には<ruby>赤<rt>あか</rt></ruby>くなって、とても<ruby>美<rt>うつく</rt></ruby>しい。<ruby>葛飾北斎<rt>かつしかほくさい</rt></ruby>の「<ruby>赤富士<rt>あかふじ</rt></ruby>」はその<ruby>美<rt>うつく</rt></ruby>しさをかいたものだ。<br>→ ＿＿＿＿＿＿＿＿＿＿<br>　＿＿＿＿＿＿＿＿＿＿",
           "jpPlain": "例、日本人が好きな山は富士山だ。日本人が好きな山は富士山である。富士山は日本で最も高い山だ。夏の晴れた朝には赤くなって、とても美しい。葛飾北斎の赤富士はその美しさをかいたものだ。",
           "zh": "依例子改寫成文章體；課本原文使用平假名「かいた」。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "ruby": "<ruby>富士山<rt>ふじさん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>で<ruby>最も<rt>もっとも</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>である。<ruby>夏<rt>なつ</rt></ruby>の<ruby>晴<rt>は</rt></ruby>れた<ruby>朝<rt>あさ</rt></ruby>には<ruby>赤<rt>あか</rt></ruby>くなり、とても<ruby>美<rt>うつく</rt></ruby>しい。<ruby>葛飾北斎<rt>かつしかほくさい</rt></ruby>の「<ruby>赤富士<rt>あかふじ</rt></ruby>」はその<ruby>美<rt>うつく</rt></ruby>しさをかいたものである。",
               "plain": "富士山は日本で最も高い山である。夏の晴れた朝には赤くなり、とても美しい。葛飾北斎の「赤富士」はその美しさをかいたものである。",
               "chinese": "把「だ」改為「である」，並用書面中止形「なり」連接。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p111-q8",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "8. 助詞填空",
           "jpRuby": "<ruby>例<rt>れい</rt></ruby>：<ruby>彼<rt>かれ</rt></ruby>は<ruby>店員<rt>てんいん</rt></ruby>の<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>話<rt>はな</rt></ruby>し<ruby>方<rt>かた</rt></ruby>（　）<ruby>腹<rt>はら</rt></ruby>を<ruby>立<rt>た</rt></ruby>てた。<br>1）<ruby>彼<rt>かれ</rt></ruby>は<ruby>結婚式<rt>けっこんしき</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>を<ruby>手伝<rt>てつだ</rt></ruby>おう（　）<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>た。<br>2）どうしようかと<ruby>相談<rt>そうだん</rt></ruby>しているところ（　）<ruby>知<rt>し</rt></ruby>らせが<ruby>届<rt>とど</rt></ruby>いた。<br>3）<ruby>毎日<rt>まいにち</rt></ruby>パソコンの<ruby>便利<rt>べんり</rt></ruby>さ（　）<ruby>味<rt>あじ</rt></ruby>わっています。<br>4）<ruby>森教授<rt>もりきょうじゅ</rt></ruby>は<ruby>論文<rt>ろんぶん</rt></ruby>を<ruby>専門<rt>せんもん</rt></ruby>の<ruby>雑誌<rt>ざっし</rt></ruby>（　）<ruby>発表<rt>はっぴょう</rt></ruby>した。",
           "jpPlain": "例、彼は店員の失礼な話し方、空欄、腹を立てた。彼は結婚式の準備を手伝おう、空欄、申し出た。どうしようかと相談しているところ、空欄、知らせが届いた。毎日パソコンの便利さ、空欄、味わっています。森教授は論文を専門の雑誌、空欄、発表した。",
           "zh": "在五個括號中填入適當助詞。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "例：に　1）と　2）に　3）を　4）に",
               "chinese": "依序填入：に、と、に、を、に。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         },
         {
           "id": "p111-q9",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "9. 副詞填空",
           "jpRuby": "<ruby>選択肢<rt>せんたくし</rt></ruby>：<ruby>早速<rt>さっそく</rt></ruby>・<ruby>結局<rt>けっきょく</rt></ruby>・あいにく・もともと<br><br><ruby>山田君<rt>やまだくん</rt></ruby>からはがきが<ruby>来<rt>き</rt></ruby>た。<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>したので、ぜひ<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>てほしいということだった。<ruby>新<rt>あたら</rt></ruby>しい<ruby>家<rt>いえ</rt></ruby>は（<ruby>例<rt>れい</rt></ruby>：もともと）お<ruby>父<rt>とう</rt></ruby>さんの<ruby>家<rt>いえ</rt></ruby>で、<ruby>駅<rt>えき</rt></ruby>からは<ruby>遠<rt>とお</rt></ruby>いけど、<ruby>景色<rt>けしき</rt></ruby>がすばらしいそうだ。<br>（①　　　　）<ruby>日曜日<rt>にちようび</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<ruby>来<rt>き</rt></ruby>た。（②　　　　）<ruby>雨<rt>あめ</rt></ruby>だったので、<ruby>景色<rt>けしき</rt></ruby>はよく<ruby>見<rt>み</rt></ruby>えなかったが、<ruby>晴<rt>は</rt></ruby>れた<ruby>日<rt>ひ</rt></ruby>には<ruby>遠<rt>とお</rt></ruby>くに<ruby>島<rt>しま</rt></ruby>が<ruby>見<rt>み</rt></ruby>えるということだ。<ruby>雨<rt>あめ</rt></ruby>がやむのを<ruby>待<rt>ま</rt></ruby>ったが、<ruby>一日中<rt>いちにちじゅう</rt></ruby><ruby>雨<rt>あめ</rt></ruby>で、（③　　　　）<ruby>島<rt>しま</rt></ruby>は<ruby>見<rt>み</rt></ruby>ないで<ruby>帰<rt>かえ</rt></ruby>って<ruby>来<rt>き</rt></ruby>た。",
           "jpPlain": "選択肢、早速、結局、あいにく、もともと。山田君からはがきが来た。引っ越したので、ぜひ遊びに来てほしいということだった。新しい家は、例、もともと、お父さんの家で、駅からは遠いけど、景色がすばらしいそうだ。空欄、日曜日に行って来た。空欄、雨だったので、景色はよく見えなかったが、晴れた日には遠くに島が見えるということだ。雨がやむのを待ったが、一日中雨で、空欄、島は見ないで帰って来た。",
           "zh": "從四個副詞中選出適合上下文的詞；三個作答欄保持空白。",
-          "examplesTitle": "答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
               "plain": "① 早速　② あいにく　③ 結局",
               "chinese": "①立刻，②不巧，③最後／結果。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-110.jpg"
         }
       ]
     },
@@ -3889,73 +4010,79 @@
       "type": "sentence_cards",
       "chapter": "reading",
       "title": "107頁｜4. 答えましょう",
-      "notice": "課本的排序括號與作答欄維持空白；照片中的鉛筆字未收錄，答案另以可收合的參考作答呈現。",
+      "notice": "題目與作答欄保留課本形式。已依使用者提供的第4課解答本核對；提供解答與自行編寫的示範答案分別標示，答案可展開播放。",
       "items": [
         {
           "id": "p107-q1",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "1）マーク・トウェイン｜依故事順序編號",
           "jpRuby": "マーク・トウェインについてまとめたものです。<ruby>話<rt>はなし</rt></ruby>の<ruby>順<rt>じゅん</rt></ruby>に<ruby>番号<rt>ばんごう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>がとても<ruby>嫌<rt>きら</rt></ruby>いだった。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>の<ruby>便利<rt>べんり</rt></ruby>さがわかった。<br>（　）<ruby>病気<rt>びょうき</rt></ruby>で<ruby>親<rt>しん</rt></ruby>せきの<ruby>葬式<rt>そうしき</rt></ruby>に<ruby>出<rt>で</rt></ruby>られないことになった。<br>（　）<ruby>無料<rt>むりょう</rt></ruby>だと<ruby>聞<rt>き</rt></ruby>いて、<ruby>電話<rt>でんわ</rt></ruby>をつなぐことにした。<br>（　）クリスマスカードをベルには<ruby>出<rt>だ</rt></ruby>さないと<ruby>伝<rt>つた</rt></ruby>えた。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ってみないかとベルに<ruby>何回<rt>なんかい</rt></ruby>も<ruby>言<rt>い</rt></ruby>われたので、<ruby>腹<rt>はら</rt></ruby>を<ruby>立<rt>た</rt></ruby>てた。",
           "jpPlain": "マーク・トウェインについてまとめたものです。話の順に番号を書いてください。電話がとても嫌いだった。電話の便利さがわかった。病気で親せきの葬式に出られないことになった。無料だと聞いて、電話をつなぐことにした。クリスマスカードをベルには出さないと伝えた。電話を使ってみないかとベルに何回も言われたので、腹を立てた。",
           "zh": "依照故事發生順序，替六句吐溫相關敘述編號。",
           "grammarNote": "請依第106頁課文中吐溫的心情與行動變化排列。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "依題目顯示順序：1、6、4、5、3、2。",
-              "chinese": "這是網站依課文整理的參考答案，不是照片中的手寫內容。"
+              "plain": "1、6、4、5、3、2。",
+              "ruby": "1、6、4、5、3、2。",
+              "chinese": "按題目順序填寫；課本第一項已填1，解答本列出其餘6、4、5、3、2。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p107-q2",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "2）ベル｜依故事順序編號",
           "jpRuby": "ベルについてまとめたものです。<ruby>話<rt>はなし</rt></ruby>の<ruby>順<rt>じゅん</rt></ruby>に<ruby>番号<rt>ばんごう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>を<ruby>発明<rt>はつめい</rt></ruby>したので、トウェインに<ruby>使<rt>つか</rt></ruby>ってほしかった。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>をトウェインの<ruby>家<rt>いえ</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>けた。<br>（　）クリスマスカードが<ruby>欲<rt>ほ</rt></ruby>しいとトウェインに<ruby>言<rt>い</rt></ruby>った。<br>（　）<ruby>電話<rt>でんわ</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>けないかとトウェインに<ruby>何回<rt>なんかい</rt></ruby>も<ruby>言<rt>い</rt></ruby>った。<br>（　）トウェインが<ruby>親<rt>しん</rt></ruby>せきの<ruby>葬式<rt>そうしき</rt></ruby>に<ruby>出<rt>で</rt></ruby>られなくて<ruby>残念<rt>ざんねん</rt></ruby>に<ruby>思<rt>おも</rt></ruby>っていることを<ruby>知<rt>し</rt></ruby>った。",
           "jpPlain": "ベルについてまとめたものです。話の順に番号を書いてください。電話を発明したので、トウェインに使ってほしかった。電話をトウェインの家に取り付けた。クリスマスカードが欲しいとトウェインに言った。電話を取り付けないかとトウェインに何回も言った。トウェインが親せきの葬式に出られなくて残念に思っていることを知った。",
           "zh": "依照故事發生順序，替五句貝爾相關敘述編號。",
           "grammarNote": "請依第106頁課文中貝爾的行動先後排列。",
-          "examplesTitle": "參考答案（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "plain": "依題目顯示順序：1、4、5、2、3。",
-              "chinese": "這是網站依課文整理的參考答案，不是照片中的手寫內容。"
+              "plain": "1、4、5、2、3。",
+              "ruby": "1、4、5、2、3。",
+              "chinese": "按題目順序填寫；課本第一項已填1，解答本列出其餘4、5、2、3。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p107-q3",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "3）為什麼電話是「失礼な機械」？",
           "jpRuby": "トウェインは、なぜ<ruby>電話<rt>でんわ</rt></ruby>は「<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>機械<rt>きかい</rt></ruby>である」と<ruby>思<rt>おも</rt></ruby>っていたのですか。<br>＿＿＿＿＿＿",
           "jpPlain": "トウェインは、なぜ電話は「失礼な機械である」と思っていたのですか。",
           "zh": "吐溫為什麼認為電話是一種失禮的機器？",
           "grammarNote": "請根據第106頁第3段回答。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "<ruby>聞<rt>き</rt></ruby>きたくもない<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>かされ、<ruby>話<rt>はな</rt></ruby>したくもないときに、<ruby>話<rt>はな</rt></ruby>したくもない<ruby>人<rt>ひと</rt></ruby>と<ruby>話<rt>はな</rt></ruby>させられるからです。",
-              "plain": "聞きたくもない音を聞かされ、話したくもないときに、話したくもない人と話させられるからです。",
-              "chinese": "因為人會被迫聽不想聽的聲音，也會在不想說話時被迫和不想交談的人說話。"
+              "plain": "聞きたくもない音を聞かされ、話したくもないときに、話したくもない人と話させられるから。",
+              "ruby": "<ruby>聞<rt>き</rt></ruby>きたくもない<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>かされ、<ruby>話<rt>はなし</rt></ruby>したくもないときに、<ruby>話<rt>はなし</rt></ruby>したくもない<ruby>人<rt>ひと</rt></ruby>と<ruby>話<rt>はなし</rt></ruby>させられるから。",
+              "chinese": "因為會被迫聽不想聽的聲音，並在不想說話時與不想交談的人說話。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         },
         {
           "id": "p107-q4",
-          "answerType": "fixed",
+          "answerType": "verified",
           "topic": "4）吐溫體驗到的「電話の便利さ」",
           "jpRuby": "トウェインが<ruby>経験<rt>けいけん</rt></ruby>した「<ruby>電話<rt>でんわ</rt></ruby>の<ruby>便利<rt>べんり</rt></ruby>さ」というのは<ruby>何<rt>なん</rt></ruby>ですか。<br>＿＿＿＿＿＿",
           "jpPlain": "トウェインが経験した「電話の便利さ」というのは何ですか。",
           "zh": "吐溫所體驗到的「電話的便利」是什麼？",
           "grammarNote": "請根據第106頁最後兩段回答。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "提供解答（點擊展開）",
           "examples": [
             {
-              "ruby": "<ruby>病気<rt>びょうき</rt></ruby>で<ruby>葬式<rt>そうしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>できなくても、<ruby>電話<rt>でんわ</rt></ruby>で<ruby>教会<rt>きょうかい</rt></ruby>にいる<ruby>出席者<rt>しゅっせきしゃ</rt></ruby>と<ruby>話<rt>はな</rt></ruby>すことができたことです。",
-              "plain": "病気で葬式に出席できなくても、電話で教会にいる出席者と話すことができたことです。",
-              "chinese": "即使因生病無法參加葬禮，也能透過電話與教堂裡的出席者交談。"
+              "plain": "その場にいなくても話したい人と話すことができるということです。",
+              "ruby": "その場にいなくても<ruby>話<rt>はなし</rt></ruby>したい<ruby>人<rt>ひと</rt></ruby>と<ruby>話<rt>はなし</rt></ruby>すことができるということです。",
+              "chinese": "即使不在現場，也能與想交談的人說話。"
             }
-          ]
+          ],
+          "answerSource": "pages/answers-108.jpg"
         }
       ]
     },
@@ -3973,7 +4100,7 @@
           "jpRuby": "<ruby>今<rt>いま</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>からもし<ruby>電話<rt>でんわ</rt></ruby>がなくなったら、どうなるでしょう。<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>って、まとめてみましょう。<br>＿＿＿＿＿＿",
           "jpPlain": "今の生活からもし電話がなくなったら、どうなるでしょう。話し合って、まとめてみましょう。",
           "zh": "如果現在的生活中沒有電話，會變成怎樣？請討論並整理結論。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "ruby": "<ruby>電話<rt>でんわ</rt></ruby>がなくなったら、<ruby>急<rt>きゅう</rt></ruby>な<ruby>連絡<rt>れんらく</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しくなり、<ruby>家族<rt>かぞく</rt></ruby>や<ruby>友達<rt>ともだち</rt></ruby>とすぐに<ruby>話<rt>はな</rt></ruby>せなくなると<ruby>思<rt>おも</rt></ruby>います。",
@@ -3989,7 +4116,7 @@
           "jpRuby": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>失敗<rt>しっぱい</rt></ruby>したこと、<ruby>電話<rt>でんわ</rt></ruby>で<ruby>助<rt>たす</rt></ruby>かったこと、<ruby>電話<rt>でんわ</rt></ruby>で<ruby>経験<rt>けいけん</rt></ruby>したおもしろいことなどがあったら、クラスの<ruby>人<rt>ひと</rt></ruby>に<ruby>話<rt>はな</rt></ruby>してください。<br>＿＿＿＿＿＿",
           "jpPlain": "電話で失敗したこと、電話で助かったこと、電話で経験したおもしろいことなどがあったら、クラスの人に話してください。",
           "zh": "若曾因電話失敗、得到幫助或遇到有趣的事，請分享給班上的同學。",
-          "examplesTitle": "參考作答（點擊展開）",
+          "examplesTitle": "示範答案（點擊展開）",
           "examples": [
             {
               "ruby": "<ruby>以前<rt>いぜん</rt></ruby>、<ruby>電話番号<rt>でんわばんごう</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>えて、<ruby>知<rt>し</rt></ruby>らない<ruby>人<rt>ひと</rt></ruby>にかけてしまったことがあります。",
@@ -4084,7 +4211,10 @@
           "dialoguePrompts": [
             "どこの専門(せんもん)病院(びょういん)がいいですか？",
             "分かりました。明日(あした)行(い)ってみます。"
-          ]
+          ],
+          "answerType": "verified",
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）"
         },
         {
           "id": "u1-5",
@@ -4099,7 +4229,10 @@
           "dialoguePrompts": [
             "じゃあ、明日(あした)送別会(そうべつかい)を開(ひら)きましょうか。",
             "寂(さび)しくなりますね。"
-          ]
+          ],
+          "answerType": "verified",
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）"
         },
         {
           "id": "u1-6",
@@ -4123,7 +4256,7 @@
           "jpRuby": "かしこまりました。ワンさんが<ruby>発表会<rt>はっぴょうかい</rt></ruby>を<ruby>担当<rt>たんとう</rt></ruby>されるということですね。",
           "jpPlain": "かしこまりました。ワンさんが発表会を担当されるということですね。",
           "zh": "好的，我知道了。也就是說王先生您要負責發表會，對吧？",
-          "answerType": "suggested",
+          "answerType": "verified",
           "promptQ": "発表会を担当する",
           "role": "渡邊（同僚）",
           "roleAvatar": "👩‍💼",
@@ -4131,6 +4264,15 @@
           "dialoguePrompts": [
             "はい、準備(じゅんび)を頑張(がんば)ります。",
             "何か手伝(てつだ)うことはありますか？"
+          ],
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "ワン：すみませんが、私、ワンが発表会を担当することになったとお伝えください。渡辺：かしこまりました。ワンさんが発表会を担当されるということですね。",
+              "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンが<ruby>発表会<rt>はっぴょうかい</rt></ruby>を<ruby>担当<rt>たんとう</rt></ruby>することになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんが<ruby>発表会<rt>はっぴょうかい</rt></ruby>を<ruby>担当<rt>たんとう</rt></ruby>されるということですね。",
+              "chinese": "王：不好意思，請轉告由我負責發表會。渡邊：明白了，也就是由您負責發表會，對吧？"
+            }
           ]
         },
         {
@@ -4140,7 +4282,7 @@
           "jpRuby": "かしこまりました。ワンさんが<ruby>明日<rt>あす</rt></ruby>、<ruby>会場<rt>かいじょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>かれるということですね。",
           "jpPlain": "かしこまりました。ワンさんが明日、会場へ行かれるということですね。",
           "zh": "好的，我知道了。也就是說王先生您明天會去會場，對吧？",
-          "answerType": "suggested",
+          "answerType": "verified",
           "promptQ": "明日、会場へ行く",
           "role": "渡邊（同僚）",
           "roleAvatar": "👩‍💼",
@@ -4148,18 +4290,36 @@
           "dialoguePrompts": [
             "はい、朝(あさ)９時(くじ)に会場(かいじょう)に行(い)きます。",
             "何時(なんじ)頃(ごろ)到着(とうちゃく)されますか？"
+          ],
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "ワン：すみませんが、私、ワンが明日、会場へ行くことになったとお伝えください。渡辺：かしこまりました。ワンさんが明日、会場へ行かれるということですね。",
+              "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンが<ruby>明日<rt>あした</rt></ruby>、<ruby>会場<rt>かいじょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くことになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんが<ruby>明日<rt>あした</rt></ruby>、<ruby>会場<rt>かいじょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>かれるということですね。",
+              "chinese": "王：請轉告我明天會去會場。渡邊：明白了，您明天會去會場，對吧？"
+            }
           ]
         },
         {
           "id": "u1-8c",
           "category": "unit1",
-          "topic": "練習2 第3題（建議答案）",
-          "jpRuby": "かしこまりました。ワンさんがそちらへ<ruby>行<rt>い</rt></ruby>かれるということですね。",
-          "jpPlain": "かしこまりました。ワンさんがそちらへ行かれるということですね。",
+          "topic": "練習2 第3題｜提供解答",
+          "jpRuby": "かしこまりました。ワンさんがこちらへ<ruby>来<rt>こ</rt></ruby>られる／いらっしゃるということですね。",
+          "jpPlain": "かしこまりました。ワンさんがこちらへ来られる／いらっしゃるということですね。",
           "zh": "好的，我知道了。也就是說王先生您會去那裡，對吧？",
-          "answerType": "suggested",
+          "answerType": "verified",
           "promptQ": "そちらへ行く",
-          "grammarNote": "課本提供提示語；本卡答案是依句型完成的建議答案。"
+          "grammarNote": "課本提供提示語；本卡答案是依句型完成的建議答案。",
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）",
+          "examples": [
+            {
+              "plain": "ワン：すみませんが、私、ワンがそちらへ行く／うかがうことになったとお伝えください。渡辺：かしこまりました。ワンさんがこちらへ来られる／いらっしゃるということですね。",
+              "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンがそちらへ<ruby>行<rt>い</rt></ruby>く／うかがうことになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんがこちらへ<ruby>来<rt>こ</rt></ruby>られる／いらっしゃるということですね。",
+              "chinese": "王：請轉告我會到您那邊。渡邊：明白了，也就是您會來我們這邊，對吧？"
+            }
+          ]
         }
       ],
       "chapter": "grammar"
@@ -4219,33 +4379,37 @@
           "id": "u2-4",
           "category": "unit2",
           "topic": "情境詢問 (口罩)",
-          "jpRuby": "「<ruby>風邪<rt>かぜ</rt></ruby>をひいたの？」「…うん、ちょっと<ruby>風邪<rt>かぜ</rt></ruby>をひいちゃったの。」",
-          "jpPlain": "風邪をひいたの？うん、ちょっと風邪をひいちゃったの。",
-          "zh": "「你感冒了嗎？」「…嗯，有點不小心感冒了。」",
+          "jpRuby": "どうしたの？<ruby>風邪<rt>かぜ</rt></ruby>をひいたの／<ruby>風邪<rt>かぜ</rt></ruby>をひいたんだ。",
+          "jpPlain": "どうしたの？風邪をひいたの／風邪をひいたんだ。",
+          "zh": "怎麼了？我感冒了。（解答例）",
           "role": "戴大口罩的小孩",
           "roleAvatar": "😷",
-          "answerType": "suggested",
+          "answerType": "verified",
           "grammarNote": "【ひいちゃったの】結合「〜ちゃった（不小心）」與「〜の（說明）」。",
           "dialoguePrompts": [
             "お大事(だいじ)にね。薬(くすり)は飲(の)んだ？",
             "熱(ねつ)はあるの？"
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）"
         },
         {
           "id": "u2-5",
           "category": "unit2",
           "topic": "情境詢問 (行李箱)",
-          "jpRuby": "「これからどこに<ruby>行<rt>い</rt></ruby>くの？」「…うん、<ruby>今日<rt>きょう</rt></ruby>から<ruby>大阪<rt>おおさか</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くの。」",
-          "jpPlain": "これからどこに行くの？うん、今日から大阪へ行くの。",
-          "zh": "「你現在要去哪裡啊？」「…嗯，我今天開始要去大阪。」",
+          "jpRuby": "どこか<ruby>行<rt>い</rt></ruby>くの？うん。ちょっと<ruby>仕事<rt>しごと</rt></ruby>でホンコンに<ruby>行<rt>い</rt></ruby>くの／<ruby>行<rt>い</rt></ruby>くんだ。",
+          "jpPlain": "どこか行くの？うん。ちょっと仕事でホンコンに行くの／行くんだ。",
+          "zh": "要去哪裡嗎？嗯，因為工作要去一趟香港。（解答例）",
           "role": "拉行李箱的朋友",
           "roleAvatar": "🧳",
-          "answerType": "suggested",
+          "answerType": "verified",
           "grammarNote": "【どこに行くの】朋友間自然的旅行詢問。",
           "dialoguePrompts": [
             "旅行(りょこう)？それとも仕事(しごと)？",
             "気(き)をつけて行(い)ってきてね！"
-          ]
+          ],
+          "answerSource": "pages/answers-106.jpg",
+          "examplesTitle": "提供解答（點擊展開）"
         }
       ],
       "chapter": "grammar"

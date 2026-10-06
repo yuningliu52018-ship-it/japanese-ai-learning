@@ -1314,7 +1314,9 @@ function renderLesson(root, data) {
         html.push(`<article class="lesson-item${item.answerType === 'suggested' ? ' is-suggested-answer' : ''}"${itemIdAttribute}${answerTypeAttribute}>`);
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
         if (item.answerType === 'suggested') {
-          html.push(`<p class="lesson-answer-kind"><strong>參考作答</strong> 非課本印刷答案，其他合理答案也可以。</p>`);
+          html.push(`<p class="lesson-answer-kind"><strong>示範答案</strong> 非課本印刷答案，其他合理答案也可以。</p>`);
+        } else if (item.answerType === 'verified') {
+          html.push(`<p class="lesson-answer-kind"><strong>提供解答</strong> 依使用者提供的解答資料核對；解答例並非唯一答案。</p>`);
         }
         if (displayedJapanese) html.push(`<p lang="ja">${displayedJapanese}</p>`);
         if (!item.jpRuby && plainJapanese && plainJapanese !== displayedJapanese) {
@@ -1332,7 +1334,9 @@ function renderLesson(root, data) {
             html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">${item.examplesTitle || '例句'}</strong>`);
           }
           for (const example of item.examples) {
+            if (example.answerType) html.push(`<p class="lesson-muted">${example.answerType === 'verified' ? '提供解答' : '示範答案'}</p>`);
             html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
+            if (example.answerSource) html.push(`<p><a href="${escapeAttribute(example.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
           }
           if (isCollapsible && item.supplementNote) {
             html.push(`<div class="lesson-kv lesson-supplement-note">${item.supplementNote}</div>`);
@@ -1341,6 +1345,7 @@ function renderLesson(root, data) {
         } else if (item.supplementNote) {
           html.push(`<details class="vocabulary-examples lesson-examples-details"><summary class="vocabulary-examples-title">${item.examplesTitle || '更多說明／補充'}</summary><div class="lesson-kv lesson-supplement-note">${item.supplementNote}</div></details>`);
         }
+        if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
         if (item.dialoguePrompts) html.push(`<div class="lesson-kv"><strong>演練提示</strong>${item.dialoguePrompts.join(' / ')}</div>`);
         if (item.promptQ) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
@@ -1371,11 +1376,13 @@ function renderLesson(root, data) {
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.title || ''}</h3>`);
         if (item.formula) html.push(`<p class="lesson-muted"><strong>公式：</strong>${item.formula}</p>`);
+        if (item.answerType) html.push(`<p class="lesson-muted">${item.answerType === 'verified' ? '提供解答' : '示範答案'}</p>`);
         html.push(`<div class="lesson-options">`);
         for (const ex of item.examples || []) {
           html.push(`<div class="lesson-option"><strong>${ex.from}</strong> → ${ex.to}${speechButton(`${ex.from}。${ex.to}`)}</div>`);
         }
         html.push(`</div>`);
+        if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
         html.push(`</article>`);
       }
       html.push(`</div>`);
@@ -1392,7 +1399,8 @@ function renderLesson(root, data) {
         html.push(`</div>`);
         if (Number.isInteger(item.correct) || item.explanation) {
           const answer = Number.isInteger(item.correct) ? `${String.fromCharCode(65 + item.correct)}. ${(item.options || [])[item.correct] || ''}` : '';
-          html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>答案：</strong>${answer}</p>` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}</details>`);
+          const answerKind = item.answerType === 'verified' ? '提供解答' : item.answerType === 'suggested' ? '示範答案' : '答案';
+          html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>${answerKind}：</strong>${answer}</p>` : ''}${item.answerText ? `<p>${item.answerText}</p>` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}${item.answerSource ? `<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>` : ''}</details>`);
         }
         html.push(`</article>`);
       }
@@ -1400,7 +1408,9 @@ function renderLesson(root, data) {
     } else if (section.type === 'answer_key') {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
-        html.push(`<details class="lesson-item lesson-answer"><summary>${item.label}</summary><p><strong>答案：</strong>${item.answer}</p>${item.reason ? `<p>${item.reason}</p>` : ''}</details>`);
+        const kind = item.answerType === 'verified' ? '提供解答' : item.answerType === 'suggested' ? '示範答案' : '答案';
+        const sourceLink = item.sourcePhoto ? `<p><a href="${item.sourcePhoto}" target="_blank" rel="noopener">查看解答本照片</a></p>` : '';
+        html.push(`<details class="lesson-item lesson-answer"${item.answerType ? ` data-answer-type="${item.answerType}"` : ''}><summary>${item.label}</summary><p><strong>${kind}：</strong><span lang="ja">${item.answerRuby || item.answer}</span></p>${item.jpPlain ? speechButton(item.jpPlain) : ''}${item.chinese ? `<p><strong>中文：</strong>${item.chinese}</p>` : ''}${item.reason ? `<p>${item.reason}</p>` : ''}${sourceLink}</details>`);
       }
       html.push(`</div>`);
     } else if (section.type === 'scenario_practice') {
@@ -1409,9 +1419,11 @@ function renderLesson(root, data) {
         html.push(`<article class="scenario-card">`);
         html.push(`<p class="scenario-label">${item.situation}</p>`);
         html.push(`<h3>${item.title}</h3>`);
+        if (item.answerType) html.push(`<p class="lesson-muted">${item.answerType === 'verified' ? '提供解答（含解答例）' : '示範答案'}</p>`);
         html.push(`<div class="scenario-turn"><strong>對方</strong><p lang="ja">${item.partner}</p>${speechButton(item.partner)}</div>`);
         html.push(`<div class="scenario-turn is-you"><strong>你要說</strong><p lang="ja">${item.target}</p>${speechButton(item.target)}</div>`);
         if (item.swap) html.push(`<p class="scenario-swap"><strong>替換練習：</strong>${item.swap}</p>`);
+        if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
         html.push(`</article>`);
       }
       html.push(`</div>`);
