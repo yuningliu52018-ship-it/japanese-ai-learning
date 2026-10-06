@@ -1,137 +1,445 @@
-/* Lesson 05 presentation only: keep the existing renderer and speech nodes. */
+/* Shared textbook-page presentation driven only by the explicit pagePresentation contract. */
 (() => {
   const root = document.getElementById('lesson-root');
   if (!root) return;
-  function setup() {
-    const chapterNav = root.querySelector('.chapter-nav');
-    if (!chapterNav) return false;
-    const sections = [...root.querySelectorAll(':scope > .lesson-section')];
-    const pages = new Map();
-    const headers = new Map();
-    const assignments = new Map();
-    let chapter = 'vocabulary';
-    const text = node => {
-      const copy = node.cloneNode(true);
-      copy.querySelectorAll('rt').forEach(el => el.remove());
-      return copy.textContent.trim();
+
+  const token = (value = '') => String(value)
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-+|-+$/g, '') || 'section';
+
+  const decodeSpeak = (value = '') => {
+    try { return decodeURIComponent(value); } catch { return value; }
+  };
+
+  let initialized = false;
+  let setupPending = false;
+  let observer = null;
+
+  function renderedStructure() {
+    const chapterNav = root.querySelector('[data-chapter-navigation]');
+    if (!chapterNav) return null;
+    const allSections = [...root.querySelectorAll(':scope > [data-lesson-section]')];
+    const contentSections = allSections.filter((section) => section.dataset.sectionKind === 'content');
+    const sectionById = new Map(contentSections.map((section) => [section.dataset.sectionId, section]));
+    const chapterHeaders = new Map(
+      allSections
+        .filter((section) => section.dataset.sectionKind === 'chapter')
+        .map((section) => [section.dataset.chapterId, section])
+    );
+    return {
+      chapterNav,
+      allSections,
+      contentSections,
+      sectionById,
+      chapterHeaders,
+      chapterOrder: [...chapterHeaders.keys()]
     };
-    function add(key, section, items = null) {
-      if (!pages.has(key)) pages.set(key, { key, chapter, entries: [] });
-      pages.get(key).entries.push({ section, items });
-      if (!assignments.has(section)) assignments.set(section, key);
+  }
+
+  function pagesFromPresentation(structure, presentation) {
+    const { contentSections, sectionById, chapterHeaders, chapterOrder } = structure;
+    const itemBySectionAndId = new Map();
+
+    for (const section of contentSections) {
+      const sectionId = section.dataset.sectionId;
+      const items = [...section.querySelectorAll('.lesson-item')];
+      if (!items.length) continue;
+      const byId = new Map();
+      items.forEach((item) => {
+        const itemId = item.dataset.itemId;
+        if (!itemId) return;
+        if (byId.has(itemId)) throw new Error(`${sectionId} 有重複 itemId：${itemId}`);
+        byId.set(itemId, item);
+      });
+      if (byId.size) itemBySectionAndId.set(sectionId, byId);
     }
-    for (const section of sections) {
-      const header = section.querySelector('.chapter-heading');
-      if (header) {
-        chapter = header.id.replace('chapter-', '');
-        headers.set(chapter, section);
-        continue;
+
+    const assignedWholeSections = new Set();
+    const assignedItems = new WeakSet();
+    const verifiedKeys = new Set((presentation.verifiedPages || []).map(String));
+    const pages = [];
+    const pageKeys = new Set();
+
+    const addEntry = (page, section, items = null) => {
+      let entry = page.entries.find((candidate) => candidate.section === section);
+      if (!entry) {
+        entry = { section, items: items ? new Set() : null };
+        page.entries.push(entry);
       }
-      const title = text(section.querySelector('.lesson-section-heading') || section);
-      if (chapter === 'vocabulary' && /1[–-]66/.test(title)) {
-        const items = [...section.querySelectorAll('.lesson-item')];
-        add('112', section, items.slice(0, 31));
-        add('113', section, items.slice(31, 64));
-        add('supplement-vocabulary', section, items.slice(64));
-        continue;
+      if (!items) {
+        if (entry.items?.size) throw new Error(`${section.dataset.sectionId} 同時被整段與部分指派`);
+        entry.items = null;
+        return;
       }
-      let key;
-      if (section.id === 'section-dialogue') key = '124';
-      else if (section.id === 'section-listening') key = '123';
-      else if (section.id === 'section-audio-cd19') key = '130';
-      else if (section.id === 'section-audio-cd20') key = '133';
-      else if (title.includes('118–119')) key = '118';
-      else if (title.includes('125–127')) key = title.includes('完整示範會話') ? '126' : '125';
-      else if (title.includes('128–131')) key = 'review-reading';
-      else key = title.match(/^(\d{3})頁/)?.[1] || `supplement-${chapter}`;
-      const heading = section.querySelector('.lesson-section-heading h3');
-      if (heading && (title.includes('118–119') || title.includes('125–127'))) {
-        const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
-        while (walker.nextNode()) walker.currentNode.textContent = walker.currentNode.textContent.replace(/118–119|125–127/g, key);
+      if (entry.items === null) throw new Error(`${section.dataset.sectionId} 同時被整段與部分指派`);
+      items.forEach((item) => entry.items.add(item));
+    };
+
+    for (const pageDefinition of presentation.pages) {
+      const key = String(pageDefinition.key);
+      if (pageKeys.has(key)) throw new Error(`pagePresentation 有重複頁碼：${key}`);
+      pageKeys.add(key);
+      const page = {
+        key,
+        label: pageDefinition.label || `${key} 頁`,
+        chapterId: pageDefinition.chapterId,
+        entries: [],
+        verified: verifiedKeys.size ? verifiedKeys.has(key) : true
+      };
+      if (!chapterHeaders.has(page.chapterId)) throw new Error(`${key} 頁的章節不存在：${page.chapterId}`);
+
+      for (const assignment of pageDefinition.assignments || []) {
+        const section = sectionById.get(assignment.sectionId);
+        if (!section) throw new Error(`${key} 頁找不到 section：${assignment.sectionId}`);
+        if (section.dataset.chapterId !== page.chapterId) {
+          throw new Error(`${assignment.sectionId} 不屬於 ${page.chapterId} 章`);
+        }
+
+        if (Array.isArray(assignment.itemIds)) {
+          if (assignedWholeSections.has(section)) throw new Error(`${assignment.sectionId} 同時被整段與部分指派`);
+          const byId = itemBySectionAndId.get(assignment.sectionId);
+          if (!byId) throw new Error(`${assignment.sectionId} 沒有可依 itemId 分頁的項目`);
+          const items = assignment.itemIds.map((itemId) => {
+            const item = byId.get(String(itemId));
+            if (!item) throw new Error(`${key} 頁找不到 ${assignment.sectionId}/${itemId}`);
+            if (assignedItems.has(item)) throw new Error(`${assignment.sectionId}/${itemId} 被重複指派`);
+            assignedItems.add(item);
+            return item;
+          });
+          addEntry(page, section, items);
+        } else {
+          if (assignedWholeSections.has(section)) throw new Error(`${assignment.sectionId} 被重複指派`);
+          if ([...section.querySelectorAll('.lesson-item')].some((item) => assignedItems.has(item))) {
+            throw new Error(`${assignment.sectionId} 同時被整段與部分指派`);
+          }
+          assignedWholeSections.add(section);
+          addEntry(page, section);
+        }
       }
-      add(key, section);
+      pages.push(page);
     }
-    const chapterOrder = [...headers.keys()];
-    const list = [...pages.values()].sort((a, b) =>
-      chapterOrder.indexOf(a.chapter) - chapterOrder.indexOf(b.chapter) ||
-      (Number(a.key) || 999) - (Number(b.key) || 999));
-    const label = key => /^\d+$/.test(key) ? `${key} 頁` : key.startsWith('review') ? '128–131 頁・綜合複習' : '補充（未指定頁碼）';
+
+    const pendingByChapter = new Map();
+    for (const range of presentation.pendingRanges || []) {
+      if (!pendingByChapter.has(range.chapterId)) pendingByChapter.set(range.chapterId, range);
+    }
+    const fallbackPages = new Map();
+    const fallbackFor = (chapterId) => {
+      if (fallbackPages.has(chapterId)) return fallbackPages.get(chapterId);
+      const pending = pendingByChapter.get(chapterId);
+      const page = {
+        key: pending ? `pending-${token(pending.pages)}` : `supplement-${token(chapterId)}`,
+        label: pending
+          ? `${pending.pages} 頁｜待逐頁核對`
+          : `${chapterId === 'vocabulary' ? '單語補充' : '補充教材'}｜未指定課本頁碼`,
+        chapterId,
+        entries: [],
+        verified: false
+      };
+      fallbackPages.set(chapterId, page);
+      return page;
+    };
+
+    for (const section of contentSections) {
+      const chapterId = section.dataset.chapterId;
+      const items = [...section.querySelectorAll('.lesson-item')];
+      if (assignedWholeSections.has(section)) continue;
+      if (items.length && items.some((item) => assignedItems.has(item))) {
+        const remainingItems = items.filter((item) => !assignedItems.has(item));
+        if (remainingItems.length) addEntry(fallbackFor(chapterId), section, remainingItems);
+      } else {
+        addEntry(fallbackFor(chapterId), section);
+      }
+    }
+
+    const ordered = [];
+    for (const chapterId of chapterOrder) {
+      const chapterPages = pages.filter((page) => page.chapterId === chapterId);
+      const fallback = fallbackPages.get(chapterId);
+      if (fallback?.entries.length) chapterPages.push(fallback);
+      ordered.push(...chapterPages);
+    }
+    if (!ordered.length) throw new Error('pagePresentation 沒有可顯示的頁面');
+    return ordered;
+  }
+
+  function mountAdapter(structure, pages, lessonId, options = {}) {
+    const { chapterNav, allSections, contentSections, sectionById, chapterHeaders } = structure;
+    const rememberPage = options.rememberPage !== false;
+    const storageKey = `japanese-ai-learning.${lessonId}.page`;
+
+    root.querySelector(':scope > .lesson-page-navigation')?.remove();
+    allSections.forEach((section) => { section.hidden = false; });
+    contentSections.forEach((section) => {
+      section.querySelectorAll('.lesson-item').forEach((item) => { item.hidden = false; });
+    });
+
     const nav = document.createElement('nav');
     nav.className = 'lesson-page-navigation';
     nav.id = 'textbook-pages';
+    nav.dataset.pageNavigation = lessonId;
     nav.setAttribute('aria-label', '教材翻頁');
     nav.innerHTML = '<button type="button" data-page-prev>← 上一頁</button><label>教材頁碼 <select aria-label="教材頁碼"></select></label><button type="button" data-page-next>下一頁 →</button>';
     const select = nav.querySelector('select');
-    for (const page of list) {
+    pages.forEach((page) => {
       const option = document.createElement('option');
       option.value = page.key;
-      option.textContent = label(page.key) + (page.key.startsWith('supplement') ? `・${page.chapter === 'vocabulary' ? '單語' : '文法'}` : '');
+      option.textContent = page.label;
       select.append(option);
-    }
+    });
     chapterNav.after(nav);
     chapterNav.hidden = true;
+
+    const headingSpeech = new Map();
+    const headingText = new Map();
+    contentSections.forEach((section) => {
+      const heading = section.querySelector('.lesson-section-heading h3');
+      if (heading) headingText.set(section, heading.textContent);
+      const button = section.querySelector('.lesson-section-heading [data-speak]');
+      if (button) {
+        headingSpeech.set(section, {
+          value: button.dataset.speak || '',
+          label: button.getAttribute('aria-label') || '朗讀本單元'
+        });
+      }
+    });
+
+    const pageIndexesBySection = new Map();
+    const pageIndexByItem = new WeakMap();
+    pages.forEach((page, pageIndex) => {
+      page.entries.forEach(({ section, items }) => {
+        const indexes = pageIndexesBySection.get(section) || [];
+        if (!indexes.includes(pageIndex)) indexes.push(pageIndex);
+        pageIndexesBySection.set(section, indexes);
+        items?.forEach((item) => pageIndexByItem.set(item, pageIndex));
+      });
+    });
+
+    const locations = pages.map((page) => ({
+      key: `page-${page.key}`,
+      href: `#page-${page.key}`,
+      label: page.label,
+      chapterId: page.chapterId,
+      sectionId: page.entries[0]?.section?.dataset.sectionId || null,
+      pageKey: page.key,
+      kind: 'page',
+      verified: page.verified
+    }));
     let current = -1;
-    function show(index, scroll = false) {
-      if (index < 0 || index >= list.length) return;
-      const page = list[index];
-      if (current !== index && current !== -1) {
-        root.querySelector('[data-speech-stop]')?.click();
-        root.querySelector('[data-shadow-close]')?.click();
-        root.querySelectorAll('audio').forEach(audio => audio.pause());
+    let navigationRegistered = false;
+
+    const setSectionSpeech = (section, visibleItems) => {
+      const button = section.querySelector('.lesson-section-heading [data-speak]');
+      const original = headingSpeech.get(section);
+      if (!button || !original) return;
+      if (!visibleItems) {
+        button.dataset.speak = original.value;
+        button.setAttribute('aria-label', original.label);
+        return;
       }
+      const phrases = [...visibleItems]
+        .map((item) => item.querySelector('[data-speak]')?.dataset.speak)
+        .filter(Boolean)
+        .map(decodeSpeak);
+      button.dataset.speak = encodeURIComponent(phrases.join('。'));
+      button.setAttribute('aria-label', '朗讀本頁內容');
+    };
+
+    const stopPageMedia = () => {
+      root.querySelector('[data-speech-stop]')?.click();
+      root.querySelector('[data-shadow-close]')?.click();
+      root.querySelectorAll('audio').forEach((audio) => audio.pause());
+    };
+
+    function show(index, scroll = false, source = 'page') {
+      const page = pages[index];
+      if (!page) return false;
+      const changed = current !== index;
+      if (changed && current >= 0) stopPageMedia();
       current = index;
-      sections.forEach(section => { section.hidden = true; });
-      headers.get(page.chapter).hidden = false;
-      for (const { section, items } of page.entries) {
+      allSections.forEach((section) => { section.hidden = true; });
+      contentSections.forEach((section) => {
+        section.querySelectorAll('.lesson-item').forEach((item) => { item.hidden = false; });
+        setSectionSpeech(section, null);
+        const heading = section.querySelector('.lesson-section-heading h3');
+        if (heading && headingText.has(section)) heading.textContent = headingText.get(section);
+      });
+      chapterHeaders.get(page.chapterId).hidden = false;
+      page.entries.forEach(({ section, items }) => {
         section.hidden = false;
-        if (items) {
-          section.querySelectorAll('.lesson-item').forEach(item => { item.hidden = !items.includes(item); });
-          section.querySelector('.lesson-section-heading h3').textContent = page.key === '112' ? '112頁｜單語 1–31' : page.key === '113' ? '113頁｜單語 32–64' : '補充單語 65–66（未指定頁碼）';
-          const button = section.querySelector('.lesson-section-heading [data-speak]');
-          if (button) {
-            const phrases = items.map(item => item.querySelector('[data-speak]')?.dataset.speak).filter(Boolean).map(decodeURIComponent).join('。');
-            button.dataset.speak = encodeURIComponent(phrases);
-            button.setAttribute('aria-label', '朗讀本頁單語');
-          }
+        if (page.headingLabel) {
+          const heading = section.querySelector('.lesson-section-heading h3');
+          if (heading) heading.textContent = page.headingLabel;
         }
-      }
+        if (items) {
+          section.querySelectorAll('.lesson-item').forEach((item) => { item.hidden = !items.has(item); });
+          setSectionSpeech(section, items);
+          const heading = section.querySelector('.lesson-section-heading h3');
+          if (heading) heading.textContent = page.headingLabel || page.label;
+        }
+      });
       select.value = page.key;
       nav.querySelector('[data-page-prev]').disabled = index === 0;
-      nav.querySelector('[data-page-next]').disabled = index === list.length - 1;
-      chapterNav.querySelectorAll('a').forEach(a => {
-        if (a.hash === `#chapter-${page.chapter}`) a.setAttribute('aria-current', 'page');
-        else a.removeAttribute('aria-current');
+      nav.querySelector('[data-page-next]').disabled = index === pages.length - 1;
+      chapterNav.querySelectorAll('a').forEach((link) => {
+        if (link.hash === `#chapter-${page.chapterId}`) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
       });
-      if (scroll) nav.scrollIntoView({ block: 'start' });
-    }
-    function navigate(index) {
-      if (!list[index]) return;
-      history.pushState(null, '', `#page-${list[index].key}`);
-      show(index, true);
-    }
-    nav.querySelector('[data-page-prev]').onclick = () => navigate(current - 1);
-    nav.querySelector('[data-page-next]').onclick = () => navigate(current + 1);
-    select.onchange = () => navigate(list.findIndex(page => page.key === select.value));
-    function followHash() {
-      const id = decodeURIComponent(location.hash.slice(1));
-      let index = -1;
-      if (id.startsWith('page-')) index = list.findIndex(page => page.key === id.slice(5));
-      else if (id.startsWith('chapter-')) index = list.findIndex(page => page.chapter === id.slice(8));
-      else {
-        const section = document.getElementById(id)?.closest('.lesson-section');
-        index = list.findIndex(page => page.key === assignments.get(section));
+      if (rememberPage) {
+        try { localStorage.setItem(storageKey, page.key); } catch {}
       }
-      show(index >= 0 ? index : current >= 0 ? current : 0);
-      if (id.startsWith('page-')) nav.scrollIntoView({ block: 'start' });
-      else document.getElementById(id)?.scrollIntoView({ block: 'start' });
+      if (scroll) nav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (changed && navigationRegistered) window.JapaneseLesson?._notifyLocation?.(locations[index], source);
+      return true;
+    }
+
+    function indexFor(target) {
+      if (target instanceof Element) {
+        const item = target.closest('.lesson-item');
+        if (item && pageIndexByItem.has(item)) return pageIndexByItem.get(item);
+        const section = target.closest('[data-lesson-section]');
+        const indexes = pageIndexesBySection.get(section) || [];
+        return indexes.includes(current) ? current : (indexes[0] ?? -1);
+      }
+      if (target && typeof target === 'object') {
+        if (target.pageKey != null) return pages.findIndex((page) => page.key === String(target.pageKey));
+        if (target.key) return locations.findIndex((location) => location.key === target.key);
+        if (target.href) return indexFor(target.href);
+        if (target.sectionId) {
+          const section = sectionById.get(target.sectionId);
+          const indexes = pageIndexesBySection.get(section) || [];
+          return indexes.includes(current) ? current : (indexes[0] ?? -1);
+        }
+        if (target.chapterId) return pages.findIndex((page) => page.chapterId === target.chapterId);
+      }
+      let raw = String(target || '').replace(/^#/, '');
+      try { raw = decodeURIComponent(raw); } catch {}
+      if (raw.startsWith('page-')) return pages.findIndex((page) => page.key === raw.slice(5));
+      if (raw.startsWith('chapter-')) return pages.findIndex((page) => page.chapterId === raw.slice(8));
+      const directPage = pages.findIndex((page) => page.key === raw);
+      if (directPage >= 0) return directPage;
+      const element = document.getElementById(raw);
+      if (element) return indexFor(element);
+      const section = sectionById.get(raw);
+      const indexes = pageIndexesBySection.get(section) || [];
+      return indexes.includes(current) ? current : (indexes[0] ?? -1);
+    }
+
+    function setLocation(index, locationOptions = {}) {
+      if (!pages[index]) return false;
+      const href = locations[index].href;
+      const historyMode = locationOptions.history ?? 'push';
+      if (historyMode !== 'none' && location.hash !== href) {
+        if (historyMode === 'replace') history.replaceState(null, '', href);
+        else history.pushState(null, '', href);
+      }
+      return show(index, locationOptions.scroll !== false, locationOptions.source || 'page');
+    }
+
+    function reveal(target, revealOptions = {}) {
+      const index = indexFor(target);
+      if (index < 0) return false;
+      const exactTarget = target instanceof Element ? target : null;
+      if (!setLocation(index, {
+        ...revealOptions,
+        scroll: exactTarget ? false : revealOptions.scroll,
+        source: revealOptions.source || 'reveal'
+      })) return false;
+      if (exactTarget) {
+        let details = exactTarget.closest('details');
+        while (details && root.contains(details)) {
+          details.open = true;
+          details = details.parentElement?.closest('details');
+        }
+        if (revealOptions.scroll !== false) {
+          exactTarget.scrollIntoView({
+            behavior: revealOptions.behavior || 'smooth',
+            block: revealOptions.block || 'start'
+          });
+        }
+      }
+      return true;
+    }
+
+    const adapter = {
+      kind: 'pages',
+      lessonId,
+      getCurrent: () => current >= 0 ? { ...locations[current] } : null,
+      getLocations: () => locations.map((location) => ({ ...location })),
+      goTo: (target, locationOptions = {}) => setLocation(indexFor(target), locationOptions),
+      reveal
+    };
+    root.lessonNavigation = adapter;
+    nav.querySelector('[data-page-prev]').onclick = () => setLocation(current - 1, { source: 'previous' });
+    nav.querySelector('[data-page-next]').onclick = () => setLocation(current + 1, { source: 'next' });
+    select.onchange = () => setLocation(pages.findIndex((page) => page.key === select.value), { source: 'select' });
+
+    function followHash(event) {
+      const hashIndex = indexFor(location.hash);
+      let index = hashIndex;
+      if (index < 0 && !location.hash && rememberPage) {
+        try { index = pages.findIndex((page) => page.key === localStorage.getItem(storageKey)); } catch {}
+      }
+      if (index < 0) index = current >= 0 ? current : 0;
+      show(index, hashIndex >= 0 && location.hash.startsWith('#page-'), event?.type || 'initial');
+      if (hashIndex >= 0 && location.hash && !location.hash.startsWith('#page-')) {
+        let id = location.hash.slice(1);
+        try { id = decodeURIComponent(id); } catch {}
+        document.getElementById(id)?.scrollIntoView({ block: 'start' });
+      }
     }
     window.addEventListener('hashchange', followHash);
     window.addEventListener('popstate', followHash);
     followHash();
+
+    const registered = window.JapaneseLesson?._registerNavigation?.(adapter) === true;
+    navigationRegistered = true;
+    if (registered) window.JapaneseLesson?._notifyLocation?.(adapter.getCurrent(), 'initial');
+    root.dataset.pageAdapterReady = lessonId;
+    initialized = true;
     return true;
   }
-  if (!setup()) {
-    const observer = new MutationObserver(() => { if (setup()) observer.disconnect(); });
+
+  function setup() {
+    if (initialized) return true;
+    const structure = renderedStructure();
+    if (!structure) return false;
+    const lessonId = root.dataset.lessonId || root.lessonContext?.lessonId;
+    if (!lessonId) return false;
+    const presentation = root.lessonContext?.pagePresentation;
+
+    if (presentation?.pages?.length) {
+      const pages = pagesFromPresentation(structure, presentation);
+      return mountAdapter(structure, pages, lessonId, {
+        rememberPage: presentation.rememberPage !== false
+      });
+    }
+
+    return false;
+  }
+
+  function ensureSetup() {
+    if (initialized || setupPending) return;
+    setupPending = true;
+    queueMicrotask(() => {
+      setupPending = false;
+      try {
+        if (setup()) {
+          observer?.disconnect();
+          observer = null;
+        }
+      } catch (error) {
+        console.error('逐頁導覽初始化失敗；保留完整章節內容。', error);
+      }
+    });
+  }
+
+  root.addEventListener('lesson:rendered', ensureSetup);
+  ensureSetup();
+  if (!initialized) {
+    observer = new MutationObserver(ensureSetup);
     observer.observe(root, { childList: true });
   }
 })();

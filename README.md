@@ -30,4 +30,11 @@ video and quizzes.
 6. Run `npm run courses:check` before committing or deploying.
 
 The format reference is `data/lesson.schema.json`. Set `catalog.listed` to
-`true` only for complete lessons that should appear on the home page.
+`true` for lessons that should appear on the home page. Page verification is
+tracked independently by `pagePresentation.status` (`partial` or `complete`).
+
+Every public lesson declares a `pagePresentation` map for the common
+one-page-at-a-time navigation. Its stable contract and maintenance checklist
+are documented in [`docs/lesson-page-spec.md`](docs/lesson-page-spec.md).
+`npm run courses:check` requires this map for `catalog.listed: true` lessons and
+verifies page keys plus every chapter, section and item reference.

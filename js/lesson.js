@@ -7,6 +7,155 @@ function plainText(value = '') {
   return (container.textContent || String(value)).replace(/\s+/g, ' ').trim();
 }
 
+function lessonToken(value = '') {
+  return plainText(value)
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-+|-+$/g, '') || 'section';
+}
+
+function escapeAttribute(value = '') {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function resolveLessonId(data = {}) {
+  if (data.id) return lessonToken(data.id);
+  if (Number.isInteger(data.catalog?.order)) return `k${data.catalog.order}`;
+  const folder = decodeURIComponent(location.pathname.split('/').filter(Boolean).at(-2) || 'lesson');
+  return lessonToken(folder);
+}
+
+function resolvePageKey(section = {}) {
+  if (section.pageKey != null && String(section.pageKey).trim()) return String(section.pageKey).trim();
+  if (Number.isFinite(section.pageOrder) && section.pageOrder >= 10) return String(Math.trunc(section.pageOrder));
+  const match = plainText(section.title || '').match(/(?:^|\D)(\d{2,3})(?:[–-]\d{2,3})?頁/);
+  return match ? match[1] : null;
+}
+
+function prepareLessonLocations(data, lessonId) {
+  let chapterId = 'lesson';
+  const counts = new Map();
+  const usedSectionIds = new Set();
+
+  for (const section of data.sections || []) {
+    if (section.type === 'chapter_heading') {
+      chapterId = lessonToken(section.id || 'lesson');
+      section.__lessonLocation = {
+        key: `chapter-${chapterId}`,
+        href: `#chapter-${chapterId}`,
+        label: plainText(section.title || chapterId),
+        chapterId,
+        sectionId: `chapter-${chapterId}`,
+        pageKey: null,
+        kind: 'chapter'
+      };
+      continue;
+    }
+
+    const pageKey = resolvePageKey(section);
+    const explicit = section.id ? lessonToken(section.id) : '';
+    const base = explicit || `${lessonToken(section.type || 'section')}${pageKey ? `-page-${lessonToken(pageKey)}` : ''}`;
+    const countKey = `${chapterId}-${base}`;
+    const count = (counts.get(countKey) || 0) + 1;
+    counts.set(countKey, count);
+    let sectionId = `${chapterId}-${base}${count > 1 ? `-${count}` : ''}`;
+    let duplicate = 2;
+    while (usedSectionIds.has(sectionId)) sectionId = `${chapterId}-${base}-${duplicate++}`;
+    usedSectionIds.add(sectionId);
+    section.__lessonLocation = {
+      key: `section-${sectionId}`,
+      href: `#section-${lessonId}-${sectionId}`,
+      label: plainText(section.title || sectionId),
+      chapterId,
+      sectionId,
+      pageKey,
+      kind: 'section'
+    };
+  }
+}
+
+function createJapaneseLessonApi() {
+  let context = null;
+  let navigation = null;
+  let readyResolved = false;
+  let resolveReady;
+  let lastLocationSignature = '';
+  const ready = new Promise((resolve) => { resolveReady = resolve; });
+
+  const dispatch = (name, detail) => {
+    if (!context?.root || typeof CustomEvent !== 'function') return;
+    context.root.dispatchEvent(new CustomEvent(name, { bubbles: true, detail }));
+  };
+
+  const api = {
+    ready,
+    _setContext(nextContext) {
+      context = nextContext;
+      context.root.lessonContext = context;
+    },
+    _hasNavigation() {
+      return Boolean(navigation);
+    },
+    _registerNavigation(nextNavigation) {
+      if (!context?.root || !nextNavigation) return false;
+      navigation = nextNavigation;
+      context.root.lessonNavigation = navigation;
+      context.root.dataset.navigationKind = navigation.kind || 'sections';
+      const detail = {
+        lessonId: context.lessonId,
+        navigationKind: navigation.kind || 'sections',
+        locations: api.getLocations()
+      };
+      dispatch('lesson:navigation-ready', detail);
+      if (!readyResolved) {
+        readyResolved = true;
+        resolveReady(api);
+      }
+      return true;
+    },
+    _notifyLocation(location, source = 'api') {
+      if (!context || !location) return;
+      const state = {
+        lessonId: context.lessonId,
+        navigationKind: navigation?.kind || 'sections',
+        ...location
+      };
+      const signature = JSON.stringify([state.lessonId, state.key, state.chapterId, state.sectionId, state.pageKey]);
+      if (signature === lastLocationSignature) return;
+      lastLocationSignature = signature;
+      dispatch('lesson:location-change', { ...state, source });
+    },
+    getState() {
+      const location = navigation?.getCurrent?.() || null;
+      return location ? {
+        lessonId: context?.lessonId || null,
+        navigationKind: navigation?.kind || 'sections',
+        ...location
+      } : null;
+    },
+    getLocations() {
+      const locations = navigation?.getLocations?.() || context?.locations || [];
+      return locations.map((location) => ({ ...location }));
+    },
+    navigate(target, options = {}) {
+      return navigation?.goTo?.(target, options) || false;
+    },
+    reveal(target, options = {}) {
+      return navigation?.reveal?.(target, options) || false;
+    }
+  };
+  return api;
+}
+
+const japaneseLessonApi = typeof window !== 'undefined'
+  ? (window.JapaneseLesson || (window.JapaneseLesson = createJapaneseLessonApi()))
+  : createJapaneseLessonApi();
+
 function speechButton(text, label = '播放') {
   const cleanText = plainText(text);
   if (!cleanText) return '';
@@ -1084,7 +1233,8 @@ function renderLesson(root, data) {
 
   for (const section of data.sections || []) {
     if (section.type === 'chapter_heading') {
-      html.push(`<div class="lesson-section">`);
+      const location = section.__lessonLocation;
+      html.push(`<div class="lesson-section" data-lesson-section data-section-kind="chapter" data-chapter-id="${escapeAttribute(location?.chapterId || section.id)}" data-section-id="${escapeAttribute(location?.sectionId || `chapter-${section.id}`)}" data-location-key="${escapeAttribute(location?.key || `chapter-${section.id}`)}" data-page-label="${escapeAttribute(section.pages || '')}">`);
       html.push(`
         <header class="chapter-heading" id="chapter-${section.id}">
           <span class="chapter-number">${section.number}</span>
@@ -1101,9 +1251,14 @@ function renderLesson(root, data) {
       continue;
     }
 
+    const location = section.__lessonLocation || {};
     const secId = resolveSectionId(section, usedIds);
+    const canonicalId = `section-${data.__lessonId || 'lesson'}-${location.sectionId || lessonToken(section.type || 'section')}`;
+    const domId = secId || canonicalId;
     const pageAttribute = Number.isInteger(section.pageOrder) ? ` data-page="${section.pageOrder}"` : '';
-    html.push(`<div class="lesson-section"${secId ? ` id="${secId}"` : ''}${pageAttribute}>`);
+    const pageKeyAttribute = location.pageKey ? ` data-page-key="${escapeAttribute(location.pageKey)}"` : '';
+    const pageOrderAttribute = Number.isFinite(section.pageOrder) ? ` data-page-order="${section.pageOrder}"` : '';
+    html.push(`<div class="lesson-section" id="${escapeAttribute(domId)}" data-lesson-section data-section-kind="content" data-chapter-id="${escapeAttribute(location.chapterId || 'lesson')}" data-section-id="${escapeAttribute(location.sectionId || lessonToken(section.type || 'section'))}" data-location-key="${escapeAttribute(location.key || canonicalId)}"${pageKeyAttribute}${pageOrderAttribute}${pageAttribute}>`);
     html.push(`<div class="lesson-section-heading"><h3>${section.title || ''}</h3>${speechButton(sectionSpeechText(section), '朗讀本單元')}</div>`);
     if (section.notice) html.push(`<p class="lesson-muted">${section.notice}</p>`);
 
@@ -1150,8 +1305,17 @@ function renderLesson(root, data) {
       for (const item of section.items || []) {
         const displayedJapanese = item.jpRuby || item.japanese || '';
         const plainJapanese = item.jpPlain || item.plainText || '';
-        html.push(`<article class="lesson-item">`);
+        const itemIdAttribute = item.id
+          ? ` data-item-id="${escapeAttribute(String(item.id))}"`
+          : '';
+        const answerTypeAttribute = item.answerType
+          ? ` data-answer-type="${escapeAttribute(String(item.answerType))}"`
+          : '';
+        html.push(`<article class="lesson-item${item.answerType === 'suggested' ? ' is-suggested-answer' : ''}"${itemIdAttribute}${answerTypeAttribute}>`);
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
+        if (item.answerType === 'suggested') {
+          html.push(`<p class="lesson-answer-kind"><strong>參考作答</strong> 非課本印刷答案，其他合理答案也可以。</p>`);
+        }
         if (displayedJapanese) html.push(`<p lang="ja">${displayedJapanese}</p>`);
         if (!item.jpRuby && plainJapanese && plainJapanese !== displayedJapanese) {
           html.push(`<p class="lesson-muted" lang="ja">${plainJapanese}</p>`);
@@ -1301,17 +1465,230 @@ function setupAudioSegments(root) {
   });
 }
 
+function collectRenderedLocations(root) {
+  return [...root.querySelectorAll(':scope > [data-lesson-section]')].map((section) => {
+    const chapterId = section.dataset.chapterId || null;
+    const sectionId = section.dataset.sectionId || null;
+    const pageKey = section.dataset.pageKey || null;
+    const kind = section.dataset.sectionKind === 'chapter' ? 'chapter' : 'section';
+    const heading = section.querySelector(kind === 'chapter' ? '.chapter-heading h2' : '.lesson-section-heading h3');
+    const chapterChinese = kind === 'chapter' ? plainText(heading?.querySelector('small')?.textContent || '') : '';
+    const chapterJapanese = kind === 'chapter'
+      ? plainText([...(heading?.childNodes || [])]
+        .filter((node) => node.nodeType === Node.TEXT_NODE)
+        .map((node) => node.textContent || '')
+        .join(' '))
+      : '';
+    const label = kind === 'chapter'
+      ? [chapterJapanese, chapterChinese].filter(Boolean).join('／')
+      : plainText(heading?.textContent || sectionId || chapterId || '');
+    const href = kind === 'chapter'
+      ? `#chapter-${chapterId}`
+      : `#${section.id}`;
+    return {
+      key: section.dataset.locationKey || (kind === 'chapter' ? `chapter-${chapterId}` : `section-${sectionId}`),
+      href,
+      label: label || sectionId || chapterId || '',
+      chapterId,
+      sectionId,
+      pageKey,
+      kind
+    };
+  });
+}
+
+function openAncestorDetails(target) {
+  let node = target?.parentElement;
+  while (node) {
+    if (node.tagName === 'DETAILS') node.open = true;
+    node = node.parentElement;
+  }
+}
+
+function createSectionNavigation(root, lessonId, locations) {
+  const sections = [...root.querySelectorAll(':scope > [data-lesson-section]')];
+  const records = locations.map((location, index) => ({ ...location, element: sections[index] }));
+  const chapterRecords = records.filter((record) => record.kind === 'chapter');
+  const chapterNav = root.querySelector('[data-chapter-navigation]');
+  const useChapterPages = root.lessonContext?.navigationMode === 'chapter-pages' && Boolean(chapterNav && chapterRecords.length > 1);
+  let currentRecord = null;
+  let currentChapterIndex = -1;
+  let pageNav = null;
+  let pageSelect = null;
+
+  function findRecord(target) {
+    if (target instanceof Element) {
+      const section = target.closest('[data-lesson-section]');
+      return records.find((record) => record.element === section) || null;
+    }
+    if (target && typeof target === 'object') {
+      return records.find((record) =>
+        (target.key && record.key === target.key) ||
+        (target.href && record.href === target.href) ||
+        (target.sectionId && record.sectionId === target.sectionId) ||
+        (target.chapterId && !target.sectionId && record.kind === 'chapter' && record.chapterId === target.chapterId)
+      ) || null;
+    }
+    const raw = String(target || '').replace(/^#/, '');
+    if (!raw) return null;
+    const element = document.getElementById(raw)?.closest('[data-lesson-section]');
+    return records.find((record) => record.element === element) ||
+      records.find((record) => record.key === raw || record.href === `#${raw}` || record.sectionId === raw) || null;
+  }
+
+  function publicLocation(record) {
+    if (!record) return null;
+    const { element, ...location } = record;
+    return location;
+  }
+
+  function chapterLocation(record) {
+    if (!record) return null;
+    const pageKey = record.element.dataset.pageLabel || null;
+    return {
+      key: `chapter-${record.chapterId}`,
+      href: `#chapter-${record.chapterId}`,
+      label: `${pageKey ? `${pageKey} 頁｜` : ''}${record.label}`,
+      chapterId: record.chapterId,
+      sectionId: record.sectionId,
+      pageKey,
+      kind: 'page'
+    };
+  }
+
+  function chapterIndexFor(record) {
+    return chapterRecords.findIndex((chapter) => chapter.chapterId === record?.chapterId);
+  }
+
+  function showChapter(index, scroll = false, source = 'pages') {
+    const chapterRecord = chapterRecords[index];
+    if (!chapterRecord) return false;
+    const changed = currentChapterIndex !== index;
+    if (changed && currentChapterIndex >= 0) {
+      root.querySelector('[data-speech-stop]')?.click();
+      root.querySelector('[data-shadow-close]')?.click();
+      root.querySelectorAll('audio').forEach(audio => audio.pause());
+    }
+    currentChapterIndex = index;
+    currentRecord = chapterRecord;
+    sections.forEach(section => {
+      section.hidden = section.dataset.chapterId !== chapterRecord.chapterId;
+    });
+    pageSelect.value = chapterRecord.chapterId;
+    pageNav.querySelector('[data-page-prev]').disabled = index === 0;
+    pageNav.querySelector('[data-page-next]').disabled = index === chapterRecords.length - 1;
+    chapterNav.querySelectorAll('a').forEach((link) => {
+      if (link.hash === `#chapter-${chapterRecord.chapterId}`) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    if (scroll) pageNav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (changed && japaneseLessonApi._hasNavigation()) {
+      japaneseLessonApi._notifyLocation(chapterLocation(chapterRecord), source);
+    }
+    return true;
+  }
+
+  if (useChapterPages) {
+    pageNav = document.createElement('nav');
+    pageNav.className = 'lesson-page-navigation';
+    pageNav.id = 'textbook-pages';
+    pageNav.dataset.pageNavigation = lessonId;
+    pageNav.setAttribute('aria-label', '教材翻頁');
+    pageNav.innerHTML = '<button type="button" data-page-prev>← 上一頁</button><label>教材頁碼 <select aria-label="教材頁碼"></select></label><button type="button" data-page-next>下一頁 →</button>';
+    pageSelect = pageNav.querySelector('select');
+    chapterRecords.forEach((record) => {
+      const location = chapterLocation(record);
+      const option = document.createElement('option');
+      option.value = record.chapterId;
+      option.textContent = location.label;
+      pageSelect.append(option);
+    });
+    chapterNav.after(pageNav);
+    chapterNav.hidden = true;
+    const initialRecord = (location.hash && findRecord(location.hash)) || chapterRecords[0];
+    showChapter(Math.max(0, chapterIndexFor(initialRecord)));
+  }
+
+  function getCurrent() {
+    if (useChapterPages) return chapterLocation(chapterRecords[currentChapterIndex] || chapterRecords[0]);
+    if (!currentRecord) {
+      currentRecord = (location.hash && findRecord(location.hash)) ||
+        records.find((candidate) => candidate.kind === 'section') || records[0];
+    }
+    return publicLocation(currentRecord);
+  }
+
+  function reveal(target, options = {}) {
+    const record = findRecord(target);
+    if (!record) return false;
+    if (useChapterPages) {
+      const index = chapterIndexFor(record);
+      if (index < 0) return false;
+      const exactTarget = target instanceof Element ? target : null;
+      const historyMode = options.history ?? 'push';
+      const href = exactTarget ? record.href : `#chapter-${record.chapterId}`;
+      if (historyMode !== 'none' && href && location.hash !== href) {
+        if (historyMode === 'replace') history.replaceState(null, '', href);
+        else history.pushState(null, '', href);
+      }
+      if (!showChapter(index, !exactTarget && options.scroll !== false, options.source || 'pages')) return false;
+      if (exactTarget) {
+        openAncestorDetails(exactTarget);
+        if (options.scroll !== false) exactTarget.scrollIntoView({ behavior: options.behavior || 'smooth', block: 'start' });
+      }
+      return true;
+    }
+    currentRecord = record;
+    const exactTarget = target instanceof Element ? target : record.element;
+    const historyMode = options.history ?? 'push';
+    if (historyMode !== 'none' && record.href && location.hash !== record.href) {
+      if (historyMode === 'replace') history.replaceState(null, '', record.href);
+      else history.pushState(null, '', record.href);
+    }
+    openAncestorDetails(exactTarget);
+    if (options.scroll !== false) exactTarget.scrollIntoView({ behavior: options.behavior || 'smooth', block: 'start' });
+    japaneseLessonApi._notifyLocation(publicLocation(record), options.source || 'sections');
+    return true;
+  }
+
+  const navigation = {
+    kind: useChapterPages ? 'pages' : 'sections',
+    lessonId,
+    getCurrent,
+    getLocations: () => useChapterPages ? chapterRecords.map(chapterLocation) : records.map(publicLocation),
+    goTo: reveal,
+    reveal
+  };
+  if (useChapterPages) {
+    pageNav.querySelector('[data-page-prev]').onclick = () => reveal(chapterRecords[currentChapterIndex - 1], { source: 'previous' });
+    pageNav.querySelector('[data-page-next]').onclick = () => reveal(chapterRecords[currentChapterIndex + 1], { source: 'next' });
+    pageSelect.onchange = () => reveal(chapterRecords.find((record) => record.chapterId === pageSelect.value), { source: 'select' });
+  }
+  window.addEventListener('hashchange', () => {
+    const record = findRecord(location.hash);
+    if (useChapterPages && record) showChapter(chapterIndexFor(record), false, 'hash');
+    else {
+      currentRecord = record || currentRecord;
+      japaneseLessonApi._notifyLocation(getCurrent(), 'hash');
+    }
+  });
+  return navigation;
+}
+
 async function loadLesson() {
   const root = document.getElementById('lesson-root');
   if (!root) return;
 
   try {
-    const res = await fetch(document.documentElement.classList.contains('lesson-k6') ? './data.json?v=7' : './data.json');
+    const res = await fetch(
+      document.documentElement.classList.contains('lesson-k6') ? './data.json?v=7' : './data.json',
+      { cache: 'no-store' }
+    );
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     const includedLessons = await Promise.all(
       (data.includes || []).map(async (include) => {
-        const includedResponse = await fetch(include.path);
+        const includedResponse = await fetch(include.path, { cache: 'no-store' });
         if (!includedResponse.ok) throw new Error(`HTTP ${includedResponse.status}: ${include.path}`);
         const includedData = await includedResponse.json();
         return (includedData.sections || []).map((section) => ({
@@ -1322,6 +1699,7 @@ async function loadLesson() {
       })
     );
     const vocabularySection = data.vocabulary?.length && !data.hideVocabularySection ? [{
+      id: 'sentence-cards',
       type: 'sentence_cards',
       chapter: 'vocabulary',
       pageOrder: data.vocabularyPageOrder,
@@ -1358,16 +1736,15 @@ async function loadLesson() {
       const sections = lessonSections.filter((section) => section.chapter === chapter.id);
       if (data.sortSectionsByPage) {
         sections.sort((left, right) => {
-          const pageOf = (section) => {
-            if (Number.isFinite(section.pageOrder)) return section.pageOrder;
-            const match = String(section.title || '').match(/(\d{3})(?:[–-]\d{3})?頁/);
-            return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
-          };
+          const pageOf = (section) => Number(resolvePageKey(section)) || Number.MAX_SAFE_INTEGER;
           return pageOf(left) - pageOf(right);
         });
       }
       return [{ type: 'chapter_heading', ...chapter, hasContent: sections.length > 0 }, ...sections];
     });
+    const lessonId = resolveLessonId(data);
+    data.__lessonId = lessonId;
+    prepareLessonLocations(data, lessonId);
     document.title = `${data.title}｜日文互動學習平台`;
 
     const pageTitle = document.getElementById('lesson-page-title');
@@ -1376,10 +1753,37 @@ async function loadLesson() {
     if (pageDescription) pageDescription.textContent = data.description || '';
 
     renderLesson(root, data);
+    root.dataset.lessonId = lessonId;
     const toolbar = root.querySelector('.speech-toolbar');
     if (toolbar && data.chapters?.length) {
-      toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
+      toolbar.insertAdjacentHTML('afterend', `<nav class="chapter-nav" data-chapter-navigation aria-label="課本章節">${data.chapters.map((chapter) => `<a href="#chapter-${chapter.id}" data-chapter-id="${chapter.id}"><span>${chapter.number}</span><strong>${chapter.title}</strong><small>${chapter.pages}頁</small></a>`).join('')}</nav>`);
     }
+    const renderedLocations = collectRenderedLocations(root);
+    japaneseLessonApi._setContext({
+      root,
+      lessonId,
+      title: plainText(data.title || ''),
+      chapters: (data.chapters || []).map((chapter) => ({
+        id: chapter.id,
+        number: chapter.number,
+        title: plainText(chapter.title || ''),
+        pages: chapter.pages
+      })),
+      navigationMode: data.navigationMode || null,
+      pagePresentation: data.pagePresentation || null,
+      locations: renderedLocations
+    });
+    root.dispatchEvent(new CustomEvent('lesson:rendered', {
+      bubbles: true,
+      detail: { lessonId, locations: renderedLocations.map((location) => ({ ...location })) }
+    }));
+    queueMicrotask(() => {
+      if (!japaneseLessonApi._hasNavigation()) {
+        const navigation = createSectionNavigation(root, lessonId, renderedLocations);
+        japaneseLessonApi._registerNavigation(navigation);
+        japaneseLessonApi._notifyLocation(navigation.getCurrent(), 'initial');
+      }
+    });
     scrollToCurrentHash('auto');
   } catch (err) {
     root.innerHTML = `<h2>載入失敗</h2><p class="lesson-muted">無法讀取 data.json。</p>`;

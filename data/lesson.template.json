@@ -18,6 +18,25 @@
       "description": "本課重要語彙"
     }
   ],
+  "pagePresentation": {
+    "status": "partial",
+    "rememberPage": true,
+    "verifiedPages": ["1"],
+    "pages": [
+      {
+        "key": "1",
+        "chapterId": "vocabulary",
+        "label": "1 頁｜單語",
+        "assignments": [
+          {
+            "sectionId": "vocabulary-sentence-cards",
+            "itemIds": ["01"]
+          }
+        ]
+      }
+    ],
+    "pendingRanges": []
+  },
   "vocabulary": [
     {
       "japanese": "例",

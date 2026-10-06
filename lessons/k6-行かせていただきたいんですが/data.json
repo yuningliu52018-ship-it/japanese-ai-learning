@@ -12,6 +12,299 @@
     136,
     164
   ],
+  "pagePresentation": {
+    "status": "complete",
+    "rememberPage": true,
+    "verifiedPages": [
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164"
+    ],
+    "pages": [
+      {
+        "key": "136",
+        "chapterId": "vocabulary",
+        "label": "136 頁",
+        "assignments": [
+          { "sectionId": "vocabulary-sentence-cards-page-136" }
+        ]
+      },
+      {
+        "key": "137",
+        "chapterId": "vocabulary",
+        "label": "137 頁",
+        "assignments": [
+          { "sectionId": "vocabulary-sentence-cards-page-137" }
+        ]
+      },
+      {
+        "key": "138",
+        "chapterId": "grammar",
+        "label": "138 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-138" },
+          { "sectionId": "grammar-answer-key-page-138" }
+        ]
+      },
+      {
+        "key": "139",
+        "chapterId": "grammar",
+        "label": "139 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-139" }
+        ]
+      },
+      {
+        "key": "140",
+        "chapterId": "grammar",
+        "label": "140 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-140" },
+          { "sectionId": "grammar-answer-key-page-140" }
+        ]
+      },
+      {
+        "key": "141",
+        "chapterId": "grammar",
+        "label": "141 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-141" },
+          { "sectionId": "grammar-answer-key-page-141" }
+        ]
+      },
+      {
+        "key": "142",
+        "chapterId": "grammar",
+        "label": "142 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-142" },
+          { "sectionId": "grammar-answer-key-page-142" }
+        ]
+      },
+      {
+        "key": "143",
+        "chapterId": "grammar",
+        "label": "143 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-143" },
+          { "sectionId": "grammar-answer-key-page-143" }
+        ]
+      },
+      {
+        "key": "144",
+        "chapterId": "grammar",
+        "label": "144 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-144" },
+          { "sectionId": "grammar-answer-key-page-144" }
+        ]
+      },
+      {
+        "key": "145",
+        "chapterId": "grammar",
+        "label": "145 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-145" },
+          { "sectionId": "grammar-answer-key-page-145" }
+        ]
+      },
+      {
+        "key": "146",
+        "chapterId": "grammar",
+        "label": "146 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-146" },
+          { "sectionId": "grammar-answer-key-page-146" }
+        ]
+      },
+      {
+        "key": "147",
+        "chapterId": "grammar",
+        "label": "147 頁",
+        "assignments": [
+          { "sectionId": "grammar-sentence-cards-page-147" },
+          { "sectionId": "grammar-answer-key-page-147" }
+        ]
+      },
+      {
+        "key": "148",
+        "chapterId": "speaking",
+        "label": "148 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-148" },
+          { "sectionId": "speaking-answer-key-page-148" }
+        ]
+      },
+      {
+        "key": "149",
+        "chapterId": "speaking",
+        "label": "149 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-149" },
+          { "sectionId": "speaking-audio-tracks-page-149" }
+        ]
+      },
+      {
+        "key": "150",
+        "chapterId": "speaking",
+        "label": "150 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-150" }
+        ]
+      },
+      {
+        "key": "151",
+        "chapterId": "speaking",
+        "label": "151 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-151" }
+        ]
+      },
+      {
+        "key": "152",
+        "chapterId": "speaking",
+        "label": "152 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-152" },
+          { "sectionId": "speaking-answer-key-page-152" }
+        ]
+      },
+      {
+        "key": "153",
+        "chapterId": "speaking",
+        "label": "153 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-153" },
+          { "sectionId": "speaking-answer-key-page-153" }
+        ]
+      },
+      {
+        "key": "154",
+        "chapterId": "speaking",
+        "label": "154 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-154" },
+          { "sectionId": "speaking-answer-key-page-154" }
+        ]
+      },
+      {
+        "key": "155",
+        "chapterId": "speaking",
+        "label": "155 頁",
+        "assignments": [
+          { "sectionId": "speaking-sentence-cards-page-155" },
+          { "sectionId": "speaking-answer-key-page-155" }
+        ]
+      },
+      {
+        "key": "156",
+        "chapterId": "reading",
+        "label": "156 頁",
+        "assignments": [
+          { "sectionId": "reading-sentence-cards-page-156" }
+        ]
+      },
+      {
+        "key": "157",
+        "chapterId": "reading",
+        "label": "157 頁",
+        "assignments": [
+          { "sectionId": "reading-sentence-cards-page-157" },
+          { "sectionId": "reading-answer-key-page-157" }
+        ]
+      },
+      {
+        "key": "158",
+        "chapterId": "reading",
+        "label": "158 頁",
+        "assignments": [
+          { "sectionId": "reading-sentence-cards-page-158" },
+          { "sectionId": "reading-audio-tracks-page-158" }
+        ]
+      },
+      {
+        "key": "159",
+        "chapterId": "reading",
+        "label": "159 頁",
+        "assignments": [
+          { "sectionId": "reading-sentence-cards-page-159" },
+          { "sectionId": "reading-answer-key-page-159" }
+        ]
+      },
+      {
+        "key": "160",
+        "chapterId": "reading",
+        "label": "160 頁",
+        "assignments": [
+          { "sectionId": "reading-sentence-cards-page-160" },
+          { "sectionId": "reading-answer-key-page-160" }
+        ]
+      },
+      {
+        "key": "161",
+        "chapterId": "questions",
+        "label": "161 頁",
+        "assignments": [
+          { "sectionId": "questions-sentence-cards-page-161" },
+          { "sectionId": "questions-audio-tracks-page-161" }
+        ]
+      },
+      {
+        "key": "162",
+        "chapterId": "questions",
+        "label": "162 頁",
+        "assignments": [
+          { "sectionId": "questions-sentence-cards-page-162" },
+          { "sectionId": "questions-answer-key-page-162" }
+        ]
+      },
+      {
+        "key": "163",
+        "chapterId": "questions",
+        "label": "163 頁",
+        "assignments": [
+          { "sectionId": "questions-sentence-cards-page-163" },
+          { "sectionId": "questions-answer-key-page-163" }
+        ]
+      },
+      {
+        "key": "164",
+        "chapterId": "questions",
+        "label": "164 頁",
+        "assignments": [
+          { "sectionId": "questions-sentence-cards-page-164" },
+          { "sectionId": "questions-answer-key-page-164" }
+        ]
+      }
+    ],
+    "pendingRanges": []
+  },
   "sections": [],
   "pages": {
     "136": {

@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "id": "k5",
   "title": "第五課：どう行ったらいいでしょうか",
   "titleRuby": "第五課：どう<ruby>行<rt>い</rt></ruby>ったらいいでしょうか",
   "description": "第5課生字與文法：問路、推測、建議及表達嘗試",
@@ -17,6 +18,405 @@
     { "id": "reading", "number": "04", "title": "<ruby>読<rt>よ</rt></ruby>む・<ruby>書<rt>か</rt></ruby>く", "chinese": "閱讀與寫作", "pages": "128–131", "description": "閱讀〈地図〉，理解地圖方向、經緯度與位置平等。" },
     { "id": "questions", "number": "05", "title": "<ruby>問題<rt>もんだい</rt></ruby>", "chinese": "綜合問題", "pages": "132–135", "description": "閱讀挑戰、CD20～CD22聽力，以及本課文法總複習。" }
   ],
+  "pagePresentation": {
+    "status": "complete",
+    "rememberPage": true,
+    "verifiedPages": [
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135"
+    ],
+    "pages": [
+      {
+        "key": "112",
+        "chapterId": "vocabulary",
+        "label": "112頁｜單語 1–31",
+        "assignments": [
+          {
+            "sectionId": "vocabulary-sentence-cards",
+            "itemIds": [
+              "01",
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "113",
+        "chapterId": "vocabulary",
+        "label": "113頁｜單語 32–64",
+        "assignments": [
+          {
+            "sectionId": "vocabulary-sentence-cards",
+            "itemIds": [
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48",
+              "49",
+              "50",
+              "51",
+              "52",
+              "53",
+              "54",
+              "55",
+              "56",
+              "57",
+              "58",
+              "59",
+              "60",
+              "61",
+              "62",
+              "63",
+              "64",
+              "65",
+              "66"
+            ]
+          },
+          {
+            "sectionId": "vocabulary-vocabulary-supplement"
+          }
+        ]
+      },
+      {
+        "key": "114",
+        "chapterId": "grammar",
+        "label": "114頁｜あ～・そ～",
+        "assignments": [
+          {
+            "sectionId": "grammar-p114-so-examples"
+          }
+        ]
+      },
+      {
+        "key": "115",
+        "chapterId": "grammar",
+        "label": "115頁｜そ～",
+        "assignments": [
+          {
+            "sectionId": "grammar-p115-so-examples"
+          },
+          {
+            "sectionId": "grammar-p115-so-note"
+          },
+          {
+            "sectionId": "grammar-topic-demonstratives-note"
+          }
+        ]
+      },
+      {
+        "key": "116",
+        "chapterId": "grammar",
+        "label": "116頁｜～んじゃない？",
+        "assignments": [
+          {
+            "sectionId": "grammar-p116-njanai-examples"
+          },
+          {
+            "sectionId": "grammar-p116-ii-advice-note"
+          }
+        ]
+      },
+      {
+        "key": "117",
+        "chapterId": "grammar",
+        "label": "117頁｜～たところに／で",
+        "assignments": [
+          {
+            "sectionId": "grammar-p117-ta-tokoro-examples"
+          },
+          {
+            "sectionId": "grammar-p117-ta-tokoro-note"
+          }
+        ]
+      },
+      {
+        "key": "118",
+        "chapterId": "grammar",
+        "label": "118頁｜～（よ）うとする／しない",
+        "assignments": [
+          {
+            "sectionId": "grammar-p118-you-to-suru"
+          }
+        ]
+      },
+      {
+        "key": "119",
+        "chapterId": "grammar",
+        "label": "119頁｜～のだろうか",
+        "assignments": [
+          {
+            "sectionId": "grammar-p119-nodarou-examples"
+          },
+          {
+            "sectionId": "grammar-p119-nodarou-note"
+          }
+        ]
+      },
+      {
+        "key": "120",
+        "chapterId": "grammar",
+        "label": "120頁｜助詞＋の",
+        "assignments": [
+          {
+            "sectionId": "grammar-p120-joshi-no"
+          },
+          {
+            "sectionId": "grammar-p120-access-note"
+          }
+        ]
+      },
+      {
+        "key": "121",
+        "chapterId": "grammar",
+        "label": "121頁｜～だろう／～だろうと思う",
+        "assignments": [
+          {
+            "sectionId": "grammar-p121-darou-examples"
+          },
+          {
+            "sectionId": "grammar-p121-darou-note"
+          }
+        ]
+      },
+      {
+        "key": "122",
+        "chapterId": "speaking",
+        "label": "122頁｜道順表現",
+        "assignments": [
+          {
+            "sectionId": "speaking-p122-route-expressions"
+          },
+          {
+            "sectionId": "speaking-section-scenario-intro"
+          }
+        ]
+      },
+      {
+        "key": "123",
+        "chapterId": "speaking",
+        "label": "123頁｜CD18 聽解",
+        "assignments": [
+          {
+            "sectionId": "speaking-section-listening"
+          },
+          {
+            "sectionId": "speaking-p123-listening-check"
+          }
+        ]
+      },
+      {
+        "key": "124",
+        "chapterId": "speaking",
+        "label": "124頁｜CD18 會話",
+        "assignments": [
+          {
+            "sectionId": "speaking-section-dialogue"
+          }
+        ]
+      },
+      {
+        "key": "125",
+        "chapterId": "speaking",
+        "label": "125頁｜道順練習",
+        "assignments": [
+          {
+            "sectionId": "speaking-section-scenario"
+          }
+        ]
+      },
+      {
+        "key": "126",
+        "chapterId": "speaking",
+        "label": "126頁｜完整示範會話",
+        "assignments": [
+          {
+            "sectionId": "speaking-p126-model-dialogue"
+          }
+        ]
+      },
+      {
+        "key": "127",
+        "chapterId": "speaking",
+        "label": "127頁｜会話をしましょう・チャレンジ",
+        "assignments": [
+          {
+            "sectionId": "speaking-p127-picture-dialogue"
+          },
+          {
+            "sectionId": "speaking-p127-challenge"
+          }
+        ]
+      },
+      {
+        "key": "128",
+        "chapterId": "reading",
+        "label": "128頁｜地圖與讀前問題",
+        "assignments": [
+          {
+            "sectionId": "reading-p128-map-pre-reading"
+          }
+        ]
+      },
+      {
+        "key": "129",
+        "chapterId": "reading",
+        "label": "129頁｜ことばチェック",
+        "assignments": [
+          {
+            "sectionId": "reading-p129-vocab-check"
+          },
+          {
+            "sectionId": "reading-p129-direction-note"
+          }
+        ]
+      },
+      {
+        "key": "130",
+        "chapterId": "reading",
+        "label": "130頁｜地図",
+        "assignments": [
+          {
+            "sectionId": "reading-section-audio-cd19"
+          },
+          {
+            "sectionId": "reading-section-reading"
+          },
+          {
+            "sectionId": "reading-section-reading-sentences"
+          },
+          {
+            "sectionId": "reading-p130-vocab-note"
+          }
+        ]
+      },
+      {
+        "key": "131",
+        "chapterId": "reading",
+        "label": "131頁｜本文理解",
+        "assignments": [
+          {
+            "sectionId": "reading-p131-reading-questions"
+          }
+        ]
+      },
+      {
+        "key": "132",
+        "chapterId": "questions",
+        "label": "132頁｜チャレンジ",
+        "assignments": [
+          {
+            "sectionId": "questions-section-scenario-2"
+          }
+        ]
+      },
+      {
+        "key": "133",
+        "chapterId": "questions",
+        "label": "133頁｜CD20～CD22・指示詞",
+        "assignments": [
+          {
+            "sectionId": "questions-section-audio-cd20"
+          },
+          {
+            "sectionId": "questions-p133-listening-quiz"
+          },
+          {
+            "sectionId": "questions-p133-demonstrative-quiz"
+          }
+        ]
+      },
+      {
+        "key": "134",
+        "chapterId": "questions",
+        "label": "134頁｜～ところ與動詞活用",
+        "assignments": [
+          {
+            "sectionId": "questions-p134-tokoro-quiz"
+          }
+        ]
+      },
+      {
+        "key": "135",
+        "chapterId": "questions",
+        "label": "135頁｜綜合問題",
+        "assignments": [
+          {
+            "sectionId": "questions-p135-joshi-no-rewrite"
+          },
+          {
+            "sectionId": "questions-p135-vocabulary-quiz"
+          },
+          {
+            "sectionId": "questions-p135-wazato-note"
+          }
+        ]
+      }
+    ]
+  },
   "vocabulary": [
     {"japanese":"教科書","plainText":"教科書（きょうかしょ）","chinese":"教科書","examples":[{"plain":"日本語の教科書を買いました。","ruby":"<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました。","chinese":"我買了日文教科書。"}],"jpRuby":"<ruby>教科書<rt>きょうかしょ</rt></ruby>"},
     {"japanese":"居酒屋","plainText":"居酒屋（いざかや）","chinese":"居酒屋、日式小酒館","examples":[{"plain":"駅前の居酒屋で食事しました。","ruby":"<ruby>駅前<rt>えきまえ</rt></ruby>の<ruby>居酒屋<rt>いざかや</rt></ruby>で<ruby>食事<rt>しょくじ</rt></ruby>しました。","chinese":"我在車站前的居酒屋吃了飯。"}],"jpRuby":"<ruby>居酒屋<rt>いざかや</rt></ruby>"},
@@ -82,11 +482,106 @@
     {"japanese":"わざと","plainText":"わざと","chinese":"故意地","examples":[{"plain":"わざと間違えたのではありません。","ruby":"わざと<ruby>間違<rt>まちが</rt></ruby>えたのではありません。","chinese":"我不是故意弄錯的。"}],"jpRuby":"わざと"},
     {"japanese":"経度","plainText":"経度（けいど）","chinese":"經度","examples":[{"plain":"経度は東西の位置を示します。","ruby":"<ruby>経度<rt>けいど</rt></ruby>は<ruby>東西<rt>とうざい</rt></ruby>の<ruby>位置<rt>いち</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>します。","chinese":"經度表示東西方向的位置。"}],"jpRuby":"<ruby>経度<rt>けいど</rt></ruby>"},
     {"japanese":"緯度","plainText":"緯度（いど）","chinese":"緯度","examples":[{"plain":"緯度は南北の位置を示します。","ruby":"<ruby>緯度<rt>いど</rt></ruby>は<ruby>南北<rt>なんぼく</rt></ruby>の<ruby>位置<rt>いち</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>します。","chinese":"緯度表示南北方向的位置。"}],"jpRuby":"<ruby>緯度<rt>いど</rt></ruby>"},
-    {"japanese":"使用する","plainText":"使用する（しようする）","chinese":"使用","examples":[{"plain":"この機械を使用しないでください。","ruby":"この<ruby>機械<rt>きかい</rt></ruby>を<ruby>使用<rt>しよう</rt></ruby>しないでください。","chinese":"請勿使用這台機器。"}],"jpRuby":"<ruby>使用<rt>しよう</rt></ruby>する"},
-    {"japanese":"東西","plainText":"東西（とうざい）","chinese":"東西","examples":[{"plain":"この線路は東西に走っています。","ruby":"この<ruby>線路<rt>せんろ</rt></ruby>は<ruby>東西<rt>とうざい</rt></ruby>に<ruby>走<rt>はし</rt></ruby>っています。","chinese":"這條鐵路東西向延伸。"}],"jpRuby":"<ruby>東西<rt>とうざい</rt></ruby>"}
+    {"japanese":"使用する","plainText":"使用する（しようする）","chinese":"使用","examples":[{"plain":"この機械を使用しないでください。","ruby":"この<ruby>機械<rt>きかい</rt></ruby>を<ruby>使用<rt>しよう</rt></ruby>しないでください。","chinese":"請勿使用這台機器。"}],"jpRuby":"<ruby>使用<rt>しよう</rt></ruby>する","grammarNote":"補充單語：非課本原單語1–64，與本課主題搭配學習。"},
+    {"japanese":"東西","plainText":"東西（とうざい）","chinese":"東西","examples":[{"plain":"この線路は東西に走っています。","ruby":"この<ruby>線路<rt>せんろ</rt></ruby>は<ruby>東西<rt>とうざい</rt></ruby>に<ruby>走<rt>はし</rt></ruby>っています。","chinese":"這條鐵路東西向延伸。"}],"jpRuby":"<ruby>東西<rt>とうざい</rt></ruby>","grammarNote":"補充單語：非課本原單語1–64，與本課主題搭配學習。"}
   ],
   "supplementalSections": [
     {
+      "id": "p127-picture-dialogue",
+      "type": "sentence_cards",
+      "chapter": "speaking",
+      "title": "127頁｜6. 会話をしましょう",
+      "notice": "課本此處只有四格圖片，沒有印刷對話。下方情境描述依照片整理，展開的日文是教學參考作答，不是課本台詞或CD逐字稿；圖片無法確認的出口及轉彎地標不自行補寫。",
+      "items": [
+        {
+          "id": "p127-picture1",
+          "topic": "1）電車での行き方",
+          "jpPlain": "1）さくら芸術センターへの行き方を説明してください。",
+          "jpRuby": "1）さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>してください。",
+          "zh": "圖示：詢問さくら芸術センター的交通方式，對方提示西千里至千里的電車路線。",
+          "grammarNote": "～たらいいでしょうか詢問方法；～に乗る＝搭乘；～で降りる＝在某處下車。",
+          "answerType": "suggested",
+          "examplesTitle": "參考會話（點擊展開）",
+          "examples": [
+            {
+              "plain": "さくら芸術センターへは、どう行ったらいいでしょうか。 西千里から電車に乗って、千里で降りてください。",
+              "ruby": "さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへは、どう<ruby>行<rt>い</rt></ruby>ったらいいでしょうか。 <ruby>西千里<rt>にしせんり</rt></ruby>から<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って、<ruby>千里<rt>せんり</rt></ruby>で<ruby>降<rt>お</rt></ruby>りてください。",
+              "chinese": "請問櫻花藝術中心怎麼去比較好？請從西千里搭電車，在千里下車。"
+            }
+          ]
+        },
+        {
+          "id": "p127-picture2",
+          "topic": "2）地下鉄を出てから",
+          "jpPlain": "2）さくら芸術センターへの行き方を説明してください。",
+          "jpRuby": "2）さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>してください。",
+          "zh": "圖示：在地下鐵入口附近問路；路線沿著河川前進後向右轉。",
+          "grammarNote": "～に沿って＝沿著；方向＋へ曲がる；～んですが委婉提出需求。",
+          "answerType": "suggested",
+          "examplesTitle": "參考會話（點擊展開）",
+          "examples": [
+            {
+              "plain": "すみません。さくら芸術センターへ行きたいんですが。 この川に沿ってまっすぐ行って、右へ曲がってください。",
+              "ruby": "すみません。さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへ<ruby>行<rt>い</rt></ruby>きたいんですが。 この<ruby>川<rt>かわ</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>ってまっすぐ<ruby>行<rt>い</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がってください。",
+              "chinese": "不好意思，我想去櫻花藝術中心。請沿著這條河直走，然後右轉。"
+            }
+          ]
+        },
+        {
+          "id": "p127-picture3",
+          "topic": "3）100メートル先",
+          "jpPlain": "3）さくら芸術センターへの行き方を説明してください。",
+          "jpRuby": "3）さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>してください。",
+          "zh": "圖示：問路者確認路線；圖中標示沿河路段為100m，之後轉彎。",
+          "grammarNote": "～んですね確認理解；ぐらい表示大約。",
+          "answerType": "suggested",
+          "examplesTitle": "參考會話（點擊展開）",
+          "examples": [
+            {
+              "plain": "100メートルぐらい行って、右へ曲がるんですね。 はい、そうです。",
+              "ruby": "<ruby>100メートル<rt>ひゃくメートル</rt></ruby>ぐらい<ruby>行<rt>い</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がるんですね。 はい、そうです。",
+              "chinese": "走大約100公尺後右轉，對吧？是的，沒錯。"
+            }
+          ]
+        },
+        {
+          "id": "p127-picture4",
+          "topic": "4）橋と所要時間",
+          "jpPlain": "4）さくら芸術センターへの行き方を説明してください。",
+          "jpRuby": "4）さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>してください。",
+          "zh": "圖示：對方指出橋另一側的藝術中心，並提示10分；問路者鞠躬道謝。",
+          "grammarNote": "移動動詞た形＋ところに表示完成移動後的地點；橋を渡る的を標示經過的路徑。",
+          "answerType": "suggested",
+          "examplesTitle": "參考會話（點擊展開）",
+          "examples": [
+            {
+              "plain": "橋を渡ったところにあります。歩いて10分ぐらいです。 どうもありがとうございます。",
+              "ruby": "<ruby>橋<rt>はし</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>ったところにあります。<ruby>歩<rt>ある</rt></ruby>いて<ruby>10分<rt>じゅっぷん</rt></ruby>ぐらいです。 どうもありがとうございます。",
+              "chinese": "就在過橋後的地方。走路大約10分鐘。非常謝謝您。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p127-challenge",
+      "type": "sentence_cards",
+      "chapter": "speaking",
+      "title": "127頁｜7. チャレンジしましょう",
+      "notice": "以下指示為課本印刷內容；開放式角色練習沒有唯一標準答案。可選擇實際想去的地點，使用句子播放及跟讀練習。",
+      "items": [
+        {
+          "id": "p127-challenge-1",
+          "topic": "行き方を尋ねる・説明する",
+          "jpPlain": "行きたい場所への行き方を周りの人に聞いてください。また、聞かれた人は行き方を説明してください。（例：東京タワー）",
+          "jpRuby": "<ruby>行<rt>い</rt></ruby>きたい<ruby>場所<rt>ばしょ</rt></ruby>への<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>に<ruby>聞<rt>き</rt></ruby>いてください。また、<ruby>聞<rt>き</rt></ruby>かれた<ruby>人<rt>ひと</rt></ruby>は<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>してください。（<ruby>例<rt>れい</rt></ruby>：<ruby>東京<rt>とうきょう</rt></ruby>タワー）",
+          "zh": "請向周圍的人詢問想去的地方怎麼走；被問到的人則請說明走法。（例：東京鐵塔）",
+          "grammarNote": "行きたい場所是名詞修飾；場所へ＋の＋行き方表示前往該地點的方法；聞かれた人中的聞かれた是被動形。"
+        }
+      ]
+    },
+    {
+      "id": "p119-nodarou-note",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "119頁補充講義｜のだろうか／のでしょうか",
@@ -132,6 +627,7 @@
       ]
     },
     {
+      "id": "p120-access-note",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "120頁補充講義｜アクセス",
@@ -156,6 +652,7 @@
       ]
     },
     {
+      "id": "p121-darou-note",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "121頁補充講義｜だろう／だろうと思う",
@@ -201,6 +698,7 @@
       ]
     },
     {
+      "id": "p129-direction-note",
       "type": "sentence_cards",
       "chapter": "reading",
       "title": "129頁補充講義｜方向＋に長い",
@@ -225,6 +723,7 @@
       ]
     },
     {
+      "id": "p130-vocab-note",
       "type": "sentence_cards",
       "chapter": "reading",
       "title": "130頁補充講義｜少なくとも・文句・なければならない",
@@ -301,6 +800,7 @@
       ]
     },
     {
+      "id": "p135-wazato-note",
       "type": "sentence_cards",
       "chapter": "questions",
       "title": "135頁補充講義｜わざと／わざわざ",
@@ -341,7 +841,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "114頁｜1（1）あ～・そ～ 完整例句與練習",
+      "id": "p114-so-examples", "type": "sentence_cards", "chapter": "grammar", "title": "114頁｜1（1）あ～・そ～ 完整例句與練習",
       "items": [
         {"topic":"課本例句｜あの<ruby>方<rt>かた</rt></ruby>","japanese":"小川さんにしばらくお会いしていないんですよ。――ああ、あの方、今年の4月に転勤されましたよ。","plainText":"小川さんにしばらくお会いしていないんですよ。――ああ、あの方、今年の4月に転勤されましたよ。","chinese":"我好一陣子沒見到小川先生了。——啊，那位先生今年四月調職了。","grammarNote":"雙方都知道小川先生，因此用「あの<ruby>方<rt>かた</rt></ruby>」。","jpRuby":"<ruby>小川<rt>おがわ</rt></ruby>さんにしばらくお<ruby>会<rt>あ</rt></ruby>いしていないんですよ。――ああ、あの<ruby>方<rt>かた</rt></ruby>、<ruby>今年<rt>ことし</rt></ruby>の4<ruby>月<rt>がつ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>されましたよ。"},
         {"topic":"課本例句｜その<ruby>人<rt>ひと</rt></ruby>","japanese":"夕べは鈴木さんといっしょにカラオケに行ったんです。――鈴木さん？その人、近所の人ですか。","plainText":"夕べは鈴木さんといっしょにカラオケに行ったんです。――鈴木さん？その人、近所の人ですか。","chinese":"昨晚我和鈴木先生一起去唱卡拉OK。——鈴木先生？那個人是你附近的人嗎？","grammarNote":"聽者第一次聽到鈴木先生，用「その<ruby>人<rt>ひと</rt></ruby>」承接對方剛提出的人物。","jpRuby":"<ruby>夕<rt>ゆう</rt></ruby>べは<ruby>鈴木<rt>すずき</rt></ruby>さんといっしょにカラオケに<ruby>行<rt>い</rt></ruby>ったんです。――<ruby>鈴木<rt>すずき</rt></ruby>さん？その<ruby>人<rt>ひと</rt></ruby>、<ruby>近所<rt>きんじょ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>ですか。"},
@@ -354,7 +854,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "115頁｜1（2）そ～ 完整例句與練習",
+      "id": "p115-so-examples", "type": "sentence_cards", "chapter": "grammar", "title": "115頁｜1（2）そ～ 完整例句與練習",
       "items": [
         {"topic":"課本例句①｜そこ","japanese":"この道を行くと、交差点があります。そこを右へ曲がってください。","plainText":"この道を行くと、交差点があります。そこを右へ曲がってください。","chinese":"沿這條路走會遇到十字路口，請在那裡右轉。","grammarNote":"「そこ」承接前句剛提到的<ruby>交差点<rt>こうさてん</rt></ruby>。","jpRuby":"この<ruby>道<rt>みち</rt></ruby>を<ruby>行<rt>い</rt></ruby>くと、<ruby>交差点<rt>こうさてん</rt></ruby>があります。そこを<ruby>右<rt>みぎ</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がってください。"},
         {"topic":"課本例句②｜そのころ","japanese":"20年前に、この町へ来ました。そのころは、まだ緑もたくさんありました。","plainText":"20年前に、この町へ来ました。そのころは、まだ緑もたくさんありました。","chinese":"二十年前我來到這座城鎮，當時還有很多綠地。","grammarNote":"「そのころ」承接前句的20<ruby>年前<rt>ねんまえ</rt></ruby>，表示當時。","jpRuby":"20<ruby>年前<rt>ねんまえ</rt></ruby>に、この<ruby>町<rt>まち</rt></ruby>へ<ruby>来<rt>き</rt></ruby>ました。そのころは、まだ<ruby>緑<rt>みどり</rt></ruby>もたくさんありました。"},
@@ -365,7 +865,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "116頁｜2 ～んじゃない？完整例句與練習",
+      "id": "p116-njanai-examples", "type": "sentence_cards", "chapter": "grammar", "title": "116頁｜2 ～んじゃない？完整例句與練習",
       "items": [
         {"topic":"課本例句｜擔心留學的兒子","japanese":"留学している息子から何の連絡もないんですよ。――心配ないんじゃないですか。何かあったら連絡がありますよ。","plainText":"留学している息子から何の連絡もないんですよ。――心配ないんじゃないですか。何かあったら連絡がありますよ。","chinese":"留學中的兒子完全沒有聯絡。——應該不用擔心吧，有事的話他會聯絡的。","grammarNote":"<ruby>普通形<rt>ふつうけい</rt></ruby>＋んじゃないですか用來提出推測或讓對方安心。","jpRuby":"<ruby>留学<rt>りゅうがく</rt></ruby>している<ruby>息子<rt>むすこ</rt></ruby>から<ruby>何<rt>なん</rt></ruby>の<ruby>連絡<rt>れんらく</rt></ruby>もないんですよ。――<ruby>心配<rt>しんぱい</rt></ruby>ないんじゃないですか。<ruby>何<rt>なに</rt></ruby>かあったら<ruby>連絡<rt>れんらく</rt></ruby>がありますよ。"},
         {"topic":"課本例句｜食慾不振","japanese":"最近、食欲がないの。――どこか悪いんじゃない？一度病院で診てもらったほうがいいよ。","plainText":"最近、食欲がないの。――どこか悪いんじゃない？一度病院で診てもらったほうがいいよ。","chinese":"最近沒有食慾。——是不是哪裡不舒服？最好去醫院看一次。","jpRuby":"<ruby>最近<rt>さいきん</rt></ruby>、<ruby>食欲<rt>しょくよく</rt></ruby>がないの。――どこか<ruby>悪<rt>わる</rt></ruby>いんじゃない？<ruby>一度<rt>いちど</rt></ruby><ruby>病院<rt>びょういん</rt></ruby>で<ruby>診<rt>み</rt></ruby>てもらったほうがいいよ。"},
@@ -376,6 +876,7 @@
       ]
     },
     {
+      "id": "p116-ii-advice-note",
       "type": "grammar_notes",
       "chapter": "grammar",
       "title": "116頁補充講義｜～といい／～ばいい／～たらいい",
@@ -409,7 +910,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "117頁｜3 ～たところに／で 完整內容",
+      "id": "p117-ta-tokoro-examples", "type": "sentence_cards", "chapter": "grammar", "title": "117頁｜3 ～たところに／で 完整內容",
       "items": [
         {"topic":"位置例句｜醫院","japanese":"げんき病院はどこですか。――あのコンビニの角を曲がったところにありますよ。","plainText":"げんき病院はどこですか。――あのコンビニの角を曲がったところにありますよ。","chinese":"元氣醫院在哪裡？——就在轉過那間便利商店的街角後。","grammarNote":"<ruby>動詞<rt>どうし</rt></ruby>た<ruby>形<rt>けい</rt></ruby>＋ところ＋に＋存在動詞，表示完成移動後，目標物所在的位置。","jpRuby":"げんき<ruby>病院<rt>びょういん</rt></ruby>はどこですか。――あのコンビニの<ruby>角<rt>かど</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>がったところにありますよ。"},
         {"topic":"地點例句｜等人","japanese":"あした、6時に会おう。――うん、駅の改札を出たところで待ってるよ。","plainText":"あした、6時に会おう。――うん、駅の改札を出たところで待ってるよ。","chinese":"明天六點見吧。——好，我在出了車站驗票口的地方等你。","grammarNote":"<ruby>動詞<rt>どうし</rt></ruby>た<ruby>形<rt>けい</rt></ruby>＋ところ＋で＋行為動詞，表示在完成移動後的地點進行某動作。","jpRuby":"あした、6<ruby>時<rt>じ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>おう。――うん、<ruby>駅<rt>えき</rt></ruby>の<ruby>改札<rt>かいさつ</rt></ruby>を<ruby>出<rt>で</rt></ruby>たところで<ruby>待<rt>ま</rt></ruby>ってるよ。"},
@@ -425,7 +926,7 @@
       ]
     },
     {
-      "type": "grammar_notes", "chapter": "grammar", "title": "117頁講義｜3 ～たところに／で：移動後的地點", "pageOrder": 117.1,
+      "id": "p117-ta-tokoro-note", "type": "grammar_notes", "chapter": "grammar", "title": "117頁講義｜3 ～たところに／で：移動後的地點", "pageOrder": 117.1,
       "items": [
         {"title":"目標物存在的位置","formula":"移動動詞た<ruby>形<rt>けい</rt></ruby>＋ところ＋に＋存在動詞","examples":[{"from":"コンビニの<ruby>角<rt>かど</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>がります","to":"<ruby>曲<rt>ま</rt></ruby>がったところに<ruby>病院<rt>びょういん</rt></ruby>があります"},{"from":"<ruby>左<rt>ひだり</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がって、50メートル<ruby>行<rt>い</rt></ruby>きます","to":"50メートル<ruby>行<rt>い</rt></ruby>ったところに<ruby>喫茶店<rt>きっさてん</rt></ruby>があります"}]},
         {"title":"在移動後的位置進行動作","formula":"移動動詞た<ruby>形<rt>けい</rt></ruby>＋ところ＋で＋行為動詞","examples":[{"from":"<ruby>駅<rt>えき</rt></ruby>の<ruby>改札<rt>かいさつ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます","to":"<ruby>改札<rt>かいさつ</rt></ruby>を<ruby>出<rt>で</rt></ruby>たところで<ruby>待<rt>ま</rt></ruby>っています"},{"from":"<ruby>信号<rt>しんごう</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がります","to":"<ruby>右<rt>みぎ</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がったところで<ruby>車<rt>くるま</rt></ruby>を<ruby>止<rt>と</rt></ruby>めてください"}]},
@@ -433,6 +934,7 @@
       ]
     },
     {
+      "id": "p118-you-to-suru",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "118–119頁｜4 ～（よ）うとする／～（よ）うとしない 核心概念",
@@ -615,7 +1117,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "grammar", "title": "119頁｜5 ～のだろうか 完整例句",
+      "id": "p119-nodarou-examples", "type": "sentence_cards", "chapter": "grammar", "title": "119頁｜5 ～のだろうか 完整例句",
       "items": [
         {"topic":"地球的未來","japanese":"地球の未来はどうなるのでしょうか。","plainText":"地球の未来はどうなるのでしょうか。","chinese":"地球的未來會變得如何呢？","jpRuby":"<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>はどうなるのでしょうか。"},
         {"topic":"消除戰爭的方法","japanese":"どうすればこの地球から戦争をなくすことができるのだろうか。","plainText":"どうすればこの地球から戦争をなくすことができるのだろうか。","chinese":"究竟怎樣才能讓戰爭從地球上消失呢？","jpRuby":"どうすればこの<ruby>地球<rt>ちきゅう</rt></ruby>から<ruby>戦争<rt>せんそう</rt></ruby>をなくすことができるのだろうか。"},
@@ -625,6 +1127,7 @@
       ]
     },
     {
+      "id": "p120-joshi-no",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "120頁｜6 助詞＋の 複合助詞修飾名詞",
@@ -758,6 +1261,7 @@
       ]
     },
     {
+      "id": "p121-darou-examples",
       "type": "sentence_cards",
       "chapter": "grammar",
       "title": "121頁｜7 ～だろう／～だろうと<ruby>思<rt>おも</rt></ruby>う 完整內容",
@@ -770,7 +1274,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "speaking", "title": "122頁｜<ruby>道順<rt>みちじゅん</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby> 1～8 完整對照",
+      "id": "p122-route-expressions", "type": "sentence_cards", "chapter": "speaking", "title": "122頁｜<ruby>道順<rt>みちじゅん</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby> 1～8 完整對照",
       "items": [
         {"topic":"1｜<ruby>川沿<rt>かわぞ</rt></ruby>い","japanese":"川に沿って行きます。","plainText":"川に沿って行きます。","chinese":"沿著河川走。","jpRuby":"<ruby>川<rt>かわ</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>って<ruby>行<rt>い</rt></ruby>きます。"},
         {"topic":"2｜分岔","japanese":"道が二つに分かれています。","plainText":"道が二つに分かれています。","chinese":"道路分成兩條。","jpRuby":"<ruby>道<rt>みち</rt></ruby>が<ruby>二<rt>ふた</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>かれています。"},
@@ -783,7 +1287,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "reading", "title": "128頁｜<ruby>地図<rt>ちず</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>と<ruby>読<rt>よ</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>",
+      "id": "p128-map-pre-reading", "type": "sentence_cards", "chapter": "reading", "title": "128頁｜<ruby>地図<rt>ちず</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>と<ruby>読<rt>よ</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>",
       "items": [
         {"topic":"導航地圖","japanese":"カーナビの地図は、車で目的地へ行くときに使われます。","jpRuby":"カーナビの<ruby>地図<rt>ちず</rt></ruby>は、<ruby>車<rt>くるま</rt></ruby>で<ruby>目的地<rt>もくてきち</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くときに<ruby>使<rt>つか</rt></ruby>われます。","plainText":"カーナビの地図は、車で目的地へ行くときに使われます。","chinese":"汽車導航地圖用於開車前往目的地。"},
         {"topic":"航空路線圖","japanese":"航空路線図は、飛行機の経路や位置を確認するときに使われます。","jpRuby":"<ruby>航空路線図<rt>こうくうろせんず</rt></ruby>は、<ruby>飛行機<rt>ひこうき</rt></ruby>の<ruby>経路<rt>けいろ</rt></ruby>や<ruby>位置<rt>いち</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>するときに<ruby>使<rt>つか</rt></ruby>われます。","plainText":"航空路線図は、飛行機の経路や位置を確認するときに使われます。","chinese":"航空路線圖用於確認飛機的路線或位置。"},
@@ -791,7 +1295,7 @@
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "reading", "title": "129頁｜ことばをチェックしましょう 完整8題",
+      "id": "p129-vocab-check", "type": "quiz_questions", "chapter": "reading", "title": "129頁｜ことばをチェックしましょう 完整8題",
       "items": [
         {"question":"<ruby>日本<rt>にほん</rt></ruby>は（　）にあるが、ブラジルは（　）にある。","options":["北半球／南半球","南半球／北半球","東西／南北"],"correct":0,"explanation":"日本在北半球；巴西大部分位於南半球。"},
         {"question":"（　）を<ruby>見<rt>み</rt></ruby>ていると、いろいろな<ruby>国<rt>くに</rt></ruby>へ<ruby>旅行<rt>りょこう</rt></ruby>したくなる。","options":["<ruby>世界地図<rt>せかいちず</rt></ruby>","<ruby>位置<rt>いち</rt></ruby>","<ruby>常識<rt>じょうしき</rt></ruby>"],"correct":0,"explanation":"看世界地圖時會想去不同國家旅行。"},
@@ -804,7 +1308,7 @@
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "reading", "title": "131頁｜〈地図〉本文理解 完整問題",
+      "id": "p131-reading-questions", "type": "quiz_questions", "chapter": "reading", "title": "131頁｜〈地図〉本文理解 完整問題",
       "items": [
         {"question":"美國人畫的世界地圖沒有澳洲，所以澳洲人製作了地圖A。","options":["○","×"],"correct":1,"explanation":"地圖A是澳洲高中教師麥克阿瑟製作；不是泛指某位澳洲人因一張美國人地圖而作。"},
         {"question":"美國留學生故意沒有在世界地圖上畫澳洲。","options":["○","×"],"correct":1,"explanation":"他是無意識地忽略，不是故意。"},
@@ -816,6 +1320,7 @@
       ]
     },
     {
+      "id": "vocabulary-supplement",
       "type": "sentence_cards",
       "chapter": "vocabulary",
       "title": "第5課講義｜生字與近義表現補充",
@@ -865,6 +1370,7 @@
       ]
     },
     {
+      "id": "p115-so-note",
       "type": "grammar_notes",
       "chapter": "grammar",
       "title": "115頁講義｜出現過的主題指示詞「そ」",
@@ -892,6 +1398,7 @@
       ]
     },
     {
+      "id": "topic-demonstratives-note",
       "type": "grammar_notes",
       "chapter": "grammar",
       "title": "第5課講義｜話題中的「あ・そ」指示詞",
@@ -925,6 +1432,7 @@
       ]
     },
     {
+      "id": "section-listening",
       "type": "audio_tracks",
       "chapter": "speaking",
       "title": "課本真人音源｜CD18",
@@ -940,6 +1448,7 @@
       ]
     },
     {
+      "id": "section-audio-cd19",
       "type": "audio_tracks",
       "chapter": "reading",
       "title": "課本真人音源｜CD19",
@@ -955,6 +1464,7 @@
       ]
     },
     {
+      "id": "section-audio-cd20",
       "type": "audio_tracks",
       "chapter": "questions",
       "title": "課本真人音源｜CD20・CD21・CD22",
@@ -984,7 +1494,7 @@
       ]
     },
     {
-      "type": "scenario_practice", "chapter": "speaking", "title": "122頁｜<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>・<ruby>道順<rt>みちじゅん</rt></ruby>の<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
+      "id": "section-scenario-intro", "type": "scenario_practice", "chapter": "speaking", "title": "122頁｜<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>・<ruby>道順<rt>みちじゅん</rt></ruby>の<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
       "items": [
         {"situation":"<ruby>川沿<rt>かわぞ</rt></ruby>いに<ruby>進<rt>すす</rt></ruby>む","title":"沿著河川走","partner":"この<ruby>道<rt>みち</rt></ruby>はどこへ<ruby>続<rt>つづ</rt></ruby>いていますか。","target":"<ruby>川<rt>かわ</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>ってまっすぐ<ruby>行<rt>い</rt></ruby>ってください。","swap":"<ruby>大通<rt>おおどお</rt></ruby>りに<ruby>出<rt>で</rt></ruby>る／<ruby>横断歩道<rt>おうだんほどう</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>る"},
         {"situation":"<ruby>道<rt>みち</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かれる","title":"岔路方向","partner":"この<ruby>先<rt>さき</rt></ruby>はどう<ruby>行<rt>い</rt></ruby>ったらいいですか。","target":"<ruby>道<rt>みち</rt></ruby>が<ruby>二<rt>ふた</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>かれていますから、<ruby>右<rt>みぎ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ってください。","swap":"<ruby>左<rt>ひだり</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>／<ruby>交差点<rt>こうさてん</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>へ"},
@@ -992,7 +1502,7 @@
       ]
     },
     {
-      "type": "dialogue_lessons", "chapter": "speaking", "title": "CD18｜さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>道順<rt>みちじゅん</rt></ruby>", "pageOrder": 124,
+      "id": "section-dialogue", "type": "dialogue_lessons", "chapter": "speaking", "title": "CD18｜さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへの<ruby>道順<rt>みちじゅん</rt></ruby>", "pageOrder": 124,
       "items": [
         {"id":"cd18-1","title":"向同事詢問交通方式","role":"サントス","jpPlain":"池田さん、あした、さくら芸術センターへ行こうと思っているんだけど、どう行ったらいい？","zh":"池田先生，我明天想去櫻花藝術中心，該怎麼去呢？","grammarNote":"どう<ruby>行<rt>い</rt></ruby>ったらいい？是詢問前往方式的口語說法。","jpRuby":"<ruby>池田<rt>いけだ</rt></ruby>さん、あした、さくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターへ<ruby>行<rt>い</rt></ruby>こうと<ruby>思<rt>おも</rt></ruby>っているんだけど、どう<ruby>行<rt>い</rt></ruby>ったらいい？"},
         {"id":"cd18-2","title":"建議搭乘地下鐵","role":"<ruby>池田<rt>いけだ</rt></ruby>","jpPlain":"あそこだったら、地下鉄で行くといいよ。千里で乗り換えて、西千里で降りればいいんじゃない。","zh":"去那裡的話，搭地下鐵比較好。在千里轉車，於西千里下車就可以了吧。","grammarNote":"～といい表示建議；～ればいいんじゃない是較柔和的建議。","jpRuby":"あそこだったら、<ruby>地下鉄<rt>ちかてつ</rt></ruby>で<ruby>行<rt>い</rt></ruby>くといいよ。<ruby>千里<rt>せんり</rt></ruby>で<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えて、<ruby>西千里<rt>にしせんり</rt></ruby>で<ruby>降<rt>お</rt></ruby>りればいいんじゃない。"},
@@ -1004,7 +1514,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "speaking", "title": "123頁｜CD18 聽解任務與表現確認",
+      "id": "p123-listening-check", "type": "sentence_cards", "chapter": "speaking", "title": "123頁｜CD18 聽解任務與表現確認",
       "items": [
         {"topic":"內容①｜記下乘車路線","japanese":"西千里までの行き方をメモしてください。","plainText":"西千里までの行き方をメモしてください。","chinese":"請記下前往西千里的交通方式。","grammarNote":"までの修飾<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>，表示『到……為止的走法／交通方式』。","jpRuby":"<ruby>西千里<rt>にしせんり</rt></ruby>までの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>をメモしてください。"},
         {"topic":"內容②｜畫出路線圖","japanese":"駅からさくら芸術センターまでの行き方の地図をかいてください。","plainText":"駅からさくら芸術センターまでの行き方の地図をかいてください。","chinese":"請畫出從車站到櫻花藝術中心的路線圖。","grammarNote":"から～まで表示起點與終點；<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の<ruby>地図<rt>ちず</rt></ruby>是『前往方式的地圖』。","jpRuby":"<ruby>駅<rt>えき</rt></ruby>からさくら<ruby>芸術<rt>げいじゅつ</rt></ruby>センターまでの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の<ruby>地図<rt>ちず</rt></ruby>をかいてください。"},
@@ -1014,7 +1524,7 @@
       ]
     },
     {
-      "type": "scenario_practice", "chapter": "speaking", "title": "125–127頁｜<ruby>道順<rt>みちじゅん</rt></ruby>を<ruby>尋<rt>たず</rt></ruby>ねる・<ruby>教<rt>おし</rt></ruby>える",
+      "id": "section-scenario", "type": "scenario_practice", "chapter": "speaking", "title": "125–127頁｜<ruby>道順<rt>みちじゅん</rt></ruby>を<ruby>尋<rt>たず</rt></ruby>ねる・<ruby>教<rt>おし</rt></ruby>える",
       "items": [
         {"situation":"ひまわり<ruby>小学校<rt>しょうがっこう</rt></ruby>","title":"以平交道為地標","partner":"ひまわり<ruby>小学校<rt>しょうがっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいんですが、どう<ruby>行<rt>い</rt></ruby>ったらいいですか。","target":"この<ruby>道<rt>みち</rt></ruby>を<ruby>行<rt>い</rt></ruby>くと<ruby>踏切<rt>ふみきり</rt></ruby>に<ruby>出<rt>で</rt></ruby>ますから、そこを<ruby>渡<rt>わた</rt></ruby>ってください。<ruby>渡<rt>わた</rt></ruby>るとすぐ<ruby>左<rt>ひだり</rt></ruby>にあります。","swap":"アップル<ruby>銀行<rt>ぎんこう</rt></ruby>／<ruby>左<rt>ひだり</rt></ruby>へ<ruby>曲<rt>ま</rt></ruby>がる"},
         {"situation":"げんき<ruby>病院<rt>びょういん</rt></ruby>","title":"以便利商店為地標","partner":"げんき<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいんですが、どう<ruby>行<rt>い</rt></ruby>ったらいいですか。","target":"まっすぐ<ruby>行<rt>い</rt></ruby>って、コンビニの<ruby>角<rt>かど</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>がってください。<ruby>病院<rt>びょういん</rt></ruby>はその<ruby>先<rt>さき</rt></ruby>にあります。","swap":"公園／交番／横断歩道"},
@@ -1022,7 +1532,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "speaking", "title": "125–127頁｜完整示範會話",
+      "id": "p126-model-dialogue", "type": "sentence_cards", "chapter": "speaking", "title": "125–127頁｜完整示範會話",
       "items": [
         {"topic":"125頁｜ひまわり<ruby>小学校<rt>しょうがっこう</rt></ruby>①","japanese":"すみません。ひまわり小学校へ行きたいんですが、どう行ったらいいですか。","plainText":"すみません。ひまわり小学校へ行きたいんですが、どう行ったらいいですか。","chinese":"不好意思，我想去向日葵小學，請問該怎麼走？","grammarNote":"<ruby>目的地<rt>もくてきち</rt></ruby>＋へ<ruby>行<rt>い</rt></ruby>きたいんですが，先說明目的後再詢問。","jpRuby":"すみません。ひまわり<ruby>小学校<rt>しょうがっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいんですが、どう<ruby>行<rt>い</rt></ruby>ったらいいですか。"},
         {"topic":"125頁｜ひまわり<ruby>小学校<rt>しょうがっこう</rt></ruby>②","japanese":"この道を行くと、踏切に出ますから、そこを渡ってください。","plainText":"この道を行くと、踏切に出ますから、そこを渡ってください。","chinese":"沿這條路走會到平交道，請越過那裡。","grammarNote":"～と表示必然結果；から表示理由；そこ承接雙方已知地點。","jpRuby":"この<ruby>道<rt>みち</rt></ruby>を<ruby>行<rt>い</rt></ruby>くと、<ruby>踏切<rt>ふみきり</rt></ruby>に<ruby>出<rt>で</rt></ruby>ますから、そこを<ruby>渡<rt>わた</rt></ruby>ってください。"},
@@ -1035,7 +1545,7 @@
       ]
     },
     {
-      "type": "long_reading", "chapter": "reading", "title": "130頁｜<ruby>地図<rt>ちず</rt></ruby>",
+      "id": "section-reading", "type": "long_reading", "chapter": "reading", "title": "130頁｜<ruby>地図<rt>ちず</rt></ruby>",
       "paragraphs": [
         "<ruby>地図<rt>ちず</rt></ruby>Aは、オーストラリアの<ruby>高校教師<rt>こうこうきょうし</rt></ruby>マッカーサーが1979<ruby>年<rt>ねん</rt></ruby>に<ruby>作<rt>つく</rt></ruby>った「<ruby>南北<rt>なんぼく</rt></ruby>を<ruby>逆<rt>ぎゃく</rt></ruby>にした<ruby>世界地図<rt>せかいちず</rt></ruby>」である。<ruby>彼<rt>かれ</rt></ruby>は<ruby>日本留学中<rt>にほんりゅうがくちゅう</rt></ruby>に、アメリカ<ruby>人留学生<rt>じんりゅうがくせい</rt></ruby>のかいた<ruby>世界地図<rt>せかいちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、びっくりした。その<ruby>地図<rt>ちず</rt></ruby>にはオーストラリアがなかったのだ。",
         "<ruby>人間<rt>にんげん</rt></ruby>の<ruby>目<rt>め</rt></ruby>は、<ruby>観察<rt>かんさつ</rt></ruby>しようとする<ruby>面<rt>めん</rt></ruby>の<ruby>中央<rt>ちゅうおう</rt></ruby>より<ruby>少<rt>すこ</rt></ruby>し<ruby>上<rt>うえ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>を<ruby>自然<rt>しぜん</rt></ruby>に<ruby>見<rt>み</rt></ruby>るそうである。<ruby>下<rt>した</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>は<ruby>努力<rt>どりょく</rt></ruby>して<ruby>見<rt>み</rt></ruby>ようとしないと、<ruby>見<rt>み</rt></ruby>えないのだ。<ruby>南半球<rt>みなみはんきゅう</rt></ruby>にあるオーストラリアは、アメリカ<ruby>人留学生<rt>じんりゅうがくせい</rt></ruby>の<ruby>意識<rt>いしき</rt></ruby>から<ruby>忘<rt>わす</rt></ruby>れられていたのである。そこで、マッカーサーが<ruby>自分<rt>じぶん</rt></ruby>で<ruby>作<rt>つく</rt></ruby>ってみたのが<ruby>地図<rt>ちず</rt></ruby>Aである。",
@@ -1044,7 +1554,7 @@
       ]
     },
     {
-      "type": "sentence_cards", "chapter": "reading", "title": "130頁｜〈<ruby>地図<rt>ちず</rt></ruby>〉逐句翻譯與文法解說",
+      "id": "section-reading-sentences", "type": "sentence_cards", "chapter": "reading", "title": "130頁｜〈<ruby>地図<rt>ちず</rt></ruby>〉逐句翻譯與文法解說",
       "items": [
         {
           "topic": "第1句｜關係子句修飾名詞",
@@ -1147,24 +1657,14 @@
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "reading", "title": "128–131頁｜ことば・<ruby>読解<rt>どっかい</rt></ruby>チェック",
-      "items": [
-        {"question":"日本和巴西分別位於哪個半球？","options":["日本在北半球；巴西大部分在南半球","兩國都在北半球","兩國都在南半球"],"correct":0,"explanation":"課文用南半球與北半球討論地圖位置。"},
-        {"question":"為什麼美國留學生畫的世界地圖沒有澳洲？","options":["故意不畫","澳洲位於觀察畫面的下方，無意識中被忽略","當時澳洲不存在"],"correct":1,"explanation":"人眼自然注意中央稍上方；位於下方的澳洲被無意識地遺忘。"},
-        {"question":"自從何時起，以北方在上方繪製地圖成為普遍習慣？","options":["開始使用經緯度之後","地圖A完成之後","南半球被發現之後"],"correct":0,"explanation":"課文說這是地圖開始使用經緯度後形成的習慣。"},
-        {"question":"古代地圖的方向一定是北方朝上嗎？","options":["一定是","不是，也有很多南方朝上的地圖","只有東方朝上"],"correct":1,"explanation":"課文指出古老地圖中也有許多以南方為上的例子。"},
-        {"question":"為什麼課文認為「<ruby>位置<rt>いち</rt></ruby>の<ruby>平等<rt>びょうどう</rt></ruby>」很困難？","options":["任何配置仍可能讓某些地區居於不利位置","因為地圖不能使用左右","因為世界沒有經緯度"],"correct":0,"explanation":"即使改成左右配置，非洲與南美洲的位置仍會引發新的問題。"}
-      ]
-    },
-    {
-      "type": "scenario_practice", "chapter": "questions", "title": "132頁｜チャレンジしましょう",
+      "id": "section-scenario-2", "type": "scenario_practice", "chapter": "questions", "title": "132頁｜チャレンジしましょう",
       "items": [
         {"situation":"地図A・地図B","title":"比較不同方向的世界地圖","partner":"「<ruby>地図<rt>ちず</rt></ruby>A」と「<ruby>地図<rt>ちず</rt></ruby>B」を<ruby>見<rt>み</rt></ruby>て、どう<ruby>思<rt>おも</rt></ruby>いますか。","target":"<ruby>地図<rt>ちず</rt></ruby>の<ruby>上下<rt>じょうげ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えると、<ruby>今<rt>いま</rt></ruby>まで<ruby>気<rt>き</rt></ruby>づかなかった<ruby>見方<rt>みかた</rt></ruby>ができると<ruby>思<rt>おも</rt></ruby>います。","swap":"<ruby>見<rt>み</rt></ruby>やすさ／<ruby>位置<rt>いち</rt></ruby>の<ruby>平等<rt>びょうどう</rt></ruby>／<ruby>自分<rt>じぶん</rt></ruby>の<ruby>常識<rt>じょうしき</rt></ruby>"},
         {"situation":"<ruby>常識<rt>じょうしき</rt></ruby>と<ruby>不思議<rt>ふしぎ</rt></ruby>","title":"分享文化差異","partner":"<ruby>自分<rt>じぶん</rt></ruby>では<ruby>常識<rt>じょうしき</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていたのに、ほかの<ruby>人<rt>ひと</rt></ruby>に<ruby>不思議<rt>ふしぎ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われたことがありますか。","target":"はい。<ruby>国<rt>くに</rt></ruby>や<ruby>地域<rt>ちいき</rt></ruby>によって<ruby>常識<rt>じょうしき</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うことに<ruby>気<rt>き</rt></ruby>づきました。","swap":"生活習慣／時間／食事／地圖方向"}
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "questions", "title": "133頁｜CD20～CD22 聴解",
+      "id": "p133-listening-quiz", "type": "quiz_questions", "chapter": "questions", "title": "133頁｜CD20～CD22 聴解",
       "items": [
         {"question":"CD20 問題1：音訊內容を<ruby>聞<rt>き</rt></ruby>いて<ruby>答<rt>こた</rt></ruby>えてください。","options":["播放上方CD20真人音檔後作答"],"explanation":"先完整聆聽CD20，再寫下第一題答案。"},
         {"question":"CD20 問題2：音訊內容を<ruby>聞<rt>き</rt></ruby>いて<ruby>答<rt>こた</rt></ruby>えてください。","options":["播放上方CD20真人音檔後作答"],"explanation":"再次播放CD20，將第二題聽到的重點寫下來。"},
@@ -1175,7 +1675,7 @@
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "questions", "title": "133頁｜指示詞 その・あの・それ・あれ・そこ・あそこ",
+      "id": "p133-demonstrative-quiz", "type": "quiz_questions", "chapter": "questions", "title": "133頁｜指示詞 その・あの・それ・あれ・そこ・あそこ",
       "items": [
         {"question":"<ruby>部長<rt>ぶちょう</rt></ruby>が<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>めるそうですよ。……（　）<ruby>話<rt>はなし</rt></ruby>、だれに<ruby>聞<rt>き</rt></ruby>いたんですか。","options":["その","あの"],"correct":0,"explanation":"對方剛提到的「那件事」使用その<ruby>話<rt>はなし</rt></ruby>。"},
         {"question":"<ruby>中国旅行<rt>ちゅうごくりょこう</rt></ruby>、<ruby>楽<rt>たの</rt></ruby>しかったね。……うん、（　）は<ruby>去年<rt>きょねん</rt></ruby>の9<ruby>月<rt>がつ</rt></ruby>だったね。","options":["それ","あれ"],"correct":1,"explanation":"雙方共同回憶的過去經驗使用あれ。"},
@@ -1183,7 +1683,7 @@
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "questions", "title": "134頁｜～ところ與動詞活用",
+      "id": "p134-tokoro-quiz", "type": "quiz_questions", "chapter": "questions", "title": "134頁｜～ところ與動詞活用",
       "items": [
         {"question":"まっすぐ50メートルぐらい<ruby>行<rt>い</rt></ruby>ったところに<ruby>公園<rt>こうえん</rt></ruby>があります。此處的「ところ」是哪一種？","options":["a：時間階段（剛剛／正要）","b：動作後所在的位置"],"correct":1,"explanation":"走約50公尺後的那個地點有公園，表示位置。"},
         {"question":"<ruby>今<rt>いま</rt></ruby>、<ruby>来<rt>き</rt></ruby>たところなので、まだその<ruby>話<rt>はなし</rt></ruby>は<ruby>聞<rt>き</rt></ruby>いていません。此處的「ところ」是哪一種？","options":["a：時間階段（剛剛）","b：<ruby>場所<rt>ばしょ</rt></ruby>"],"correct":0,"explanation":"<ruby>来<rt>き</rt></ruby>たところ表示剛到。"},
@@ -1197,13 +1697,13 @@
       ]
     },
     {
-      "type": "grammar_notes", "chapter": "questions", "title": "135頁｜<ruby>助詞<rt>じょし</rt></ruby>＋の <ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>え",
+      "id": "p135-joshi-no-rewrite", "type": "grammar_notes", "chapter": "questions", "title": "135頁｜<ruby>助詞<rt>じょし</rt></ruby>＋の <ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>え",
       "items": [
         {"title":"來源、場所與對象改寫","formula":"名詞＋助詞＋動詞修飾 → <ruby>名詞<rt>めいし</rt></ruby>＋<ruby>助詞<rt>じょし</rt></ruby>＋の＋<ruby>名詞<rt>めいし</rt></ruby>","examples":[{"from":"<ruby>東京<rt>とうきょう</rt></ruby>から<ruby>来<rt>く</rt></ruby>る<ruby>飛行機<rt>ひこうき</rt></ruby>","to":"<ruby>東京<rt>とうきょう</rt></ruby>からの<ruby>飛行機<rt>ひこうき</rt></ruby>"},{"from":"<ruby>日本<rt>にほん</rt></ruby>でした<ruby>経験<rt>けいけん</rt></ruby>","to":"<ruby>日本<rt>にほん</rt></ruby>での<ruby>経験<rt>けいけん</rt></ruby>"},{"from":"<ruby>国<rt>くに</rt></ruby>へかける<ruby>電話代<rt>でんわだい</rt></ruby>","to":"<ruby>国<rt>くに</rt></ruby>への<ruby>電話代<rt>でんわだい</rt></ruby>"},{"from":"<ruby>課長<rt>かちょう</rt></ruby>とするミーティング","to":"<ruby>課長<rt>かちょう</rt></ruby>とのミーティング"},{"from":"<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>まで<ruby>行<rt>い</rt></ruby>くタクシー<ruby>代<rt>だい</rt></ruby>","to":"<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>までのタクシー<ruby>代<rt>だい</rt></ruby>"},{"from":"<ruby>友達<rt>ともだち</rt></ruby>にあげるお<ruby>土産<rt>みやげ</rt></ruby>","to":"<ruby>友達<rt>ともだち</rt></ruby>へのお<ruby>土産<rt>みやげ</rt></ruby>"}]}
       ]
     },
     {
-      "type": "quiz_questions", "chapter": "questions", "title": "135頁｜そこで・わざと・<ruby>無意識<rt>むいしき</rt></ruby>に・<ruby>自然<rt>しぜん</rt></ruby>に・<ruby>少<rt>すく</rt></ruby>なくとも",
+      "id": "p135-vocabulary-quiz", "type": "quiz_questions", "chapter": "questions", "title": "135頁｜そこで・わざと・<ruby>無意識<rt>むいしき</rt></ruby>に・<ruby>自然<rt>しぜん</rt></ruby>に・<ruby>少<rt>すく</rt></ruby>なくとも",
       "items": [
         {"question":"<ruby>会社<rt>かいしゃ</rt></ruby>は9<ruby>時<rt>じ</rt></ruby>からだから、（　）8<ruby>時<rt>じ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ないと<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わない。","options":["<ruby>少<rt>すく</rt></ruby>なくとも","<ruby>自然<rt>しぜん</rt></ruby>に","そこで"],"correct":0,"explanation":"表示最低限度，使用<ruby>少<rt>すく</rt></ruby>なくとも。"},
         {"question":"<ruby>時計<rt>とけい</rt></ruby>が<ruby>起<rt>お</rt></ruby>こしてくれるのだが、（　）<ruby>止<rt>と</rt></ruby>めて、また<ruby>寝<rt>ね</rt></ruby>てしまう。<ruby>止<rt>と</rt></ruby>めたことも<ruby>覚<rt>おぼ</rt></ruby>えていない。","options":["<ruby>無意識<rt>むいしき</rt></ruby>に","わざと","そこで"],"correct":0,"explanation":"本人沒有察覺自己關掉鬧鐘，使用<ruby>無意識<rt>むいしき</rt></ruby>に。"},
