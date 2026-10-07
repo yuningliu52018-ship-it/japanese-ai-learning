@@ -23,6 +23,17 @@ function escapeAttribute(value = '') {
     .replace(/>/g, '&gt;');
 }
 
+function answerLabel(item) {
+  const core = window.LessonClassroomCore;
+  return core ? core.labels[core.status(item)] : '待核對';
+}
+
+function evidenceHtml(item) {
+  const evidence = item.answerEvidence;
+  if (!evidence) return '';
+  return `<details class="classroom-evidence"><summary>答案來源與核對紀錄</summary><p>${answerLabel(item)}</p>${(evidence.sources || []).map(source => `<p><a href="${escapeAttribute(source.href)}" target="_blank" rel="noopener">${source.kind === 'answer-book' ? '解答本' : source.kind === 'textbook' ? '課本' : '教師紀錄'} ${escapeAttribute(source.page)}頁｜${escapeAttribute(source.locator || '')}</a></p>`).join('') || '<p>尚缺逐題來源，不能標成已核對。</p>'}${evidence.review ? `<p>核對：${escapeAttribute(evidence.review.by)}｜${escapeAttribute(evidence.review.date)}<br>${escapeAttribute(evidence.review.method || '')}</p>` : ''}</details>`;
+}
+
 function resolveLessonId(data = {}) {
   if (data.id) return lessonToken(data.id);
   if (Number.isInteger(data.catalog?.order)) return `k${data.catalog.order}`;
@@ -162,7 +173,7 @@ function speechButton(text, label = '播放') {
   const encoded = encodeURIComponent(cleanText);
   const escaped = cleanText.replace(/"/g, '&quot;');
   const canShadow = label === '播放' || label === '朗讀本段';
-  return `<span class="speech-actions"><button class="speech-button" type="button" data-speak="${encoded}" aria-label="播放日文：${escaped}"><span aria-hidden="true">▶</span> ${label}</button>${canShadow ? `<button class="shadow-button" type="button" data-shadow="${encoded}" aria-label="跟讀練習：${escaped}"><span aria-hidden="true">🎙</span> 跟讀</button>` : ''}</span>`;
+  return `<span class="speech-actions"><button class="speech-button" type="button" data-speak="${encoded}" aria-label="播放日文：${escaped}"><span aria-hidden="true">▶</span> AI ${label}</button>${canShadow ? `<button class="shadow-button" type="button" data-shadow="${encoded}" aria-label="跟讀練習：${escaped}"><span aria-hidden="true">🎙</span> 跟讀</button>` : ''}</span>`;
 }
 
 function normalizeJapanese(text = '') {
@@ -195,7 +206,7 @@ function pronunciationScore(target, transcript) {
 }
 
 function itemSpeechText(item = {}) {
-  return item.jpPlain || item.plainText || item.japanese || item.jpRuby || '';
+  return item.speechReading || item.jpPlain || item.plainText || item.japanese || item.jpRuby || '';
 }
 
 function sectionSpeechText(section = {}) {
@@ -203,9 +214,13 @@ function sectionSpeechText(section = {}) {
   if (section.type === 'long_reading') return (section.paragraphs || []).join('');
   for (const item of section.items || []) {
     if (section.type === 'grammar_notes') {
-      for (const example of item.examples || []) parts.push(example.from, example.to);
+      for (const example of item.examples || []) {
+        if (example.fromLang !== 'zh') parts.push(example.from);
+        if (example.toLang !== 'zh') parts.push(example.to);
+      }
     } else if (section.type === 'quiz_questions') {
-      parts.push(item.question, ...(item.options || []));
+      if (item.questionLanguage !== 'zh') parts.push(itemSpeechText(item) || item.question);
+      if (item.optionsLanguage !== 'zh') parts.push(...(item.options || []));
     } else {
       parts.push(itemSpeechText(item));
     }
@@ -458,6 +473,7 @@ function setupSpeech(root) {
   const speakText = (text, rate = 0.95, options = {}) => {
     const { onStart, onEnd, onError, playButton } = options;
     stopPlayback();
+    root.querySelectorAll('audio').forEach(audio => audio.pause());
     const session = currentPlaySession;
 
     let fallbackTriggered = false;
@@ -669,6 +685,8 @@ function setupSpeech(root) {
 
     playNextChunk();
   };
+
+  root.lessonSpeech = { stop: stopPlayback };
 
   const playShadowTarget = (rate = 0.95, onEnd) => {
     if (!shadowTarget) return;
@@ -1106,6 +1124,7 @@ function setupSpeech(root) {
     const stopButton = event.target.closest('[data-speech-stop]');
     if (stopButton) {
       stopPlayback();
+      root.querySelectorAll('audio').forEach(audio => audio.pause());
       if (status) status.textContent = '已停止播放';
       return;
     }
@@ -1303,7 +1322,7 @@ function renderLesson(root, data) {
     } else if (section.type === 'sentence_cards' || section.type === 'dialogue_lessons') {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
-        const displayedJapanese = item.jpRuby || item.japanese || '';
+        const displayedJapanese = item.classroom?.originalRuby || item.jpRuby || item.japanese || '';
         const plainJapanese = item.jpPlain || item.plainText || '';
         const itemIdAttribute = item.id
           ? ` data-item-id="${escapeAttribute(String(item.id))}"`
@@ -1315,26 +1334,29 @@ function renderLesson(root, data) {
         html.push(`<h3>${item.topic || item.title || item.id || ''}</h3>`);
         if (item.answerType === 'suggested') {
           html.push(`<p class="lesson-answer-kind"><strong>示範答案</strong> 非課本印刷答案，其他合理答案也可以。</p>`);
-        } else if (item.answerType === 'verified') {
-          html.push(`<p class="lesson-answer-kind"><strong>提供解答</strong> 依使用者提供的解答資料核對；解答例並非唯一答案。</p>`);
+        } else if (item.answerType || item.answerEvidence) {
+          html.push(`<p class="lesson-answer-kind"><strong>${answerLabel(item)}</strong>${answerLabel(item) === '示範答案' ? ' 解答例並非唯一答案。' : ''}</p>`);
         }
         if (displayedJapanese) html.push(`<p lang="ja">${displayedJapanese}</p>`);
         if (!item.jpRuby && plainJapanese && plainJapanese !== displayedJapanese) {
           html.push(`<p class="lesson-muted" lang="ja">${plainJapanese}</p>`);
         }
-        html.push(speechButton(itemSpeechText(item)));
-        if (item.zh || item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
+        html.push(speechButton(item.classroom?.originalRuby || itemSpeechText(item)));
+        if ((item.zh || item.chinese) && !item.classroom?.originalRuby) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
+        if (item.classroom?.originalRuby) html.push(`<details class="lesson-answer classroom-answer"><summary>查看答案｜${answerLabel(item)}</summary><p lang="ja">${item.jpRuby || item.japanese}</p>${speechButton(itemSpeechText(item))}<p><strong>中文：</strong>${item.zh || item.chinese || ''}</p>${evidenceHtml(item)}</details>`);
+        else html.push(evidenceHtml(item));
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
         if (item.examples?.length) {
-          const isCollapsible = section.chapter !== 'vocabulary';
-          const summaryLabel = item.examplesTitle || `更多例句／補充（點擊展開 ${item.examples.length} 句）`;
+          const isAnswer = item.classroom?.examplesRole === 'answer';
+          const isCollapsible = isAnswer || section.chapter !== 'vocabulary';
+          const summaryLabel = isAnswer ? '看答案' : item.examplesTitle || `更多例句／補充（點擊展開 ${item.examples.length} 句）`;
           if (isCollapsible) {
-            html.push(`<details class="vocabulary-examples lesson-examples-details"><summary class="vocabulary-examples-title">${summaryLabel}</summary>`);
+            html.push(`<details class="vocabulary-examples ${isAnswer ? 'lesson-answer' : 'lesson-examples-details'}"><summary class="vocabulary-examples-title">${summaryLabel}</summary>`);
           } else {
             html.push(`<div class="vocabulary-examples"><strong class="vocabulary-examples-title">${item.examplesTitle || '例句'}</strong>`);
           }
           for (const example of item.examples) {
-            if (example.answerType) html.push(`<p class="lesson-muted">${example.answerType === 'verified' ? '提供解答' : '示範答案'}</p>`);
+            if (example.answerType) html.push(`<p class="lesson-muted">${answerLabel(example)}</p>${evidenceHtml(example)}`);
             html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
             if (example.answerSource) html.push(`<p><a href="${escapeAttribute(example.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
           }
@@ -1348,8 +1370,8 @@ function renderLesson(root, data) {
         if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
         if (item.role) html.push(`<div class="lesson-kv"><strong>角色</strong>${item.role}</div>`);
         if (item.dialoguePrompts) html.push(`<div class="lesson-kv"><strong>演練提示</strong>${item.dialoguePrompts.join(' / ')}</div>`);
-        if (item.promptQ) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
-        if (item.speakerBAns) html.push(`<div class="lesson-kv"><strong>答案</strong>${item.speakerBAns}</div>`);
+        if (item.promptQ && !item.classroom?.originalRuby) html.push(`<div class="lesson-kv"><strong>題目</strong>${item.promptQ}</div>`);
+        if (item.speakerBAns && !item.classroom?.originalRuby) html.push(`<div class="lesson-kv"><strong>答案</strong>${item.speakerBAns}</div>`);
         if (item.speakerBTrans) html.push(`<div class="lesson-kv"><strong>翻譯</strong>${item.speakerBTrans}</div>`);
         if (item.grammarKey) html.push(`<div class="lesson-kv"><strong>要點</strong>${item.grammarKey}</div>`);
         html.push(`</article>`);
@@ -1376,10 +1398,11 @@ function renderLesson(root, data) {
         html.push(`<article class="lesson-item">`);
         html.push(`<h3>${item.title || ''}</h3>`);
         if (item.formula) html.push(`<p class="lesson-muted"><strong>公式：</strong>${item.formula}</p>`);
-        if (item.answerType) html.push(`<p class="lesson-muted">${item.answerType === 'verified' ? '提供解答' : '示範答案'}</p>`);
+        if (item.answerType) html.push(`<p class="lesson-muted">${answerLabel(item)}</p>${evidenceHtml(item)}`);
         html.push(`<div class="lesson-options">`);
         for (const ex of item.examples || []) {
-          html.push(`<div class="lesson-option"><strong>${ex.from}</strong> → ${ex.to}${speechButton(`${ex.from}。${ex.to}`)}</div>`);
+          const spoken = [ex.fromLang !== 'zh' ? ex.from : '', ex.toLang !== 'zh' ? ex.to : ''].filter(Boolean).join('。');
+          html.push(`<div class="lesson-option"><p lang="${ex.fromLang || 'ja'}"><strong>${ex.from}</strong></p><p lang="${ex.toLang || 'ja'}">${ex.to}</p>${speechButton(spoken)}</div>`);
         }
         html.push(`</div>`);
         if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
@@ -1390,17 +1413,20 @@ function renderLesson(root, data) {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
         html.push(`<article class="lesson-item">`);
-        html.push(`<h3>${item.question || ''}</h3>`);
-        html.push(speechButton(item.question));
+        html.push(`<h3>${item.topic || item.question || ''}</h3>`);
+        if (item.jpRuby || item.jpPlain) html.push(`<p lang="ja">${item.jpRuby || item.jpPlain}</p>`);
+        if (item.questionLanguage !== 'zh') html.push(speechButton(itemSpeechText(item) || item.question));
+        if (item.chinese) html.push(`<p><strong>中文：</strong>${item.chinese}</p>`);
         html.push(`<div class="lesson-options">`);
         (item.options || []).forEach((opt, idx) => {
-          html.push(`<div class="lesson-option">${String.fromCharCode(65 + idx)}. ${opt}</div>`);
+          html.push(`<div class="lesson-option">${item.optionLabels?.[idx] || String.fromCharCode(65 + idx)}. ${opt}</div>`);
         });
         html.push(`</div>`);
-        if (Number.isInteger(item.correct) || item.explanation) {
-          const answer = Number.isInteger(item.correct) ? `${String.fromCharCode(65 + item.correct)}. ${(item.options || [])[item.correct] || ''}` : '';
-          const answerKind = item.answerType === 'verified' ? '提供解答' : item.answerType === 'suggested' ? '示範答案' : '答案';
-          html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>${answerKind}：</strong>${answer}</p>` : ''}${item.answerText ? `<p>${item.answerText}</p>` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}${item.answerSource ? `<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>` : ''}</details>`);
+        if (Number.isInteger(item.correct) || item.explanation || item.answerText) {
+          const answer = Number.isInteger(item.correct) ? `${item.optionLabels?.[item.correct] || String.fromCharCode(65 + item.correct)}. ${(item.options || [])[item.correct] || ''}` : '';
+          const answerKind = answerLabel(item);
+          html.push(`<p class="lesson-answer-kind"><strong>${answerKind}</strong></p>`);
+          html.push(`<details class="lesson-answer"><summary>查看答案與解釋</summary>${answer ? `<p><strong>${answerKind}：</strong>${answer}</p>` : ''}${item.answerText ? `<p${item.answerPlain ? ' lang="ja"' : ''}>${item.answerText}</p>${item.answerPlain ? speechButton(item.answerPlain) : ''}` : ''}${item.explanation ? `<p>${item.explanation}</p>` : ''}${item.answerSource ? `<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>` : ''}</details>`);
         }
         html.push(`</article>`);
       }
@@ -1408,9 +1434,9 @@ function renderLesson(root, data) {
     } else if (section.type === 'answer_key') {
       html.push(`<div class="lesson-grid">`);
       for (const item of section.items || []) {
-        const kind = item.answerType === 'verified' ? '提供解答' : item.answerType === 'suggested' ? '示範答案' : '答案';
+        const kind = answerLabel(item);
         const sourceLink = item.sourcePhoto ? `<p><a href="${item.sourcePhoto}" target="_blank" rel="noopener">查看解答本照片</a></p>` : '';
-        html.push(`<details class="lesson-item lesson-answer"${item.answerType ? ` data-answer-type="${item.answerType}"` : ''}><summary>${item.label}</summary><p><strong>${kind}：</strong><span lang="ja">${item.answerRuby || item.answer}</span></p>${item.jpPlain ? speechButton(item.jpPlain) : ''}${item.chinese ? `<p><strong>中文：</strong>${item.chinese}</p>` : ''}${item.reason ? `<p>${item.reason}</p>` : ''}${sourceLink}</details>`);
+        html.push(`<details class="lesson-item lesson-answer"${item.answerType ? ` data-answer-type="${item.answerType}"` : ''}><summary>${item.label} · ${kind}</summary><p><strong>${kind}：</strong><span lang="ja">${item.answerRuby || item.answer}</span></p>${item.jpPlain ? speechButton(item.jpPlain) : ''}${item.chinese ? `<p><strong>中文：</strong>${item.chinese}</p>` : ''}${item.reason ? `<p>${item.reason}</p>` : ''}${sourceLink}</details>`);
       }
       html.push(`</div>`);
     } else if (section.type === 'scenario_practice') {
@@ -1419,9 +1445,9 @@ function renderLesson(root, data) {
         html.push(`<article class="scenario-card">`);
         html.push(`<p class="scenario-label">${item.situation}</p>`);
         html.push(`<h3>${item.title}</h3>`);
-        if (item.answerType) html.push(`<p class="lesson-muted">${item.answerType === 'verified' ? '提供解答（含解答例）' : '示範答案'}</p>`);
+        if (item.answerType) html.push(`<p class="lesson-muted">${answerLabel(item)}</p>${evidenceHtml(item)}`);
         html.push(`<div class="scenario-turn"><strong>對方</strong><p lang="ja">${item.partner}</p>${speechButton(item.partner)}</div>`);
-        html.push(`<div class="scenario-turn is-you"><strong>你要說</strong><p lang="ja">${item.target}</p>${speechButton(item.target)}</div>`);
+        html.push(`<details class="lesson-answer"><summary>看答案</summary><div class="scenario-turn is-you"><strong>你要說</strong><p lang="ja">${item.target}</p>${speechButton(item.target)}</div></details>`);
         if (item.swap) html.push(`<p class="scenario-swap"><strong>替換練習：</strong>${item.swap}</p>`);
         if (item.answerSource) html.push(`<p><a href="${escapeAttribute(item.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
         html.push(`</article>`);
@@ -1725,7 +1751,7 @@ async function loadLesson() {
           : entry;
         return {
           ...normalized,
-          id: String(index + 1).padStart(2, '0'),
+          id: entry.id || String(index + 1).padStart(2, '0'),
           topic: `${index + 1}. ${normalized.jpRuby || normalized.japanese}`,
           plainText: normalized.plainText || normalized.japanese
         };
@@ -1783,6 +1809,7 @@ async function loadLesson() {
       })),
       navigationMode: data.navigationMode || null,
       pagePresentation: data.pagePresentation || null,
+      data,
       locations: renderedLocations
     });
     root.dispatchEvent(new CustomEvent('lesson:rendered', {
@@ -1805,6 +1832,7 @@ async function loadLesson() {
 
 function scrollToCurrentHash(behavior = 'auto') {
   if (typeof window === 'undefined' || !window.location || !window.location.hash) return;
+  if (location.hash.startsWith('#item-')) return; // Legacy item URLs now resolve to the textbook page only.
   const rawHash = window.location.hash.slice(1);
   let targetId = rawHash;
   try {

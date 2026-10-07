@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "classroomSpecVersion": 1,
+  "id": "k7",
+  "title": "第七課：填入課文名稱",
+  "description": "製作中：填入本頁完整教材與來源，不複製程式或另存重複摘句；歸頁有疑義時保留待核對並列出缺件。",
+  "catalog": { "listed": false, "order": 7 },
+  "pageRange": [165, 165],
+  "hideLegacySections": true,
+  "sortSectionsByPage": true,
+  "chapters": [{ "id": "grammar", "title": "文法・練習" }],
+  "pagePresentation": {
+    "status": "partial", "rememberPage": true, "verifiedPages": [],
+    "pages": [{ "key": "165", "chapterId": "grammar", "label": "165 頁｜製作中", "assignments": [{ "sectionId": "grammar-practice", "itemIds": ["q1", "response1", "answer1"] }] }],
+    "pendingRanges": [{ "chapterId": "grammar", "pages": "165" }]
+  },
+  "supplementalSections": [{
+    "id": "practice", "chapter": "grammar", "type": "sentence_cards", "pageKey": "165", "title": "練習（資料範本，非課本）",
+    "items": [
+      { "id": "q1", "topic": "1）原題待填", "jpPlain": "原文待填", "chinese": "中文待填", "classroom": { "kind": "question", "questionNumber": "1）", "textbookPage": "165", "priorityReviewed": false, "textReview": { "status": "pending" }, "readingReview": { "status": "partial" }, "responseIds": ["response1"], "answerIds": ["answer1"] } },
+      { "id": "response1", "topic": "課本回應待填", "jpPlain": "原文待填", "chinese": "中文待填", "classroom": { "kind": "text", "textbookPage": "165", "priorityReviewed": false, "textReview": { "status": "pending" } } },
+      { "id": "answer1", "topic": "1）答案待核對", "jpPlain": "答案待填", "chinese": "譯文待填", "answerType": "pending", "answerEvidence": { "status": "pending", "sources": [] }, "classroom": { "kind": "answer", "textbookPage": "165", "priorityReviewed": false } }
+    ]
+  }]
+}

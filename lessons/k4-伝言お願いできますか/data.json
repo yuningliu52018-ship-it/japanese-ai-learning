@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "k4",
+  "pageRange": [
+    86,
+    111
+  ],
   "title": "第四課：伝言、お願いできますか",
   "description": "第4課完整教材：文法・練習、話す・聞く、読む・書く與問題",
   "source": "伝言、お願いできますか.html",
@@ -551,7 +555,19 @@
           "plain": "病院で血液を検査します。",
           "chinese": "在醫院檢驗血液。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "01"
     },
     {
       "japanese": "明日",
@@ -562,7 +578,19 @@
           "plain": "明日の会議は九時からです。",
           "chinese": "明天的會議九點開始。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "02"
     },
     {
       "japanese": "能力",
@@ -573,7 +601,19 @@
           "plain": "彼は語学の能力が高いです。",
           "chinese": "他的語言能力很好。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "03"
     },
     {
       "japanese": "バザー",
@@ -584,7 +624,19 @@
           "plain": "学校でバザーが開かれます。",
           "chinese": "學校將舉辦義賣會。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "04"
     },
     {
       "japanese": "マスク",
@@ -595,7 +647,19 @@
           "plain": "風邪をひいたので、マスクをします。",
           "chinese": "因為感冒了，所以戴口罩。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "05"
     },
     {
       "japanese": "スーツケース",
@@ -606,7 +670,19 @@
           "plain": "服をスーツケースに入れました。",
           "chinese": "把衣服放進行李箱了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "06"
     },
     {
       "japanese": "目が覚める",
@@ -623,7 +699,19 @@
           "plain": "今朝、早く目が覚めた。",
           "chinese": "今天早上很早就醒了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "07"
     },
     {
       "japanese": "朝礼",
@@ -634,7 +722,19 @@
           "plain": "毎朝、会社で朝礼があります。",
           "chinese": "公司每天早上都有晨會。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "08"
     },
     {
       "japanese": "校歌",
@@ -645,7 +745,19 @@
           "plain": "入学式で校歌を歌いました。",
           "chinese": "在入學典禮上唱了校歌。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "09"
     },
     {
       "japanese": "敬語",
@@ -656,7 +768,19 @@
           "plain": "お客様には敬語を使います。",
           "chinese": "對客人使用敬語。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "10"
     },
     {
       "japanese": "感想文",
@@ -667,7 +791,19 @@
           "plain": "夏休みに本の感想文を書きました。",
           "chinese": "暑假寫了讀書心得。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "11"
     },
     {
       "japanese": "運動場",
@@ -678,7 +814,19 @@
           "plain": "学生が運動場を走っています。",
           "chinese": "學生正在運動場跑步。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "12"
     },
     {
       "japanese": "いたずら",
@@ -695,7 +843,19 @@
           "plain": "友達にいたずらをして、怒られた。",
           "chinese": "因為對朋友惡作劇而被罵了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "13"
     },
     {
       "japanese": "美しい",
@@ -706,7 +866,19 @@
           "plain": "この町は景色が美しいです。",
           "chinese": "這座城市的景色很美。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "14"
     },
     {
       "japanese": "世紀",
@@ -717,7 +889,19 @@
           "plain": "電話は十九世紀に発明されました。",
           "chinese": "電話是在十九世紀發明的。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "15"
     },
     {
       "japanese": "平和[な]",
@@ -728,7 +912,19 @@
           "plain": "平和な世界を願っています。",
           "chinese": "祈願世界和平。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "16"
     },
     {
       "japanese": "人々",
@@ -739,7 +935,19 @@
           "plain": "多くの人々が広場に集まりました。",
           "chinese": "許多人聚集在廣場。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "17"
     },
     {
       "japanese": "願う",
@@ -762,7 +970,19 @@
           "plain": "子供の病気が早く治るように願う。",
           "chinese": "祈願孩子的病早日康復。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "18"
     },
     {
       "japanese": "文",
@@ -773,7 +993,19 @@
           "plain": "次の文を読んでください。",
           "chinese": "請讀下一個句子。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "19"
     },
     {
       "japanese": "書き換える",
@@ -796,7 +1028,19 @@
           "plain": "歴史の試験のとき、僕は世界の歴史を書き換えた。",
           "chinese": "歷史考試時，我把世界歷史都改寫了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "20"
     },
     {
       "japanese": "合わせる",
@@ -824,7 +1068,19 @@
           "plain": "お寺で神様に手を合わせます。",
           "chinese": "在寺廟裡向神明合掌。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "21"
     },
     {
       "japanese": "もともと",
@@ -846,7 +1102,19 @@
           "plain": "あの二人はもともとは夫婦だったけど、今は離婚した。",
           "chinese": "那兩個人原本是夫妻，但現在離婚了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "22"
     },
     {
       "japanese": "若者",
@@ -857,7 +1125,19 @@
           "plain": "最近の若者はスマホをよく使います。",
           "chinese": "最近的年輕人常使用智慧型手機。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "23"
     },
     {
       "japanese": "～湖",
@@ -868,7 +1148,19 @@
           "plain": "琵琶湖は日本で一番大きい湖です。",
           "chinese": "琵琶湖是日本最大的湖。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "24"
     },
     {
       "japanese": "深い",
@@ -879,7 +1171,19 @@
           "plain": "この湖はとても深いです。",
           "chinese": "這座湖非常深。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "25"
     },
     {
       "japanese": "さまざま[な]",
@@ -908,7 +1212,19 @@
         }
       ],
       "examplesTitle": "例句與補充說明",
-      "grammarNote": " 補充：いろいろ是さまざま的近義表現，較常用於日常會話。"
+      "grammarNote": " 補充：いろいろ是さまざま的近義表現，較常用於日常會話。",
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "26"
     },
     {
       "japanese": "苦しい（生活が～）",
@@ -919,7 +1235,19 @@
           "plain": "息が苦しいので、少し休みます。",
           "chinese": "呼吸很難受，所以稍微休息一下。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "27"
     },
     {
       "japanese": "性格",
@@ -930,7 +1258,19 @@
           "plain": "彼女は明るい性格です。",
           "chinese": "她個性開朗。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "28"
     },
     {
       "japanese": "人気者",
@@ -941,7 +1281,19 @@
           "plain": "彼はクラスの人気者です。",
           "chinese": "他是班上的紅人。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "29"
     },
     {
       "japanese": "多く",
@@ -964,7 +1316,19 @@
           "plain": "参加者の多くが女性だった。",
           "chinese": "參加者大多是女性。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "30"
     },
     {
       "japanese": "不安[な]",
@@ -975,7 +1339,19 @@
           "plain": "初めての一人旅で不安です。",
           "chinese": "第一次獨自旅行，心裡很不安。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "31"
     },
     {
       "japanese": "出る（製品が～）",
@@ -986,7 +1362,19 @@
           "plain": "新しいモデルが来月出ます。",
           "chinese": "新款型號下個月上市。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "32"
     },
     {
       "japanese": "雷",
@@ -997,7 +1385,19 @@
           "plain": "昨夜は雷が鳴っていました。",
           "chinese": "昨晚一直在打雷。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "33"
     },
     {
       "japanese": "うち（＊うちの子ども）",
@@ -1008,7 +1408,19 @@
           "plain": "うちの会社では日本語を使います。",
           "chinese": "我們公司使用日語。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "34"
     },
     {
       "japanese": "残念[な]",
@@ -1019,7 +1431,19 @@
           "plain": "試合が中止になって残念です。",
           "chinese": "比賽取消了，真可惜。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "35"
     },
     {
       "japanese": "認める",
@@ -1037,7 +1461,19 @@
           "plain": "彼は自分の失敗を認めない。",
           "chinese": "他不承認自己的失敗。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "36"
     },
     {
       "japanese": "現実",
@@ -1048,7 +1484,19 @@
           "plain": "夢を現実にしたいです。",
           "chinese": "我想讓夢想成真。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "37"
     },
     {
       "japanese": "愛する",
@@ -1059,7 +1507,19 @@
           "plain": "彼は故郷を深く愛しています。",
           "chinese": "他深愛自己的故鄉。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "38"
     },
     {
       "japanese": "首都",
@@ -1070,7 +1530,19 @@
           "plain": "東京は日本の首都です。",
           "chinese": "東京是日本的首都。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "39"
     },
     {
       "japanese": "伝言",
@@ -1081,7 +1553,19 @@
           "plain": "田中さんに伝言をお願いできますか。",
           "chinese": "可以請您幫我傳話給田中先生嗎？"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "40"
     },
     {
       "japanese": "留守番電話",
@@ -1092,7 +1576,19 @@
           "plain": "留守番電話にメッセージを残しました。",
           "chinese": "我在語音信箱裡留下了訊息。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "86",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "41"
     },
     {
       "japanese": "メッセージ",
@@ -1103,7 +1599,19 @@
           "plain": "留守番電話にメッセージを残しました。",
           "chinese": "我在語音信箱裡留下了訊息。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "42"
     },
     {
       "japanese": "受ける（伝言を～）",
@@ -1114,7 +1622,19 @@
           "plain": "受付の人が伝言を受けました。",
           "chinese": "櫃檯人員代收了留言。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "43"
     },
     {
       "japanese": "入れる（メッセージを～）",
@@ -1129,7 +1649,19 @@
           "plain": "留守電に伝言を入れておきます。",
           "chinese": "我會先在語音信箱留下口信。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "44"
     },
     {
       "japanese": "差し上げる（電話を～）",
@@ -1140,7 +1672,19 @@
           "plain": "確認してから、こちらからお電話を差し上げます。",
           "chinese": "確認後由我們打電話給您。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "45"
     },
     {
       "japanese": "そのように",
@@ -1151,7 +1695,19 @@
           "plain": "担当者にそのように伝えます。",
           "chinese": "我會照您說的轉告負責人。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "46"
     },
     {
       "japanese": "出る（電話に～）",
@@ -1162,7 +1718,19 @@
           "plain": "今、部長は電話に出ています。",
           "chinese": "部長現在正在接電話。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "47"
     },
     {
       "japanese": "急[な]",
@@ -1173,7 +1741,19 @@
           "plain": "急な仕事が入って、行けなくなりました。",
           "chinese": "臨時有緊急工作，所以不能去了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "48"
     },
     {
       "japanese": "入る（仕事が～）",
@@ -1201,7 +1781,19 @@
           "plain": "急な仕事が入ったので、カラオケに行けそうもありません。",
           "chinese": "臨時有工作，所以恐怕沒辦法去唱卡拉 OK。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "49"
     },
     {
       "japanese": "取り消す",
@@ -1224,7 +1816,19 @@
           "plain": "先週出した申請書を取り消したいんですが。",
           "chinese": "我想撤回上週提出的申請書。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "50"
     },
     {
       "japanese": "来客中",
@@ -1235,7 +1839,19 @@
           "plain": "社長はただ今、来客中です。",
           "chinese": "社長現在正在接待客人。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "51"
     },
     {
       "japanese": "食パン",
@@ -1246,7 +1862,19 @@
           "plain": "朝は食パンを二枚食べます。",
           "chinese": "早上吃兩片吐司。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "52"
     },
     {
       "japanese": "売り切れ",
@@ -1257,7 +1885,19 @@
           "plain": "人気の商品はもう売り切れです。",
           "chinese": "熱門商品已經售完了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "53"
     },
     {
       "japanese": "バーゲンセール",
@@ -1268,7 +1908,19 @@
           "plain": "デパートでバーゲンセールが始まりました。",
           "chinese": "百貨公司的特賣活動開始了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "54"
     },
     {
       "japanese": "案内状",
@@ -1279,7 +1931,19 @@
           "plain": "同窓会の案内状が届きました。",
           "chinese": "收到了同學會的通知函。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "55"
     },
     {
       "japanese": "～状（招待～）",
@@ -1290,7 +1954,19 @@
           "plain": "結婚式の招待状を送りました。",
           "chinese": "寄出了婚禮邀請函。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "56"
     },
     {
       "japanese": "遠い（電話が～）",
@@ -1301,7 +1977,19 @@
           "plain": "すみません、少し電話が遠いようです。",
           "chinese": "不好意思，電話聲音好像有點聽不清楚。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "57"
     },
     {
       "japanese": "～嫌い",
@@ -1324,7 +2012,19 @@
           "plain": "部長はプライドが高くて、部下の話を聞かない嫌いがある。",
           "chinese": "部長自尊心很強，有不聽部下意見的毛病。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "58"
     },
     {
       "japanese": "時代",
@@ -1335,7 +2035,19 @@
           "plain": "時代とともに生活も変わります。",
           "chinese": "生活也會隨著時代改變。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "59"
     },
     {
       "japanese": "順に",
@@ -1346,7 +2058,19 @@
           "plain": "名前を順に呼びます。",
           "chinese": "我會依序點名。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "60"
     },
     {
       "japanese": "失礼[な]",
@@ -1364,7 +2088,19 @@
           "plain": "お先に失礼します。",
           "chinese": "我先告辭了。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "61"
     },
     {
       "japanese": "勧める",
@@ -1387,7 +2123,19 @@
           "plain": "今度の司会は、山田さんを薦めます。",
           "chinese": "下次主持人我推薦山田先生。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "62"
     },
     {
       "japanese": "腹を立てる",
@@ -1405,7 +2153,19 @@
           "plain": "彼女は彼のうそに腹を立てた。",
           "chinese": "她因他的謊言而生氣。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "63"
     },
     {
       "japanese": "味わう",
@@ -1423,7 +2183,19 @@
           "plain": "若い頃、いろいろな苦労を味わった。",
           "chinese": "年輕時經歷了各種辛苦。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "64"
     },
     {
       "japanese": "つなぐ",
@@ -1441,7 +2213,19 @@
           "plain": "言葉は世界中の人々をつなぐ。",
           "chinese": "語言把世界各地的人連結起來。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "65"
     },
     {
       "japanese": "エピソード",
@@ -1452,7 +2236,19 @@
           "plain": "子供のころのエピソードを話しました。",
           "chinese": "談了小時候的一段故事。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "66"
     },
     {
       "japanese": "大嫌い",
@@ -1463,7 +2259,19 @@
           "plain": "私はうそをつく人が大嫌いです。",
           "chinese": "我最討厭說謊的人。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "67"
     },
     {
       "japanese": "大～（～好き／～嫌い）",
@@ -1474,7 +2282,19 @@
           "plain": "この歌手は若者に大人気です。",
           "chinese": "這位歌手非常受年輕人歡迎。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "68"
     },
     {
       "japanese": "しつこい",
@@ -1492,7 +2312,19 @@
           "plain": "今年の風邪は本当にしつこくて、治るのに時間がかかった。",
           "chinese": "今年的感冒很難纏，花了很久才痊癒。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "69"
     },
     {
       "japanese": "全員",
@@ -1503,7 +2335,19 @@
           "plain": "参加者は全員そろいました。",
           "chinese": "參加者已經全員到齊。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "70"
     },
     {
       "japanese": "数日",
@@ -1514,7 +2358,19 @@
           "plain": "返事まで数日かかります。",
           "chinese": "回覆需要幾天時間。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "71"
     },
     {
       "japanese": "親せき",
@@ -1525,7 +2381,19 @@
           "plain": "お正月に親戚が集まりました。",
           "chinese": "新年時親戚們聚在一起。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "72"
     },
     {
       "japanese": "接続する",
@@ -1536,7 +2404,19 @@
           "plain": "パソコンをインターネットに接続します。",
           "chinese": "把電腦連接到網路。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "73"
     },
     {
       "japanese": "申し出る",
@@ -1554,7 +2434,19 @@
           "plain": "店に商品の返品を申し出たいと思います。",
           "chinese": "我想向店家提出退貨。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "74"
     },
     {
       "japanese": "結局",
@@ -1575,7 +2467,19 @@
         }
       ],
       "examplesTitle": "例句與補充說明",
-      "grammarNote": " 補充：結局是副詞，著重最後的結論；結果是名詞，常接動詞た形／名詞＋の。"
+      "grammarNote": " 補充：結局是副詞，著重最後的結論；結果是名詞，常接動詞た形／名詞＋の。",
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "75"
     },
     {
       "japanese": "早速",
@@ -1592,7 +2496,19 @@
         }
       ],
       "examplesTitle": "例句與補充說明",
-      "grammarNote": " 補充：帶有期待並毫不拖延地立刻行動的語感。"
+      "grammarNote": " 補充：帶有期待並毫不拖延地立刻行動的語感。",
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "76"
     },
     {
       "japanese": "そば",
@@ -1603,7 +2519,19 @@
           "plain": "いつも家族がそばにいてくれます。",
           "chinese": "家人總是陪在我身邊。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "77"
     },
     {
       "japanese": "取り付ける",
@@ -1614,7 +2542,19 @@
           "plain": "玄関に新しいカメラを取り付けました。",
           "chinese": "在玄關安裝了新的攝影機。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "78"
     },
     {
       "japanese": "出席者",
@@ -1625,7 +2565,19 @@
           "plain": "会議の出席者は十人です。",
           "chinese": "會議的出席者有十人。"
         }
-      ]
+      ],
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "79"
     },
     {
       "japanese": "料金",
@@ -1654,7 +2606,19 @@
         }
       ],
       "examplesTitle": "例句與補充說明",
-      "grammarNote": " 補充：料金是服務的規定費用；～料如入場料；～費多為某類開銷；～代指具體項目費用；～金常指交易或約定款項。"
+      "grammarNote": " 補充：料金是服務的規定費用；～料如入場料；～費多為某類開銷；～代指具體項目費用；～金常指交易或約定款項。",
+      "classroom": {
+        "kind": "text",
+        "textbookPage": "87",
+        "priorityReviewed": false,
+        "textReview": {
+          "status": "pending"
+        },
+        "readingReview": {
+          "status": "partial"
+        }
+      },
+      "id": "80"
     }
   ],
   "supplementalSections": [
@@ -1671,7 +2635,18 @@
           "jpRuby": "IMCでございます。",
           "jpPlain": "IMCでございます。",
           "zh": "這裡是IMC。",
-          "grammarNote": "でございます是です的鄭重說法，常用於接聽商務電話。"
+          "grammarNote": "でございます是です的鄭重說法，常用於接聽商務電話。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-2",
@@ -1679,7 +2654,18 @@
           "jpRuby": "パワー<ruby>電気<rt>でんき</rt></ruby>のシュミットと<ruby>申<rt>もう</rt></ruby>しますが、<ruby>松本部長<rt>まつもとぶちょう</rt></ruby>はいらっしゃいますか。",
           "jpPlain": "パワー電気のシュミットと申しますが、松本部長はいらっしゃいますか。",
           "zh": "我是Power電氣的施密特，請問松本部長在嗎？",
-          "grammarNote": "と申します是と言います的自謙語；いらっしゃいます是います的尊敬語。"
+          "grammarNote": "と申します是と言います的自謙語；いらっしゃいます是います的尊敬語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-3",
@@ -1697,7 +2683,30 @@
               "chinese": "啊，平時承蒙您照顧。不巧，松本正在出差。①提供解答：あいにく。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p98-4",
@@ -1705,7 +2714,18 @@
           "jpRuby": "そうですか。いつごろお<ruby>帰<rt>かえ</rt></ruby>りになりますか。",
           "jpPlain": "そうですか。いつごろお帰りになりますか。",
           "zh": "是嗎？大約什麼時候回來呢？",
-          "grammarNote": "お＋動詞ます形去ます＋になります表示尊敬：お帰りになります。"
+          "grammarNote": "お＋動詞ます形去ます＋になります表示尊敬：お帰りになります。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-5",
@@ -1713,7 +2733,18 @@
           "jpRuby": "<ruby>明日<rt>あす</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>です。<ruby>戻<rt>もど</rt></ruby>りましたら、こちらからお<ruby>電話<rt>でんわ</rt></ruby><ruby>差<rt>さ</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げましょうか。",
           "jpPlain": "明日の午後の予定です。戻りましたら、こちらからお電話差し上げましょうか。",
           "zh": "預計明天下午回來。他回來後，要不要由我們這邊打電話給您？",
-          "grammarNote": "～ましたら表示完成後；お電話差し上げる是打電話給對方的鄭重說法。"
+          "grammarNote": "～ましたら表示完成後；お電話差し上げる是打電話給對方的鄭重說法。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-6",
@@ -1731,7 +2762,30 @@
               "chinese": "不用。那個，不好意思，可以請您代為轉告嗎？②恐れ入りますが；③伝言、お願いできますか。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p98-7",
@@ -1739,7 +2793,18 @@
           "jpRuby": "はい。どうぞ。",
           "jpPlain": "はい。どうぞ。",
           "zh": "好的，請說。",
-          "grammarNote": "どうぞ在此邀請對方說明留言內容。"
+          "grammarNote": "どうぞ在此邀請對方說明留言內容。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-8",
@@ -1747,7 +2812,18 @@
           "jpRuby": "<ruby>私<rt>わたくし</rt></ruby>、あさっての<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>会<rt>あ</rt></ruby>いすることになっていましたが、<ruby>都合<rt>つごう</rt></ruby>で<ruby>急<rt>きゅう</rt></ruby>に<ruby>１週間<rt>いっしゅうかん</rt></ruby>ほど<ruby>帰国<rt>きこく</rt></ruby>することになりまして……。",
           "jpPlain": "私、あさっての金曜日、部長にお会いすることになっていましたが、都合で急に１週間ほど帰国することになりまして……。",
           "zh": "我原本安排後天星期五與部長見面，但臨時有事，必須回國大約一週……。",
-          "grammarNote": "お会いする是会う的自謙語；ことになっていました表示原定安排；まして保留後續語意。"
+          "grammarNote": "お会いする是会う的自謙語；ことになっていました表示原定安排；まして保留後續語意。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-9",
@@ -1755,7 +2831,18 @@
           "jpRuby": "はい。",
           "jpPlain": "はい。",
           "zh": "是。",
-          "grammarNote": "回應表示正在聽對方說話。"
+          "grammarNote": "回應表示正在聽對方說話。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-10",
@@ -1773,7 +2860,30 @@
               "chinese": "非常抱歉，可以請您照這樣轉告嗎？④提供解答：お伝えいただけますか。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p98-11",
@@ -1791,7 +2901,30 @@
               "chinese": "好的。也就是後天星期五變得不方便了，對吧？⑤提供解答：ということですね。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p98-12",
@@ -1799,7 +2932,18 @@
           "jpRuby": "はい。",
           "jpPlain": "はい。",
           "zh": "是的。",
-          "grammarNote": "肯定對方確認的內容。"
+          "grammarNote": "肯定對方確認的內容。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-13",
@@ -1807,7 +2951,18 @@
           "jpRuby": "かしこまりました。",
           "jpPlain": "かしこまりました。",
           "zh": "明白了。",
-          "grammarNote": "比わかりました更鄭重，適用商務及服務場合。"
+          "grammarNote": "比わかりました更鄭重，適用商務及服務場合。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-14",
@@ -1815,7 +2970,18 @@
           "jpRuby": "よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。<ruby>失礼<rt>しつれい</rt></ruby>します。",
           "jpPlain": "よろしくお願いいたします。失礼します。",
           "zh": "麻煩您了。那我先告辭。",
-          "grammarNote": "お願いいたします比お願いします更鄭重；失礼します是結束電話的禮貌用語。"
+          "grammarNote": "お願いいたします比お願いします更鄭重；失礼します是結束電話的禮貌用語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p98-15",
@@ -1823,7 +2989,18 @@
           "jpRuby": "<ruby>失礼<rt>しつれい</rt></ruby>いたします。",
           "jpPlain": "失礼いたします。",
           "zh": "失禮了。",
-          "grammarNote": "いたします是します的自謙語。"
+          "grammarNote": "いたします是します的自謙語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -1840,7 +3017,18 @@
           "jpRuby": "ただいま<ruby>電話<rt>でんわ</rt></ruby>に出ることができません。メッセージをどうぞ。",
           "jpPlain": "ただいま電話に出ることができません。メッセージをどうぞ。",
           "zh": "現在無法接聽電話，請留言。",
-          "grammarNote": "電話に出る＝接電話；動詞辭書形＋ことができません表示無法做某事。"
+          "grammarNote": "電話に出る＝接電話；動詞辭書形＋ことができません表示無法做某事。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "99",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p99-2",
@@ -1848,7 +3036,18 @@
           "jpRuby": "わたし、けい子。<ruby>今日<rt>きょう</rt></ruby>ね、<ruby>急<rt>きゅう</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っちゃって、<ruby>遅<rt>おそ</rt></ruby>くなりそうなの。<ruby>晩ご飯<rt>ばんごはん</rt></ruby>、<ruby>先<rt>さき</rt></ruby>に<ruby>食<rt>た</rt></ruby>べといて。じゃね。",
           "jpPlain": "わたし、けい子。今日ね、急な仕事が入っちゃって、遅くなりそうなの。晩ご飯、先に食べといて。じゃね。",
           "zh": "是我，惠子。今天臨時有工作，可能會晚回去。晚飯你先吃。再見。",
-          "grammarNote": "入っちゃって＝入ってしまって；食べといて＝食べておいて；なりそう表示看起來可能變成。"
+          "grammarNote": "入っちゃって＝入ってしまって；食べといて＝食べておいて；なりそう表示看起來可能變成。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "99",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p99-3",
@@ -1856,7 +3055,18 @@
           "jpRuby": "このままでよろしければ１を、<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>したい<ruby>場合<rt>ばあい</rt></ruby>は２を<ruby>押<rt>お</rt></ruby>してください。",
           "jpPlain": "このままでよろしければ１を、取り消したい場合は２を押してください。",
           "zh": "若維持此內容請按1；若要取消請按2。",
-          "grammarNote": "よろしければ是よければ的鄭重說法；～たい場合は表示想做某事時。"
+          "grammarNote": "よろしければ是よければ的鄭重說法；～たい場合は表示想做某事時。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "99",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p99-4",
@@ -1864,7 +3074,18 @@
           "jpRuby": "ただいまのメッセージをお<ruby>預<rt>あず</rt></ruby>かりしました。",
           "jpPlain": "ただいまのメッセージをお預かりしました。",
           "zh": "已為您保留剛才的留言。",
-          "grammarNote": "お預かりしました是預かりました的鄭重說法。"
+          "grammarNote": "お預かりしました是預かりました的鄭重說法。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "99",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -1881,7 +3102,18 @@
           "jpRuby": "<ruby>発音<rt>はつおん</rt></ruby>やイントネーションに<ruby>注意<rt>ちゅうい</rt></ruby>して、CDのとおりに<ruby>言<rt>い</rt></ruby>ってみましょう。",
           "jpPlain": "発音やイントネーションに注意して、CDのとおりに言ってみましょう。",
           "zh": "注意發音與語調，試著照CD的說法練習。",
-          "grammarNote": "～に注意して表示留意某項內容；～のとおりに＝按照；言ってみましょう＝試著說說看。"
+          "grammarNote": "～に注意して表示留意某項內容；～のとおりに＝按照；言ってみましょう＝試著說說看。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "99",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -1898,7 +3130,18 @@
           "jpRuby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>19<rt>じゅうきゅう</rt></ruby>で<ruby>結婚<rt>けっこん</rt></ruby>して、<ruby>９人<rt>きゅうにん</rt></ruby>の<ruby>子ども<rt>こども</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てて、<ruby>99<rt>きゅうじゅうきゅう</rt></ruby>で<ruby>亡<rt>な</rt></ruby>くなった。 → <ruby>彼<rt>かれ</rt></ruby>は<ruby>19<rt>じゅうきゅう</rt></ruby>で<ruby>結婚<rt>けっこん</rt></ruby>し、<ruby>９人<rt>きゅうにん</rt></ruby>の<ruby>子ども<rt>こども</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>て、<ruby>99<rt>きゅうじゅうきゅう</rt></ruby>で<ruby>亡<rt>な</rt></ruby>くなった。",
           "jpPlain": "彼は19で結婚して、９人の子どもを育てて、99で亡くなった。 → 彼は19で結婚し、９人の子どもを育て、99で亡くなった。",
           "zh": "他19歲結婚，養育了9個孩子，99歲過世。",
-          "grammarNote": "動詞て形改為ます形去掉ます的連用形：結婚して → 結婚し；育てて → 育て。"
+          "grammarNote": "動詞て形改為ます形去掉ます的連用形：結婚して → 結婚し；育てて → 育て。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p93-cont-1",
@@ -1916,7 +3159,30 @@
               "chinese": "他個性開朗又有幽默感，是班上的人氣人物。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p93-cont-2",
@@ -1934,7 +3200,30 @@
               "chinese": "地震毀損的建築物裡仍有許多人，似乎也有人受傷。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -1951,7 +3240,18 @@
           "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>は<ruby>友達<rt>ともだち</rt></ruby>が<ruby>持<rt>も</rt></ruby>っているのと<ruby>同<rt>おな</rt></ruby>じ<ruby>物<rt>もの</rt></ruby>を<ruby>欲<rt>ほ</rt></ruby>しがります。",
           "jpPlain": "子どもは友達が持っているのと同じ物を欲しがります。",
           "zh": "孩子想要跟朋友擁有的一樣的東西。",
-          "grammarNote": "欲しい → 欲しがる；「友達が持っているの」中的の代替物。 補充：欲しい→欲しがる；動詞ます形去掉「ます」＋たがる；い形容詞去「い」＋がる（怖い→怖がる）；な形容詞／感情詞幹＋がる（不安→不安がる、嫌→嫌がる）。持續狀態常用「～たがっている」，否定為「～たがらない／～たがりません」。通常不用來直接陳述自己的內心。"
+          "grammarNote": "欲しい → 欲しがる；「友達が持っているの」中的の代替物。 補充：欲しい→欲しがる；動詞ます形去掉「ます」＋たがる；い形容詞去「い」＋がる（怖い→怖がる）；な形容詞／感情詞幹＋がる（不安→不安がる、嫌→嫌がる）。持續狀態常用「～たがっている」，否定為「～たがらない／～たがりません」。通常不用來直接陳述自己的內心。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p93-garu-2",
@@ -1959,7 +3259,18 @@
           "jpRuby": "<ruby>母<rt>はは</rt></ruby>は<ruby>地震<rt>じしん</rt></ruby>のニュースを<ruby>聞<rt>き</rt></ruby>くと、とても<ruby>不安<rt>ふあん</rt></ruby>がります。",
           "jpPlain": "母は地震のニュースを聞くと、とても不安がります。",
           "zh": "母親一聽到地震新聞，就顯得非常不安。",
-          "grammarNote": "な形容詞不安（な）＋がる → 不安がる。"
+          "grammarNote": "な形容詞不安（な）＋がる → 不安がる。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p93-garu-3",
@@ -1967,7 +3278,18 @@
           "jpRuby": "<ruby>父<rt>ちち</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しい<ruby>製品<rt>せいひん</rt></ruby>が<ruby>出<rt>で</rt></ruby>ると、すぐに<ruby>買<rt>か</rt></ruby>いたがります。",
           "jpPlain": "父は新しい製品が出ると、すぐに買いたがります。",
           "zh": "父親一有新產品上市，就馬上想買。",
-          "grammarNote": "買います去掉ます＋たがる → 買いたがる。"
+          "grammarNote": "買います去掉ます＋たがる → 買いたがる。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p93-garu-4",
@@ -1975,7 +3297,18 @@
           "jpRuby": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>結婚<rt>けっこん</rt></ruby>したがらない<ruby>若者<rt>わかもの</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えています。",
           "jpPlain": "最近、結婚したがらない若者が増えています。",
           "zh": "最近，不想結婚的年輕人增加了。",
-          "grammarNote": "結婚したがる的否定為結婚したがらない；描述他人的意願。"
+          "grammarNote": "結婚したがる的否定為結婚したがらない；描述他人的意願。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -1992,7 +3325,18 @@
           "jpRuby": "<ruby>妹<rt>いもうと</rt></ruby>・<ruby>小<rt>ちい</rt></ruby>さいけがでも<ruby>痛<rt>いた</rt></ruby>い → <ruby>妹<rt>いもうと</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいけがでも<ruby>痛<rt>いた</rt></ruby>がります。",
           "jpPlain": "妹・小さいけがでも痛い → 妹は小さいけがでも痛がります。",
           "zh": "妹妹・即使小傷也覺得痛 → 妹妹即使受了小傷，也會喊痛。",
-          "grammarNote": "痛い去掉い＋がる → 痛がる。"
+          "grammarNote": "痛い去掉い＋がる → 痛がる。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p93-garu-q1",
@@ -2010,7 +3354,30 @@
               "chinese": "姐姐一聽到雷聲就顯得害怕。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p93-garu-q2",
@@ -2028,7 +3395,30 @@
               "chinese": "弟弟不願意洗澡。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p93-garu-q3",
@@ -2046,7 +3436,30 @@
               "chinese": "我家的孩子星期一不想去學校。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "93",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2090,7 +3503,18 @@
               "plain": "見て！あのワンちゃん、暴走しちゃって、帰りたがっていないね。",
               "chinese": "你看！那隻小狗到處亂跑，看來還不想回家呢。"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p94-gatte-2",
@@ -2098,7 +3522,18 @@
           "jpRuby": "<ruby>太郎君<rt>たろうくん</rt></ruby>は<ruby>試合<rt>しあい</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けて、とても<ruby>残念<rt>ざんねん</rt></ruby>がっていました。",
           "jpPlain": "太郎君は試合に負けて、とても残念がっていました。",
           "zh": "太郎輸了比賽，當時顯得非常遺憾。",
-          "grammarNote": "残念（な）＋がる；がっていました描述過去那段時間的感受。"
+          "grammarNote": "残念（な）＋がる；がっていました描述過去那段時間的感受。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p94-gatte-3",
@@ -2106,7 +3541,18 @@
           "jpRuby": "<ruby>娘<rt>むすめ</rt></ruby>は<ruby>歌手<rt>かしゅ</rt></ruby>になりたがっています。",
           "jpPlain": "娘は歌手になりたがっています。",
           "zh": "女兒想成為歌手。",
-          "grammarNote": "なります去掉ます＋たがっている → なりたがっている。"
+          "grammarNote": "なります去掉ます＋たがっている → なりたがっている。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2123,7 +3569,18 @@
           "jpRuby": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>恥<rt>は</rt></ruby>ずかしがっています。",
           "jpPlain": "男の人は恥ずかしがっています。",
           "zh": "那名男子正顯得害羞。",
-          "grammarNote": "恥ずかしい → 恥ずかしがっている；圖中男子回想唱歌的情境。"
+          "grammarNote": "恥ずかしい → 恥ずかしがっている；圖中男子回想唱歌的情境。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p94-picture-1",
@@ -2141,7 +3598,30 @@
               "chinese": "嬰兒想要喝奶。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p94-picture-2",
@@ -2159,7 +3639,30 @@
               "chinese": "狗想去散步。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p94-picture-3",
@@ -2177,7 +3680,30 @@
               "chinese": "狗不願意散步後回家。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "94",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2213,7 +3739,18 @@
               "plain": "今の若者は結婚しないということについて、どう思う？",
               "chinese": "對於現在的年輕人不結婚這件事，你怎麼看？（補充：「ということ」比單純「こと」更偏向解讀、探討或確認前面的整項內容。）"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p95-koto-2",
@@ -2221,7 +3758,18 @@
           "jpRuby": "この<ruby>島<rt>しま</rt></ruby>に<ruby>空港<rt>くうこう</rt></ruby>が<ruby>造<rt>つく</rt></ruby>られることについてどう<ruby>思<rt>おも</rt></ruby>いますか。",
           "jpPlain": "この島に空港が造られることについてどう思いますか。",
           "zh": "你對在這座島上興建機場這件事有什麼看法？",
-          "grammarNote": "動詞普通形＋こと＋について；造られる是造る的被動形。"
+          "grammarNote": "動詞普通形＋こと＋について；造られる是造る的被動形。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p95-koto-3",
@@ -2229,7 +3777,18 @@
           "jpRuby": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>出<rt>で</rt></ruby>て<ruby>一人<rt>ひとり</rt></ruby>で<ruby>生活<rt>せいかつ</rt></ruby>してみて、<ruby>現実<rt>げんじつ</rt></ruby>は<ruby>厳<rt>きび</rt></ruby>しいということを<ruby>知<rt>し</rt></ruby>った。",
           "jpPlain": "大学を出て一人で生活してみて、現実は厳しいということを知った。",
           "zh": "大學畢業後試著獨自生活，才知道現實很嚴酷這件事。",
-          "grammarNote": "句子＋ということを知る；生活してみる表示試著生活。"
+          "grammarNote": "句子＋ということを知る；生活してみる表示試著生活。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p95-koto-4",
@@ -2237,7 +3796,18 @@
           "jpRuby": "あなたをいちばん<ruby>愛<rt>あい</rt></ruby>しているのはご<ruby>両親<rt>りょうしん</rt></ruby>だということを<ruby>忘<rt>わす</rt></ruby>れないでください。",
           "jpPlain": "あなたをいちばん愛しているのはご両親だということを忘れないでください。",
           "zh": "請不要忘記，最愛你的人是你的父母。",
-          "grammarNote": "名詞述語保留だ＋ということ；忘れないでください表示請不要忘記。"
+          "grammarNote": "名詞述語保留だ＋ということ；忘れないでください表示請不要忘記。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2263,7 +3833,23 @@
               "ruby": "<ruby>富士山<rt>ふじさん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>で<ruby>最<rt>もっと</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>だということを<ruby>知<rt>し</rt></ruby>っていますか。",
               "chinese": "你知道富士山是日本最高的山這件事嗎？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p95-example",
@@ -2271,7 +3857,18 @@
           "jpRuby": "<ruby>京都<rt>きょうと</rt></ruby>は<ruby>昔<rt>むかし</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>の<ruby>首都<rt>しゅと</rt></ruby>だったということを<ruby>知<rt>し</rt></ruby>っていますか。",
           "jpPlain": "京都は昔、日本の首都だったということを知っていますか。",
           "zh": "你知道京都以前是日本首都這件事嗎？",
-          "grammarNote": "名詞述語的過去式だった＋ということ；知っていますか詢問是否知道。"
+          "grammarNote": "名詞述語的過去式だった＋ということ；知っていますか詢問是否知道。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "95",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2288,7 +3885,18 @@
           "jpRuby": "<ruby>朝<rt>あさ</rt></ruby>の<ruby>薬<rt>くすり</rt></ruby>、<ruby>飲ん<rt>のん</rt></ruby>だ？（ううん、まだ）\n…ううん、まだ<ruby>飲ん<rt>のん</rt></ruby>でない。",
           "jpPlain": "朝の薬、飲んだ？（ううん、まだ）\n…ううん、まだ飲んでない。",
           "zh": "早上的藥吃了嗎？（沒有，還沒）……沒有，還沒吃。",
-          "grammarNote": "「飲んでいない」口語省略「い」成「飲んでない」。"
+          "grammarNote": "「飲んでいない」口語省略「い」成「飲んでない」。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p90-short-1",
@@ -2306,7 +3914,30 @@
               "chinese": "嗯，昨天全部讀完了。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p90-short-2",
@@ -2324,7 +3955,30 @@
               "chinese": "嗯，請先做好咖哩／可以幫我先做好咖哩嗎？"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p90-short-3",
@@ -2342,7 +3996,30 @@
               "chinese": "沒有，不擠。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2359,7 +4036,18 @@
           "jpRuby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>朝礼<rt>ちょうれい</rt></ruby>で、<ruby>月<rt>つき</rt></ruby>に１<ruby>回<rt>かい</rt></ruby>「<ruby>最近<rt>さいきん</rt></ruby><ruby>思<rt>おも</rt></ruby>うこと」を<ruby>話<rt>はな</rt></ruby>させられます。",
           "jpPlain": "会社の朝礼で、月に１回「最近思うこと」を話させられます。",
           "zh": "在公司的晨會，每個月被要求談一次「最近的想法」。",
-          "grammarNote": "使役受身表示被要求做某事。話す → 話させられる；以「す」結尾的第一類動詞保留完整形式，不能縮成「話される」。 補充：受害者 A は／が＋指使者 B に＋使役受身形。表示 A 被 B 強迫做某事，通常帶有不情願或抱怨語氣。；ます形去ます，改成あ段音＋せられる；可縮成あ段音＋される，但原形以「す」結尾者不可縮略。；第二類：ます形去ます＋させられる；第三類：来させられる／させられる。沒有縮略形。"
+          "grammarNote": "使役受身表示被要求做某事。話す → 話させられる；以「す」結尾的第一類動詞保留完整形式，不能縮成「話される」。 補充：受害者 A は／が＋指使者 B に＋使役受身形。表示 A 被 B 強迫做某事，通常帶有不情願或抱怨語氣。；ます形去ます，改成あ段音＋せられる；可縮成あ段音＋される，但原形以「す」結尾者不可縮略。；第二類：ます形去ます＋させられる；第三類：来させられる／させられる。沒有縮略形。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p90-cause-2",
@@ -2367,7 +4055,18 @@
           "jpRuby": "<ruby>中学校<rt>ちゅうがっこう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったとき、<ruby>校歌<rt>こうか</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えさせられました。",
           "jpPlain": "中学校に入ったとき、校歌を覚えさせられました。",
           "zh": "進入國中時，被要求背校歌。",
-          "grammarNote": "覚える → 覚えさせられる：第二類動詞。"
+          "grammarNote": "覚える → 覚えさせられる：第二類動詞。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p90-cause-3",
@@ -2375,7 +4074,18 @@
           "jpRuby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったとき、<ruby>３か月間<rt>さんかげつかん</rt></ruby><ruby>敬語<rt>けいご</rt></ruby>の<ruby>練習<rt>れんしゅう</rt></ruby>をさせられました。",
           "jpPlain": "会社に入ったとき、３か月間敬語の練習をさせられました。",
           "zh": "進公司時，被要求練習了三個月的敬語。",
-          "grammarNote": "する → させられる；「３か月間」讀作「さんかげつかん」。"
+          "grammarNote": "する → させられる；「３か月間」讀作「さんかげつかん」。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p90-cause-4",
@@ -2383,7 +4093,18 @@
           "jpRuby": "<ruby>小学校<rt>しょうがっこう</rt></ruby>のとき、<ruby>本<rt>ほん</rt></ruby>を<ruby>読ん<rt>よん</rt></ruby>だあと、いつも<ruby>先生<rt>せんせい</rt></ruby>に<ruby>感想文<rt>かんそうぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>かされました。",
           "jpPlain": "小学校のとき、本を読んだあと、いつも先生に感想文を書かされました。",
           "zh": "小學時，讀完書後總是被老師要求寫讀後感。",
-          "grammarNote": "書く → 書かせられる → 書かされる；「先生に」標示要求我做事的人。"
+          "grammarNote": "書く → 書かせられる → 書かされる；「先生に」標示要求我做事的人。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2400,7 +4121,18 @@
           "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>のとき・<ruby>母<rt>はは</rt></ruby>\n→ <ruby>子ども<rt>こども</rt></ruby>のとき、<ruby>母<rt>はは</rt></ruby>に<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食べ<rt>たべ</rt></ruby>させられました。",
           "jpPlain": "子どものとき・母\n→ 子どものとき、母に野菜を食べさせられました。",
           "zh": "小時候・母親 → 小時候，被母親要求吃蔬菜。",
-          "grammarNote": "食べる → 食べさせられる。"
+          "grammarNote": "食べる → 食べさせられる。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p90-pr1-1",
@@ -2418,7 +4150,30 @@
               "chinese": "幼稚園時，父親要求我到外面玩。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p90-pr1-2",
@@ -2436,7 +4191,30 @@
               "chinese": "小學時，父母要求我學珠算。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p90-pr1-3",
@@ -2454,7 +4232,30 @@
               "chinese": "過年時，祖母要求我正坐問候。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "90",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2471,7 +4272,18 @@
           "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>のとき、<ruby>母<rt>はは</rt></ruby>に<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食べ<rt>たべ</rt></ruby>させられました。",
           "jpPlain": "子どものとき、母に野菜を食べさせられました。",
           "zh": "小時候，被母親要求吃蔬菜。",
-          "grammarNote": "圖片顯示母親與吃蔬菜的小孩；日文沿用90頁印刷範例。"
+          "grammarNote": "圖片顯示母親與吃蔬菜的小孩；日文沿用90頁印刷範例。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p91-pic-1",
@@ -2479,7 +4291,18 @@
           "jpRuby": "<ruby>幼稚園<rt>ようちえん</rt></ruby>のとき・<ruby>父<rt>ちち</rt></ruby>",
           "jpPlain": "幼稚園のとき・父",
           "zh": "幼稚園時・父親。圖片包含太陽、父親及孩子在外面活動的提示。",
-          "grammarNote": "沿用90頁第1題，參考作答見上一頁。"
+          "grammarNote": "沿用90頁第1題，參考作答見上一頁。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p91-pic-2",
@@ -2487,7 +4310,18 @@
           "jpRuby": "<ruby>小学校<rt>しょうがっこう</rt></ruby>のとき・<ruby>両親<rt>りょうしん</rt></ruby>",
           "jpPlain": "小学校のとき・両親",
           "zh": "小學時・父母。圖片顯示孩子想到電腦操作，父母在旁。",
-          "grammarNote": "沿用90頁第2題，圖片沒有印刷日文台詞。"
+          "grammarNote": "沿用90頁第2題，圖片沒有印刷日文台詞。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p91-pic-3",
@@ -2495,7 +4329,18 @@
           "jpRuby": "お<ruby>正月<rt>しょうがつ</rt></ruby>に・<ruby>祖母<rt>そぼ</rt></ruby>",
           "jpPlain": "お正月に・祖母",
           "zh": "過年時・祖母。圖片顯示孩子跪坐、祖母及年節擺設。",
-          "grammarNote": "沿用90頁第3題，圖片沒有印刷日文台詞。"
+          "grammarNote": "沿用90頁第3題，圖片沒有印刷日文台詞。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2512,7 +4357,18 @@
           "jpRuby": "<ruby>何<rt>なに</rt></ruby>かあったんですか。（<ruby>彼女<rt>かのじょ</rt></ruby>・２<ruby>時間<rt>じかん</rt></ruby>も待つ）\n…ええ。<ruby>彼女<rt>かのじょ</rt></ruby>に２<ruby>時間<rt>じかん</rt></ruby>も待たされたんです。",
           "jpPlain": "何かあったんですか。（彼女・２時間も待つ）\n…ええ。彼女に２時間も待たされたんです。",
           "zh": "發生什麼事了嗎？（女朋友・等了足足兩小時）……是的，被女朋友要求等了足足兩小時。",
-          "grammarNote": "待つ → 待たせられる → 待たされる；「も」強調時間長。"
+          "grammarNote": "待つ → 待たせられる → 待たされる；「も」強調時間長。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p91-pr2-1",
@@ -2530,7 +4386,30 @@
               "chinese": "是的，我被課長要求在KTV唱歌。"
             }
           ],
-          "answerSource": "pages/answers-106.jpg"
+          "answerSource": "pages/answers-106.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p91-pr2-2",
@@ -2548,7 +4427,30 @@
               "chinese": "是的，被前輩要求在操場跑步。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p91-pr2-3",
@@ -2566,7 +4468,30 @@
               "chinese": "是的，被妻子要求戒菸了。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2583,7 +4508,18 @@
           "jpRuby": "<ruby>子ども<rt>こども</rt></ruby>のとき、<ruby>規則<rt>きそく</rt></ruby>を<ruby>守<rt>まも</rt></ruby>らなかったり、いたずらをしたりしたら、だれにどんなことをさせられましたか。",
           "jpPlain": "子どものとき、規則を守らなかったり、いたずらをしたりしたら、だれにどんなことをさせられましたか。",
           "zh": "小時候，如果不守規則或惡作劇，會被誰要求做什麼？",
-          "grammarNote": "～たり、～たり：列舉行為；～たら：如果。依自己實際經驗回答，不限一種答案。"
+          "grammarNote": "～たり、～たり：列舉行為；～たら：如果。依自己實際經驗回答，不限一種答案。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p91-pr3-ex",
@@ -2591,7 +4527,18 @@
           "jpRuby": "<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れたら、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>立<rt>た</rt></ruby>たされました。",
           "jpPlain": "宿題を忘れたら、先生に立たされました。",
           "zh": "忘記作業時，被老師要求站著。",
-          "grammarNote": "立つ → 立たせられる → 立たされる；這是課本印刷範例。"
+          "grammarNote": "立つ → 立たせられる → 立たされる；這是課本印刷範例。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "91",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2623,7 +4570,18 @@
               "plain": "一番大切なのは家族である。",
               "chinese": "最重要的是家人。（補充：以正式書面語斷定主題。）"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p92-dearu-2",
@@ -2631,7 +4589,18 @@
           "jpRuby": "<ruby>20世紀<rt>にじゅっせいき</rt></ruby>は<ruby>戦争<rt>せんそう</rt></ruby>の<ruby>世紀<rt>せいき</rt></ruby>であった。<ruby>21世紀<rt>にじゅういっせいき</rt></ruby>は<ruby>平和<rt>へいわ</rt></ruby>であってほしい。",
           "jpPlain": "20世紀は戦争の世紀であった。21世紀は平和であってほしい。",
           "zh": "20世紀是戰爭的世紀。希望21世紀是和平的。",
-          "grammarNote": "過去為であった；であってほしい表示希望處於某種狀態。"
+          "grammarNote": "過去為であった；であってほしい表示希望處於某種狀態。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p92-dearu-3",
@@ -2639,7 +4608,18 @@
           "jpRuby": "<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>平和<rt>へいわ</rt></ruby>を<ruby>願って<rt>ねがって</rt></ruby>いるのである。",
           "jpPlain": "世界中の人々が平和を願っているのである。",
           "zh": "全世界的人們都在盼望和平。",
-          "grammarNote": "「のである」是「のだ／のです」的書面語，帶有解釋與強調的語氣。"
+          "grammarNote": "「のである」是「のだ／のです」的書面語，帶有解釋與強調的語氣。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2666,7 +4646,30 @@
               "chinese": "已依提供的解答本核對，三處改為「である／であった／のである」。"
             }
           ],
-          "answerSource": "pages/answers-107.jpg"
+          "answerSource": "pages/answers-107.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2683,7 +4686,18 @@
           "jpRuby": "<ruby>世界<rt>せかい</rt></ruby>の<ruby>若者<rt>わかもの</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まり、<ruby>環境問題<rt>かんきょうもんだい</rt></ruby>について<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>った。",
           "jpPlain": "世界の若者が集まり、環境問題について話し合った。",
           "zh": "世界各地的年輕人聚集起來，討論了環境問題。",
-          "grammarNote": "集まります去掉ます，成為集まり；以動詞連用形連接後句。 補充：正式文章為了減少重複的「て」，可用中止形連接句子。動詞用ます形去ます；い形容詞用～く；ない形用～なく；名詞與な形容詞用～で／～であり。中止形通常不放在句尾。"
+          "grammarNote": "集まります去掉ます，成為集まり；以動詞連用形連接後句。 補充：正式文章為了減少重複的「て」，可用中止形連接句子。動詞用ます形去ます；い形容詞用～く；ない形用～なく；名詞與な形容詞用～で／～であり。中止形通常不放在句尾。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p92-cont-2",
@@ -2691,7 +4705,18 @@
           "jpRuby": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>７月<rt>しちがつ</rt></ruby>の<ruby>摩周湖<rt>ましゅうこ</rt></ruby>は、<ruby>深<rt>ふか</rt></ruby>く、<ruby>青<rt>あお</rt></ruby>く、<ruby>静<rt>しず</rt></ruby>かで、<ruby>絵<rt>え</rt></ruby>のように<ruby>美<rt>うつく</rt></ruby>しかった。",
           "jpPlain": "北海道の７月の摩周湖は、深く、青く、静かで、絵のように美しかった。",
           "zh": "北海道七月的摩周湖深邃、湛藍、寧靜，像畫一般美麗。",
-          "grammarNote": "深い → 深く；青い → 青く；静かだ → 静かで。"
+          "grammarNote": "深い → 深く；青い → 青く；静かだ → 静かで。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p92-cont-3",
@@ -2699,7 +4724,18 @@
           "jpRuby": "<ruby>東京<rt>とうきょう</rt></ruby>にはさまざまな<ruby>国<rt>くに</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>住<rt>す</rt></ruby>んでおり、<ruby>外国語<rt>がいこくご</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く<ruby>機会<rt>きかい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
           "jpPlain": "東京にはさまざまな国の人が住んでおり、外国語を聞く機会が多い。",
           "zh": "東京住著來自各國的人，聽到外語的機會很多。",
-          "grammarNote": "住んでいる → 住んでおり：書面接續；おります去掉ます為おり。"
+          "grammarNote": "住んでいる → 住んでおり：書面接續；おります去掉ます為おり。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p92-cont-4",
@@ -2707,7 +4743,18 @@
           "jpRuby": "<ruby>若い<rt>わかい</rt></ruby>ころはお<ruby>金<rt>かね</rt></ruby>も<ruby>仕事<rt>しごと</rt></ruby>もなく、<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>苦<rt>くる</rt></ruby>しかった。しかし、<ruby>夢<rt>ゆめ</rt></ruby>があった。",
           "jpPlain": "若いころはお金も仕事もなく、生活は苦しかった。しかし、夢があった。",
           "zh": "年輕時既沒有錢也沒有工作，生活很辛苦。但是有夢想。",
-          "grammarNote": "ない → なく；「も…も」表示兩者都；しかし表示轉折。"
+          "grammarNote": "ない → なく；「も…も」表示兩者都；しかし表示轉折。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "92",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2723,7 +4770,19 @@
           "title": "話す・聞く：会話與留言練習",
           "pages": "97",
           "duration": "1:45",
-          "src": "../../assets/audio/lesson-04-track-14.mp3?v=2"
+          "src": "../../assets/audio/lesson-04-track-14.mp3?v=2",
+          "id": "item-001",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -2750,7 +4809,30 @@
               "ruby": "いいえ、<ruby>来<rt>こ</rt></ruby>ていません。",
               "chinese": "沒有，他沒來公司。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c1-q2",
@@ -2768,7 +4850,30 @@
               "ruby": "いいえ、しません。",
               "chinese": "不會。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c1-q3",
@@ -2786,7 +4891,30 @@
               "ruby": "いいえ、<ruby>会<rt>あ</rt></ruby>いません。",
               "chinese": "不會見面。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c1-e1",
@@ -2804,7 +4932,30 @@
               "ruby": "<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>伝言<rt>でんごん</rt></ruby>、<ruby>お願<rt>ねが</rt></ruby>いできますか。",
               "chinese": "不好意思，可以請您代為轉告嗎？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c1-e2",
@@ -2822,7 +4973,30 @@
               "ruby": "はい。あさっての<ruby>金曜日<rt>きんようび</rt></ruby>はご<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったということですね。",
               "chinese": "好的，也就是後天星期五不方便了，對吧？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "107",
+                "href": "pages/answers-107.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c2-q1",
@@ -2840,7 +5014,30 @@
               "ruby": "けい<ruby>子<rt>こ</rt></ruby>さんが、<ruby>今日<rt>きょう</rt></ruby><ruby>急<rt>きゅう</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>が<ruby>入<rt>い</rt></ruby>って<ruby>遅<rt>おそ</rt></ruby>くなりそうなので、<ruby>晩ご飯<rt>ばんごはん</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>食べ<rt>たべ</rt></ruby>るようにというメッセージを<ruby>入<rt>い</rt></ruby>れました。",
               "chinese": "惠子留言說，今天臨時有工作，可能晚回家，請先吃晚餐。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p97-c2-e1",
@@ -2858,7 +5055,30 @@
               "ruby": "<ruby>自分<rt>じぶん</rt></ruby>（メッセージを<ruby>入<rt>い</rt></ruby>れている<ruby>人<rt>ひと</rt></ruby>）の<ruby>名前<rt>なまえ</rt></ruby>を<ruby>言<rt>い</rt></ruby>いました。",
               "chinese": "說了自己的名字，也就是留言者的姓名。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "97",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2875,7 +5095,18 @@
           "jpRuby": "<ruby>山田<rt>やまだ</rt></ruby>さんはお<ruby>客<rt>きゃく</rt></ruby>さんと<ruby>話<rt>はな</rt></ruby>している（●：<ruby>部長<rt>ぶちょう</rt></ruby>）<br>●：<ruby>山田君<rt>やまだくん</rt></ruby>。<ruby>山田君<rt>やまだくん</rt></ruby>、いませんか。<br>○：あいにく<ruby>来客中<rt>らいきゃくちゅう</rt></ruby>なんですが、……。<br>●：ああ、そう。",
           "jpPlain": "山田さんはお客さんと話している。山田君。山田君、いませんか。あいにく来客中なんですが……。ああ、そう。",
           "zh": "例：山田正在接待客人。部長找山田時，以「あいにく～んですが」婉轉說明目前的情況。",
-          "grammarNote": "あいにく＋不方便的情況＋んですが：委婉告知對方無法滿足其期待。"
+          "grammarNote": "あいにく＋不方便的情況＋んですが：委婉告知對方無法滿足其期待。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "100",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p100-q1",
@@ -2893,7 +5124,30 @@
               "chinese": "很不巧，已經售完了……。（解答例）"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "100",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p100-q2",
@@ -2911,7 +5165,30 @@
               "chinese": "不巧，我只有一千圓鈔。（解答例）"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "100",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2928,7 +5205,18 @@
           "jpRuby": "○：ただいま<ruby>準備中<rt>じゅんびちゅう</rt></ruby>ですので、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、30<ruby>分<rt>ぷん</rt></ruby>ほどあとでいらっしゃっていただけませんか。<br>●：わかりました。",
           "jpPlain": "ただいま準備中ですので、恐れ入りますが、30分ほどあとでいらっしゃっていただけませんか。わかりました。",
           "zh": "例：餐廳目前正在準備，禮貌請客人大約三十分鐘後再來。",
-          "grammarNote": "理由＋ので、恐れ入りますが、～ていただけませんか：先說明原因，再鄭重提出請求。"
+          "grammarNote": "理由＋ので、恐れ入りますが、～ていただけませんか：先說明原因，再鄭重提出請求。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "101",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p101-q1",
@@ -2946,7 +5234,30 @@
               "chinese": "我們想寄特賣通知函，不好意思，可以請您把地址寫在這裡嗎？（解答例）"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "101",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p101-q2",
@@ -2964,7 +5275,30 @@
               "chinese": "喂，電話聲音不清楚，不好意思，可以請您大聲一點說嗎？（解答例）"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "101",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -2977,19 +5311,67 @@
       "items": [
         {
           "title": "1）",
-          "imageDesc": "圖中文字：IMC、松本。"
+          "imageDesc": "圖中文字：IMC、松本。",
+          "id": "item-001",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "title": "2）",
-          "imageDesc": "圖中文字：PM、IMC。"
+          "imageDesc": "圖中文字：PM、IMC。",
+          "id": "item-002",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "title": "3）",
-          "imageDesc": "圖中文字：1週間（いっしゅうかん）。"
+          "imageDesc": "圖中文字：1週間（いっしゅうかん）。",
+          "id": "item-003",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "title": "4）",
-          "imageDesc": "只有紅色×、日曆與人物圖示，沒有印刷台詞。"
+          "imageDesc": "只有紅色×、日曆與人物圖示，沒有印刷台詞。",
+          "id": "item-004",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -3006,7 +5388,18 @@
           "jpRuby": "<ruby>電話<rt>でんわ</rt></ruby>をかけましたが、<ruby>相手<rt>あいて</rt></ruby>はいませんでした。",
           "jpPlain": "電話をかけましたが、相手はいませんでした。",
           "zh": "打了電話，但對方不在。",
-          "grammarNote": "～ましたが：雖然做了前項動作，但出現後項結果。"
+          "grammarNote": "～ましたが：雖然做了前項動作，但出現後項結果。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "103",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p103-q1",
@@ -3028,7 +5421,23 @@
               "plain": "はい、かしこまりました。お子さんが熱を出したので、今日は学校を休ませるということですね。",
               "chinese": "好的，明白了。也就是孩子發燒，所以今天要讓他請假，對吧？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "103",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p103-q2",
@@ -3045,7 +5454,23 @@
               "plain": "○○です。今晩帰るのが遅くなりそうなので、先に晩ご飯を食べていてください。",
               "chinese": "我是○○。今晚可能會晚回家，所以請你們先吃晚飯。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "103",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3062,7 +5487,18 @@
           "jpRuby": "<ruby>気持<rt>きも</rt></ruby>ちの<ruby>変化<rt>へんか</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えながら<ruby>読<rt>よ</rt></ruby>む",
           "jpPlain": "気持ちの変化を考えながら読む。",
           "zh": "一邊思考心情的變化，一邊閱讀。",
-          "grammarNote": "動詞ます形＋ながら：一邊做～，一邊做～。"
+          "grammarNote": "動詞ます形＋ながら：一邊做～，一邊做～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "104",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p104-q1",
@@ -3079,7 +5515,30 @@
               "chinese": "最早的是⑤，之後依序為②、①、④，最後是行動電話③。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "104",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p104-q2",
@@ -3096,7 +5555,23 @@
               "plain": "私は電話が好きです。離れている家族や友達とすぐに話せるからです。",
               "chinese": "我喜歡電話，因為能立刻和遠方的家人或朋友交談。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "104",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3121,7 +5596,30 @@
               "chinese": "手をつないで：牽著手。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q2",
@@ -3137,7 +5635,30 @@
               "chinese": "断ってしまった：拒絕了。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q3",
@@ -3153,7 +5674,30 @@
               "chinese": "寂しさを味わっています：正在體會寂寞。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q4",
@@ -3169,7 +5713,30 @@
               "chinese": "腹を立てて：生氣地。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q5",
@@ -3185,7 +5752,30 @@
               "chinese": "勧めてくれた：為我提出建議。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q6",
@@ -3201,7 +5791,30 @@
               "chinese": "便利さ：方便、便利之處。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p105-q7",
@@ -3217,7 +5830,30 @@
               "chinese": "失礼だ：不禮貌。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "105",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3354,7 +5990,19 @@
               "chinese": "已為您保留剛才的留言。",
               "note": "「お預かりしました」是「預かりました」的鄭重說法。"
             }
-          ]
+          ],
+          "id": "item-001",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "98",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -3369,7 +6017,19 @@
           "title": "読む：電話嫌い",
           "pages": "106",
           "duration": "2:01",
-          "src": "../../assets/audio/lesson-04-track-15.mp3?v=2"
+          "src": "../../assets/audio/lesson-04-track-15.mp3?v=2",
+          "id": "item-001",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -3402,7 +6062,19 @@
               "chinese": "小時候被迫做過的事情中，最討厭的是什麼？",
               "note": "「させられた」是「する」的使役受身，表示被迫去做。"
             }
-          ]
+          ],
+          "id": "item-001",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "track": "17",
@@ -3519,7 +6191,19 @@
               "chinese": "知道了，請多保重。",
               "note": "「お大事に」用於關心生病或受傷的人。"
             }
-          ]
+          ],
+          "id": "item-002",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ],
       "notice": "CD16、CD17逐句原音與文字已依提供的解答本核對；題目與答案放在下方，不另重複列出整段會話。<a href=\"pages/answers-109.jpg\" target=\"_blank\" rel=\"noopener\">查看解答本109頁</a>。"
@@ -3546,7 +6230,30 @@
               "chinese": "我認為不好。因為孩子會以為只要想要，任何東西都會有人買給他。（解答例）"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-cd16-q2",
@@ -3563,7 +6270,30 @@
               "chinese": "明明想看電視，卻被要求早點睡。（解答例）"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-cd17-memo1",
@@ -3579,7 +6309,30 @@
               "chinese": "依CD17會話內容整理。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-cd17-memo2",
@@ -3595,14 +6348,48 @@
               "chinese": "依CD17會話內容簡要記錄：小川因感冒，今天的練習請假。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-q3-example",
           "topic": "3. 例",
           "jpRuby": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>彼<rt>かれ</rt></ruby>から<ruby>電話<rt>でんわ</rt></ruby>が<ruby>来<rt>こ</rt></ruby>ないと、（<ruby>寂<rt>さび</rt></ruby>しがり）ます。<br><ruby>選択肢<rt>せんたくし</rt></ruby>：<ruby>不安<rt>ふあん</rt></ruby>な／<ruby>寂<rt>さび</rt></ruby>しい／<ruby>悔<rt>くや</rt></ruby>しい／<ruby>知<rt>し</rt></ruby>りたい／<ruby>留学<rt>りゅうがく</rt></ruby>したい／<ruby>出<rt>で</rt></ruby>かけたい",
           "jpPlain": "彼女は彼から電話が来ないと、寂しがります。選択肢。不安な、寂しい、悔しい、知りたい、留学したい、出かけたい。",
-          "zh": "示例：她接不到男朋友的電話時會顯得寂寞。請從選項選詞並改成描述第三人稱情感或願望的形式。"
+          "zh": "示例：她接不到男朋友的電話時會顯得寂寞。請從選項選詞並改成描述第三人稱情感或願望的形式。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p109-q3-1",
@@ -3618,7 +6405,30 @@
               "chinese": "完整句：悔しがります（顯得懊悔）。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-q3-2",
@@ -3634,7 +6444,30 @@
               "chinese": "完整句：不安がっています（顯得很不安）。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p109-q3-3",
@@ -3650,7 +6483,30 @@
               "chinese": "完整句：出かけたがりません（不想出門）。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "109",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3675,7 +6531,30 @@
               "chinese": "完整句：留学したがっています（顯得想留學）。"
             }
           ],
-          "answerSource": "pages/answers-109.jpg"
+          "answerSource": "pages/answers-109.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "109",
+                "href": "pages/answers-109.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p110-q3-5",
@@ -3691,7 +6570,30 @@
               "chinese": "完整句：知りたがります（什麼都想知道）。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p110-q4",
@@ -3708,7 +6610,30 @@
               "chinese": "依序為九個動詞的使役被動形。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p110-q5",
@@ -3725,14 +6650,48 @@
               "chinese": "解答本列的是填入部分。完整形式：作らされる、洗濯させられる／洗わされる／準備させられる、持たされる、行かされる。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p110-q6-example",
           "topic": "6. 次のように書き換えてください｜例",
           "jpRuby": "<ruby>次<rt>つぎ</rt></ruby>のように<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えてください。<br><ruby>例<rt>れい</rt></ruby>：<ruby>彼<rt>かれ</rt></ruby>は<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>った。<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>った。<ruby>本<rt>ほん</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた。<br>→ <ruby>彼<rt>かれ</rt></ruby>は<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>り、<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>り、<ruby>本<rt>ほん</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた。",
           "jpPlain": "次のように書き換えてください。例。彼は世界中の山に登った。写真を撮った。本を書いた。彼は世界中の山に登り、写真を撮り、本を書いた。",
-          "zh": "把數個句子以書面中止形連接成一句。"
+          "zh": "把數個句子以書面中止形連接成一句。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p110-q6-1",
@@ -3748,7 +6707,30 @@
               "chinese": "這裡夏天涼爽、交通也方便，是適合居住的地方。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p110-q6-2",
@@ -3764,7 +6746,30 @@
               "chinese": "東京匯集世界各地的資訊，人與物一天24小時都在流動。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "110",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3790,7 +6795,30 @@
               "chinese": "把「だ」改為「である」，並用書面中止形「なり」連接。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "111",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p111-q8",
@@ -3806,7 +6834,30 @@
               "chinese": "依序填入：に、と、に、を、に。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "111",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p111-q9",
@@ -3822,7 +6873,30 @@
               "chinese": "①立刻，②不巧，③最後／結果。"
             }
           ],
-          "answerSource": "pages/answers-110.jpg"
+          "answerSource": "pages/answers-110.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "110",
+                "href": "pages/answers-110.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "111",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3847,7 +6921,23 @@
               "plain": "線",
               "chinese": "在指定文字下方畫線。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -3864,7 +6954,18 @@
           "jpRuby": "<ruby>電話嫌<rt>でんわぎら</rt></ruby>いと<ruby>言<rt>い</rt></ruby>われる<ruby>人<rt>ひと</rt></ruby>がいる。",
           "jpPlain": "電話嫌いと言われる人がいる。",
           "zh": "有人被稱為討厭電話的人。",
-          "grammarNote": "～と言われる：被稱為～。"
+          "grammarNote": "～と言われる：被稱為～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s02",
@@ -3872,7 +6973,18 @@
           "jpRuby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>作家<rt>さっか</rt></ruby>、<ruby>夏目漱石<rt>なつめそうせき</rt></ruby>、アメリカの<ruby>作家<rt>さっか</rt></ruby>、マーク・トウェイン、イギリスのH.G.ウェルズなども<ruby>電話<rt>でんわ</rt></ruby>が<ruby>嫌<rt>きら</rt></ruby>いだったようだ。",
           "jpPlain": "日本の作家、夏目漱石、アメリカの作家、マーク・トウェイン、イギリスのH.G.ウェルズなども電話が嫌いだったようだ。",
           "zh": "日本作家夏目漱石、美國作家馬克・吐溫、英國的H.G.威爾斯等人似乎也討厭電話。",
-          "grammarNote": "～ようだ：看來／似乎～。"
+          "grammarNote": "～ようだ：看來／似乎～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s03",
@@ -3880,7 +6992,18 @@
           "jpRuby": "<ruby>電話<rt>でんわ</rt></ruby>を<ruby>発明<rt>はつめい</rt></ruby>したグラハム・ベルと<ruby>作家<rt>さっか</rt></ruby>マーク・トウェインの<ruby>間<rt>あいだ</rt></ruby>にはおもしろいエピソードがある。",
           "jpPlain": "電話を発明したグラハム・ベルと作家マーク・トウェインの間にはおもしろいエピソードがある。",
           "zh": "發明電話的格雷厄姆・貝爾和作家馬克・吐溫之間有一段有趣的故事。",
-          "grammarNote": "AとBの間には～がある：A與B之間有～。"
+          "grammarNote": "AとBの間には～がある：A與B之間有～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s04",
@@ -3899,7 +7022,18 @@
               "plain": "性能がいいパソコンが欲しいです。→ 性能のいいパソコンが欲しいです。",
               "chinese": "我想要性能好的電腦。（補充：即使修飾句的述語是形容詞，主語的「が」也可換成「の」。）"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s05",
@@ -3922,7 +7056,18 @@
               "plain": "元カノは今誰といるのか、知りたくもない。",
               "chinese": "前女友現在和誰在一起，我一點也不想知道。"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s06",
@@ -3930,7 +7075,18 @@
           "jpRuby": "<ruby>失礼<rt>しつれい</rt></ruby>な<ruby>機械<rt>きかい</rt></ruby>である。",
           "jpPlain": "失礼な機械である。",
           "zh": "這是一種失禮的機器。",
-          "grammarNote": "である：文章體的「です」。"
+          "grammarNote": "である：文章體的「です」。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s07",
@@ -3938,7 +7094,18 @@
           "jpRuby": "いくら<ruby>断<rt>ことわ</rt></ruby>っても、しつこく<ruby>勧<rt>すす</rt></ruby>めるベルに<ruby>腹<rt>はら</rt></ruby>を<ruby>立<rt>た</rt></ruby>て、トウェインはある<ruby>文<rt>ぶん</rt></ruby>を<ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>発表<rt>はっぴょう</rt></ruby>した。",
           "jpPlain": "いくら断っても、しつこく勧めるベルに腹を立て、トウェインはある文を新聞に発表した。",
           "zh": "無論怎麼拒絕，貝爾仍糾纏著勸他使用；吐溫因此生氣，在報紙上發表了一段文字。",
-          "grammarNote": "いくら～ても：無論怎麼～也～；腹を立てる：生氣。"
+          "grammarNote": "いくら～ても：無論怎麼～也～；腹を立てる：生氣。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s08",
@@ -3946,7 +7113,18 @@
           "jpRuby": "「ハートフォードの<ruby>市民<rt>しみん</rt></ruby>には、いつものとおり、<ruby>全員<rt>ぜんいん</rt></ruby>にクリスマスカードを<ruby>送<rt>おく</rt></ruby>るが、ベルにだけは<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>送<rt>おく</rt></ruby>らない」と。",
           "jpPlain": "「ハートフォードの市民には、いつものとおり、全員にクリスマスカードを送るが、ベルにだけは絶対に送らない」と。",
           "zh": "他寫道：「我會像往常一樣寄聖誕卡給哈特福德的所有市民，但絕對不寄給貝爾。」",
-          "grammarNote": "～にだけは：唯獨對～；絶対に～ない：絕對不～。"
+          "grammarNote": "～にだけは：唯獨對～；絶対に～ない：絕對不～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s09",
@@ -3969,7 +7147,18 @@
               "plain": "うちを出たところに、うちの電話が鳴った。",
               "chinese": "剛離開家時，家裡的電話就響了。"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s10",
@@ -3977,7 +7166,18 @@
           "jpRuby": "トウェインが<ruby>葬式<rt>そうしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>できないのを<ruby>残念<rt>ざんねん</rt></ruby>がっていることを<ruby>知<rt>し</rt></ruby>ったベルは、すぐに、トウェインの<ruby>家<rt>いえ</rt></ruby>と<ruby>葬式<rt>そうしき</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われる<ruby>教会<rt>きょうかい</rt></ruby>を<ruby>電話<rt>でんわ</rt></ruby>で<ruby>接続<rt>せつぞく</rt></ruby>しようと<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>た。",
           "jpPlain": "トウェインが葬式に出席できないのを残念がっていることを知ったベルは、すぐに、トウェインの家と葬式が行われる教会を電話で接続しようと申し出た。",
           "zh": "貝爾得知吐溫因無法參加葬禮而感到遺憾，便立刻提議用電話連接吐溫家與舉行葬禮的教堂。",
-          "grammarNote": "～ようと申し出る：主動提出要做～。"
+          "grammarNote": "～ようと申し出る：主動提出要做～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s11",
@@ -3985,7 +7185,18 @@
           "jpRuby": "トウェインはなかなか「うん」と<ruby>言<rt>い</rt></ruby>わなかったが、<ruby>結局<rt>けっきょく</rt></ruby>、<ruby>無料<rt>むりょう</rt></ruby>だというので、つないでもらうことにした。",
           "jpPlain": "トウェインはなかなか「うん」と言わなかったが、結局、無料だというので、つないでもらうことにした。",
           "zh": "吐溫一直不肯答應，但最後聽說是免費的，便決定請貝爾接通電話。",
-          "grammarNote": "～てもらうことにした：決定請別人替自己做～。"
+          "grammarNote": "～てもらうことにした：決定請別人替自己做～。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s12",
@@ -3993,7 +7204,18 @@
           "jpRuby": "<ruby>早速<rt>さっそく</rt></ruby>、<ruby>電話機<rt>でんわき</rt></ruby>がトウェインのベッドのそばに<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>けられ、トウェインは<ruby>教会<rt>きょうかい</rt></ruby>にいる<ruby>出席者<rt>しゅっせきしゃ</rt></ruby>と<ruby>話<rt>はな</rt></ruby>すことができ、<ruby>電話<rt>でんわ</rt></ruby>の<ruby>便利<rt>べんり</rt></ruby>さを<ruby>味<rt>あじ</rt></ruby>わった。",
           "jpPlain": "早速、電話機がトウェインのベッドのそばに取り付けられ、トウェインは教会にいる出席者と話すことができ、電話の便利さを味わった。",
           "zh": "電話很快就被裝在吐溫床邊，他得以和教堂裡的葬禮出席者交談，體會到電話的便利。",
-          "grammarNote": "取り付けられる：被安裝；便利さを味わう：體會便利。"
+          "grammarNote": "取り付けられる：被安裝；便利さを味わう：體會便利。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "p106-s13",
@@ -4001,7 +7223,18 @@
           "jpRuby": "「<ruby>電話<rt>でんわ</rt></ruby>の<ruby>料金<rt>りょうきん</rt></ruby>は<ruby>払<rt>はら</rt></ruby>わせてください」とトウェインが<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>ると、ベルは「<ruby>料金<rt>りょうきん</rt></ruby>は<ruby>結構<rt>けっこう</rt></ruby>ですから、わたしにもクリスマスカードをください」と<ruby>答<rt>こた</rt></ruby>えた。",
           "jpPlain": "「電話の料金は払わせてください」とトウェインが申し出ると、ベルは「料金は結構ですから、わたしにもクリスマスカードをください」と答えた。",
           "zh": "吐溫提出「請讓我支付電話費」，貝爾回答：「費用就不用了，也請送我一張聖誕卡吧。」",
-          "grammarNote": "～させてください：請允許我做～；結構です：不用了。"
+          "grammarNote": "～させてください：請允許我做～；結構です：不用了。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "106",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -4028,7 +7261,30 @@
               "chinese": "按題目順序填寫；課本第一項已填1，解答本列出其餘6、4、5、3、2。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "107",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p107-q2",
@@ -4046,7 +7302,30 @@
               "chinese": "按題目順序填寫；課本第一項已填1，解答本列出其餘4、5、2、3。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "107",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p107-q3",
@@ -4064,7 +7343,30 @@
               "chinese": "因為會被迫聽不想聽的聲音，並在不想說話時與不想交談的人說話。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "107",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p107-q4",
@@ -4082,7 +7384,30 @@
               "chinese": "即使不在現場，也能與想交談的人說話。"
             }
           ],
-          "answerSource": "pages/answers-108.jpg"
+          "answerSource": "pages/answers-108.jpg",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "108",
+                "href": "pages/answers-108.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "107",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -4107,7 +7432,23 @@
               "plain": "電話がなくなったら、急な連絡が難しくなり、家族や友達とすぐに話せなくなると思います。",
               "chinese": "如果沒有電話，緊急聯絡會變困難，也無法立刻和家人朋友交談。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "108",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "p108-q2",
@@ -4123,7 +7464,23 @@
               "plain": "以前、電話番号を間違えて、知らない人にかけてしまったことがあります。",
               "chinese": "以前曾撥錯號碼，打給了不認識的人。"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "suggested",
+            "sources": []
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "108",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ]
     },
@@ -4158,7 +7515,18 @@
               "ruby": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>では、<ruby>今年<rt>ことし</rt></ruby>の<ruby>社員旅行<rt>しゃいんりょこう</rt></ruby>は<ruby>中止<rt>ちゅうし</rt></ruby>になったということです。",
               "chinese": "根據部長的說法，今年的員工旅行取消了。（補充：「人の話では」用來指出消息來自某人的說法。）"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-2",
@@ -4181,7 +7549,18 @@
               "ruby": "<ruby>客<rt>きゃく</rt></ruby>：これは<ruby>先日<rt>せんじつ</rt></ruby>お<ruby>店<rt>みせ</rt></ruby>で<ruby>買<rt>か</rt></ruby>ったスカートですが、サイズが<ruby>小<rt>ちい</rt></ruby>さかったので、ワンサイズ<ruby>大<rt>おお</rt></ruby>きいのに<ruby>換<rt>か</rt></ruby>えたいんです。<br><ruby>店員<rt>てんいん</rt></ruby>：かしこまりました。MサイズからLサイズへ<ruby>変更<rt>へんこう</rt></ruby>されるということですね。",
               "chinese": "客人：這是前幾天在店裡買的裙子，但尺寸太小，我想換成大一號。店員：明白了，也就是要從 M 號換成 L 號，對吧？（補充：店員把客人的長篇說明整理成重點，再以「〜ということですね」確認。）"
             }
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-3",
@@ -4196,7 +7575,18 @@
           "dialoguePrompts": [
             "えっ、どうして中止(ちゅうし)になったんですか？",
             "残念(ざんねん)ですね。みんなで飲(の)みたかったのに。"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-4",
@@ -4214,7 +7604,29 @@
           ],
           "answerType": "verified",
           "answerSource": "pages/answers-106.jpg",
-          "examplesTitle": "提供解答（點擊展開）"
+          "examplesTitle": "提供解答（點擊展開）",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-5",
@@ -4232,7 +7644,29 @@
           ],
           "answerType": "verified",
           "answerSource": "pages/answers-106.jpg",
-          "examplesTitle": "提供解答（點擊展開）"
+          "examplesTitle": "提供解答（點擊展開）",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-6",
@@ -4247,7 +7681,18 @@
           "dialoguePrompts": [
             "はい、よろしくお願(ねが)いします。",
             "いつまで出張(しゅっちょう)される予定(よてい)ですか？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u1-7",
@@ -4273,7 +7718,30 @@
               "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンが<ruby>発表会<rt>はっぴょうかい</rt></ruby>を<ruby>担当<rt>たんとう</rt></ruby>することになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんが<ruby>発表会<rt>はっぴょうかい</rt></ruby>を<ruby>担当<rt>たんとう</rt></ruby>されるということですね。",
               "chinese": "王：不好意思，請轉告由我負責發表會。渡邊：明白了，也就是由您負責發表會，對吧？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "u1-8",
@@ -4299,7 +7767,30 @@
               "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンが<ruby>明日<rt>あした</rt></ruby>、<ruby>会場<rt>かいじょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くことになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんが<ruby>明日<rt>あした</rt></ruby>、<ruby>会場<rt>かいじょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>かれるということですね。",
               "chinese": "王：請轉告我明天會去會場。渡邊：明白了，您明天會去會場，對吧？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         },
         {
           "id": "u1-8c",
@@ -4319,7 +7810,30 @@
               "ruby": "ワン：すみませんが、<ruby>私<rt>わたし</rt></ruby>、ワンがそちらへ<ruby>行<rt>い</rt></ruby>く／うかがうことになったとお<ruby>伝<rt>つた</rt></ruby>えください。渡辺：かしこまりました。ワンさんがこちらへ<ruby>来<rt>こ</rt></ruby>られる／いらっしゃるということですね。",
               "chinese": "王：請轉告我會到您那邊。渡邊：明白了，也就是您會來我們這邊，對吧？"
             }
-          ]
+          ],
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "88",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            },
+            "examplesRole": "answer"
+          }
         }
       ],
       "chapter": "grammar"
@@ -4342,7 +7856,18 @@
           "dialoguePrompts": [
             "私(わたし)もN2を試(こころ)みようと思(おも)っています。",
             "一緒(いっしょ)に勉強(べんきょう)しませんか？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u2-2",
@@ -4357,7 +7882,18 @@
           "dialoguePrompts": [
             "大丈夫(だいじょうぶ)？一緒(いっしょ)にお母(かあ)さんを探(さが)そうか？",
             "迷子(まいご)になっちゃったの？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u2-3",
@@ -4373,7 +7909,18 @@
           "dialoguePrompts": [
             "すごくかわいい帽子(ぼうし)ですね！",
             "いくらでしたか？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u2-4",
@@ -4391,7 +7938,29 @@
             "熱(ねつ)はあるの？"
           ],
           "answerSource": "pages/answers-106.jpg",
-          "examplesTitle": "提供解答（點擊展開）"
+          "examplesTitle": "提供解答（點擊展開）",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u2-5",
@@ -4409,7 +7978,29 @@
             "気(き)をつけて行(い)ってきてね！"
           ],
           "answerSource": "pages/answers-106.jpg",
-          "examplesTitle": "提供解答（點擊展開）"
+          "examplesTitle": "提供解答（點擊展開）",
+          "answerEvidence": {
+            "status": "pending",
+            "sources": [
+              {
+                "kind": "answer-book",
+                "page": "106",
+                "href": "pages/answers-106.jpg",
+                "locator": "原有來源；尚待逐題复核"
+              }
+            ]
+          },
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ],
       "chapter": "grammar"
@@ -4432,7 +8023,18 @@
           "dialoguePrompts": [
             "ごめんね、静(しず)かにするね。",
             "もう一回(いっかい)寝(ね)られる？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u3-2",
@@ -4447,7 +8049,18 @@
           "dialoguePrompts": [
             "分(わか)かった。そのままにしておくね。",
             "ちょっと寒(さむ)くない？"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "u3-3",
@@ -4462,7 +8075,18 @@
           "dialoguePrompts": [
             "すごいね！週(しゅう)に何回(なんかい)走(はし)ってるの？",
             "私(わたし)も一緒(いっしょ)に走(はし)ろうかな。"
-          ]
+          ],
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "89",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ],
       "chapter": "grammar"
@@ -4480,7 +8104,18 @@
           "jpRuby": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>日本語教室<rt>にほんごきょうしつ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く<ruby>日<rt>ひ</rt></ruby>ですが、<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなりました。",
           "jpPlain": "今日は日本語教室へ行く日ですが、都合が悪くなりました。",
           "zh": "今天雖然是去日語教室的日子，但時間變得不方便了。",
-          "grammarNote": "都合が悪くなる：行程變得不方便；〜ですが：雖然……但是。"
+          "grammarNote": "都合が悪くなる：行程變得不方便；〜ですが：雖然……但是。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "96",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "intro-2",
@@ -4488,7 +8123,18 @@
           "jpRuby": "<ruby>休<rt>やす</rt></ruby>むことを<ruby>電話<rt>でんわ</rt></ruby>で<ruby>連絡<rt>れんらく</rt></ruby>します。",
           "jpPlain": "休むことを電話で連絡します。",
           "zh": "用電話聯繫，通知要請假這件事。",
-          "grammarNote": "動詞辭書形＋こと：把動作名詞化。"
+          "grammarNote": "動詞辭書形＋こと：把動作名詞化。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "96",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "intro-3",
@@ -4496,7 +8142,18 @@
           "jpRuby": "<ruby>先生<rt>せんせい</rt></ruby>はまだ<ruby>来<rt>き</rt></ruby>ていないので、<ruby>受付<rt>うけつけ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>伝言<rt>でんごん</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>んでください。",
           "jpPlain": "先生はまだ来ていないので、受付の人に伝言を頼んでください。",
           "zh": "因為老師還沒來，所以請拜託櫃檯人員轉達留言。",
-          "grammarNote": "人に伝言を頼む：拜託某人轉達留言。"
+          "grammarNote": "人に伝言を頼む：拜託某人轉達留言。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "96",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -4511,7 +8168,18 @@
           "jpRuby": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>山田<rt>やまだ</rt></ruby>さんと<ruby>約束<rt>やくそく</rt></ruby>がありますが、30<ruby>分<rt>ぷん</rt></ruby>ほど<ruby>遅<rt>おく</rt></ruby>れそうです。",
           "jpPlain": "友達の山田さんと約束がありますが、30分ほど遅れそうです。",
           "zh": "和朋友山田有約，但看起來會遲到大約30分鐘。",
-          "grammarNote": "動詞ます形去掉ます＋そうです：看起來可能會……。"
+          "grammarNote": "動詞ます形去掉ます＋そうです：看起來可能會……。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "96",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "intro-5",
@@ -4519,7 +8187,18 @@
           "jpRuby": "<ruby>山田<rt>やまだ</rt></ruby>さんの<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>は<ruby>留守番電話<rt>るすばんでんわ</rt></ruby>になっているので、メッセージを<ruby>入<rt>い</rt></ruby>れてください。",
           "jpPlain": "山田さんの携帯電話は留守番電話になっているので、メッセージを入れてください。",
           "zh": "因為山田的手機轉接到了語音信箱，所以請留下訊息。",
-          "grammarNote": "留守番電話：語音信箱；メッセージを入れる：留下訊息。"
+          "grammarNote": "留守番電話：語音信箱；メッセージを入れる：留下訊息。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "96",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     },
@@ -4536,7 +8215,18 @@
           "jpRuby": "IMCでございます。",
           "jpPlain": "IMCでございます。",
           "zh": "您好，這裡是 IMC。",
-          "grammarNote": "〜でございます是「です」的鄭重說法，常用於商務電話。"
+          "grammarNote": "〜でございます是「です」的鄭重說法，常用於商務電話。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-2",
@@ -4545,7 +8235,18 @@
           "jpRuby": "パワー<ruby>電気<rt>でんき</rt></ruby>のシュミットと<ruby>申<rt>もう</rt></ruby>しますが、<ruby>松本部長<rt>まつもとぶちょう</rt></ruby>はいらっしゃいますか。",
           "jpPlain": "パワー電気のシュミットと申しますが、松本部長はいらっしゃいますか。",
           "zh": "我是 Power 電氣的 Schmidt，請問松本部長在嗎？",
-          "grammarNote": "申します是「言います」的自謙語；いらっしゃいます是「います」的尊敬語。"
+          "grammarNote": "申します是「言います」的自謙語；いらっしゃいます是「います」的尊敬語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-3",
@@ -4554,7 +8255,18 @@
           "jpRuby": "あ、いつもお<ruby>世話<rt>せわ</rt></ruby>になっております。あいにく、<ruby>松本<rt>まつもと</rt></ruby>は<ruby>出張<rt>しゅっちょう</rt></ruby>しておりますが。",
           "jpPlain": "あ、いつもお世話になっております。あいにく、松本は出張しておりますが。",
           "zh": "啊，平時承蒙您的照顧。不巧，松本正在出差。",
-          "grammarNote": "對外談到自己公司的人，用姓名而不加職稱；「おります」是「います」的自謙語。"
+          "grammarNote": "對外談到自己公司的人，用姓名而不加職稱；「おります」是「います」的自謙語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-4",
@@ -4563,7 +8275,18 @@
           "jpRuby": "そうですか。いつごろお<ruby>帰<rt>かえ</rt></ruby>りになりますか。",
           "jpPlain": "そうですか。いつごろお帰りになりますか。",
           "zh": "這樣啊。請問他大概什麼時候回來呢？",
-          "grammarNote": "お帰りになります是「帰ります」的尊敬語。"
+          "grammarNote": "お帰りになります是「帰ります」的尊敬語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-5",
@@ -4572,7 +8295,18 @@
           "jpRuby": "<ruby>明日<rt>あす</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>です。<ruby>戻<rt>もど</rt></ruby>りましたら、こちらからお<ruby>電話<rt>でんわ</rt></ruby><ruby>差<rt>さ</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げましょうか。",
           "jpPlain": "明日の午後の予定です。戻りましたら、こちらからお電話差し上げましょうか。",
           "zh": "預計是明天下午。等他回來後，需要由我們這邊打電話給您嗎？",
-          "grammarNote": "お電話差し上げる：以自謙方式表示為對方打電話。"
+          "grammarNote": "お電話差し上げる：以自謙方式表示為對方打電話。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-6",
@@ -4581,7 +8315,18 @@
           "jpRuby": "いえ。あのう、<ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが、<ruby>伝言<rt>でんごん</rt></ruby>を<ruby>お願<rt>ねが</rt></ruby>いできますか。",
           "jpPlain": "いえ。あのう、恐れ入りますが、伝言をお願いできますか。",
           "zh": "不用。那個，不好意思，可以麻煩您轉告嗎？",
-          "grammarNote": "「恐れ入りますが」是提出請求前的客氣緩衝語。"
+          "grammarNote": "「恐れ入りますが」是提出請求前的客氣緩衝語。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-6a",
@@ -4590,7 +8335,18 @@
           "jpRuby": "はい。どうぞ。",
           "jpPlain": "はい。どうぞ。",
           "zh": "好的，請說。",
-          "grammarNote": "電話中用「どうぞ」表示請對方接著說明留言內容。"
+          "grammarNote": "電話中用「どうぞ」表示請對方接著說明留言內容。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-7",
@@ -4599,7 +8355,18 @@
           "jpRuby": "<ruby>私<rt>わたくし</rt></ruby>、あさっての<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>会<rt>あ</rt></ruby>いすることになっていましたが、<ruby>都合<rt>つごう</rt></ruby>で<ruby>急<rt>きゅう</rt></ruby>に1<ruby>週間<rt>いっしゅうかん</rt></ruby>ほど<ruby>帰国<rt>きこく</rt></ruby>することになりまして……。",
           "jpPlain": "私、あさっての金曜日、部長にお会いすることになっていましたが、都合で急に1週間ほど帰国することになりまして。",
           "zh": "我原本約好後天星期五要和部長見面，但因為私事突然要回國一週左右。",
-          "grammarNote": "ことになっていました表示原先已安排好的計畫；ことになりまして表示情況後來有所改變。"
+          "grammarNote": "ことになっていました表示原先已安排好的計畫；ことになりまして表示情況後來有所改變。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-8",
@@ -4608,7 +8375,18 @@
           "jpRuby": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、そのようにお<ruby>伝<rt>つた</rt></ruby>えいただけますか。",
           "jpPlain": "申し訳ありませんが、そのようにお伝えいただけますか。",
           "zh": "非常抱歉，能請您幫我這樣轉達嗎？",
-          "grammarNote": "お＋動詞ます形＋いただけますか：非常禮貌地請求對方做某事。"
+          "grammarNote": "お＋動詞ます形＋いただけますか：非常禮貌地請求對方做某事。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-9",
@@ -4617,7 +8395,18 @@
           "jpRuby": "はい。あさっての<ruby>金曜日<rt>きんようび</rt></ruby>はご<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったということですね。",
           "jpPlain": "はい。あさっての金曜日はご都合が悪くなったということですね。",
           "zh": "好的。也就是說，後天星期五您的時間變得不方便了，對嗎？",
-          "grammarNote": "〜ということですね：摘要並確認自己理解的內容。"
+          "grammarNote": "〜ということですね：摘要並確認自己理解的內容。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         },
         {
           "id": "business-10",
@@ -4626,9 +8415,21 @@
           "jpRuby": "はい。かしこまりました。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。<ruby>失礼<rt>しつれい</rt></ruby>します。<ruby>失礼<rt>しつれい</rt></ruby>いたします。",
           "jpPlain": "はい。かしこまりました。よろしくお願いいたします。失礼します。失礼いたします。",
           "zh": "是的。明白了。麻煩您了。那我先告辭。失禮了。",
-          "grammarNote": "「かしこまりました」是商務場合比「わかりました」更鄭重的說法；通話雙方以「失礼します／失礼いたします」禮貌結束電話。"
+          "grammarNote": "「かしこまりました」是商務場合比「わかりました」更鄭重的說法；通話雙方以「失礼します／失礼いたします」禮貌結束電話。",
+          "classroom": {
+            "kind": "text",
+            "textbookPage": "102",
+            "priorityReviewed": false,
+            "textReview": {
+              "status": "pending"
+            },
+            "readingReview": {
+              "status": "partial"
+            }
+          }
         }
       ]
     }
-  ]
+  ],
+  "classroomSpecVersion": 1
 }

@@ -274,7 +274,11 @@
           if (heading) heading.textContent = page.headingLabel;
         }
         if (items) {
-          section.querySelectorAll('.lesson-item').forEach((item) => { item.hidden = !items.has(item); });
+          section.querySelectorAll('.lesson-item').forEach((item) => {
+            // Reparented inline answers still belong to their original assignment.
+            if(item.dataset.classroomSection && item.dataset.classroomSection!==section.dataset.sectionId)return;
+            item.hidden = !items.has(item);
+          });
           setSectionSpeech(section, items);
           const heading = section.querySelector('.lesson-section-heading h3');
           if (heading) heading.textContent = page.headingLabel || page.label;
@@ -291,7 +295,9 @@
         try { localStorage.setItem(storageKey, page.key); } catch {}
         try { localStorage.setItem('japanese-ai-learning.last-read', JSON.stringify({ lessonId, pageKey: page.key })); } catch {}
       }
-      if (scroll) nav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // A sticky nav can already be at viewport top while the reader is far below it.
+      // Position the content root once, rather than scrolling that sticky element.
+      if (scroll) root.scrollIntoView({ behavior: 'instant', block: 'start' });
       if (changed && navigationRegistered) window.JapaneseLesson?._notifyLocation?.(locations[index], source);
       return true;
     }
@@ -321,6 +327,9 @@
       if (raw.startsWith('chapter-')) return pages.findIndex((page) => page.chapterId === raw.slice(8));
       const directPage = pages.findIndex((page) => page.key === raw);
       if (directPage >= 0) return directPage;
+      // Stable page-bearing item links remain page aliases after data cleanup.
+      const aliasPage = raw.startsWith('item-') && raw.match(/-page-(\d+)-/)?.[1];
+      if (aliasPage) return pages.findIndex((page) => page.key === aliasPage);
       const element = document.getElementById(raw);
       if (element) return indexFor(element);
       const section = sectionById.get(raw);
@@ -377,18 +386,24 @@
     nav.querySelector('[data-page-next]').onclick = () => setLocation(current + 1, { source: 'next' });
     select.onchange = () => setLocation(pages.findIndex((page) => page.key === select.value), { source: 'select' });
 
+    let returningHash = null;
     function followHash(event) {
+      if(event?.type==='popstate')returningHash=location.hash;
+      const returning=event?.type==='popstate'||(event?.type==='hashchange'&&returningHash===location.hash);
+      if(event?.type==='hashchange')returningHash=null;
+      // Stable item URLs are page aliases; returning uses browser scroll restoration.
+      const itemAlias = location.hash.startsWith('#item-');
       const hashIndex = indexFor(location.hash);
       let index = hashIndex;
       if (index < 0 && !location.hash && rememberPage) {
         try { index = pages.findIndex((page) => page.key === localStorage.getItem(storageKey)); } catch {}
       }
       if (index < 0) index = current >= 0 ? current : 0;
-      show(index, hashIndex >= 0 && location.hash.startsWith('#page-'), event?.type || 'initial');
+      show(index, hashIndex >= 0 && location.hash.startsWith('#page-') && !returning, event?.type || 'initial');
       if (hashIndex >= 0 && location.hash && !location.hash.startsWith('#page-')) {
         let id = location.hash.slice(1);
         try { id = decodeURIComponent(id); } catch {}
-        document.getElementById(id)?.scrollIntoView({ block: 'start' });
+        if (!itemAlias) document.getElementById(id)?.scrollIntoView({ block: 'start' });
       }
     }
     window.addEventListener('hashchange', followHash);

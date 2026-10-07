@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import { validateClassroom } from './classroom-validation.mjs';
 
 const root = process.cwd();
 const lessonsDir = path.join(root, 'lessons');
@@ -54,7 +55,7 @@ function normalizedLessonSections(file, data) {
     pageOrder: data.vocabularyPageOrder,
     items: data.vocabulary.map((entry, index) => ({
       ...(typeof entry === 'object' && entry ? entry : {}),
-      id: String(index + 1).padStart(2, '0')
+      id: entry.id || String(index + 1).padStart(2, '0')
     }))
   }] : [];
   const legacySections = data.hideLegacySections
@@ -316,6 +317,9 @@ function validateLesson(file, data) {
       errors.push(`${label}：section[${index}] 指向不存在的 chapter「${section.chapter}」`);
     }
   }
+  const classroom = validateClassroom(file, data);
+  errors.push(...classroom.errors);
+  warnings.push(...classroom.warnings);
   return { errors, warnings };
 }
 

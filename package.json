@@ -5,6 +5,8 @@
   "scripts": {
     "courses:validate": "node scripts/course-tools.mjs validate",
     "courses:index": "node scripts/course-tools.mjs index",
-    "courses:check": "node scripts/course-tools.mjs check"
+    "courses:check": "node scripts/course-tools.mjs check",
+    "classroom:check": "node scripts/classroom-check.mjs",
+    "release:check": "npm run courses:check && node scripts/speech-check.mjs && npm run classroom:check"
   }
 }
