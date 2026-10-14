@@ -564,19 +564,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 1・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 01"
+          "locator": "単語 1・印刷假名欄（非手寫）"
         }
       },
-      "id": "01"
+      "id": "01",
+      "jpRuby": "<ruby>検査<rt>けんさ</rt></ruby>する",
+      "jpPlain": "検査する",
+      "speechReading": "けんさする"
     },
     {
       "japanese": "明日",
@@ -593,19 +616,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 2・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 02"
+          "locator": "単語 2・印刷假名欄（非手寫）"
         }
       },
-      "id": "02"
+      "id": "02",
+      "jpRuby": "<ruby>明日<rt>あす</rt></ruby>",
+      "jpPlain": "明日",
+      "speechReading": "あす"
     },
     {
       "japanese": "能力",
@@ -622,19 +668,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 3・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 03"
+          "locator": "単語 3・印刷假名欄（非手寫）"
         }
       },
-      "id": "03"
+      "id": "03",
+      "jpRuby": "<ruby>能力<rt>のうりょく</rt></ruby>",
+      "jpPlain": "能力",
+      "speechReading": "のうりょく"
     },
     {
       "japanese": "バザー",
@@ -744,19 +813,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 7・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 07"
+          "locator": "単語 7・印刷假名欄（非手寫）"
         }
       },
-      "id": "07"
+      "id": "07",
+      "jpRuby": "<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>める",
+      "jpPlain": "目が覚める",
+      "speechReading": "めがさめる"
     },
     {
       "japanese": "朝礼",
@@ -773,19 +865,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 8・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 08"
+          "locator": "単語 8・印刷假名欄（非手寫）"
         }
       },
-      "id": "08"
+      "id": "08",
+      "jpRuby": "<ruby>朝礼<rt>ちょうれい</rt></ruby>",
+      "jpPlain": "朝礼",
+      "speechReading": "ちょうれい"
     },
     {
       "japanese": "校歌",
@@ -802,19 +917,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 9・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 09"
+          "locator": "単語 9・印刷假名欄（非手寫）"
         }
       },
-      "id": "09"
+      "id": "09",
+      "jpRuby": "<ruby>校歌<rt>こうか</rt></ruby>",
+      "jpPlain": "校歌",
+      "speechReading": "こうか"
     },
     {
       "japanese": "敬語",
@@ -831,19 +969,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 10・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 10"
+          "locator": "単語 10・印刷假名欄（非手寫）"
         }
       },
-      "id": "10"
+      "id": "10",
+      "jpRuby": "<ruby>敬語<rt>けいご</rt></ruby>",
+      "jpPlain": "敬語",
+      "speechReading": "けいご"
     },
     {
       "japanese": "感想文",
@@ -860,19 +1021,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 11・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 11"
+          "locator": "単語 11・印刷假名欄（非手寫）"
         }
       },
-      "id": "11"
+      "id": "11",
+      "jpRuby": "<ruby>感想文<rt>かんそうぶん</rt></ruby>",
+      "jpPlain": "感想文",
+      "speechReading": "かんそうぶん"
     },
     {
       "japanese": "運動場",
@@ -889,19 +1073,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 12・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 12"
+          "locator": "単語 12・印刷假名欄（非手寫）"
         }
       },
-      "id": "12"
+      "id": "12",
+      "jpRuby": "<ruby>運動場<rt>うんどうじょう</rt></ruby>",
+      "jpPlain": "運動場",
+      "speechReading": "うんどうじょう"
     },
     {
       "japanese": "いたずら",
@@ -953,19 +1160,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 14・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 14"
+          "locator": "単語 14・印刷假名欄（非手寫）"
         }
       },
-      "id": "14"
+      "id": "14",
+      "jpRuby": "<ruby>美<rt>うつく</rt></ruby>しい",
+      "jpPlain": "美しい",
+      "speechReading": "うつくしい"
     },
     {
       "japanese": "世紀",
@@ -982,19 +1212,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 15・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 15"
+          "locator": "単語 15・印刷假名欄（非手寫）"
         }
       },
-      "id": "15"
+      "id": "15",
+      "jpRuby": "<ruby>世紀<rt>せいき</rt></ruby>",
+      "jpPlain": "世紀",
+      "speechReading": "せいき"
     },
     {
       "japanese": "平和[な]",
@@ -1011,19 +1264,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 16・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 16"
+          "locator": "単語 16・印刷假名欄（非手寫）"
         }
       },
-      "id": "16"
+      "id": "16",
+      "jpRuby": "<ruby>平和<rt>へいわ</rt></ruby>[な]",
+      "jpPlain": "平和[な]",
+      "speechReading": "へいわな"
     },
     {
       "japanese": "人々",
@@ -1040,19 +1316,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 17・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 17"
+          "locator": "単語 17・印刷假名欄（非手寫）"
         }
       },
-      "id": "17"
+      "id": "17",
+      "jpRuby": "<ruby>人々<rt>ひとびと</rt></ruby>",
+      "jpPlain": "人々",
+      "speechReading": "ひとびと"
     },
     {
       "japanese": "願う",
@@ -1081,19 +1380,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 18・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 18"
+          "locator": "単語 18・印刷假名欄（非手寫）"
         }
       },
-      "id": "18"
+      "id": "18",
+      "jpRuby": "<ruby>願<rt>ねが</rt></ruby>う",
+      "jpPlain": "願う",
+      "speechReading": "ねがう"
     },
     {
       "japanese": "文",
@@ -1110,19 +1432,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 19・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 19"
+          "locator": "単語 19・印刷假名欄（非手寫）"
         }
       },
-      "id": "19"
+      "id": "19",
+      "jpRuby": "<ruby>文<rt>ぶん</rt></ruby>",
+      "jpPlain": "文",
+      "speechReading": "ぶん"
     },
     {
       "japanese": "書き換える",
@@ -1151,19 +1496,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 20・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 20"
+          "locator": "単語 20・印刷假名欄（非手寫）"
         }
       },
-      "id": "20"
+      "id": "20",
+      "jpRuby": "<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>える",
+      "jpPlain": "書き換える",
+      "speechReading": "かきかえる"
     },
     {
       "japanese": "合わせる",
@@ -1197,19 +1565,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 21・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 21"
+          "locator": "単語 21・印刷假名欄（非手寫）"
         }
       },
-      "id": "21"
+      "id": "21",
+      "jpRuby": "<ruby>合<rt>あ</rt></ruby>わせる",
+      "jpPlain": "合わせる",
+      "speechReading": "あわせる"
     },
     {
       "japanese": "もともと",
@@ -1266,19 +1657,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 23・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 23"
+          "locator": "単語 23・印刷假名欄（非手寫）"
         }
       },
-      "id": "23"
+      "id": "23",
+      "jpRuby": "<ruby>若者<rt>わかもの</rt></ruby>",
+      "jpPlain": "若者",
+      "speechReading": "わかもの"
     },
     {
       "japanese": "～湖",
@@ -1295,19 +1709,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 24・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 24"
+          "locator": "単語 24・印刷假名欄（非手寫）"
         }
       },
-      "id": "24"
+      "id": "24",
+      "jpRuby": "～<ruby>湖<rt>こ</rt></ruby>",
+      "jpPlain": "～湖",
+      "speechReading": "こ"
     },
     {
       "japanese": "深い",
@@ -1324,19 +1761,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 25・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 25"
+          "locator": "単語 25・印刷假名欄（非手寫）"
         }
       },
-      "id": "25"
+      "id": "25",
+      "jpRuby": "<ruby>深<rt>ふか</rt></ruby>い",
+      "jpPlain": "深い",
+      "speechReading": "ふかい"
     },
     {
       "japanese": "さまざま[な]",
@@ -1400,19 +1860,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 27・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 27"
+          "locator": "単語 27・印刷假名欄（非手寫）"
         }
       },
-      "id": "27"
+      "id": "27",
+      "jpRuby": "<ruby>苦<rt>くる</rt></ruby>しい（<ruby>生活<rt>せいかつ</rt></ruby>が～）",
+      "jpPlain": "苦しい（生活が～）",
+      "speechReading": "くるしい"
     },
     {
       "japanese": "性格",
@@ -1429,19 +1912,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 28・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 28"
+          "locator": "単語 28・印刷假名欄（非手寫）"
         }
       },
-      "id": "28"
+      "id": "28",
+      "jpRuby": "<ruby>性格<rt>せいかく</rt></ruby>",
+      "jpPlain": "性格",
+      "speechReading": "せいかく"
     },
     {
       "japanese": "人気者",
@@ -1458,19 +1964,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 29・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 29"
+          "locator": "単語 29・印刷假名欄（非手寫）"
         }
       },
-      "id": "29"
+      "id": "29",
+      "jpRuby": "<ruby>人気者<rt>にんきもの</rt></ruby>",
+      "jpPlain": "人気者",
+      "speechReading": "にんきもの"
     },
     {
       "japanese": "多く",
@@ -1499,19 +2028,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 30・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 30"
+          "locator": "単語 30・印刷假名欄（非手寫）"
         }
       },
-      "id": "30"
+      "id": "30",
+      "jpRuby": "<ruby>多<rt>おお</rt></ruby>く",
+      "jpPlain": "多く",
+      "speechReading": "おおく"
     },
     {
       "japanese": "不安[な]",
@@ -1528,19 +2080,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 31・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 31"
+          "locator": "単語 31・印刷假名欄（非手寫）"
         }
       },
-      "id": "31"
+      "id": "31",
+      "jpRuby": "<ruby>不安<rt>ふあん</rt></ruby>[な]",
+      "jpPlain": "不安[な]",
+      "speechReading": "ふあんな"
     },
     {
       "japanese": "出る（製品が～）",
@@ -1557,19 +2132,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 32・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 32"
+          "locator": "単語 32・印刷假名欄（非手寫）"
         }
       },
-      "id": "32"
+      "id": "32",
+      "jpRuby": "<ruby>出<rt>で</rt></ruby>る（<ruby>製品<rt>せいひん</rt></ruby>が～）",
+      "jpPlain": "出る（製品が～）",
+      "speechReading": "でる"
     },
     {
       "japanese": "雷",
@@ -1586,19 +2184,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 33・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 33"
+          "locator": "単語 33・印刷假名欄（非手寫）"
         }
       },
-      "id": "33"
+      "id": "33",
+      "jpRuby": "<ruby>雷<rt>かみなり</rt></ruby>",
+      "jpPlain": "雷",
+      "speechReading": "かみなり"
     },
     {
       "japanese": "うち（＊うちの子ども）",
@@ -1615,19 +2236,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 34・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 34"
+          "locator": "単語 34・印刷假名欄（非手寫）"
         }
       },
-      "id": "34"
+      "id": "34",
+      "jpRuby": "うち（＊うちの<ruby>子<rt>こ</rt></ruby>ども）",
+      "jpPlain": "うち（＊うちの子ども）",
+      "speechReading": "うち"
     },
     {
       "japanese": "残念[な]",
@@ -1644,19 +2288,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 35・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 35"
+          "locator": "単語 35・印刷假名欄（非手寫）"
         }
       },
-      "id": "35"
+      "id": "35",
+      "jpRuby": "<ruby>残念<rt>ざんねん</rt></ruby>[な]",
+      "jpPlain": "残念[な]",
+      "speechReading": "ざんねんな"
     },
     {
       "japanese": "認める",
@@ -1680,19 +2347,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 36・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 36"
+          "locator": "単語 36・印刷假名欄（非手寫）"
         }
       },
-      "id": "36"
+      "id": "36",
+      "jpRuby": "<ruby>認<rt>みと</rt></ruby>める",
+      "jpPlain": "認める",
+      "speechReading": "みとめる"
     },
     {
       "japanese": "現実",
@@ -1709,19 +2399,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 37・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 37"
+          "locator": "単語 37・印刷假名欄（非手寫）"
         }
       },
-      "id": "37"
+      "id": "37",
+      "jpRuby": "<ruby>現実<rt>げんじつ</rt></ruby>",
+      "jpPlain": "現実",
+      "speechReading": "げんじつ"
     },
     {
       "japanese": "愛する",
@@ -1738,19 +2451,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 38・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 38"
+          "locator": "単語 38・印刷假名欄（非手寫）"
         }
       },
-      "id": "38"
+      "id": "38",
+      "jpRuby": "<ruby>愛<rt>あい</rt></ruby>する",
+      "jpPlain": "愛する",
+      "speechReading": "あいする"
     },
     {
       "japanese": "首都",
@@ -1767,19 +2503,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 39・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 39"
+          "locator": "単語 39・印刷假名欄（非手寫）"
         }
       },
-      "id": "39"
+      "id": "39",
+      "jpRuby": "<ruby>首都<rt>しゅと</rt></ruby>",
+      "jpPlain": "首都",
+      "speechReading": "しゅと"
     },
     {
       "japanese": "伝言",
@@ -1796,19 +2555,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 40・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 40"
+          "locator": "単語 40・印刷假名欄（非手寫）"
         }
       },
-      "id": "40"
+      "id": "40",
+      "jpRuby": "<ruby>伝言<rt>でんごん</rt></ruby>",
+      "jpPlain": "伝言",
+      "speechReading": "でんごん"
     },
     {
       "japanese": "留守番電話",
@@ -1825,19 +2607,42 @@
         "textbookPage": "86",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "86",
+              "href": "pages/86.jpg",
+              "locator": "単語 41・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "86",
           "href": "pages/86.jpg",
-          "locator": "単語 41"
+          "locator": "単語 41・印刷假名欄（非手寫）"
         }
       },
-      "id": "41"
+      "id": "41",
+      "jpRuby": "<ruby>留守番電話<rt>るすばんでんわ</rt></ruby>",
+      "jpPlain": "留守番電話",
+      "speechReading": "るすばんでんわ"
     },
     {
       "japanese": "メッセージ",
@@ -1883,19 +2688,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 43・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 43"
+          "locator": "単語 43・印刷假名欄（非手寫）"
         }
       },
-      "id": "43"
+      "id": "43",
+      "jpRuby": "<ruby>受<rt>う</rt></ruby>ける（<ruby>伝言<rt>でんごん</rt></ruby>を～）",
+      "jpPlain": "受ける（伝言を～）",
+      "speechReading": "うける"
     },
     {
       "japanese": "入れる（メッセージを～）",
@@ -1916,19 +2744,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 44・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 44"
+          "locator": "単語 44・印刷假名欄（非手寫）"
         }
       },
-      "id": "44"
+      "id": "44",
+      "jpRuby": "<ruby>入<rt>い</rt></ruby>れる（メッセージを～）",
+      "jpPlain": "入れる（メッセージを～）",
+      "speechReading": "いれる"
     },
     {
       "japanese": "差し上げる（電話を～）",
@@ -1945,19 +2796,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 45・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 45"
+          "locator": "単語 45・印刷假名欄（非手寫）"
         }
       },
-      "id": "45"
+      "id": "45",
+      "jpRuby": "<ruby>差<rt>さ</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げる（<ruby>電話<rt>でんわ</rt></ruby>を～）",
+      "jpPlain": "差し上げる（電話を～）",
+      "speechReading": "さしあげる"
     },
     {
       "japanese": "そのように",
@@ -2003,19 +2877,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 47・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 47"
+          "locator": "単語 47・印刷假名欄（非手寫）"
         }
       },
-      "id": "47"
+      "id": "47",
+      "jpRuby": "<ruby>出<rt>で</rt></ruby>る（<ruby>電話<rt>でんわ</rt></ruby>に～）",
+      "jpPlain": "出る（電話に～）",
+      "speechReading": "でる"
     },
     {
       "japanese": "急[な]",
@@ -2032,19 +2929,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 48・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 48"
+          "locator": "単語 48・印刷假名欄（非手寫）"
         }
       },
-      "id": "48"
+      "id": "48",
+      "jpRuby": "<ruby>急<rt>きゅう</rt></ruby>[な]",
+      "jpPlain": "急[な]",
+      "speechReading": "きゅうな"
     },
     {
       "japanese": "入る（仕事が～）",
@@ -2078,19 +2998,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 49・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 49"
+          "locator": "単語 49・印刷假名欄（非手寫）"
         }
       },
-      "id": "49"
+      "id": "49",
+      "jpRuby": "<ruby>入<rt>はい</rt></ruby>る（<ruby>仕事<rt>しごと</rt></ruby>が～）",
+      "jpPlain": "入る（仕事が～）",
+      "speechReading": "はいる"
     },
     {
       "japanese": "取り消す",
@@ -2119,19 +3062,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 50・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 50"
+          "locator": "単語 50・印刷假名欄（非手寫）"
         }
       },
-      "id": "50"
+      "id": "50",
+      "jpRuby": "<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>す",
+      "jpPlain": "取り消す",
+      "speechReading": "とりけす"
     },
     {
       "japanese": "来客中",
@@ -2148,19 +3114,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 51・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 51"
+          "locator": "単語 51・印刷假名欄（非手寫）"
         }
       },
-      "id": "51"
+      "id": "51",
+      "jpRuby": "<ruby>来客中<rt>らいきゃくちゅう</rt></ruby>",
+      "jpPlain": "来客中",
+      "speechReading": "らいきゃくちゅう"
     },
     {
       "japanese": "食パン",
@@ -2177,19 +3166,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 52・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 52"
+          "locator": "単語 52・印刷假名欄（非手寫）"
         }
       },
-      "id": "52"
+      "id": "52",
+      "jpRuby": "<ruby>食<rt>しょく</rt></ruby>パン",
+      "jpPlain": "食パン",
+      "speechReading": "しょくパン"
     },
     {
       "japanese": "売り切れ",
@@ -2206,19 +3218,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 53・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 53"
+          "locator": "単語 53・印刷假名欄（非手寫）"
         }
       },
-      "id": "53"
+      "id": "53",
+      "jpRuby": "<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れ",
+      "jpPlain": "売り切れ",
+      "speechReading": "うりきれ"
     },
     {
       "japanese": "バーゲンセール",
@@ -2264,19 +3299,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 55・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 55"
+          "locator": "単語 55・印刷假名欄（非手寫）"
         }
       },
-      "id": "55"
+      "id": "55",
+      "jpRuby": "<ruby>案内状<rt>あんないじょう</rt></ruby>",
+      "jpPlain": "案内状",
+      "speechReading": "あんないじょう"
     },
     {
       "japanese": "～状（招待～）",
@@ -2293,19 +3351,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 56・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 56"
+          "locator": "単語 56・印刷假名欄（非手寫）"
         }
       },
-      "id": "56"
+      "id": "56",
+      "jpRuby": "～<ruby>状<rt>じょう</rt></ruby>（<ruby>招待<rt>しょうたい</rt></ruby>～）",
+      "jpPlain": "～状（招待～）",
+      "speechReading": "じょう"
     },
     {
       "japanese": "遠い（電話が～）",
@@ -2322,19 +3403,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 57・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 57"
+          "locator": "単語 57・印刷假名欄（非手寫）"
         }
       },
-      "id": "57"
+      "id": "57",
+      "jpRuby": "<ruby>遠<rt>とお</rt></ruby>い（<ruby>電話<rt>でんわ</rt></ruby>が～）",
+      "jpPlain": "遠い（電話が～）",
+      "speechReading": "とおい"
     },
     {
       "japanese": "～嫌い",
@@ -2363,19 +3467,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 58・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 58"
+          "locator": "単語 58・印刷假名欄（非手寫）"
         }
       },
-      "id": "58"
+      "id": "58",
+      "jpRuby": "～<ruby>嫌<rt>ぎら</rt></ruby>い",
+      "jpPlain": "～嫌い",
+      "speechReading": "ぎらい"
     },
     {
       "japanese": "時代",
@@ -2392,19 +3519,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 59・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 59"
+          "locator": "単語 59・印刷假名欄（非手寫）"
         }
       },
-      "id": "59"
+      "id": "59",
+      "jpRuby": "<ruby>時代<rt>じだい</rt></ruby>",
+      "jpPlain": "時代",
+      "speechReading": "じだい"
     },
     {
       "japanese": "順に",
@@ -2421,19 +3571,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 60・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 60"
+          "locator": "単語 60・印刷假名欄（非手寫）"
         }
       },
-      "id": "60"
+      "id": "60",
+      "jpRuby": "<ruby>順<rt>じゅん</rt></ruby>に",
+      "jpPlain": "順に",
+      "speechReading": "じゅんに"
     },
     {
       "japanese": "失礼[な]",
@@ -2457,19 +3630,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 61・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 61"
+          "locator": "単語 61・印刷假名欄（非手寫）"
         }
       },
-      "id": "61"
+      "id": "61",
+      "jpRuby": "<ruby>失礼<rt>しつれい</rt></ruby>[な]",
+      "jpPlain": "失礼[な]",
+      "speechReading": "しつれいな"
     },
     {
       "japanese": "勧める",
@@ -2498,19 +3694,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 62・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 62"
+          "locator": "単語 62・印刷假名欄（非手寫）"
         }
       },
-      "id": "62"
+      "id": "62",
+      "jpRuby": "<ruby>勧<rt>すす</rt></ruby>める",
+      "jpPlain": "勧める",
+      "speechReading": "すすめる"
     },
     {
       "japanese": "腹を立てる",
@@ -2534,19 +3753,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 63・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 63"
+          "locator": "単語 63・印刷假名欄（非手寫）"
         }
       },
-      "id": "63"
+      "id": "63",
+      "jpRuby": "<ruby>腹<rt>はら</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる",
+      "jpPlain": "腹を立てる",
+      "speechReading": "はらをたてる"
     },
     {
       "japanese": "味わう",
@@ -2570,19 +3812,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 64・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 64"
+          "locator": "単語 64・印刷假名欄（非手寫）"
         }
       },
-      "id": "64"
+      "id": "64",
+      "jpRuby": "<ruby>味<rt>あじ</rt></ruby>わう",
+      "jpPlain": "味わう",
+      "speechReading": "あじわう"
     },
     {
       "japanese": "つなぐ",
@@ -2664,19 +3929,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 67・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 67"
+          "locator": "単語 67・印刷假名欄（非手寫）"
         }
       },
-      "id": "67"
+      "id": "67",
+      "jpRuby": "<ruby>大嫌<rt>だいきら</rt></ruby>い",
+      "jpPlain": "大嫌い",
+      "speechReading": "だいきらい"
     },
     {
       "japanese": "大～（～好き／～嫌い）",
@@ -2693,19 +3981,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 68・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 68"
+          "locator": "単語 68・印刷假名欄（非手寫）"
         }
       },
-      "id": "68"
+      "id": "68",
+      "jpRuby": "<ruby>大<rt>だい</rt></ruby>～（～<ruby>好<rt>す</rt></ruby>き／～<ruby>嫌<rt>きら</rt></ruby>い）",
+      "jpPlain": "大～（～好き／～嫌い）",
+      "speechReading": "だい"
     },
     {
       "japanese": "しつこい",
@@ -2758,19 +4069,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 70・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 70"
+          "locator": "単語 70・印刷假名欄（非手寫）"
         }
       },
-      "id": "70"
+      "id": "70",
+      "jpRuby": "<ruby>全員<rt>ぜんいん</rt></ruby>",
+      "jpPlain": "全員",
+      "speechReading": "ぜんいん"
     },
     {
       "japanese": "数日",
@@ -2787,19 +4121,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 71・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 71"
+          "locator": "単語 71・印刷假名欄（非手寫）"
         }
       },
-      "id": "71"
+      "id": "71",
+      "jpRuby": "<ruby>数日<rt>すうじつ</rt></ruby>",
+      "jpPlain": "数日",
+      "speechReading": "すうじつ"
     },
     {
       "japanese": "親せき",
@@ -2816,19 +4173,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 72・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 72"
+          "locator": "単語 72・印刷假名欄（非手寫）"
         }
       },
-      "id": "72"
+      "id": "72",
+      "jpRuby": "<ruby>親<rt>しん</rt></ruby>せき",
+      "jpPlain": "親せき",
+      "speechReading": "しんせき"
     },
     {
       "japanese": "接続する",
@@ -2845,19 +4225,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 73・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 73"
+          "locator": "単語 73・印刷假名欄（非手寫）"
         }
       },
-      "id": "73"
+      "id": "73",
+      "jpRuby": "<ruby>接続<rt>せつぞく</rt></ruby>する",
+      "jpPlain": "接続する",
+      "speechReading": "せつぞくする"
     },
     {
       "japanese": "申し出る",
@@ -2881,19 +4284,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 74・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 74"
+          "locator": "単語 74・印刷假名欄（非手寫）"
         }
       },
-      "id": "74"
+      "id": "74",
+      "jpRuby": "<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る",
+      "jpPlain": "申し出る",
+      "speechReading": "もうしでる"
     },
     {
       "japanese": "結局",
@@ -2920,19 +4346,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 75・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 75"
+          "locator": "単語 75・印刷假名欄（非手寫）"
         }
       },
-      "id": "75"
+      "id": "75",
+      "jpRuby": "<ruby>結局<rt>けっきょく</rt></ruby>",
+      "jpPlain": "結局",
+      "speechReading": "けっきょく"
     },
     {
       "japanese": "早速",
@@ -2955,19 +4404,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 76・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 76"
+          "locator": "単語 76・印刷假名欄（非手寫）"
         }
       },
-      "id": "76"
+      "id": "76",
+      "jpRuby": "<ruby>早速<rt>さっそく</rt></ruby>",
+      "jpPlain": "早速",
+      "speechReading": "さっそく"
     },
     {
       "japanese": "そば",
@@ -3013,19 +4485,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 78・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 78"
+          "locator": "単語 78・印刷假名欄（非手寫）"
         }
       },
-      "id": "78"
+      "id": "78",
+      "jpRuby": "<ruby>取<rt>と</rt></ruby>り<ruby>付<rt>つ</rt></ruby>ける",
+      "jpPlain": "取り付ける",
+      "speechReading": "とりつける"
     },
     {
       "japanese": "出席者",
@@ -3042,19 +4537,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 79・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 79"
+          "locator": "単語 79・印刷假名欄（非手寫）"
         }
       },
-      "id": "79"
+      "id": "79",
+      "jpRuby": "<ruby>出席者<rt>しゅっせきしゃ</rt></ruby>",
+      "jpPlain": "出席者",
+      "speechReading": "しゅっせきしゃ"
     },
     {
       "japanese": "料金",
@@ -3089,19 +4607,42 @@
         "textbookPage": "87",
         "priorityReviewed": false,
         "textReview": {
-          "status": "pending"
+          "status": "photo-verified",
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "僅單語表記；下方既有補充例句非本頁印刷教材，未由此紀錄驗證。"
         },
         "readingReview": {
-          "status": "partial"
+          "status": "photo-verified",
+          "sources": [
+            {
+              "kind": "textbook",
+              "page": "87",
+              "href": "pages/87.jpg",
+              "locator": "単語 80・印刷假名欄（非手寫）"
+            }
+          ],
+          "review": {
+            "by": "Codex：逐項對照使用者提供的課本印刷假名",
+            "date": "2026-10-14",
+            "method": "比較86–87頁單語左欄假名及日文表記；不採鉛筆／羅馬字筆記。只核對單語與印刷搭配提示，不包含既有補充例句、音高或試聽。"
+          },
+          "note": "單語依印刷假名核對；播放單語本體（な形容詞含な），不朗讀括號搭配提示、波浪線或文法括號。未核對音高、補充例句或實際合成語音。"
         },
         "textSource": {
           "kind": "textbook",
           "page": "87",
           "href": "pages/87.jpg",
-          "locator": "単語 80"
+          "locator": "単語 80・印刷假名欄（非手寫）"
         }
       },
-      "id": "80"
+      "id": "80",
+      "jpRuby": "<ruby>料金<rt>りょうきん</rt></ruby>",
+      "jpPlain": "料金",
+      "speechReading": "りょうきん"
     }
   ],
   "supplementalSections": [
@@ -11319,7 +12860,7 @@
       "id": "page102-reference-dialogue",
       "type": "dialogue_lessons",
       "title": "102頁｜6. 会話をしましょう｜CD14 參考會話",
-      "notice": "第102頁只有四格圖片，以下句子依現有 CD14 真人音源整理，作為圖片會話的參考答案；不是印刷在第102頁的文字。",
+      "notice": "102頁只有四格圖片，以下保留既有CD14參考會話，文字參照98頁印刷對話；不是印刷在102頁的句子，也未完成CD14逐段聽核。核對狀態以各卡為準。",
       "items": [
         {
           "id": "business-1",
@@ -11341,9 +12882,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-1"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-1）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11367,9 +12908,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-2"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-2）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11393,9 +12934,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-3"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-3）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11419,9 +12960,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-4"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-4）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11445,9 +12986,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-5"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-5）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11471,9 +13012,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-6"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-6）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11497,9 +13038,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-6a"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-6a）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11507,8 +13048,8 @@
           "id": "business-7",
           "title": "3）說明原定計畫改變",
           "role": "シュミット",
-          "jpRuby": "<ruby>私<rt>わたくし</rt></ruby>、あさっての<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>会<rt>あ</rt></ruby>いすることになっていましたが、<ruby>都合<rt>つごう</rt></ruby>で<ruby>急<rt>きゅう</rt></ruby>に1<ruby>週間<rt>いっしゅうかん</rt></ruby>ほど<ruby>帰国<rt>きこく</rt></ruby>することになりまして……。",
-          "jpPlain": "私、あさっての金曜日、部長にお会いすることになっていましたが、都合で急に1週間ほど帰国することになりまして。",
+          "jpRuby": "<ruby>私<rt>わたし</rt></ruby>、あさっての<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>会<rt>あ</rt></ruby>いすることになっていましたが、<ruby>都合<rt>つごう</rt></ruby>で<ruby>急<rt>きゅう</rt></ruby>に<ruby>1週間<rt>いっしゅうかん</rt></ruby>ほど<ruby>帰国<rt>きこく</rt></ruby>することになりまして……。",
+          "jpPlain": "私、あさっての金曜日、部長にお会いすることになっていましたが、都合で急に1週間ほど帰国することになりまして……。",
           "zh": "我原本約好後天星期五要和部長見面，但因為私事突然要回國一週左右。",
           "grammarNote": "ことになっていました表示原先已安排好的計畫；ことになりまして表示情況後來有所改變。",
           "classroom": {
@@ -11516,16 +13057,22 @@
             "textbookPage": "102",
             "priorityReviewed": false,
             "textReview": {
-              "status": "pending"
+              "status": "photo-verified",
+              "review": {
+                "by": "Codex：對照98頁印刷對話",
+                "date": "2026-10-14",
+                "method": "逐字核對 business-7 與98頁同句，統一句尾省略號，保留102頁參考會話而非本頁原句的區分。"
+              }
             },
             "readingReview": {
-              "status": "partial"
+              "status": "partial",
+              "note": "私依98頁印刷注音修正為わたし；1週間合併為同一ruby，避免「1＋いっしゅうかん」的重複注音。缺件：完整數字讀法之教師或原音確認；未完成CD14逐段聽核與試聽。"
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-7"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・シュミット：私、あさっての金曜日…帰国することになりまして……。"
             }
           }
         },
@@ -11549,9 +13096,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-8"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-8）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11575,9 +13122,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-9"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-9）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         },
@@ -11601,9 +13148,9 @@
             },
             "textSource": {
               "kind": "textbook",
-              "page": "102",
-              "href": "pages/102.jpg",
-              "locator": "102頁｜6. 会話をしましょう｜CD14 參考會話／business-10"
+              "page": "98",
+              "href": "pages/98.jpg",
+              "locator": "会話1・102頁圖片會話參考（business-10）；部分用語整理，未核對者不宣稱逐字相符"
             }
           }
         }

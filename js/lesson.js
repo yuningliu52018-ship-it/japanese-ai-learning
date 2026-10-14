@@ -167,13 +167,38 @@ const japaneseLessonApi = typeof window !== 'undefined'
   ? (window.JapaneseLesson || (window.JapaneseLesson = createJapaneseLessonApi()))
   : createJapaneseLessonApi();
 
-function speechButton(text, label = '播放') {
+function chineseSpeechText(value = '') {
+  const text = plainText(value);
+  if (/^補充\s*[:：]/.test(text)) return '';
+  let result = '';
+  for (let i = 0; i < text.length;) {
+    if (text[i] === '（' || text[i] === '(') {
+      const stack = [text[i] === '（' ? '）' : ')'];
+      let end = i + 1;
+      while (end < text.length && stack.length) {
+        const char = text[end++];
+        if (char === '（' || char === '(') stack.push(char === '（' ? '）' : ')');
+        else if (char === stack.at(-1)) stack.pop();
+      }
+      if (!stack.length && /^\s*補充\s*[:：]/.test(text.slice(i + 1, end - 1))) {
+        i = end;
+        continue;
+      }
+    }
+    result += text[i++];
+  }
+  return result.replace(/\s+/g, ' ').trim();
+}
+
+function speechButton(text, label = '播放', chinese = '') {
   const cleanText = plainText(text);
   if (!cleanText) return '';
   const encoded = encodeURIComponent(cleanText);
   const escaped = cleanText.replace(/"/g, '&quot;');
   const canShadow = label === '播放' || label === '朗讀本段';
-  return `<span class="speech-actions"><button class="speech-button" type="button" data-speak="${encoded}" aria-label="播放日文：${escaped}"><span aria-hidden="true">▶</span> AI ${label}</button>${canShadow ? `<button class="shadow-button" type="button" data-shadow="${encoded}" aria-label="跟讀練習：${escaped}"><span aria-hidden="true">🎙</span> 跟讀</button>` : ''}</span>`;
+  const translation = chineseSpeechText(chinese);
+  const bilingual = translation ? `<button class="speech-button" type="button" data-bilingual="${encoded}" data-chinese="${encodeURIComponent(translation)}" aria-label="從此句日中連播：${escapeAttribute(cleanText)}">▶ 日→中連播</button>` : '';
+  return `<span class="speech-actions"><button class="speech-button" type="button" data-speak="${encoded}" aria-label="播放日文：${escaped}"><span aria-hidden="true">▶</span> AI ${label}</button>${bilingual}${canShadow ? `<button class="shadow-button" type="button" data-shadow="${encoded}" aria-label="跟讀練習：${escaped}"><span aria-hidden="true">🎙</span> 跟讀</button>` : ''}</span>`;
 }
 
 function normalizeJapanese(text = '') {
@@ -291,6 +316,7 @@ function renderSpeechToolbar() {
         <label for="speech-voice">語音</label>
         <select id="speech-voice" disabled aria-describedby="speech-voice-help"><option>正在載入日語語音…</option></select>
         <button class="speech-button" type="button" data-speak="${encodeURIComponent('明日は図書館で日本語を勉強します。')}" data-rate="0.95" disabled>▶ 試聽</button>
+        <button class="speech-button" type="button" data-bilingual-page>▶ 本頁日→中連播</button>
         <label for="speech-rate">速度</label>
         <select id="speech-rate">
           <option value="0.82">慢速 0.82×</option>
@@ -300,7 +326,7 @@ function renderSpeechToolbar() {
         <button class="speech-button shadow-toggle-btn" type="button" data-shadow-mode-toggle>🎙 開啟跟讀</button>
         <button class="speech-stop" type="button" data-speech-stop>■ 停止</button>
       </div>
-      <small id="speech-voice-help">選擇語音後按試聽；選項僅儲存在此裝置、此瀏覽器的本站，不會同步至手機或其他網址。</small>
+      <small id="speech-voice-help">日→中連播依本頁順序播放日文、中文解釋、下一句；略過未展開答案及缺中文的句子，不自動翻頁。選項僅儲存在此裝置。</small>
     </aside>
     <aside class="shadowing-panel" id="shadowing-panel" hidden aria-live="polite">
       <div class="shadowing-heading">
@@ -395,6 +421,7 @@ function setupSpeech(root) {
   let useGoogleOnline = savedVoiceKey === null || savedVoiceKey === GOOGLE_VOICE_KEY;
   let speechReady = false;
   let currentPlaySession = 0;
+  let bilingualGeneration = 0;
   let activeAudio = null;
   let activeAudioCleanup = null;
 
@@ -409,7 +436,8 @@ function setupSpeech(root) {
   };
   ensureNoReferrerMeta();
 
-  const stopPlayback = () => {
+  const stopPlayback = ({ keepSequence = false } = {}) => {
+    if (!keepSequence) bilingualGeneration++;
     currentPlaySession++;
     if (typeof activeAudioCleanup === 'function') {
       try {
@@ -471,8 +499,8 @@ function setupSpeech(root) {
   }
 
   const speakText = (text, rate = 0.95, options = {}) => {
-    const { onStart, onEnd, onError, playButton } = options;
-    stopPlayback();
+    const { onStart, onEnd, onError, playButton, language = 'ja-JP', continuation = false } = options;
+    stopPlayback({ keepSequence: continuation });
     root.querySelectorAll('audio').forEach(audio => audio.pause());
     const session = currentPlaySession;
 
@@ -518,10 +546,17 @@ function setupSpeech(root) {
         synthesis.cancel();
       } catch {}
       const utterance = new SpeechSynthesisUtterance(targetText);
-      utterance.lang = 'ja-JP';
+      utterance.lang = language;
       utterance.rate = rate;
       utterance.pitch = 1;
-      if (japaneseVoice) utterance.voice = japaneseVoice;
+      const selectedVoice = language === 'ja-JP' ? japaneseVoice
+        : (synthesis.getVoices?.() || []).find(v => /^zh-(?:TW|Hant)(?:-|$)/i.test(v.lang))
+          || (synthesis.getVoices?.() || []).find(v => /^zh(?:-|$)/i.test(v.lang));
+      if (language !== 'ja-JP' && !selectedVoice) {
+        errorIndicator('此裝置尚無中文語音，請安裝中文語音或改用線上語音');
+        return;
+      }
+      if (selectedVoice) utterance.voice = selectedVoice;
 
       utterance.onstart = () => {
         if (session !== currentPlaySession) return;
@@ -536,7 +571,7 @@ function setupSpeech(root) {
       };
       utterance.onerror = () => {
         if (session !== currentPlaySession) return;
-        errorIndicator('播放失敗，請確認裝置已安裝日文語音');
+        errorIndicator(`播放失敗，請確認裝置已安裝${language === 'ja-JP' ? '日文' : '中文'}語音`);
       };
       synthesis.speak(utterance);
       return utterance;
@@ -561,7 +596,7 @@ function setupSpeech(root) {
 
       const chunk = chunks[currentChunkIndex];
       const chunkToken = ++currentChunkToken;
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(chunk)}`;
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${language === 'ja-JP' ? 'ja' : 'zh-TW'}&client=tw-ob&q=${encodeURIComponent(chunk)}`;
       let audio;
       try {
         audio = new Audio();
@@ -686,7 +721,26 @@ function setupSpeech(root) {
     playNextChunk();
   };
 
-  root.lessonSpeech = { stop: stopPlayback };
+  const playBilingual = (pairs, rate = 0.95) => {
+    stopPlayback();
+    const generation = bilingualGeneration;
+    const queue = pairs.filter(p => p.jp && p.zh).flatMap(p => [
+      { text: p.jp, language: 'ja-JP', playButton: p.button },
+      { text: p.zh, language: 'zh-TW', playButton: p.button }
+    ]);
+    let index = 0;
+    const next = () => {
+      if (generation !== bilingualGeneration || isCleanedUp) return;
+      if (index >= queue.length) {
+        if (status) status.textContent = queue.length ? '本頁日中連播完成' : '本頁沒有可連播的日中對照句';
+        return;
+      }
+      const part = queue[index++];
+      speakText(part.text, rate, { ...part, continuation: true, onEnd: next });
+    };
+    next();
+  };
+  root.lessonSpeech = { stop: stopPlayback, playBilingual };
 
   const playShadowTarget = (rate = 0.95, onEnd) => {
     if (!shadowTarget) return;
@@ -1129,6 +1183,19 @@ function setupSpeech(root) {
       return;
     }
 
+    const bilingualButton = event.target.closest('[data-bilingual]');
+    const pageButton = event.target.closest('[data-bilingual-page]');
+    if (bilingualButton || pageButton) {
+      if (!speechReady) return;
+      // Layout visibility excludes other pages and collapsed answers; no scroll/reveal.
+      const visible = [...root.querySelectorAll('[data-bilingual]')].filter(b => b.getClientRects().length);
+      const start = bilingualButton ? visible.indexOf(bilingualButton) : 0;
+      playBilingual(visible.slice(Math.max(0, start)).map(button => ({
+        jp: decodeURIComponent(button.dataset.bilingual || ''),
+        zh: decodeURIComponent(button.dataset.chinese || ''), button
+      })), Number(root.querySelector('#speech-rate')?.value || 0.95));
+      return;
+    }
     const playButton = event.target.closest('[data-speak]');
     if (!playButton || !speechReady) return;
 
@@ -1341,9 +1408,9 @@ function renderLesson(root, data) {
         if (!item.jpRuby && plainJapanese && plainJapanese !== displayedJapanese) {
           html.push(`<p class="lesson-muted" lang="ja">${plainJapanese}</p>`);
         }
-        html.push(speechButton(item.classroom?.originalRuby || itemSpeechText(item)));
+        html.push(speechButton(item.classroom?.originalRuby || itemSpeechText(item), '播放', item.classroom?.originalRuby ? '' : item.zh || item.chinese));
         if ((item.zh || item.chinese) && !item.classroom?.originalRuby) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.zh || item.chinese}</div>`);
-        if (item.classroom?.originalRuby) html.push(`<details class="lesson-answer classroom-answer"><summary>查看答案｜${answerLabel(item)}</summary><p lang="ja">${item.jpRuby || item.japanese}</p>${speechButton(itemSpeechText(item))}<p><strong>中文：</strong>${item.zh || item.chinese || ''}</p>${evidenceHtml(item)}</details>`);
+        if (item.classroom?.originalRuby) html.push(`<details class="lesson-answer classroom-answer"><summary>查看答案｜${answerLabel(item)}</summary><p lang="ja">${item.jpRuby || item.japanese}</p>${speechButton(itemSpeechText(item), '播放', item.zh || item.chinese)}<p><strong>中文：</strong>${item.zh || item.chinese || ''}</p>${evidenceHtml(item)}</details>`);
         else html.push(evidenceHtml(item));
         if (item.grammarNote || item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法解析</strong>${item.grammarNote || item.verbInfo}</div>`);
         if (item.examples?.length) {
@@ -1357,7 +1424,7 @@ function renderLesson(root, data) {
           }
           for (const example of item.examples) {
             if (example.answerType) html.push(`<p class="lesson-muted">${answerLabel(example)}</p>${evidenceHtml(example)}`);
-            html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
+            html.push(`<div class="vocabulary-example"><p class="vocabulary-example-japanese" lang="ja">${example.ruby || example.japanese || example.plain}</p>${speechButton(example.plain || example.japanese || example.ruby, '播放', example.chinese)}${example.chinese ? `<p class="vocabulary-example-chinese">${example.chinese}</p>` : ''}</div>`);
             if (example.answerSource) html.push(`<p><a href="${escapeAttribute(example.answerSource)}" target="_blank" rel="noopener">查看解答本照片</a></p>`);
           }
           if (isCollapsible && item.supplementNote) {
@@ -1385,7 +1452,7 @@ function renderLesson(root, data) {
         if (item.imageDesc) html.push(`<p class="lesson-muted">${item.imageDesc}</p>`);
         if (item.japanese) html.push(`<p>${item.japanese}</p>`);
         if (item.plainText) html.push(`<p class="lesson-muted">${item.plainText}</p>`);
-        html.push(speechButton(itemSpeechText(item)));
+        html.push(speechButton(itemSpeechText(item), '播放', item.zh || item.chinese));
         if (item.romaji) html.push(`<p class="lesson-muted"><code>${item.romaji}</code></p>`);
         if (item.chinese) html.push(`<div class="lesson-kv"><strong>中文</strong>${item.chinese}</div>`);
         if (item.verbInfo) html.push(`<div class="lesson-kv"><strong>文法提示</strong>${item.verbInfo}</div>`);
